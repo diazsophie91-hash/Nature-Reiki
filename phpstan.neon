@@ -4,7 +4,18 @@ includes:
 parameters:
     level: 5
     paths:
-        - .
-    excludePaths:
-        - vendor/*
-        - node_modules/*
+        - accueil-reiki.php
+        - faq.php
+        - footer.php
+        - front-page.php
+        - functions.php
+        - header.php
+        - index.php
+        - le-reiki.php
+        - me-contacter.php
+        - menu-nature.php
+        - menu-reiki.php
+        - prendre-rendez-vous-reiki.php
+        - qui-suis-je.php
+        - reserver.php
+        - soins-reiki.php
