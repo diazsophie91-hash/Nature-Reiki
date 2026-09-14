@@ -1,0 +1,16 @@
+# Dépendances PHP
+/vendor/
+
+# Dépendances JavaScript
+/node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'environnement
+.env
+.env.*
+
+# Logs
+*.log

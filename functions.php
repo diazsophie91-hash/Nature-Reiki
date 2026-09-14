@@ -1,0 +1,215 @@
+<?php
+/**
+ * Configuration et fonctions partagées du thème Nature & Reiki.
+ *
+ * @package Nature_Reiki
+ */
+
+/**
+ * Active les fonctionnalités natives dont le thème a besoin.
+ */
+function nature_reiki_setup() {
+	add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'nature_reiki_setup' );
+
+/**
+ * Renvoie l'univers demandé, après validation de la valeur de l'URL.
+ *
+ * @return string "nature" ou "reiki".
+ */
+function nature_reiki_get_universe() {
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Navigation parameter, no form action
+	$univers = isset( $_GET['univers'] )
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Navigation parameter, no form action
+		? sanitize_key( wp_unslash( $_GET['univers'] ) )
+		: 'reiki';
+
+	return in_array( $univers, array( 'nature', 'reiki' ), true )
+		? $univers
+		: 'reiki';
+}
+
+/**
+ * Vérifie une page par son modèle lorsqu'il est attribué, ou par son slug.
+ *
+ * @param string|array $templates Modèle(s) de page attendus.
+ * @param string|array $slugs     Slug(s) de page attendus.
+ * @return bool
+ */
+function nature_reiki_is_current_page( $templates, $slugs ) {
+	return is_page_template( $templates ) || is_page( $slugs );
+}
+
+/**
+ * Configuration des deux univers et de leurs pages partagées.
+ *
+ * Format : 'univers' => array(
+ *     'templates' => array( ... ),
+ *     'slugs'     => array( ... ),
+ * ).
+ *
+ * Les pages partagées (faq, qui-suis-je, me-contacter) sont assignées
+ * à un univers selon le paramètre d'URL `?univers=`.
+ */
+function nature_reiki_get_universes_config() {
+	return array(
+		'reiki'  => array(
+			'templates' => array(
+				'accueil-reiki.php',
+				'le-reiki.php',
+				'soins-reiki.php',
+				'prendre-rendez-vous-reiki.php',
+			),
+			'slugs'     => array(
+				'accueil-reiki',
+				'le-reiki',
+				'soins-reiki',
+				'prendre-rendez-vous-reiki',
+			),
+		),
+		'nature' => array(
+			'templates' => array(
+				'accueil-guide-nature.php',
+				'balades.php',
+				'animations.php',
+				'reserver.php',
+			),
+			'slugs'     => array(
+				'accueil-guide-nature',
+				'balades',
+				'animations',
+				'reserver',
+			),
+		),
+	);
+}
+
+/**
+ * Indique si la page courante appartient à un univers donné.
+ *
+ * @param string $univers Identifiant d'univers ('reiki' ou 'nature').
+ * @return bool
+ */
+function nature_reiki_is_context( $univers ) {
+	$config = nature_reiki_get_universes_config();
+	if ( ! isset( $config[ $univers ] ) ) {
+		return false;
+	}
+	$cfg = $config[ $univers ];
+
+	$is_in_native_pages = nature_reiki_is_current_page(
+		$cfg['templates'],
+		$cfg['slugs']
+	);
+
+	if ( $is_in_native_pages ) {
+		return true;
+	}
+
+	// Pages partagées : affectées selon le paramètre d'URL.
+	$is_shared_page = nature_reiki_is_current_page(
+		array(
+			'faq.php',
+			'qui-suis-je.php',
+			'me-contacter.php',
+		),
+		array( 'faq', 'qui-suis-je', 'me-contacter' )
+	);
+
+	return $is_shared_page && nature_reiki_get_universe() === $univers;
+}
+
+/**
+ * Indique si la page courante appartient à l'univers Reiki.
+ *
+ * @return bool
+ */
+function nature_reiki_is_reiki_context() {
+	return nature_reiki_is_context( 'reiki' );
+}
+
+/**
+ * Indique si la page courante appartient à l'univers Nature.
+ *
+ * @return bool
+ */
+function nature_reiki_is_nature_context() {
+	return nature_reiki_is_context( 'nature' );
+}
+
+/**
+ * Indique si la page courante utilise un des accordéons du thème.
+ * Utilisé pour ne charger le JS des accordéons que sur les pages concernées.
+ *
+ * @return bool
+ */
+function nature_reiki_page_has_accordion() {
+	return nature_reiki_is_current_page(
+		array( 'le-reiki.php', 'soins-reiki.php', 'faq.php', 'qui-suis-je.php' ),
+		array( 'faq', 'qui-suis-je', 'le-reiki' )
+	);
+}
+
+/**
+ * Construit l'URL d'un fichier inclus dans le thème.
+ *
+ * @param string $path Chemin relatif au dossier du thème.
+ * @return string
+ */
+function nature_reiki_asset_url( $path ) {
+	return get_theme_file_uri( '/' . ltrim( $path, '/' ) );
+}
+
+/**
+ * Charge la feuille de style principale et le JS des accordéons
+ * avec la version du thème pour le cache.
+ *
+ * Le JS des accordéons n'est chargé que sur les pages qui en ont besoin.
+ */
+function nature_reiki_enqueue_assets() {
+	$theme    = wp_get_theme();
+	$min_css  = '/style.min.css';
+	$css_file = file_exists( get_stylesheet_directory() . $min_css ) ? $min_css : '/style.css';
+	$version  = filemtime( get_stylesheet_directory() . $css_file );
+
+	wp_enqueue_style(
+		'nature-reiki-style',
+		get_stylesheet_directory_uri() . $css_file,
+		array(),
+		$version
+	);
+
+	if ( nature_reiki_page_has_accordion() ) {
+		wp_enqueue_script(
+			'nature-reiki-accordeon',
+			nature_reiki_asset_url( 'assets/js/accordeon.js' ),
+			array(),
+			$version,
+			true
+		);
+	}
+
+	wp_enqueue_script(
+		'nature-reiki-retour-haut',
+		nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
+		array(),
+		$version,
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'nature_reiki_enqueue_assets' );
+
+/**
+ * Affiche le menu de navigation correspondant à l'univers courant.
+ *
+ * Utilise `menu-nature.php` si l'univers courant est "nature",
+ * `menu-reiki.php` sinon.
+ */
+function nature_reiki_display_menu() {
+	$template = 'nature' === nature_reiki_get_universe()
+		? 'menu-nature'
+		: 'menu-reiki';
+
+	get_template_part( $template );
+}
