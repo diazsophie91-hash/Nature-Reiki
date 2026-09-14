@@ -10,7 +10,7 @@
 
 $menu_items = array(
 	array(
-		'label'    => 'Accueil',
+		'label'    => 'Accueil Guide Nature',
 		'template' => 'accueil-guide-nature.php',
 		'slug'     => 'accueil-guide-nature',
 		'url'      => home_url( '/accueil-guide-nature/' ),
@@ -32,6 +32,12 @@ $menu_items = array(
 		'template' => 'animations.php',
 		'slug'     => 'animations',
 		'url'      => home_url( '/animations/' ),
+	),
+	array(
+		'label'    => 'À venir',
+		'template' => 'a-venir.php',
+		'slug'     => 'a-venir',
+		'url'      => home_url( '/a-venir/' ),
 	),
 	array(
 		'label'    => 'Réserver',

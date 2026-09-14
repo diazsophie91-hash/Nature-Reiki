@@ -68,20 +68,22 @@ function nature_reiki_get_universes_config() {
 				'prendre-rendez-vous-reiki',
 			),
 		),
-		'nature' => array(
-			'templates' => array(
-				'accueil-guide-nature.php',
-				'balades.php',
-				'animations.php',
-				'reserver.php',
-			),
-			'slugs'     => array(
-				'accueil-guide-nature',
-				'balades',
-				'animations',
-				'reserver',
-			),
-		),
+'nature' => array(
+	'templates' => array(
+		'accueil-guide-nature.php',
+		'balades.php',
+		'animations.php',
+		'a-venir.php',
+		'reserver.php',
+	),
+	'slugs'     => array(
+		'accueil-guide-nature',
+		'balades',
+		'animations',
+		'a-venir',
+		'reserver',
+	),
+),
 	);
 }
 
