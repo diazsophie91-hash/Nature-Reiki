@@ -195,6 +195,8 @@ get_header();
 
 	<section class="me-contacter-univers">
 
+		<div class="separateur-dore" aria-hidden="true"></div>
+
 		<div class="me-contacter-contenu">
 
 			<div class="me-contacter-univers-grid">

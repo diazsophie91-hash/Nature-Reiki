@@ -87,6 +87,9 @@ echo esc_url(
 	========================== -->
 
 	<div class="le-reiki-mention">
+
+		<div class="separateur-dore" aria-hidden="true"></div>
+
 		<p>
 			Le Reiki est une pratique complémentaire de bien-être et ne se substitue en aucun cas à un avis médical, à un diagnostic ou à un traitement médical. En cas de problème de santé, il est important de consulter un professionnel de santé.
 		</p>

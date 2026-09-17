@@ -518,6 +518,8 @@ foreach ( $soins as $soin ) :
 
 	<section class="soins-reiki-cta">
 
+		<div class="separateur-dore" aria-hidden="true"></div>
+
 		<div class="soins-reiki-cta-interieur">
 
 			<h2>Une question avant votre rendez-vous ?</h2>

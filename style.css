@@ -2134,17 +2134,11 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     text-align: center;
 }
 
-.qui-suis-je-citation::before {
-    content: "";
-
-    display: block;
-
+.separateur-dore {
     width: 100px;
-    height: 1px;
-
+    height: 1.6px;
     margin: 0 auto 25px;
-
-    background: var(--color-accent);
+    background: var(--color-accent-border);
 }
 
 .qui-suis-je-citation-interieur {
@@ -2969,18 +2963,7 @@ body.page-template-le-reiki .page-le-reiki {
     text-align: center;
 }
 
-.le-reiki-mention::before {
-    content: "";
 
-    display: block;
-
-    width: 100px;
-    height: 1px;
-
-    margin: 0 auto 25px;
-
-    background: var(--color-accent-border);
-}
 
 .le-reiki-mention p {
     margin: 0;
@@ -3160,18 +3143,7 @@ body.page-template-le-reiki .page-le-reiki {
 }
 
 
-.me-contacter-univers::before {
-    content: "";
 
-    display: block;
-
-    width: 100px;
-    height: 1px;
-
-    margin: 0 auto 25px;
-
-    background: var(--color-accent-border);
-}
 
 .me-contacter-univers-grid {
     display: grid;
@@ -3933,18 +3905,7 @@ body.page-template-me-contacter {
     padding: 10px 30px 60px;
 }
 
-.soins-reiki-cta::before {
-    content: "";
 
-    display: block;
-
-    width: 100px;
-    height: 1px;
-
-    margin: 0 auto 25px;
-
-    background: var(--color-accent);
-}
 
 .soins-reiki-cta-interieur {
     width: 100%;
