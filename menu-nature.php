@@ -34,12 +34,6 @@ $menu_items = array(
 		'url'      => home_url( '/animations/' ),
 	),
 	array(
-		'label'    => 'À venir',
-		'template' => 'a-venir.php',
-		'slug'     => 'a-venir',
-		'url'      => home_url( '/a-venir/' ),
-	),
-	array(
 		'label'    => 'Réserver',
 		'template' => 'reserver.php',
 		'slug'     => 'reserver',

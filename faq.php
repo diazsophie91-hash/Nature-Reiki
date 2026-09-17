@@ -99,6 +99,8 @@ foreach ( $univers_ordre as $univers_faq ) :
 	</div>
 </section>
 
+	<div class="separateur-dore" aria-hidden="true"></div>
+
 </main>
 
 <?php

@@ -363,6 +363,8 @@ Template Name: Qui suis-je ?
 
 	<section class="qui-suis-je-citation">
 
+		<div class="separateur-dore" aria-hidden="true"></div>
+
 		<div class="qui-suis-je-citation-interieur">
 
 			<p>

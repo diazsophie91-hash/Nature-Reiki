@@ -14,29 +14,18 @@ function nature_reiki_setup() {
 add_action( 'after_setup_theme', 'nature_reiki_setup' );
 
 /**
- * Renvoie l'univers demandé, après validation de la valeur de l'URL
- * ou détection automatique à partir de la page courante.
+ * Renvoie l'univers demandé, après validation de la valeur de l'URL.
  *
  * @return string "nature" ou "reiki".
  */
 function nature_reiki_get_universe() {
-	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Navigation parameter, no form action
-	if ( isset( $_GET['univers'] ) ) {
-		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Navigation parameter, no form action
-		$univers = sanitize_key( wp_unslash( $_GET['univers'] ) );
-		if ( in_array( $univers, array( 'nature', 'reiki' ), true ) ) {
-			return $univers;
-		}
-	}
+	$univers = isset( $_GET['univers'] )
+		? sanitize_key( wp_unslash( $_GET['univers'] ) )
+		: 'reiki';
 
-	$config = nature_reiki_get_universes_config();
-	foreach ( $config as $univers => $cfg ) {
-		if ( nature_reiki_is_current_page( $cfg['templates'], $cfg['slugs'] ) ) {
-			return $univers;
-		}
-	}
-
-	return 'reiki';
+	return in_array( $univers, array( 'nature', 'reiki' ), true )
+		? $univers
+		: 'reiki';
 }
 
 /**
@@ -82,14 +71,12 @@ function nature_reiki_get_universes_config() {
 				'accueil-guide-nature.php',
 				'balades.php',
 				'animations.php',
-				'a-venir.php',
 				'reserver.php',
 			),
 			'slugs'     => array(
 				'accueil-guide-nature',
 				'balades',
 				'animations',
-				'a-venir',
 				'reserver',
 			),
 		),
@@ -163,19 +150,6 @@ function nature_reiki_page_has_accordion() {
 }
 
 /**
- * Indique si la page courante utilise le carrousel de l'univers Nature.
- * Utilisé pour ne charger le JS du carrousel que sur les pages concernées.
- *
- * @return bool
- */
-function nature_reiki_page_has_carousel() {
-	return nature_reiki_is_current_page(
-		array( 'balades.php' ),
-		array( 'balades' )
-	);
-}
-
-/**
  * Construit l'URL d'un fichier inclus dans le thème.
  *
  * @param string $path Chemin relatif au dossier du thème.
@@ -214,16 +188,6 @@ function nature_reiki_enqueue_assets() {
 		);
 	}
 
-	if ( nature_reiki_page_has_carousel() ) {
-		wp_enqueue_script(
-			'nature-reiki-carrousel',
-			nature_reiki_asset_url( 'assets/js/carrousel-nature.js' ),
-			array(),
-			$version,
-			true
-		);
-	}
-
 	wp_enqueue_script(
 		'nature-reiki-retour-haut',
 		nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
@@ -247,19 +211,3 @@ function nature_reiki_display_menu() {
 
 	get_template_part( $template );
 }
-
-/**
- * Ajoute une classe de contexte d'univers au body.
- *
- * @param array $classes Classes existantes du body.
- * @return array Classes modifiées.
- */
-function nature_reiki_body_universe_classes( $classes ) {
-	if ( nature_reiki_is_nature_context() ) {
-		$classes[] = 'universe-nature';
-	} elseif ( nature_reiki_is_reiki_context() ) {
-		$classes[] = 'universe-reiki';
-	}
-	return $classes;
-}
-add_filter( 'body_class', 'nature_reiki_body_universe_classes' );

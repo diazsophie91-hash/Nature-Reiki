@@ -260,9 +260,9 @@
 			Un même site, deux univers, une seule adresse
 		</span>
 
-		<span class="adresse">
-			Nature-reiki.be
-		</span>
+<a href="https://nature-reiki.be/" class="adresse">
+    Nature-reiki.be
+</a>
 
 	</div>
 
