@@ -10,7 +10,7 @@
 
 $menu_items = array(
 	array(
-		'label'    => 'Accueil Guide Nature',
+		'label'    => 'Accueil',
 		'template' => 'accueil-guide-nature.php',
 		'slug'     => 'accueil-guide-nature',
 		'url'      => home_url( '/accueil-guide-nature/' ),

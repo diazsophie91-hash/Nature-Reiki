@@ -188,6 +188,19 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --drop-shadow-icon:   drop-shadow(0 2px 2px rgba(70, 45, 80, 0.30));
     --drop-shadow-title:  drop-shadow(0 2px 2px rgba(70, 45, 80, 0.45)) drop-shadow(0 4px 4px rgba(70, 45, 80, 0.30)) drop-shadow(1px 1px 1px rgba(120, 85, 35, 0.45));
 
+    /* === Univers Nature : brun et bleu complementaires === */
+    --color-nature-brown:       #7a5a3a;
+    --color-nature-brown-dark:  #533b26;
+    --color-nature-brown-light: #a9855f;
+    --color-nature-brown-bg:    #f4ece2;
+    --color-nature-blue:        #3d6b86;
+    --color-nature-blue-dark:   #29495d;
+    --color-nature-blue-light:  #7ba4b9;
+    --color-nature-blue-bg:     #e9f1f5;
+    --shadow-nature-card:       0 6px 20px rgba(45, 60, 40, 0.10);
+    --shadow-nature-card-hover: 0 12px 28px rgba(45, 60, 40, 0.16);
+    --color-nature-translucent-70: rgba(255, 252, 247, 0.70);
+
 
 
 }
@@ -1034,6 +1047,17 @@ body:has(.page-reiki) {
     line-height: 1;
 }
 
+/* Adaptation des couleurs de H1 pour les pages communes */
+body.universe-nature .reiki-hero h1 {
+    color: var(--color-nature);
+}
+
+body.universe-reiki .reiki-hero h1 {
+    color: var(--color-primary);
+}
+
+
+
 /* =========================
    ACCROCHE
 ========================= */
@@ -1052,6 +1076,17 @@ body:has(.page-reiki) {
     font-style: italic;
 
     line-height: 1.05;
+}
+
+/* Adaptation des couleurs de sous-titres pour F.A.Q et Me contacter */
+body.universe-nature .page-faq .reiki-hero p:first-of-type,
+body.universe-nature .page-me-contacter .reiki-hero p:first-of-type {
+    color: var(--color-nature);
+}
+
+body.universe-reiki .page-faq .reiki-hero p:first-of-type,
+body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
+    color: var(--color-sub-reiki);
 }
 
 .page-qui-suis-je .sous-titre-reiki {
@@ -1243,7 +1278,10 @@ body:has(.page-reiki) {
 
     padding: 22px 30px;
 
-    background-image: url("images/texture-peinture.png");
+    background-image: 
+        linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
+        url("images/texture-peinture.png");
+    background-color: var(--color-white-warm);
 
     background-size: cover;
     background-position: center;
@@ -1280,7 +1318,10 @@ body:has(.page-reiki) {
 
     padding: 22px 30px;
 
-    background-image: url("images/texture-peinture.png");
+    background-image: 
+        linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
+        url("images/texture-peinture.png");
+    background-color: var(--color-white-warm);
 
     background-size: cover;
     background-position: center;
@@ -1563,7 +1604,10 @@ body:has(.page-reiki) {
 
     padding: 22px 30px;
 
-    background-image: url("images/texture-peinture.png");
+    background-image: 
+        linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
+        url("images/texture-peinture.png");
+    background-color: var(--color-white-warm);
 
     background-size: cover;
     background-position: center;
@@ -2105,7 +2149,10 @@ body.page-template-qui-suis-je .page-qui-suis-je {
 
     padding: 25px 45px;
 
-    background-image: url("images/texture-peinture.png");
+    background-image: 
+        linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
+        url("images/texture-peinture.png");
+    background-color: var(--color-white-warm);
 
     background-size: cover;
     background-position: center;
@@ -4336,4 +4383,1161 @@ body:has(.page-faq) {
     border-top: 2px solid currentColor;
 
     transform: rotate(45deg);
+}
+
+/* =========================================================
+   UNIVERS NATURE
+   Bloc autonome : aucune regle Reiki n'est modifiee ici.
+   Toutes les classes sont prefixees par "nature-".
+========================================================= */
+
+/* =========================================================
+   DEFILEMENT DES PAGES NATURE
+========================================================= */
+
+html:has(body.page-template-accueil-guide-nature),
+html:has(body.page-template-balades),
+html:has(body.page-template-animations),
+html:has(body.page-template-a-venir),
+html:has(body.page-template-reserver),
+body.page-template-accueil-guide-nature,
+body.page-template-balades,
+body.page-template-animations,
+body.page-template-a-venir,
+body.page-template-reserver {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* =========================================================
+   FOND DES PAGES NATURE
+   Vert repris de la variable existante --color-nature-bg.
+========================================================= */
+
+.page-nature {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    overflow: visible;
+
+    color: var(--color-text);
+}
+
+body.universe-nature {
+    background-color: #d2e5bc;
+}
+
+body.universe-nature .accueil-header,
+body.universe-nature .site-footer,
+body.universe-nature .page-nature,
+body.universe-nature .page-faq,
+body.universe-nature .page-me-contacter,
+body.universe-nature .page-qui-suis-je {
+    background-color: #d2e5bc;
+}
+
+/* =========================================================
+   HERO NATURE
+========================================================= */
+
+.nature-hero {
+    width: 100%;
+    max-width: 1100px;
+
+    min-height: 0;
+
+    margin: 0 auto;
+
+    padding: 2px 30px 10px;
+
+    text-align: center;
+}
+
+.nature-hero h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature);
+
+    font-size: clamp(48px, 5vw, 68px);
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    line-height: 1;
+}
+
+.nature-hero p:first-of-type {
+    margin: 8px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-brown);
+
+    font-size: clamp(26px, 2.7vw, 36px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.05;
+}
+
+/* =========================================================
+   LIGNE + FEUILLE DE CHENE
+========================================================= */
+
+.nature-ligne-decoration {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    max-width: 60%;
+
+    margin: 10px auto 0;
+
+    gap: 8px;
+}
+
+.nature-ligne-decoration span {
+    height: 1px;
+
+    background: var(--color-accent-border);
+
+    flex: 1;
+}
+
+.nature-ligne-decoration img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   MENU NATURE : RECOLORATION UNIQUEMENT
+   Le positionnement reste celui defini plus haut.
+========================================================= */
+
+body:has(.page-nature) .nature-menu {
+    border-color: var(--color-nature-light);
+}
+
+body:has(.page-nature) .nature-menu a {
+    color: var(--color-nature-dark);
+}
+
+body:has(.page-nature) .nature-menu a:hover {
+    background: var(--color-nature-card-bg);
+    color: var(--color-nature-dark);
+}
+
+body:has(.page-nature) .nature-menu a.actif {
+    background: var(--color-nature-accent);
+    color: var(--color-nature-dark);
+}
+
+/* =========================================================
+   SECTIONS NATURE
+========================================================= */
+
+.nature-section {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 18px 30px;
+}
+
+.nature-section--texte {
+    padding-top: 30px;
+}
+
+.nature-titre-section {
+    margin: 0 0 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(28px, 3vw, 38px);
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+.nature-intro {
+    width: 100%;
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.nature-intro p {
+    margin: 0 0 12px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.nature-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.nature-disponibilite {
+    font-style: italic;
+
+    color: var(--color-nature-brown-dark);
+}
+
+.nature-section-action {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 26px;
+}
+
+/* =========================================================
+   BOUTONS NATURE
+========================================================= */
+
+.nature-bouton {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 26px;
+
+    background: var(--color-nature);
+
+    border: 1px solid var(--color-nature);
+    border-radius: var(--radius-btn);
+
+    font-family: "Lora", serif;
+
+    color: var(--color-white-warm);
+
+    font-size: 16px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nature-bouton:hover {
+    background: var(--color-nature-hover);
+
+    transform: translateY(-2px);
+}
+
+.nature-bouton--secondaire {
+    background: var(--color-nature-translucent-70);
+
+    border-color: var(--color-nature);
+
+    color: var(--color-nature-dark);
+}
+
+.nature-bouton--secondaire:hover {
+    background: var(--color-nature-card-bg);
+
+    color: var(--color-nature-dark);
+}
+
+.nature-bouton--large {
+    padding: 14px 34px;
+
+    font-size: 17px;
+}
+
+/* =========================================================
+   BANNIERES DE L'ACCUEIL NATURE
+   Texture propre a Nature : degrade en couches, distinct de
+   la texture peinture utilisee par les bannieres Reiki.
+========================================================= */
+
+.nature-banniere {
+    width: 100%;
+
+    min-height: 136px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 22px 30px;
+
+    box-sizing: border-box;
+
+    border-radius: var(--radius-card);
+
+    box-shadow: var(--shadow-nature-card);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.nature-banniere:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-nature-card-hover);
+}
+
+.nature-banniere--verte {
+    background-color: var(--color-nature-card-bg);
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
+        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-card-bg) 65%);
+}
+
+.nature-banniere--brune {
+    background-color: var(--color-nature-brown-bg);
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
+        linear-gradient(135deg, #e8d8c4 0%, var(--color-nature-brown-bg) 65%);
+}
+
+.nature-banniere--bleue {
+    background-color: var(--color-nature-blue-bg);
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
+        linear-gradient(135deg, #d5e6ee 0%, var(--color-nature-blue-bg) 65%);
+}
+
+.nature-banniere-decor {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.nature-banniere-decor img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.25s ease;
+}
+
+.nature-banniere:hover .nature-banniere-decor img {
+    transform: translateY(-2px);
+}
+
+.nature-banniere-contenu {
+    flex: 1;
+
+    text-align: left;
+}
+
+.nature-banniere-contenu h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(30px, 3vw, 40px);
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    line-height: 1.05;
+}
+
+.nature-banniere--brune .nature-banniere-contenu h2 {
+    color: var(--color-nature-brown-dark);
+}
+
+.nature-banniere--bleue .nature-banniere-contenu h2 {
+    color: var(--color-nature-blue-dark);
+}
+
+.nature-banniere-contenu p {
+    margin: 7px 0 0;
+
+    max-width: 68%;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+.nature-banniere-bouton {
+    position: absolute;
+
+    right: 30px;
+    bottom: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 18px;
+
+    background: var(--color-nature);
+
+    border-radius: var(--radius-btn);
+
+    font-family: "Lora", serif;
+
+    color: var(--color-white-warm);
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nature-banniere-bouton:hover {
+    background: var(--color-nature-hover);
+
+    transform: translateY(-2px);
+}
+
+.nature-banniere--brune .nature-banniere-bouton {
+    background: var(--color-nature-brown);
+}
+
+.nature-banniere--brune .nature-banniere-bouton:hover {
+    background: var(--color-nature-brown-light);
+}
+
+.nature-banniere--bleue .nature-banniere-bouton {
+    background: var(--color-nature-blue);
+}
+
+.nature-banniere--bleue .nature-banniere-bouton:hover {
+    background: var(--color-nature-blue-light);
+}
+
+/* =========================================================
+   CARTES NATURE (balades, animations, projets a venir)
+========================================================= */
+
+.nature-cartes {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+}
+
+.nature-cartes--duo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.nature-carte {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 24px 22px 26px;
+
+    background: var(--color-white-warm-translucent-72);
+
+    border: 1px solid var(--color-nature-light);
+    border-radius: var(--radius-card);
+
+    box-shadow: var(--shadow-nature-card);
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.nature-carte:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-nature-card-hover);
+}
+
+.nature-carte--brune {
+    border-color: var(--color-nature-brown-light);
+
+    background: var(--color-nature-brown-bg);
+}
+
+.nature-carte--bleue {
+    border-color: var(--color-nature-blue-light);
+
+    background: var(--color-nature-blue-bg);
+}
+
+.nature-carte-symbole {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+}
+
+.nature-carte-symbole img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.nature-carte-etiquette {
+    margin: 0 0 8px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-nature-brown-dark);
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    letter-spacing: 0.5px;
+}
+
+.nature-carte h3 {
+    margin: 0 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(22px, 2.2vw, 27px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+}
+
+.nature-carte--brune h3 {
+    color: var(--color-nature-brown-dark);
+}
+
+.nature-carte--bleue h3 {
+    color: var(--color-nature-blue-dark);
+}
+
+.nature-carte-texte {
+    margin: 0;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+/* =========================================================
+   ENCARTS NATURE (balades privees, conditions)
+========================================================= */
+
+.nature-encart {
+    width: 100%;
+    max-width: 860px;
+
+    margin: 0 auto;
+
+    padding: 30px 34px;
+
+    border: 1px solid var(--color-nature-light);
+    border-radius: var(--radius-card);
+
+    background: var(--color-white-warm-translucent-72);
+
+    box-shadow: var(--shadow-nature-card);
+
+    text-align: center;
+}
+
+.nature-encart--brun {
+    border-color: var(--color-nature-brown-light);
+
+    background: var(--color-nature-brown-bg);
+}
+
+.nature-encart--bleu {
+    border-color: var(--color-nature-blue-light);
+
+    background: var(--color-nature-blue-bg);
+}
+
+.nature-encart h2 {
+    margin: 0 0 14px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(26px, 2.8vw, 34px);
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+.nature-encart--brun h2 {
+    color: var(--color-nature-brown-dark);
+}
+
+.nature-encart--bleu h2 {
+    color: var(--color-nature-blue-dark);
+}
+
+.nature-encart p {
+    margin: 0 0 14px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+.nature-encart-mention {
+    font-style: italic;
+
+    color: var(--color-nature-brown-dark);
+}
+
+/* =========================================================
+   APPEL A L'ACTION NATURE
+========================================================= */
+
+.nature-cta {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 30px 30px 40px;
+}
+
+.nature-cta-interieur {
+    width: 100%;
+
+    padding: 30px 34px;
+
+    border-radius: var(--radius-card);
+
+    background-color: var(--color-nature-card-bg);
+    background-image:
+        linear-gradient(160deg, var(--color-nature-accent) 0%, var(--color-nature-card-bg) 70%);
+
+    box-shadow: var(--shadow-nature-card);
+
+    text-align: center;
+}
+
+.nature-cta-interieur h2 {
+    margin: 0 0 8px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(26px, 2.8vw, 34px);
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+.nature-cta-interieur p {
+    margin: 0 0 18px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+.nature-cta-boutons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 18px;
+}
+
+/* =========================================================
+   CARROUSEL NATURE
+   Aucune librairie externe : le defilement est gere par
+   assets/js/carrousel-nature.js.
+========================================================= */
+
+.nature-carrousel {
+    width: 100%;
+    max-width: 860px;
+
+    margin: 0 auto;
+}
+
+.nature-carrousel:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* La fenetre masque les diapositives hors champ : pas de
+   debordement horizontal possible. */
+.nature-carrousel-fenetre {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-nature-light);
+    border-radius: var(--radius-card);
+
+    background: var(--color-white-warm-translucent-72);
+
+    box-shadow: var(--shadow-nature-card);
+}
+
+.nature-carrousel-piste {
+    display: flex;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    transition: transform 0.4s ease;
+}
+
+.nature-carrousel-diapositive {
+    flex: 0 0 100%;
+
+    width: 100%;
+    min-width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 34px 38px;
+}
+
+.nature-carrousel-diapositive blockquote {
+    margin: 0;
+
+    text-align: center;
+}
+
+.nature-carrousel-diapositive blockquote p {
+    margin: 0 0 14px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--color-nature-dark);
+
+    font-size: clamp(21px, 2.4vw, 28px);
+
+    font-style: italic;
+
+    line-height: 1.45;
+}
+
+.nature-carrousel-diapositive blockquote footer {
+    font-family: "Lora", serif;
+
+    color: var(--color-nature-brown-dark);
+
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+}
+
+.nature-carrousel-commandes {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 18px;
+}
+
+.nature-carrousel-fleche {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--color-nature-light);
+    border-radius: 50%;
+
+    background: var(--color-white-warm-translucent-88);
+
+    color: var(--color-nature-dark);
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nature-carrousel-fleche:hover {
+    background: var(--color-nature-card-bg);
+
+    transform: translateY(-2px);
+}
+
+.nature-carrousel-fleche span {
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid currentcolor;
+    border-top: 2px solid currentcolor;
+}
+
+.nature-carrousel-fleche--precedent span {
+    transform: rotate(-45deg);
+
+    margin-left: -2px;
+}
+
+.nature-carrousel-fleche--suivant span {
+    transform: rotate(135deg);
+
+    margin-right: -2px;
+}
+
+.nature-carrousel-puces {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.nature-carrousel-puce {
+    width: 11px;
+    height: 11px;
+
+    padding: 0;
+
+    border: 1px solid var(--color-nature);
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nature-carrousel-puce:hover {
+    transform: scale(1.15);
+}
+
+.nature-carrousel-puce.actif {
+    background: var(--color-nature);
+}
+
+/* =========================================================
+   PAGE RESERVER
+========================================================= */
+
+.nature-reserver {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 35px 30px 30px;
+
+    text-align: center;
+}
+
+.nature-reserver-contenu p {
+    margin: 0;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.nature-reserver-contenu a {
+    color: var(--color-nature-dark);
+}
+
+/* =========================================================
+   MENTION BAS DE PAGE NATURE
+========================================================= */
+
+.nature-mention {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 10px 30px 30px;
+
+    text-align: center;
+}
+
+.nature-mention p {
+    margin: 0;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text-light);
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+}
+
+/* =========================================================
+   RETOUR EN HAUT : VARIANTE NATURE
+========================================================= */
+
+.retour-haut--nature {
+    color: var(--color-nature-dark);
+}
+
+.retour-haut--nature:hover {
+    background: var(--color-nature-card-bg);
+}
+
+/* =========================================================
+   FOCUS CLAVIER DES ELEMENTS NATURE
+========================================================= */
+
+.nature-bouton:focus-visible,
+.nature-banniere-bouton:focus-visible,
+.nature-carrousel-fleche:focus-visible,
+.nature-carrousel-puce:focus-visible,
+.nature-reserver-contenu a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   MOUVEMENT REDUIT
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .nature-carrousel-piste {
+        transition: none;
+    }
+
+    .nature-banniere,
+    .nature-carte,
+    .nature-bouton,
+    .nature-banniere-bouton,
+    .nature-carrousel-fleche,
+    .nature-carrousel-puce {
+        transition: none;
+    }
+
+    .nature-banniere:hover,
+    .nature-carte:hover,
+    .nature-bouton:hover,
+    .nature-banniere-bouton:hover,
+    .nature-carrousel-fleche:hover {
+        transform: none;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE NATURE : TABLETTE
+========================================================= */
+
+@media (max-width: 1024px) {
+    .nature-cartes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nature-banniere-contenu p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .nature-section,
+    .nature-cta {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nature-banniere {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding: 22px 24px;
+    }
+
+    .nature-banniere-contenu {
+        width: 100%;
+    }
+
+    /* Le bouton quitte la position absolue pour eviter
+       tout chevauchement du texte. */
+    .nature-banniere-bouton {
+        position: static;
+
+        right: auto;
+        bottom: auto;
+
+        margin-top: 14px;
+    }
+
+    .nature-carrousel-diapositive {
+        padding: 28px 26px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE NATURE : MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    .nature-hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .nature-section,
+    .nature-cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .nature-cartes,
+    .nature-cartes--duo {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 16px;
+    }
+
+    .nature-encart,
+    .nature-cta-interieur {
+        padding: 24px 20px;
+    }
+
+    .nature-carrousel-diapositive {
+        padding: 24px 18px;
+    }
+
+    .nature-carrousel-commandes {
+        gap: 12px;
+    }
+
+    .nature-cta-boutons {
+        flex-direction: column;
+    }
+
+    .nature-cta-boutons .nature-bouton {
+        width: 100%;
+    }
+
+    .nature-bouton--large {
+        width: 100%;
+
+        padding: 14px 20px;
+
+        font-size: 16px;
+    }
 }

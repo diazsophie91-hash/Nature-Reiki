@@ -19,6 +19,14 @@
 <?php
 $is_reiki  = nature_reiki_is_reiki_context();
 $is_nature = nature_reiki_is_nature_context();
+
+if ( $is_reiki ) {
+	$logo = 'images/logo-reiki-transparent.png';
+} elseif ( $is_nature ) {
+	$logo = 'images/logo-guide-nature-transparent.png';
+} else {
+	$logo = 'images/logo-nature-reiki-transparent.png';
+}
 ?>
 
 
@@ -28,7 +36,7 @@ $is_nature = nature_reiki_is_nature_context();
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
 
 	<img
-		src="<?php echo esc_url( nature_reiki_asset_url( $is_reiki ? 'images/logo-reiki-transparent.png' : 'images/logo-nature-reiki-transparent.png' ) ); ?>"
+		src="<?php echo esc_url( nature_reiki_asset_url( $logo ) ); ?>"
 		alt="Nature & Reiki"
 	>
 

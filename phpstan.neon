@@ -4,7 +4,11 @@ includes:
 parameters:
     level: 5
     paths:
+        - a-venir.php
+        - accueil-guide-nature.php
         - accueil-reiki.php
+        - animations.php
+        - balades.php
         - faq.php
         - footer.php
         - front-page.php
