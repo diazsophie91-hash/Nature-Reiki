@@ -71,7 +71,7 @@ $soins = array(
 		'image'         => 'images/arbre-vie.png',
 		'titre'         => 'Pack 4 séances',
 		'prix'          => '170 €',
-		'description'   => "Texte à compléter concernant le pack de quatre\n                            séances et l'accompagnement dans la durée.",
+		'description'   => 'Un accompagnement complet en quatre séances, conçu pour travailler progressivement sur l’équilibre énergétique et permettre au processus d’harmonisation de s’installer dans le temps. Particulièrement conseillé pour une première expérience du Reiki.',
 		'test_html'     => 'Test énergétique avec pendule :                            <strong>compris dans le pack</strong>',
 	),
 	array(
@@ -79,7 +79,7 @@ $soins = array(
 		'image'         => 'images/lotus.png',
 		'titre'         => 'Séance unique',
 		'prix'          => '55 €',
-		'description'   => 'Texte à compléter concernant la séance unique et son déroulement.',
+		'description'   => 'Une séance ponctuelle pour découvrir le Reiki, prendre un moment pour vous et bénéficier d’un soin adapté à vos besoins du moment.',
 		'test_html'     => 'Test énergétique avec pendule : + 8 €',
 	),
 	array(
@@ -87,8 +87,8 @@ $soins = array(
 		'image'         => 'images/feuille-chene.png',
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
-		'description'   => 'Texte à compléter concernant la séance de Reiki en forêt.',
-		'test_html'     => 'Cette séance dépend des conditions météorologiques.',
+		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
+		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\'y a pas de test énergétique pour ce type de séance.',
 	),
 );
 
@@ -241,10 +241,10 @@ foreach ( $soins as $soin ) :
 
 				<p>
 					Pour une séance unique, il est proposé avec un supplément de 8 €.
+				</p>
+
 				<p>
 					Pas de test énergétique pour la séance en forêt, qui se concentre sur l’expérience de l’immersion dans la nature et le soin Reiki.
-				<p>
-
 				</p>
 
 			</div>
@@ -279,6 +279,67 @@ foreach ( $soins as $soin ) :
 
 			<div class="le-reiki-accordeon-contenu ouvert">
 
+				<!-- =========================
+					PACK 4 SÉANCES
+				========================== -->
+
+				<article class="soin-reiki-explication">
+
+					<h3>Pack 4 séances</h3>
+
+					<p>
+						Ce traitement complet est vivement conseillé, surtout si vous n’avez jamais reçu de soins Reiki.
+					</p>
+
+					<p>
+						Idéalement, les quatre séances sont réalisées à quelques jours d’intervalle afin de permettre au processus de s’installer progressivement.
+					</p>
+
+					<p>
+						<strong>Les quatre étapes du traitement :</strong>
+					</p>
+
+					<p>
+						<strong>1ère séance — Nettoyage et rééquilibrage</strong>
+					</p>
+
+					<p>
+						Cette première séance vise à accompagner l’évacuation des tensions et à travailler sur les déséquilibres énergétiques.
+					</p>
+
+					<p>
+						<strong>2ème séance — Mise en mouvement de l’énergie Reiki</strong>
+					</p>
+
+					<p>
+						Le travail énergétique se poursuit afin d’accompagner la circulation de l’énergie.
+					</p>
+
+					<p>
+						<strong>3ème séance — Accompagnement du processus d’harmonisation</strong>
+					</p>
+
+					<p>
+						Cette étape permet de poursuivre le travail engagé lors des deux premières séances.
+					</p>
+
+					<p>
+						<strong>4ème séance — Harmonisation du système énergétique</strong>
+					</p>
+
+					<p>
+						Cette dernière séance vient compléter le processus et accompagner l’harmonisation globale.
+					</p>
+
+					<p>
+						<strong>Test énergétique</strong>
+					</p>
+
+					<p>
+						Un test énergétique comprenant l’évaluation du taux vibratoire et l’observation des 7 chakras principaux est réalisé lors de la première et de la dernière séance. Il permet d’observer l’évolution de l’équilibre énergétique au cours du traitement.
+					</p>
+
+				</article>
 
 				<!-- =========================
 					SÉANCE UNIQUE
@@ -289,23 +350,19 @@ foreach ( $soins as $soin ) :
 					<h3>Séance unique</h3>
 
 					<p>
-						Texte à compléter concernant le déroulement de la séance unique, l'accompagnement proposé et les différentes étapes de la séance.
+						La séance unique est un moment consacré à soi, qui permet de découvrir le Reiki ou de bénéficier ponctuellement de ses bienfaits.
 					</p>
 
-				</article>
-
-
-
-				<!-- =========================
-					PACK 4 SÉANCES
-				========================== -->
-
-				<article class="soin-reiki-explication">
-
-					<h3>Pack 4 séances</h3>
+					<p>
+						Elle offre un temps pour ralentir, se recentrer et accueillir ce qui est présent au moment de la séance.
+					</p>
 
 					<p>
-						Texte à compléter concernant l'accompagnement sur quatre séances et la manière dont celles-ci peuvent s'inscrire dans le temps.
+						Le soin Reiki s’inscrit dans une approche d’accompagnement énergétique et peut être choisi lorsque l’on ressent le besoin de prendre soin de soi, de retrouver davantage d’équilibre ou simplement de s’accorder une pause.
+					</p>
+
+					<p>
+						Chaque séance est différente et s’adapte à la personne et à son état du moment.
 					</p>
 
 				</article>
@@ -396,7 +453,11 @@ foreach ( $soins as $soin ) :
 				<div class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Texte à compléter concernant le lieu des séances, l'adresse et les informations utiles pour s'y rendre.
+						Les séances se déroulent à l’adresse suivante : Rue du Doyare n°3, 4920 Aywaille.
+					</p>
+
+					<p>
+						Pour la séance en forêt, le rendez-vous se fait à cette même adresse, sauf indication contraire lors de la prise de rendez-vous.
 					</p>
 
 				</div>
@@ -422,7 +483,15 @@ foreach ( $soins as $soin ) :
 				<div class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Texte à compléter concernant la durée des séances et leur déroulement.
+						Les séances de Reiki durent environ 1 heure. 
+					</p>
+
+					<p>
+						Pour une première rencontre, prévoir environ 15 minutes supplémentaires.
+					</p>
+
+					<p>
+						Si un test énergétique est prévu, compter également environ 15 minutes supplémentaires.
 					</p>
 
 				</div>
@@ -474,7 +543,15 @@ foreach ( $soins as $soin ) :
 				<div class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Texte à compléter concernant ce qu'il est utile de prévoir avant la séance.
+						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin. 
+					</p>
+					
+					<p>
+						Pour une séance en forêt, prévoir une tenue et des chaussures adaptées aux conditions météorologiques ainsi qu’un ou plusieurs plaids.
+					</p>
+
+					<p>
+						Pensez à apporter de l'eau et à vous hydrater avant et après la séance.
 					</p>
 
 				</div>
