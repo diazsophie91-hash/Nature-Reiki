@@ -125,15 +125,15 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-sub-reiki:      #79529b; /* Ajout�e pour sous-titres */
 
     /* === Fond d�grad� principal === */
-    --bg-grad-1: #d2e5bc;
-    --bg-grad-2: #dbeacb;
-    --bg-grad-3: #e6eed7;
-    --bg-grad-4: #f2eee5;
-    --bg-grad-5: #faf6f0;
-    --bg-grad-6: #f4ecf3;
-    --bg-grad-7: #ede0ec;
-    --bg-grad-8: #e3d1e6;
-    --bg-grad-9: #dcbee3;
+    --bg-grad-1: #e5f0e2;
+    --bg-grad-2: #e7f0e4;
+    --bg-grad-3: #eaf1e7;
+    --bg-grad-4: #eef0e9;
+    --bg-grad-5: #f2eee9;
+    --bg-grad-6: #f2ebee;
+    --bg-grad-7: #f1e8ed;
+    --bg-grad-8: #f0e5ed;
+    --bg-grad-9: #f0e2f0;
 
     /* === Ombres === */
     --shadow-card:        0 5px 18px rgba(70, 45, 80, 0.10);
