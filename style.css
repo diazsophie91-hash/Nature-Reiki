@@ -95,7 +95,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-black:          #000000;
     --color-white:          #fff;
     --color-white-warm:     #fffcf7;
-    --color-dark-brown:     #4a3a3a;
     --color-address:        #416b45;
 
     /* UNIVERS NATURE */
@@ -109,7 +108,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-nature-text:         #2c2926;
     --color-nature-olive:        #7a9c51;
     --color-nature-bg-translucent: rgba(200, 234, 175, 0.75);
-    --color-nature-translucent-70: rgba(255, 252, 247, 0.70);
     --color-nature-gradient-start: #407646;
     --color-nature-gradient-end:   #55865a;
 
@@ -117,7 +115,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-primary:             #79529b;
     --color-primary-light:       #8c67ad;
     --color-primary-hover:       #946fb6;
-    --color-primary-dark:        #4d326b;
     --color-primary-bg:          #f0e2f0;
     --color-sub-reiki:           #79529b;
     --color-primary-bg-translucent: rgba(240, 226, 240, 0.75);
@@ -148,9 +145,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --radius-btn:         25px;
     --radius-card:        20px;
     --shadow-card:        0 5px 18px rgba(70, 45, 80, 0.10);
-    --shadow-card-hover:  0 8px 25px rgba(70, 45, 80, 0.15);
     --shadow-box:         0 10px 25px rgba(70, 45, 80, 0.15);
-    --shadow-box-hover:   0 14px 30px rgba(70, 45, 80, 0.22);
     --shadow-soft:        0 8px 25px rgba(70, 45, 80, 0.07);
     --shadow-hover:       0 14px 30px rgba(70, 45, 80, 0.12);
     --shadow-switch:      0 4px 14px rgba(70, 45, 80, 0.06);
@@ -171,7 +166,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-accent-border-55: rgba(191, 159, 69, 0.55);
     --color-accent-border-50: rgba(191, 159, 69, 0.50);
     --color-accent-border-42: rgba(191, 159, 69, 0.42);
-    --color-accent-border-70: rgba(191, 159, 69, 0.70);
     --color-accent-border-65: rgba(191, 159, 69, 0.65);
     --color-accent-border-75: rgba(191, 159, 69, 0.75);
     --shadow-soft-8:      0 8px 25px rgba(70, 45, 80, 0.08);
@@ -187,8 +181,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --shadow-soft-7:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-soft-6:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-hover-card:  0 10px 28px rgba(70, 45, 80, 0.10);
-    --drop-shadow-icon:   drop-shadow(0 2px 2px rgba(70, 45, 80, 0.30));
-    --drop-shadow-title:  drop-shadow(0 2px 2px rgba(70, 45, 80, 0.45)) drop-shadow(0 4px 4px rgba(70, 45, 80, 0.30));
 }
 
 * {
