@@ -89,42 +89,51 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
 ========================= */
 
 :root {
-    /* === Couleurs Reiki (violet) === */
-    --color-primary:        #79529b;
-    --color-primary-light:  #8c67ad;
-    --color-primary-hover:  #946fb6;
-    --color-primary-dark:   #4d326b;
-    --color-primary-bg:     #f0e2f0; /* Mise � jour vers votre valeur en dur */
-    --color-accent-title:   #c2a04f;
-
-    /* === Couleurs Nature (vert) === */
-    --color-nature:         #3e7c48;
-    --color-nature-hover:   #4f925a;
-    --color-nature-dark:    #254f2a;
-    --color-nature-light:   #709f74;
-    --color-nature-bg:      #e5f0e2;
-    --color-nature-accent:  #c8eaaf;
-    --color-nature-olive:   #7a9c51; /* Ajout�e pour la page contact */
-    --color-address:        #416b45; /* Ajout�e pour lien adresse bas de page */
-    --color-accent-line:  #ccaa4c; /* Pour ligne fine petite-ligne */
-    --color-accent-button-bg: #e6c45f; /* Pour fond bouton */
-    --color-accent-button-text: #3d3014; /* Pour texte bouton */
-    --color-accent-old: #b89338; /* Ancienne couleur accent dor� */
-    --color-black: #000000; /* Pour ic�nes */
-    --color-white: #fff; /* Pour texte bouton */
-
-    /* === Couleurs Accent (dor�) === */
-    --color-accent:         #bf9f45;
-    --color-accent-light:   #d9bc70;
-    --color-accent-hover:   #a68336;
-    --color-accent-border:  #bf9f45;
-
-    /* === Texte === */
+    /* COMMUNS */
     --color-text:           #302d2b;
     --color-text-light:     #615b58;
-    --color-sub-reiki:      #79529b; /* Ajout�e pour sous-titres */
+    --color-black:          #000000;
+    --color-white:          #fff;
+    --color-white-warm:     #fffcf7;
+    --color-dark-brown:     #4a3a3a;
+    --color-address:        #416b45;
 
-    /* === Fond d�grad� principal === */
+    /* UNIVERS NATURE */
+    --color-nature:              #3f7047;
+    --color-nature-hover:        #4f925a;
+    --color-nature-light:        #709f74;
+    --color-nature-bg:           #e5f0e2;
+    --color-nature-accent:       #c8eaaf;
+    --color-nature-h2:           #4a6f7d;
+    --color-nature-menu-border:  #6a5745;
+    --color-nature-text:         #2c2926;
+    --color-nature-olive:        #7a9c51;
+    --color-nature-bg-translucent: rgba(200, 234, 175, 0.75);
+    --color-nature-translucent-70: rgba(255, 252, 247, 0.70);
+    --color-nature-gradient-start: #407646;
+    --color-nature-gradient-end:   #55865a;
+
+    /* UNIVERS REIKI */
+    --color-primary:             #79529b;
+    --color-primary-light:       #8c67ad;
+    --color-primary-hover:       #946fb6;
+    --color-primary-dark:        #4d326b;
+    --color-primary-bg:          #f0e2f0;
+    --color-sub-reiki:           #79529b;
+    --color-primary-bg-translucent: rgba(240, 226, 240, 0.75);
+
+    /* ACCENTS (DORÉ) */
+    --color-accent:              #bf9f45;
+    --color-accent-light:        #d9bc70;
+    --color-accent-hover:        #a68336;
+    --color-accent-border:       #bf9f45;
+    --color-accent-title:        #c2a04f;
+    --color-accent-line:         #ccaa4c;
+    --color-accent-button-bg:    #e6c45f;
+    --color-accent-button-text:  #3d3014;
+    --color-accent-old:          #b89338;
+
+    /* FOND DÉGRADÉ PRINCIPAL */
     --bg-grad-1: #e5f0e2;
     --bg-grad-2: #e7f0e4;
     --bg-grad-3: #eaf1e7;
@@ -135,28 +144,21 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --bg-grad-8: #f0e5ed;
     --bg-grad-9: #f0e2f0;
 
-    /* === Ombres === */
-    --shadow-card:        0 5px 18px rgba(70, 45, 80, 0.10);
-    --shadow-card-hover: 0 8px 25px rgba(70, 45, 80, 0.15);
-    --shadow-box:         0 10px 25px rgba(70, 45, 80, 0.15);
-    --shadow-box-hover:   0 14px 30px rgba(70, 45, 80, 0.22);
-
-    /* === Helpers === */
-    --color-white-warm:   #fffcf7;
-    --color-dark-brown:   #4a3a3a;
+    /* OMBRES & HELPERS */
     --radius-btn:         25px;
     --radius-card:        20px;
+    --shadow-card:        0 5px 18px rgba(70, 45, 80, 0.10);
+    --shadow-card-hover:  0 8px 25px rgba(70, 45, 80, 0.15);
+    --shadow-box:         0 10px 25px rgba(70, 45, 80, 0.15);
+    --shadow-box-hover:   0 14px 30px rgba(70, 45, 80, 0.22);
     --shadow-soft:        0 8px 25px rgba(70, 45, 80, 0.07);
     --shadow-hover:       0 14px 30px rgba(70, 45, 80, 0.12);
-    --color-primary-bg-translucent: rgba(240, 226, 240, 0.75);
-    --color-nature-card-bg: #e6eedd;
-    --color-nature-gradient-start: #407646;
-    --color-nature-gradient-end: #55865a;
-    --color-nature-bg-translucent: rgba(200, 234, 175, 0.75);
     --shadow-switch:      0 4px 14px rgba(70, 45, 80, 0.06);
     --shadow-nature:      0 10px 25px rgba(50, 40, 30, 0.16);
     --shadow-nature-hover: 0 15px 30px rgba(50, 40, 30, 0.22);
     --shadow-subnav:      0 5px 15px rgba(70, 45, 80, 0.08);
+    --shadow-nature-card:       0 6px 20px rgba(45, 60, 40, 0.10);
+    --shadow-nature-card-hover: 0 12px 28px rgba(45, 60, 40, 0.16);
     --color-white-warm-translucent-92: rgba(255, 252, 247, 0.92);
     --color-white-warm-translucent-88: rgba(255, 252, 247, 0.88);
     --color-white-warm-translucent-72: rgba(255, 252, 247, 0.72);
@@ -183,27 +185,10 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-white-warm-translucent-40: rgba(255, 250, 242, 0.40);
     --color-accent-border-48: rgba(196, 154, 50, 0.48);
     --shadow-soft-7:      0 7px 22px rgba(70, 45, 80, 0.06);
-
     --shadow-soft-6:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-hover-card:  0 10px 28px rgba(70, 45, 80, 0.10);
     --drop-shadow-icon:   drop-shadow(0 2px 2px rgba(70, 45, 80, 0.30));
-    --drop-shadow-title:  drop-shadow(0 2px 2px rgba(70, 45, 80, 0.45)) drop-shadow(0 4px 4px rgba(70, 45, 80, 0.30)) drop-shadow(1px 1px 1px rgba(120, 85, 35, 0.45));
-
-    /* === Univers Nature : brun et bleu complementaires === */
-    --color-nature-brown:       #7a5a3a;
-    --color-nature-brown-dark:  #533b26;
-    --color-nature-brown-light: #a9855f;
-    --color-nature-brown-bg:    #f4ece2;
-    --color-nature-blue:        #3d6b86;
-    --color-nature-blue-dark:   #29495d;
-    --color-nature-blue-light:  #7ba4b9;
-    --color-nature-blue-bg:     #e9f1f5;
-    --shadow-nature-card:       0 6px 20px rgba(45, 60, 40, 0.10);
-    --shadow-nature-card-hover: 0 12px 28px rgba(45, 60, 40, 0.16);
-    --color-nature-translucent-70: rgba(255, 252, 247, 0.70);
-
-
-
+    --drop-shadow-title:  drop-shadow(0 2px 2px rgba(70, 45, 80, 0.45)) drop-shadow(0 4px 4px rgba(70, 45, 80, 0.30));
 }
 
 * {
@@ -430,7 +415,7 @@ main {
     left: -9px;
     right: -9px;
 
-    background: var(--color-nature-card-bg);
+    background: var(--color-nature-bg);
     border-radius: 20px;
 
     z-index: -1;
@@ -1086,6 +1071,11 @@ body.universe-nature .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-nature);
 }
 
+/* Adaptation du sous-titre pour la page Réserver (Nature) */
+body.universe-native-nature .page-reserver .reiki-hero p:first-of-type {
+    color: var(--color-nature-h2);
+}
+
 body.universe-reiki .page-faq .reiki-hero p:first-of-type,
 body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-sub-reiki);
@@ -1171,6 +1161,10 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     border-radius: 40px;
 
     box-shadow: var(--shadow-subnav);
+}
+
+.nature-menu {
+    border-color: var(--color-nature-menu-border);
 }
 
 .reiki-menu a,
@@ -4442,7 +4436,7 @@ body.page-template-reserver {
 
     overflow: visible;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 }
 
 body.universe-native-nature,
@@ -4491,7 +4485,7 @@ body.universe-native-nature .page-nature {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-brown);
+    color: var(--color-nature-h2);
 
     font-size: clamp(26px, 2.7vw, 36px);
 
@@ -4545,21 +4539,21 @@ body.universe-native-nature .page-nature {
 ========================================================= */
 
 body:has(.page-nature) .nature-menu {
-    border-color: var(--color-nature-light);
+    border-color: var(--color-nature-menu-border);
 }
 
 body:has(.page-nature) .nature-menu a {
-    color: var(--color-nature-dark);
+    color: var(--color-nature-text);
 }
 
 body:has(.page-nature) .nature-menu a:hover {
-    background: var(--color-nature-card-bg);
-    color: var(--color-nature-dark);
+    background: var(--color-nature-bg);
+    color: var(--color-nature);
 }
 
 body:has(.page-nature) .nature-menu a.actif {
-    background: var(--color-nature-accent);
-    color: var(--color-nature-dark);
+    background: var(--color-nature);
+    color: var(--color-white-warm);
 }
 
 /* =========================================================
@@ -4584,7 +4578,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature-h2);
 
     font-size: clamp(28px, 3vw, 38px);
 
@@ -4609,7 +4603,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 
     font-size: 17px;
 
@@ -4623,7 +4617,7 @@ body:has(.page-nature) .nature-menu a.actif {
 .nature-disponibilite {
     font-style: italic;
 
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-text);
 }
 
 .nature-section-action {
@@ -4673,17 +4667,17 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-bouton--secondaire {
-    background: var(--color-nature-translucent-70);
+    background: var(--color-nature-bg);
 
     border-color: var(--color-nature);
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 }
 
 .nature-bouton--secondaire:hover {
-    background: var(--color-nature-card-bg);
+    background: var(--color-nature-bg);
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 }
 
 .nature-bouton--large {
@@ -4731,24 +4725,24 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-banniere--verte {
-    background-color: var(--color-nature-card-bg);
+    background-color: var(--color-nature-bg);
     background-image:
         radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-card-bg) 65%);
+        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
 }
 
 .nature-banniere--brune {
-    background-color: var(--color-nature-brown-bg);
+    background-color: var(--color-nature-bg);
     background-image:
         radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, #e8d8c4 0%, var(--color-nature-brown-bg) 65%);
+        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
 }
 
 .nature-banniere--bleue {
-    background-color: var(--color-nature-blue-bg);
+    background-color: var(--color-nature-bg);
     background-image:
         radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, #d5e6ee 0%, var(--color-nature-blue-bg) 65%);
+        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
 }
 
 .nature-banniere-decor {
@@ -4789,7 +4783,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature-h2);
 
     font-size: clamp(30px, 3vw, 40px);
 
@@ -4801,11 +4795,11 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-banniere--brune .nature-banniere-contenu h2 {
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-h2);
 }
 
 .nature-banniere--bleue .nature-banniere-contenu h2 {
-    color: var(--color-nature-blue-dark);
+    color: var(--color-nature-h2);
 }
 
 .nature-banniere-contenu p {
@@ -4815,7 +4809,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 
     font-size: 16px;
 
@@ -4861,19 +4855,19 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-banniere--brune .nature-banniere-bouton {
-    background: var(--color-nature-brown);
+    background: var(--color-nature);
 }
 
 .nature-banniere--brune .nature-banniere-bouton:hover {
-    background: var(--color-nature-brown-light);
+    background: var(--color-nature-hover);
 }
 
 .nature-banniere--bleue .nature-banniere-bouton {
-    background: var(--color-nature-blue);
+    background: var(--color-nature);
 }
 
 .nature-banniere--bleue .nature-banniere-bouton:hover {
-    background: var(--color-nature-blue-light);
+    background: var(--color-nature-hover);
 }
 
 /* =========================================================
@@ -4927,28 +4921,18 @@ body:has(.page-nature) .nature-menu a.actif {
     box-shadow: var(--shadow-nature-card-hover);
 }
 
-.nature-carte--brune {
-    border-color: var(--color-nature-brown-light);
-
-    background: var(--color-nature-brown-bg);
-}
-
-.nature-carte--bleue {
-    border-color: var(--color-nature-blue-light);
-
-    background: var(--color-nature-blue-bg);
-}
-
 .nature-carte-symbole {
     width: 52px;
     height: 52px;
+
+    flex-shrink: 0;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 12px;
+    margin: 0 0 14px;
 }
 
 .nature-carte-symbole img {
@@ -4965,7 +4949,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-text);
 
     font-size: 13px;
 
@@ -4979,7 +4963,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 
     font-size: clamp(22px, 2.2vw, 27px);
 
@@ -4988,20 +4972,12 @@ body:has(.page-nature) .nature-menu a.actif {
     line-height: 1.15;
 }
 
-.nature-carte--brune h3 {
-    color: var(--color-nature-brown-dark);
-}
-
-.nature-carte--bleue h3 {
-    color: var(--color-nature-blue-dark);
-}
-
 .nature-carte-texte {
     margin: 0;
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-h2);
 
     font-size: 15px;
 
@@ -5031,15 +5007,15 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-encart--brun {
-    border-color: var(--color-nature-brown-light);
+    border-color: var(--color-nature-light);
 
-    background: var(--color-nature-brown-bg);
+    background: var(--color-white-warm-translucent-72);
 }
 
 .nature-encart--bleu {
-    border-color: var(--color-nature-blue-light);
+    border-color: var(--color-nature-light);
 
-    background: var(--color-nature-blue-bg);
+    background: var(--color-white-warm-translucent-72);
 }
 
 .nature-encart h2 {
@@ -5047,7 +5023,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature-h2);
 
     font-size: clamp(26px, 2.8vw, 34px);
 
@@ -5057,11 +5033,11 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-encart--brun h2 {
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-h2);
 }
 
 .nature-encart--bleu h2 {
-    color: var(--color-nature-blue-dark);
+    color: var(--color-nature-h2);
 }
 
 .nature-encart p {
@@ -5069,7 +5045,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 
     font-size: 16px;
 
@@ -5079,7 +5055,7 @@ body:has(.page-nature) .nature-menu a.actif {
 .nature-encart-mention {
     font-style: italic;
 
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-text);
 }
 
 /* =========================================================
@@ -5102,9 +5078,9 @@ body:has(.page-nature) .nature-menu a.actif {
 
     border-radius: var(--radius-card);
 
-    background-color: var(--color-nature-card-bg);
+    background-color: var(--color-nature-bg);
     background-image:
-        linear-gradient(160deg, var(--color-nature-accent) 0%, var(--color-nature-card-bg) 70%);
+        linear-gradient(160deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 70%);
 
     box-shadow: var(--shadow-nature-card);
 
@@ -5116,7 +5092,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature-h2);
 
     font-size: clamp(26px, 2.8vw, 34px);
 
@@ -5130,7 +5106,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 
     font-size: 16px;
 
@@ -5218,7 +5194,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature-h2);
 
     font-size: clamp(21px, 2.4vw, 28px);
 
@@ -5230,7 +5206,7 @@ body:has(.page-nature) .nature-menu a.actif {
 .nature-carrousel-diapositive blockquote footer {
     font-family: "Lora", serif;
 
-    color: var(--color-nature-brown-dark);
+    color: var(--color-nature-text);
 
     font-size: 14px;
 
@@ -5266,7 +5242,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     background: var(--color-white-warm-translucent-88);
 
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 
     cursor: pointer;
 
@@ -5276,7 +5252,7 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-carrousel-fleche:hover {
-    background: var(--color-nature-card-bg);
+    background: var(--color-nature-bg);
 
     transform: translateY(-2px);
 }
@@ -5358,7 +5334,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     font-family: "Lora", serif;
 
-    color: var(--color-text);
+    color: var(--color-nature-text);
 
     font-size: 18px;
 
@@ -5368,7 +5344,7 @@ body:has(.page-nature) .nature-menu a.actif {
 }
 
 .nature-reserver-contenu a {
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 }
 
 /* =========================================================
@@ -5405,11 +5381,11 @@ body:has(.page-nature) .nature-menu a.actif {
 ========================================================= */
 
 .retour-haut--nature {
-    color: var(--color-nature-dark);
+    color: var(--color-nature);
 }
 
 .retour-haut--nature:hover {
-    background: var(--color-nature-card-bg);
+    background: var(--color-nature-bg);
 }
 
 /* =========================================================
