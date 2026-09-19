@@ -102,7 +102,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-nature-hover:   #4f925a;
     --color-nature-dark:    #254f2a;
     --color-nature-light:   #709f74;
-    --color-nature-bg:      #f1f6f1;
+    --color-nature-bg:      #e5f0e2;
     --color-nature-accent:  #c8eaaf;
     --color-nature-olive:   #7a9c51; /* Ajout�e pour la page contact */
     --color-address:        #416b45; /* Ajout�e pour lien adresse bas de page */
@@ -1003,12 +1003,14 @@ body.page-template-accueil-reiki .page-reiki {
     min-height: 100vh;
 
     color: var(--color-text);
-
-    background: var(--color-primary-bg);
 }
 
-body:has(.page-reiki) {
-    background: var(--color-primary-bg);
+body.universe-native-reiki,
+body.universe-native-reiki .accueil-header,
+body.universe-native-reiki .site-footer,
+body.universe-native-reiki .page-reiki {
+    background-color: var(--color-primary-bg);
+    background-image: none;
 }
 
 /* =========================
@@ -3987,9 +3989,7 @@ body.page-template-me-contacter {
     transform: translateY(-1px);
 }
 
-body:has(.page-soins-reiki) {
-    background: var(--color-primary-bg);
-}
+
 
 /* =========================================================
    SCROLL � PAGE SOINS REIKI
@@ -4445,17 +4445,12 @@ body.page-template-reserver {
     color: var(--color-text);
 }
 
-body.universe-nature {
-    background-color: #d2e5bc;
-}
-
-body.universe-nature .accueil-header,
-body.universe-nature .site-footer,
-body.universe-nature .page-nature,
-body.universe-nature .page-faq,
-body.universe-nature .page-me-contacter,
-body.universe-nature .page-qui-suis-je {
-    background-color: #d2e5bc;
+body.universe-native-nature,
+body.universe-native-nature .accueil-header,
+body.universe-native-nature .site-footer,
+body.universe-native-nature .page-nature {
+    background-color: var(--color-nature-bg);
+    background-image: none;
 }
 
 /* =========================================================

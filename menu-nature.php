@@ -40,6 +40,12 @@ $menu_items = array(
 		'url'      => home_url( '/reserver/' ),
 	),
 	array(
+		'label'    => 'À venir',
+		'template' => 'a-venir.php',
+		'slug'     => 'a-venir',
+		'url'      => home_url( '/a-venir/' ),
+	),
+	array(
 		'label'    => 'F.A.Q',
 		'template' => 'faq.php',
 		'slug'     => 'faq',

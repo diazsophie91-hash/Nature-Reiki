@@ -14,11 +14,38 @@ function nature_reiki_setup() {
 add_action( 'after_setup_theme', 'nature_reiki_setup' );
 
 /**
- * Renvoie l'univers demandé, après validation de la valeur de l'URL.
+ * Indique si la page courante est une page native Nature.
+ *
+ * @return bool
+ */
+function nature_reiki_is_native_nature() {
+	$config = nature_reiki_get_universes_config();
+	return nature_reiki_is_current_page( $config['nature']['templates'], $config['nature']['slugs'] );
+}
+
+/**
+ * Indique si la page courante est une page native Reiki.
+ *
+ * @return bool
+ */
+function nature_reiki_is_native_reiki() {
+	$config = nature_reiki_get_universes_config();
+	return nature_reiki_is_current_page( $config['reiki']['templates'], $config['reiki']['slugs'] );
+}
+
+/**
+ * Renvoie l'univers demandé, après validation de la valeur de l'URL ou détection native.
  *
  * @return string "nature" ou "reiki".
  */
 function nature_reiki_get_universe() {
+	if ( nature_reiki_is_native_nature() ) {
+		return 'nature';
+	}
+	if ( nature_reiki_is_native_reiki() ) {
+		return 'reiki';
+	}
+
 	$univers = isset( $_GET['univers'] )
 		? sanitize_key( wp_unslash( $_GET['univers'] ) )
 		: 'reiki';
@@ -71,12 +98,14 @@ function nature_reiki_get_universes_config() {
 				'accueil-guide-nature.php',
 				'balades.php',
 				'animations.php',
+				'a-venir.php',
 				'reserver.php',
 			),
 			'slugs'     => array(
 				'accueil-guide-nature',
 				'balades',
 				'animations',
+				'a-venir',
 				'reserver',
 			),
 		),
@@ -135,6 +164,29 @@ function nature_reiki_is_reiki_context() {
 function nature_reiki_is_nature_context() {
 	return nature_reiki_is_context( 'nature' );
 }
+
+/**
+ * Ajoute des classes au body pour le contexte et le type de page native.
+ *
+ * @param array $classes Classes CSS du body.
+ * @return array
+ */
+function nature_reiki_body_classes( $classes ) {
+	if ( nature_reiki_is_nature_context() ) {
+		$classes[] = 'universe-nature';
+	} else {
+		$classes[] = 'universe-reiki';
+	}
+
+	if ( nature_reiki_is_native_nature() ) {
+		$classes[] = 'universe-native-nature';
+	} elseif ( nature_reiki_is_native_reiki() ) {
+		$classes[] = 'universe-native-reiki';
+	}
+
+	return $classes;
+}
+add_filter( 'body_class', 'nature_reiki_body_classes' );
 
 /**
  * Indique si la page courante utilise un des accordéons du thème.
