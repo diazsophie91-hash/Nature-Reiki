@@ -448,7 +448,7 @@ body.universe-nature .switch-univers a:focus-visible {
 /* Focus sur le switch en contexte Reiki */
 
 body.universe-native-nature .switch-univers a:focus-visible {
-    outline-color: var(--color-accent);
+    outline-color: var(--color-nature-menu-border);
     outline-offset: 3px;
 }
 
@@ -4147,9 +4147,13 @@ body.universe-native-nature .soins-reiki-accordeon {
 .soin-reiki-rendez-vous:focus-visible,
 .soins-reiki-cta-bouton:focus-visible,
 .reiki-menu a:focus-visible,
-.nature-menu a:focus-visible,
 .switch-univers a:focus-visible {
     outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.nature-menu a:focus-visible {
+    outline: 2px solid var(--color-nature);
     outline-offset: 3px;
 }
 
@@ -5422,7 +5426,7 @@ body.universe-native-nature .page-nature {
 .nature-carrousel-fleche:focus-visible,
 .nature-carrousel-puce:focus-visible,
 .nature-reserver-contenu a:focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-nature);
     outline-offset: 3px;
 }
 
