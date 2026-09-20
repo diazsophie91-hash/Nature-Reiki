@@ -121,7 +121,7 @@ get_header(); ?>
 			),
 			array(
 				'titre'    => 'Découverte carrières',
-				'mention'  => 'Cette balade nécessite d’être guide carrière.',
+				'mention'  => '',
 				'image'    => 'images/chene.png',
 				'variante' => 'nature-carte--bleue',
 			),

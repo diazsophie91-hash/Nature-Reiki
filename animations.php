@@ -88,9 +88,9 @@ get_header(); ?>
 		<?php
 		$publics = array(
 			array(
-				'titre'       => 'Familles',
-				'description' => 'Une sortie à faire ensemble, parents et enfants, pour observer, chercher et apprendre au même rythme.',
-				'image'       => 'images/chene.png',
+				'titre'       => 'Groupes privés',
+				'description' => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
+				'image'       => 'images/feuille-chene.png',
 				'variante'    => 'nature-carte--verte',
 			),
 			array(
@@ -104,12 +104,6 @@ get_header(); ?>
 				'description' => 'Un temps en extérieur pour souffler et se retrouver autrement, autour de la découverte du vivant.',
 				'image'       => 'images/chene.png',
 				'variante'    => 'nature-carte--brune',
-			),
-			array(
-				'titre'       => 'Groupes privés',
-				'description' => 'Une animation sur mesure pour un groupe constitué : amis, association ou occasion particulière.',
-				'image'       => 'images/feuille-chene.png',
-				'variante'    => 'nature-carte--verte',
 			),
 		);
 		?>
