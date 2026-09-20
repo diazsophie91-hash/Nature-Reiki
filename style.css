@@ -383,6 +383,13 @@ main {
     line-height: 1;
 }
 
+/* Doré → brun en contexte Nature */
+
+body.universe-nature .switch-icon,
+body.universe-native-nature .switch-icon {
+    color: var(--color-nature-menu-border);
+}
+
 .switch-univers a {
     text-decoration: none;
 }
@@ -397,7 +404,7 @@ main {
     z-index: 1;
 }
 
-/* Fond vert derri�re Nature */
+/* Fond vert derrière Nature */
 .switch-nature.actif::before {
     content: "";
     position: absolute;
@@ -413,7 +420,7 @@ main {
     z-index: -1;
 }
 
-/* Fond mauve derri�re Reiki */
+/* Fond mauve derrière Reiki */
 .switch-reiki.actif::before {
     content: "";
     position: absolute;
@@ -422,11 +429,27 @@ main {
     bottom: -5px;
     left: -9px;
     right: -9px;
+}
 
-    background: var(--color-primary-bg);
-    border-radius: 20px;
+/* Doré → brun en contexte Nature pour la bordure du switch */
 
-    z-index: -1;
+body.universe-nature .switch-univers,
+body.universe-native-nature .switch-univers {
+    border-color: var(--color-nature-menu-border);
+}
+
+/* Focus sur le switch en contexte Nature */
+
+body.universe-nature .switch-univers a:focus-visible {
+    outline-color: var(--color-nature-menu-border);
+    outline-offset: 3px;
+}
+
+/* Focus sur le switch en contexte Reiki */
+
+body.universe-native-nature .switch-univers a:focus-visible {
+    outline-color: var(--color-accent);
+    outline-offset: 3px;
 }
 
 /* Reiki actif sur la page Soins Reiki */
@@ -1085,6 +1108,13 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-accent-old);
 }
 
+/* Dor� → brun en contexte Nature */
+
+body.universe-nature .page-qui-suis-je .sous-titre-dore,
+body.universe-native-nature .page-qui-suis-je .sous-titre-dore {
+    color: var(--color-nature-menu-border);
+}
+
 /* =========================
    LIGNE + LOTUS
 ========================= */
@@ -1111,6 +1141,13 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     background: var(--color-accent-border);
 
     flex: 1;
+}
+
+/* Lignes brunes en contexte Nature */
+
+body.universe-nature .reiki-ligne-decoration span,
+body.universe-native-nature .reiki-ligne-decoration span {
+    background: var(--color-nature-menu-border);
 }
 
 /* Lotus */
@@ -2127,6 +2164,13 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     height: 1.6px;
     margin: 0 auto 25px;
     background: var(--color-accent-border);
+}
+
+/* Doré → brun en contexte Nature */
+
+body.universe-nature .separateur-dore,
+body.universe-native-nature .separateur-dore {
+    background: var(--color-nature-menu-border);
 }
 
 .qui-suis-je-citation-interieur {
@@ -4021,6 +4065,15 @@ button {
     border-color: var(--color-accent-border-48);
 }
 
+/* Doré → brun en contexte Nature */
+
+body.universe-nature .me-contacter-univers-card,
+body.universe-native-nature .me-contacter-univers-card,
+body.universe-nature .soins-reiki-accordeon,
+body.universe-native-nature .soins-reiki-accordeon {
+    border-color: var(--color-nature-menu-border);
+}
+
 .soin-reiki-card:hover,
 .reiki-fonctionnement-bloc:hover,
 .reiki-pourquoi-bloc:hover,
@@ -4509,7 +4562,7 @@ body.universe-native-nature .page-nature {
 .nature-ligne-decoration span {
     height: 1px;
 
-    background: var(--color-accent-border);
+    background: var(--color-nature-menu-border);
 
     flex: 1;
 }
@@ -5109,7 +5162,7 @@ body.universe-native-nature .page-nature {
 }
 
 .nature-carrousel:focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-nature-menu-border);
     outline-offset: 4px;
 }
 
