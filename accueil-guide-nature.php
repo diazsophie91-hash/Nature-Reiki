@@ -88,16 +88,6 @@ get_header(); ?>
 			'bouton_text'   => 'Découvrir les animations →',
 			'image'         => 'images/feuille-chene.png',
 		),
-		array(
-			'section_class' => 'nature-section',
-			'variante'      => 'nature-banniere--verte',
-			'titre_id'      => 'nature-a-venir-titre',
-			'titre'         => 'À venir',
-			'description'   => 'Les prochains thèmes en préparation pour enrichir les sorties.',
-			'url'           => home_url( '/a-venir/' ),
-			'bouton_text'   => 'Voir les projets →',
-			'image'         => 'images/chene.png',
-		),
 	);
 	?>
 
@@ -136,31 +126,6 @@ get_header(); ?>
 	<?php endforeach; ?>
 
 
-	<!-- =========================
-		APPEL À L'ACTION
-	========================== -->
-
-	<section class="nature-cta" aria-labelledby="nature-cta-titre">
-
-		<div class="nature-cta-interieur">
-
-			<h2 id="nature-cta-titre">Envie de partir en balade ?</h2>
-
-			<div class="nature-cta-boutons">
-
-				<a href="<?php echo esc_url( home_url( '/reserver/' ) ); ?>" class="nature-bouton">
-					Réserver
-				</a>
-
-				<a href="<?php echo esc_url( home_url( '/me-contacter/?univers=nature' ) ); ?>" class="nature-bouton nature-bouton--secondaire">
-					Me contacter
-				</a>
-
-			</div>
-
-		</div>
-
-	</section>
 
 
 </main>

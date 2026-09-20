@@ -1194,7 +1194,7 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     transform: translateY(-1px);
 }
 
-/* �l�ment actif */
+/* Élément actif */
 
 .reiki-menu a.actif {
     background: var(--color-primary-bg);
@@ -4523,29 +4523,6 @@ body.universe-native-nature .page-nature {
     display: block;
 
     flex-shrink: 0;
-}
-
-/* =========================================================
-   MENU NATURE : RECOLORATION UNIQUEMENT
-   Le positionnement reste celui defini plus haut.
-========================================================= */
-
-body:has(.page-nature) .nature-menu {
-    border-color: var(--color-nature-menu-border);
-}
-
-body:has(.page-nature) .nature-menu a {
-    color: var(--color-nature-text);
-}
-
-body:has(.page-nature) .nature-menu a:hover {
-    background: var(--color-nature-bg);
-    color: var(--color-nature);
-}
-
-body:has(.page-nature) .nature-menu a.actif {
-    background: var(--color-nature);
-    color: var(--color-white-warm);
 }
 
 /* =========================================================
