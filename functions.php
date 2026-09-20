@@ -200,6 +200,18 @@ function nature_reiki_page_has_accordion() {
 		array( 'faq', 'qui-suis-je', 'le-reiki' )
 	);
 }
+/**
+ * Indique si la page courante possède le carrousel Nature.
+ * Utilisé pour ne charger le JS du carrousel que sur la page balades.
+ *
+ * @return bool
+ */
+function nature_reiki_page_has_carrousel_nature() {
+	return nature_reiki_is_current_page(
+		array( 'balades.php' ),
+		array( 'balades' )
+	);
+}
 
 /**
  * Construit l'URL d'un fichier inclus dans le thème.
@@ -239,6 +251,16 @@ function nature_reiki_enqueue_assets() {
 			true
 		);
 	}
+if ( nature_reiki_page_has_carrousel_nature() ) {
+		wp_enqueue_script(
+			'nature-reiki-carrousel-nature',
+			nature_reiki_asset_url( 'assets/js/carrousel-nature.js' ),
+			array(),
+			$version,
+			true
+		);
+	}
+
 
 	wp_enqueue_script(
 		'nature-reiki-retour-haut',
