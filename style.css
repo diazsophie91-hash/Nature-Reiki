@@ -5103,7 +5103,7 @@ body.universe-native-nature .page-nature {
 
 .nature-carrousel {
     width: 100%;
-    max-width: 860px;
+    max-width: 640px;
 
     margin: 0 auto;
 }
@@ -5153,15 +5153,17 @@ body.universe-native-nature .page-nature {
 .nature-carrousel-figure {
     flex: 0 0 100%;
     width: 100%;
-    height: clamp(260px, 30vw, 380px);
+    height: clamp(260px, 26vw, 330px);
     margin: 0;
     position: relative;
+    background: var(--color-white-warm-translucent-72);
 }
 
 .nature-carrousel-figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .nature-carrousel-figure figcaption {
@@ -5173,7 +5175,11 @@ body.universe-native-nature .page-nature {
     position: absolute;
     right: 15px;
     bottom: 15px;
-    background: rgba(106, 87, 69, 0.7);
+    background: color-mix(
+    in srgb,
+    var(--color-nature-text) 58%,
+    transparent
+);
     border-radius: 4px;
     padding: 4px 8px;
     max-width: calc(100% - 30px);
