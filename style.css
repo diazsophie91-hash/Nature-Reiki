@@ -103,9 +103,9 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-nature-light:        #709f74;
     --color-nature-bg:           #e5f0e2;
     --color-nature-accent:       #c8eaaf;
-    --color-nature-h2:           #4a6f7d;
-    --color-nature-menu-border:  #6a5745;
-    --color-nature-text:         #2c2926;
+    --color-nature-h2:           #246a95;
+    --color-nature-menu-border:  #7a624d;
+    --color-nature-text:         #6a5745;
     --color-nature-olive:        #7a9c51;
     --color-nature-bg-translucent: rgba(200, 234, 175, 0.75);
     --color-nature-gradient-start: #407646;
@@ -4895,7 +4895,7 @@ body:has(.page-nature) .nature-menu a.actif {
 
     background: var(--color-white-warm-translucent-72);
 
-    border: 1px solid var(--color-nature-light);
+    border: 1px solid var(--color-nature-text);
     border-radius: var(--radius-card);
 
     box-shadow: var(--shadow-nature-card);
