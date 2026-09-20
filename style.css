@@ -4965,7 +4965,7 @@ body.universe-native-nature .page-nature {
 
     padding: 30px 34px;
 
-    border: 1px solid var(--color-nature-light);
+    border: 1px solid var(--color-nature-text);
     border-radius: var(--radius-card);
 
     background: var(--color-white-warm-translucent-72);
@@ -4976,13 +4976,13 @@ body.universe-native-nature .page-nature {
 }
 
 .nature-encart--brun {
-    border-color: var(--color-nature-light);
+    border-color: var(--color-nature-text);
 
     background: var(--color-white-warm-translucent-72);
 }
 
 .nature-encart--bleu {
-    border-color: var(--color-nature-light);
+    border-color: var(--color-nature-text);
 
     background: var(--color-white-warm-translucent-72);
 }
