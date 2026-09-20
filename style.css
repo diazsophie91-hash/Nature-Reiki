@@ -2414,6 +2414,17 @@ body.page-template-le-reiki .page-le-reiki {
     border-color: var(--color-accent-hover);
 }
 
+/* Doré → brun en contexte Nature (qui suis-je) */
+
+body.universe-nature .le-reiki-fleche {
+    border-right-color: var(--color-nature-menu-border);
+    border-bottom-color: var(--color-nature-menu-border);
+}
+
+body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
+    border-color: var(--color-nature-menu-border);
+}
+
 /* =========================
    CONTENU REPLIABLE
 ========================= */
@@ -3888,6 +3899,13 @@ body.page-template-me-contacter {
     transform: rotate(225deg);
 }
 
+/* Doré → brun en contexte Nature (questions FAQ) */
+
+body.universe-nature .soins-reiki-accordeon-fleche {
+    border-right-color: var(--color-nature-menu-border);
+    border-bottom-color: var(--color-nature-menu-border);
+}
+
 /* =========================================================
    CONTENU ACCORD�ON
 ========================================================= */
@@ -4332,6 +4350,11 @@ body:has(.page-faq) {
     transform: rotate(45deg);
 
     transition: transform 0.3s ease;
+}
+
+body.universe-nature .page-faq .faq-univers-fleche {
+    border-right-color: var(--color-nature-menu-border);
+    border-bottom-color: var(--color-nature-menu-border);
 }
 
 .page-faq .faq-univers.ouvert
