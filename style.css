@@ -5148,38 +5148,35 @@ body.universe-native-nature .page-nature {
     min-width: 100%;
 
     box-sizing: border-box;
-
-    padding: 34px 38px;
 }
 
-.nature-carrousel-diapositive blockquote {
+.nature-carrousel-figure {
+    flex: 0 0 100%;
+    width: 100%;
+    height: clamp(260px, 30vw, 380px);
     margin: 0;
-
-    text-align: center;
+    position: relative;
 }
 
-.nature-carrousel-diapositive blockquote p {
-    margin: 0 0 14px;
-
-    font-family: "Cormorant Garamond", serif;
-
-    color: var(--color-nature-h2);
-
-    font-size: clamp(21px, 2.4vw, 28px);
-
-    font-style: italic;
-
-    line-height: 1.45;
+.nature-carrousel-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.nature-carrousel-diapositive blockquote footer {
+.nature-carrousel-figure figcaption {
     font-family: "Lora", serif;
-
-    color: var(--color-nature-text);
-
+    color: var(--color-white-warm);
     font-size: 14px;
-
     letter-spacing: 0.5px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: rgba(106, 87, 69, 0.7);
+    border-radius: 4px;
+    padding: 4px 8px;
+    max-width: calc(100% - 30px);
 }
 
 .nature-carrousel-commandes {

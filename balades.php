@@ -211,20 +211,28 @@ get_header(); ?>
 		<?php
 		$diapositives = array(
 			array(
-				'texte'   => 'On avance doucement : c’est en ralentissant que l’on remarque le plus de choses.',
-				'legende' => 'Le rythme de la balade',
+				'image'   => 'images/celte.jpg',
+				'legende' => 'Sur les pas des Celtes à nos jours',
 			),
 			array(
-				'texte'   => 'Reconnaître une plante, c’est d’abord la regarder longuement, sous tous les angles.',
-				'legende' => 'Observer avant de nommer',
+				'image'   => 'images/ami-arbre.jpg',
+				'legende' => 'Mon ami l’arbre',
 			),
 			array(
-				'texte'   => 'Une cueillette se fait avec mesure : on ne prélève jamais tout ce que l’on trouve.',
-				'legende' => 'Cueillir avec respect',
+				'image'   => 'images/foret-autrement.png',
+				'legende' => 'La forêt autrement',
 			),
 			array(
-				'texte'   => 'Chaque saison redessine le même chemin : rien n’est jamais tout à fait pareil.',
-				'legende' => 'Revenir au fil des saisons',
+				'image'   => 'images/traces.jpg',
+				'legende' => 'Traces et indices en forêt',
+			),
+			array(
+				'image'   => 'images/cuisine.jpg',
+				'legende' => 'Cuisine sauvage',
+			),
+			array(
+				'image'   => 'images/carriere.jpg',
+				'legende' => 'Découverte carrières',
 			),
 		);
 
@@ -247,10 +255,15 @@ get_header(); ?>
 						aria-label="<?php echo esc_attr( sprintf( '%1$d sur %2$d', $index + 1, $total_diapositives ) ); ?>"
 					>
 
-						<blockquote>
-							<p><?php echo esc_html( $diapositive['texte'] ); ?></p>
-							<footer><?php echo esc_html( $diapositive['legende'] ); ?></footer>
-						</blockquote>
+						<figure class="nature-carrousel-figure">
+							<img
+								src="<?php echo esc_url( nature_reiki_asset_url( $diapositive['image'] ) ); ?>"
+								alt="<?php echo esc_attr( $diapositive['legende'] ); ?>"
+								loading="lazy"
+								decoding="async"
+							>
+							<figcaption><?php echo esc_html( $diapositive['legende'] ); ?></figcaption>
+						</figure>
 
 					</li>
 
