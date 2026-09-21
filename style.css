@@ -452,13 +452,13 @@ body.universe-native-nature .switch-univers a:focus-visible {
     outline-offset: 3px;
 }
 
-/* Reiki actif sur la page Soins Reiki */
-body:has(.page-soins-reiki) .switch-reiki {
+/* Fond mauve derrière Reiki sur toutes les pages univers Reiki */
+body.universe-reiki .switch-reiki {
     position: relative;
     z-index: 1;
 }
 
-body:has(.page-soins-reiki) .switch-reiki::before {
+body.universe-reiki .switch-reiki::before {
     content: "";
     position: absolute;
 
