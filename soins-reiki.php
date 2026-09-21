@@ -165,7 +165,7 @@ foreach ( $soins as $soin ) :
 					"
 					class="soin-reiki-rendez-vous"
 				>
-					Prendre rendez-vous
+					Réserver votre soin Reiki
 				</a>
 
 			</div>

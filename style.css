@@ -3630,11 +3630,13 @@ body.page-template-me-contacter {
 }
 
 .soin-reiki-rendez-vous {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 13px 33px;
 
-    border-radius: 30px;
+    border-radius: var(--radius-btn);
 
     background: var(--color-primary);
     color: var(--color-white-warm);
@@ -3642,11 +3644,14 @@ body.page-template-me-contacter {
 
     font-family: "Lora", serif;
 
-    font-size: 15px;
+    font-size: 17px;
 
 	font-weight: 600;
 
     text-decoration: none;
+
+    width: 360px;
+    box-sizing: border-box;
 
     transition:
         background 0.25s ease,
@@ -4744,6 +4749,10 @@ body.universe-native-nature .page-nature {
     border: 2px solid var(--color-white-warm);
 
     font-size: 17px;
+    font-weight: 600;
+
+    width: 360px;
+    box-sizing: border-box;
 }
 
 /* =========================================================
@@ -5717,7 +5726,8 @@ body.universe-nature .retour-haut {
         width: 100%;
     }
 
-    .nature-bouton--large {
+    .nature-bouton--large,
+    .soin-reiki-rendez-vous {
         width: 100%;
 
         padding: 14px 20px;
