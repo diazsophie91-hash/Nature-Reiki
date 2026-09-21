@@ -4804,7 +4804,9 @@ body.universe-native-nature .page-nature {
 .nature-banniere--brune,
 .nature-banniere--bleue {
     background-color: var(--color-nature-bg);
-    background-image: url("images/texture-bois.png");
+    background-image:
+        linear-gradient(rgba(229, 240, 226, 0.72), rgba(229, 240, 226, 0.72)),
+        url("images/texture-bois.png");
     background-size: cover;
     background-position: center;
 }
