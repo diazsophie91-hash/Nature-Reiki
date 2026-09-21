@@ -3632,7 +3632,7 @@ body.page-template-me-contacter {
 .soin-reiki-rendez-vous {
     display: inline-block;
 
-    padding: 11px 22px;
+    padding: 13px 33px;
 
     border-radius: 30px;
 
@@ -4740,7 +4740,8 @@ body.universe-native-nature .page-nature {
 }
 
 .nature-bouton--large {
-    padding: 14px 34px;
+    padding: 13px 33px;
+    border: 2px solid var(--color-white-warm);
 
     font-size: 17px;
 }
@@ -4783,25 +4784,20 @@ body.universe-native-nature .page-nature {
     box-shadow: var(--shadow-nature-card-hover);
 }
 
-.nature-banniere--verte {
-    background-color: var(--color-nature-bg);
-    background-image:
-        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
-}
+/* ---------------------------------------------------------
+   BANNIÈRES ACCUEIL NATURE — FOND TEXTURE BOIS
+   Remplace le fond vert (dégradés) par la texture bois
+   sur les 3 variantes : verte (Qui suis-je), brune (Balades), bleue (Animations).
+   Conserve : dimensions, position, coins arrondis, ombres, icônes, textes, boutons, animations, responsive.
+   --------------------------------------------------------- */
 
-.nature-banniere--brune {
-    background-color: var(--color-nature-bg);
-    background-image:
-        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
-}
-
+.nature-banniere--verte,
+.nature-banniere--brune,
 .nature-banniere--bleue {
     background-color: var(--color-nature-bg);
-    background-image:
-        radial-gradient(circle at 12% 18%, rgba(255, 252, 247, 0.55) 0%, transparent 45%),
-        linear-gradient(135deg, var(--color-nature-accent) 0%, var(--color-nature-bg) 65%);
+    background-image: url("images/texture-bois.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .nature-banniere-decor {
@@ -5514,7 +5510,7 @@ body.universe-native-nature .page-nature {
     text-align: center;
 }
 
-.nature-reserver-contenu p {
+.reserver-contenu p {
     margin: 0;
 
     font-family: "Lora", serif;
@@ -5528,8 +5524,12 @@ body.universe-native-nature .page-nature {
     text-align: center;
 }
 
-.nature-reserver-contenu a {
+.reserver-contenu a {
     color: var(--color-nature);
+}
+
+.reserver-contenu a:hover {
+    color: var(--color-nature-hover);
 }
 
 /* =========================================================
