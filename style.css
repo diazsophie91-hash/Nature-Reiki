@@ -5441,6 +5441,14 @@ body.universe-native-nature .page-nature {
 }
 
 /* =========================================================
+   BORDURE NATURE POUR LE BOUTON RETOUR HAUT
+   ========================================================= */
+
+body.universe-nature .retour-haut {
+    border-color: var(--color-nature-menu-border);
+}
+
+/* =========================================================
    FOCUS CLAVIER DES ELEMENTS NATURE
 ========================================================= */
 
