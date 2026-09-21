@@ -104,6 +104,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-nature-bg:           #e5f0e2;
     --color-nature-accent:       #c8eaaf;
     --color-nature-h2:           #246a95;
+    --color-nature-button-hover: #5B91B3;
     --color-nature-menu-border:  #7a624d;
     --color-nature-text:         #6a5745;
     --color-nature-olive:        #7a9c51;
@@ -1110,6 +1111,10 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-sub-reiki);
 }
 
+body.universe-nature .page-qui-suis-je .sous-titre-reiki {
+    color: var(--color-nature-text);
+}
+
 .page-qui-suis-je .sous-titre-nature {
     color: var(--color-nature);
 }
@@ -1873,6 +1878,10 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     line-height: 1.1;
 }
 
+body.universe-nature .qui-suis-je-contenu h2 {
+    color: var(--color-nature);
+}
+
 .qui-suis-je-contenu p {
     margin: 0 0 22px;
 
@@ -1883,6 +1892,10 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     line-height: 1.75;
 
     text-align: justify;
+}
+
+body.universe-nature .qui-suis-je-contenu p {
+    color: var(--color-nature-text);
 }
 
 .qui-suis-je-contenu p:last-child {
@@ -2037,6 +2050,11 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     text-align: justify;
 }
 
+body.universe-nature .qui-suis-je-parcours-contenu
+.qui-suis-je-contenu p {
+    color: var(--color-nature-text);
+}
+
 /* =========================================================
    COLONNE PHOTO DES PARCOURS
 ========================================================= */
@@ -2139,6 +2157,10 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     margin-bottom: 12px;
 }
 
+body.universe-nature .qui-suis-je-lien .qui-suis-je-contenu h2 {
+    color: var(--color-nature);
+}
+
 .qui-suis-je-lien .qui-suis-je-contenu p {
     width: 100%;
     max-width: 900px;
@@ -2152,6 +2174,10 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     line-height: 1.75;
 
     text-align: justify;
+}
+
+body.universe-nature .qui-suis-je-lien .qui-suis-je-contenu p {
+    color: var(--color-nature-text);
 }
 
 /* =========================================================
@@ -2274,6 +2300,10 @@ body.universe-native-nature .separateur-dore {
     line-height: 1.35;
 }
 
+body.universe-nature .qui-suis-je-citation-interieur p {
+    color: var(--color-nature-text);
+}
+
 .qui-suis-je-citation-auteur {
     display: inline-block;
     margin: 0 0 0 6px;
@@ -2376,6 +2406,10 @@ body.page-template-le-reiki .page-le-reiki {
     text-align: center;
 
     transition: color 0.25s ease;
+}
+
+body.universe-nature .le-reiki-toggle {
+    color: var(--color-nature);
 }
 
 .le-reiki-toggle:hover {
@@ -4926,7 +4960,7 @@ body.page-template-animations .nature-bouton {
 }
 
 .nature-banniere-bouton:hover {
-    background: var(--color-nature);
+    background: var(--color-nature-h2);
 
     transform: translateY(-2px);
 }
@@ -5084,9 +5118,14 @@ body.page-template-animations .nature-bouton {
 }
 
 .nature-carte-en-savoir-plus:hover {
-    background: var(--color-nature-hover);
+    background: var(--color-nature-button-hover);
 
     color: var(--color-white);
+}
+
+.nature-carte-en-savoir-plus:hover .nature-carte-fleche {
+    border-right-color: var(--color-nature);
+    border-bottom-color: var(--color-nature);
 }
 
 /* =========================================================
