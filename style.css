@@ -5422,7 +5422,7 @@ body.universe-native-nature .page-nature {
 
     padding: 0;
 
-    border: 1px solid var(--color-nature-light);
+    border: 1px solid var(--color-nature-menu-border);
     border-radius: 50%;
 
     background: var(--color-white-warm-translucent-88);
@@ -5479,7 +5479,7 @@ body.universe-native-nature .page-nature {
 
     padding: 0;
 
-    border: 1px solid var(--color-nature);
+    border: 1px solid var(--color-nature-h2);
     border-radius: 50%;
 
     background: transparent;
@@ -5496,7 +5496,7 @@ body.universe-native-nature .page-nature {
 }
 
 .nature-carrousel-puce.actif {
-    background: var(--color-nature);
+    background: var(--color-nature-h2);
 }
 
 /* =========================================================
