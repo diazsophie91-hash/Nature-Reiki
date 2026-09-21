@@ -78,6 +78,8 @@
                     contenu = container.querySelector( '.soin-reiki-details' );
                 } else if ( container.classList.contains( 'soins-reiki-accordeon' ) ) {
                     contenu = container.querySelector( '.soins-reiki-accordeon-contenu' );
+                } else if ( container.classList.contains( 'nature-carte' ) ) {
+                    contenu = container.querySelector( '.nature-carte-details' );
                 }
                 if ( contenu && contenu.style.maxHeight && contenu.style.maxHeight !== '0px' ) {
                     contenu.style.maxHeight = contenu.scrollHeight + 'px';
@@ -143,6 +145,14 @@
                 }
             }
         }() );
+
+        // Accordéon « En savoir plus » des cartes Nature — animé via max-height.
+        initToggle( {
+            boutonSelector: '.nature-carte-en-savoir-plus',
+            containerSelector: '.nature-carte',
+            contenuSelector: '.nature-carte-details',
+            animate: true
+        } );
 
     } );
 

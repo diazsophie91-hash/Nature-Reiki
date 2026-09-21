@@ -90,40 +90,46 @@ get_header(); ?>
 		 */
 		$balades = array(
 			array(
-				'titre'    => 'Sur les pas des Celtes à nos jours',
-				'mention'  => '',
-				'image'    => 'images/chene.png',
-				'variante' => 'nature-carte--verte',
+				'titre'     => 'Sur les pas des Celtes à nos jours',
+				'mention'   => '',
+				'image'     => 'images/chene.png',
+				'variante'  => 'nature-carte--verte',
+				'contenu'   => '<p>Depuis mon enfance, la nature a toujours occupé une place particulière dans ma vie. Les plantes, les arbres, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité.</p><p>Cette balade invite à marcher, observer et comprendre, en suivant les traces de ceux qui nous ont précédés et en découvrant l’histoire qui s’écrit autour de nous, entre terre et ciel.</p>',
 			),
 			array(
-				'titre'    => 'Mon ami l’arbre',
-				'mention'  => '',
-				'image'    => 'images/chene.png',
-				'variante' => 'nature-carte--verte',
+				'titre'     => 'Mon ami l’arbre',
+				'mention'   => '',
+				'image'     => 'images/chene.png',
+				'variante'  => 'nature-carte--verte',
+				'contenu'   => '<p>Les arbres, les plantes, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité. Dans cette balade, nous apprendrons à observer l’arbre autrement, à lire ses cicatrices, ses branches et sa présence dans le paysage.</p><p>L’arbre est un compagnon de route qui nous enseigne la patience, la résilience et le lien profond qui nous unit au vivant.</p>',
 			),
 			array(
-				'titre'    => 'La forêt autrement',
-				'mention'  => '',
-				'image'    => 'images/feuille-chene.png',
-				'variante' => 'nature-carte--brune',
+				'titre'     => 'La forêt autrement',
+				'mention'   => '',
+				'image'     => 'images/feuille-chene.png',
+				'variante'  => 'nature-carte--brune',
+				'contenu'   => '<p>La forêt est un lieu où l’on peut être au calme, s’émerveiller et simplement se sentir exister. Dans cette balade, nous apprendrons à l’observer autrement, à ralentir et à écouter ce qu’elle a à nous dire.</p><p>Chaque pas devient une rencontre avec le vivant, les plantes sauvages, les arbres et les animaux qui l’habitent.</p>',
 			),
 			array(
-				'titre'    => 'Traces et indices en forêt',
-				'mention'  => '',
-				'image'    => 'images/feuille-chene.png',
-				'variante' => 'nature-carte--brune',
+				'titre'     => 'Traces et indices en forêt',
+				'mention'   => '',
+				'image'     => 'images/feuille-chene.png',
+				'variante'  => 'nature-carte--brune',
+				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à lire les traces, les indices et les signes discrets qui révèlent la présence de la vie dans la forêt.</p>',
 			),
 			array(
-				'titre'    => 'Cuisine sauvage',
-				'mention'  => '',
-				'image'    => 'images/feuille-chene.png',
-				'variante' => 'nature-carte--bleue',
+				'titre'     => 'Cuisine sauvage',
+				'mention'   => '',
+				'image'     => 'images/feuille-chene.png',
+				'variante'  => 'nature-carte--bleue',
+				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à reconnaître les plantes sauvages comestibles, à les observer et à les intégrer avec respect dans notre cuisine quotidienne.</p>',
 			),
 			array(
-				'titre'    => 'Découverte carrières',
-				'mention'  => '',
-				'image'    => 'images/chene.png',
-				'variante' => 'nature-carte--bleue',
+				'titre'     => 'Découverte carrières',
+				'mention'   => '',
+				'image'     => 'images/chene.png',
+				'variante'  => 'nature-carte--bleue',
+				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à découvrir les carrières, à comprendre leur histoire, leur géologie et la manière dont elles participent à la richesse du paysage et de la biodiversité locale.</p>',
 			),
 		);
 		?>
@@ -151,6 +157,19 @@ get_header(); ?>
 					<?php echo esc_html( $balade['mention'] ); ?>
 				</p>
 				<?php endif; ?>
+
+				<button
+					type="button"
+					class="nature-carte-en-savoir-plus"
+					aria-expanded="false"
+				>
+					<span>En savoir plus</span>
+					<span class="nature-carte-fleche" aria-hidden="true"></span>
+				</button>
+
+				<div class="nature-carte-details">
+					<?php echo wp_kses_post( $balade['contenu'] ); ?>
+				</div>
 
 			</article>
 

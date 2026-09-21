@@ -5044,6 +5044,129 @@ body.universe-native-nature .page-nature {
 }
 
 /* =========================================================
+   EN SAVOIR PLUS DES CARTES NATURE
+   ========================================================= */
+
+.nature-carte-en-savoir-plus {
+    min-height: 44px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 10px 20px;
+
+    border: 1px solid var(--color-nature);
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: var(--color-nature);
+
+    font-family: "Lora", serif;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.nature-carte-en-savoir-plus:hover {
+    background: var(--color-nature-hover);
+
+    color: var(--color-white);
+}
+
+/* =========================================================
+   CHEVRON DES CARTES NATURE
+   ========================================================= */
+
+.nature-carte-fleche {
+    position: relative;
+
+    display: inline-block;
+
+    width: 9px;
+
+    height: 9px;
+
+    border-right: 1.5px solid currentColor;
+
+    border-bottom: 1.5px solid currentColor;
+
+    transform: rotate(45deg);
+
+    transition: transform 0.3s ease;
+}
+
+.nature-carte.ouvert
+.nature-carte-fleche {
+    transform: rotate(225deg);
+}
+
+/* =========================================================
+   CONTENU DÉPLIABLE DES CARTES NATURE
+   ========================================================= */
+
+.nature-carte-details {
+    width: 100%;
+
+    max-height: 0;
+
+    margin-top: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.5s ease,
+        opacity 0.35s ease,
+        margin-top 0.35s ease;
+}
+
+.nature-carte.ouvert
+.nature-carte-details {
+    margin-top: 22px;
+
+    opacity: 1;
+}
+
+.nature-carte-details p {
+    margin: 0 0 16px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-nature-text);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    text-align: left;
+}
+
+.nature-carte-details p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.nature-carte.ouvert {
+    box-shadow: var(--shadow-card-open);
+}
+
+
+
+/* =========================================================
    ENCARTS NATURE (balades privees, conditions)
 ========================================================= */
 
@@ -5466,7 +5589,8 @@ body.universe-nature .retour-haut {
 .nature-banniere-bouton:focus-visible,
 .nature-carrousel-fleche:focus-visible,
 .nature-carrousel-puce:focus-visible,
-.nature-reserver-contenu a:focus-visible {
+.nature-reserver-contenu a:focus-visible,
+.nature-carte-en-savoir-plus:focus-visible {
     outline: 2px solid var(--color-nature);
     outline-offset: 3px;
 }
