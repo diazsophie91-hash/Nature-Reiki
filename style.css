@@ -4805,7 +4805,7 @@ body.universe-native-nature .page-nature {
 .nature-banniere--bleue {
     background-color: var(--color-nature-bg);
     background-image:
-        linear-gradient(rgba(229, 240, 226, 0.72), rgba(229, 240, 226, 0.72)),
+        linear-gradient(rgba(229, 240, 226, 0.65), rgba(229, 240, 226, 0.65)),
         url("images/texture-bois.png");
     background-size: cover;
     background-position: center;
@@ -4849,7 +4849,7 @@ body.universe-native-nature .page-nature {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-h2);
+    color: var(--color-nature);
 
     font-size: clamp(30px, 3vw, 40px);
 
@@ -4858,14 +4858,6 @@ body.universe-native-nature .page-nature {
     letter-spacing: 1px;
 
     line-height: 1.05;
-}
-
-.nature-banniere--brune .nature-banniere-contenu h2 {
-    color: var(--color-nature-h2);
-}
-
-.nature-banniere--bleue .nature-banniere-contenu h2 {
-    color: var(--color-nature-h2);
 }
 
 .nature-banniere-contenu p {
@@ -4895,7 +4887,7 @@ body.universe-native-nature .page-nature {
 
     padding: 9px 18px;
 
-    background: var(--color-nature);
+    background: var(--color-nature-h2);
 
     border-radius: var(--radius-btn);
 
@@ -4915,25 +4907,9 @@ body.universe-native-nature .page-nature {
 }
 
 .nature-banniere-bouton:hover {
-    background: var(--color-nature-hover);
+    background: var(--color-nature);
 
     transform: translateY(-2px);
-}
-
-.nature-banniere--brune .nature-banniere-bouton {
-    background: var(--color-nature);
-}
-
-.nature-banniere--brune .nature-banniere-bouton:hover {
-    background: var(--color-nature-hover);
-}
-
-.nature-banniere--bleue .nature-banniere-bouton {
-    background: var(--color-nature);
-}
-
-.nature-banniere--bleue .nature-banniere-bouton:hover {
-    background: var(--color-nature-hover);
 }
 
 /* =========================================================
