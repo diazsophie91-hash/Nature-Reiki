@@ -115,6 +115,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-primary:             #79529b;
     --color-primary-light:       #8c67ad;
     --color-primary-hover:       #946fb6;
+    --color-primary-dark:        #4d326b;
     --color-primary-bg:          #f0e2f0;
     --color-sub-reiki:           #79529b;
     --color-primary-bg-translucent: rgba(240, 226, 240, 0.75);
@@ -181,6 +182,15 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --shadow-soft-7:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-soft-6:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-hover-card:  0 10px 28px rgba(70, 45, 80, 0.10);
+}
+
+/* =========================
+   TEXTE COURANT REIKI
+   Remplacement du noir par le mauve foncé en contexte Reiki
+===================== */
+
+body.universe-reiki {
+    --color-text: var(--color-primary-dark);
 }
 
 * {
