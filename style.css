@@ -2304,7 +2304,7 @@ body.universe-native-nature .separateur-dore {
     background: linear-gradient(
         115deg,
         transparent 40%,
-        var(--color-accent-light) 50%,
+        var(--color-nature-bg) 50%,
         transparent 60%
     );
 
@@ -2346,7 +2346,19 @@ body.universe-native-nature .separateur-dore {
     }
 }
 
-.qui-suis-je-citation-interieur p {
+body.universe-nature .qui-suis-je-citation-interieur p {
+    color: var(--color-nature);
+}
+
+body.universe-nature .qui-suis-je-citation-guillemets {
+    color: var(--color-nature-h2);
+}
+
+body.universe-nature .qui-suis-je-citation-auteur {
+    color: var(--color-nature-text);
+}
+
+.qui-suis-je-citation-texte {
     margin: 0;
 
     font-family: "Cormorant Garamond", serif;
@@ -2360,8 +2372,20 @@ body.universe-native-nature .separateur-dore {
     line-height: 1.35;
 }
 
-body.universe-nature .qui-suis-je-citation-interieur p {
-    color: var(--color-nature-text);
+body.universe-nature .qui-suis-je-citation-interieur {
+    background-image:
+        linear-gradient(rgba(229, 240, 226, 0.65), rgba(229, 240, 226, 0.65)),
+        url("images/texture-bois.png");
+    background-color: var(--color-nature-bg);
+    background-size: cover;
+    background-position: center;
+}
+
+body.universe-nature .qui-suis-je-citation-interieur:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        var(--shadow-box),
+        0 0 22px var(--color-nature-h2);
 }
 
 .qui-suis-je-citation-auteur {

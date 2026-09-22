@@ -367,9 +367,10 @@ Template Name: Qui suis-je ?
 
 		<div class="qui-suis-je-citation-interieur">
 
-			<p>
-				« La vie, ce n’est pas d’attendre que les orages passent, c’est d’apprendre comment danser sous la pluie. » <span class="qui-suis-je-citation-auteur">- Sénèque</span>
-			</p>
+			<span class="qui-suis-je-citation-guillemets">« </span>
+			<span class="qui-suis-je-citation-texte">La vie, ce n’est pas d’attendre que les orages passent, c’est d’apprendre comment danser sous la pluie.</span>
+			<span class="qui-suis-je-citation-guillemets"> »</span>
+			<span class="qui-suis-je-citation-auteur">- Sénèque</span>
 
 		</div>
 
