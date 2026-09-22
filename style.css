@@ -1,9 +1,9 @@
-/*
+﻿/*
 Theme Name: Nature & Reiki
 Theme URI: https://nature-reiki.be
-Author: Jo�lle Siwek
+Author: Joï¿½lle Siwek
 Author URI: https://nature-reiki.be
-Description: Th�me personnalis� pour le site Nature & Reiki, pr�sentant deux univers (Guide Nature et Reiki) avec un design �pur� et accessible.
+Description: Thï¿½me personnalisï¿½ pour le site Nature & Reiki, prï¿½sentant deux univers (Guide Nature et Reiki) avec un design ï¿½purï¿½ et accessible.
 Version: 1.1.0
 Requires at least: 6.0
 Tested up to: 6.4
@@ -121,7 +121,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-sub-reiki:           #79529b;
     --color-primary-bg-translucent: rgba(240, 226, 240, 0.75);
 
-    /* ACCENTS (DORÉ) */
+    /* ACCENTS (DORÃ‰) */
     --color-accent:              #bf9f45;
     --color-accent-light:        #d9bc70;
     --color-accent-hover:        #a68336;
@@ -132,7 +132,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-accent-button-text:  #3d3014;
     --color-accent-old:          #b89338;
 
-    /* FOND DÉGRADÉ PRINCIPAL */
+    /* FOND DÃ‰GRADÃ‰ PRINCIPAL */
     --bg-grad-1: #e5f0e2;
     --bg-grad-2: #e7f0e4;
     --bg-grad-3: #eaf1e7;
@@ -187,7 +187,7 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
 
 /* =========================
    TEXTE COURANT REIKI
-   Remplacement du noir par le mauve foncé en contexte Reiki
+   Remplacement du noir par le mauve foncÃ© en contexte Reiki
 ===================== */
 
 body.universe-reiki {
@@ -236,14 +236,14 @@ body.home {
     overflow: hidden;
 }
 
-/* Les pages de contenu doivent pouvoir défiler sans règle spécifique. */
+/* Les pages de contenu doivent pouvoir dÃ©filer sans rÃ¨gle spÃ©cifique. */
 main {
     min-height: 0;
 }
 
 /* =========================
-   ACCESSIBILIT�
-   - skip-link : lien d'acc�s rapide au contenu
+   ACCESSIBILITï¿½
+   - skip-link : lien d'accï¿½s rapide au contenu
    - :focus-visible : focus clavier visible
  ========================= */
 
@@ -376,7 +376,7 @@ main {
 }
 
 .switch-reiki {
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     transition:
         color 0.25s ease,
@@ -394,7 +394,7 @@ main {
     line-height: 1;
 }
 
-/* Doré → brun en contexte Nature */
+/* DorÃ© â†’ brun en contexte Nature */
 
 body.universe-nature .switch-icon,
 body.universe-native-nature .switch-icon {
@@ -415,7 +415,7 @@ body.universe-native-nature .switch-icon {
     z-index: 1;
 }
 
-/* Fond vert derrière Nature */
+/* Fond vert derriÃ¨re Nature */
 .switch-nature.actif::before {
     content: "";
     position: absolute;
@@ -431,7 +431,7 @@ body.universe-native-nature .switch-icon {
     z-index: -1;
 }
 
-/* Fond mauve derrière Reiki */
+/* Fond mauve derriÃ¨re Reiki */
 .switch-reiki.actif::before {
     content: "";
     position: absolute;
@@ -442,7 +442,7 @@ body.universe-native-nature .switch-icon {
     right: -9px;
 }
 
-/* Doré → brun en contexte Nature pour la bordure du switch */
+/* DorÃ© â†’ brun en contexte Nature pour la bordure du switch */
 
 body.universe-nature .switch-univers,
 body.universe-native-nature .switch-univers {
@@ -463,7 +463,7 @@ body.universe-native-nature .switch-univers a:focus-visible {
     outline-offset: 3px;
 }
 
-/* Fond mauve derrière Reiki sur toutes les pages univers Reiki */
+/* Fond mauve derriÃ¨re Reiki sur toutes les pages univers Reiki */
 body.universe-reiki .switch-reiki {
     position: relative;
     z-index: 1;
@@ -607,7 +607,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 /* =========================
-   LIGNE + FEUILLE DE CH�NE + LOTUS
+   LIGNE + FEUILLE DE CHï¿½NE + LOTUS
 ========================= */
 
 .ligne-decoration {
@@ -623,7 +623,7 @@ body.universe-reiki .switch-reiki::before {
     gap: 16px;
 }
 
-/* Les deux lignes dor�es */
+/* Les deux lignes dorï¿½es */
 
 .ligne-decoration .ligne {
     height: 1px;
@@ -655,7 +655,7 @@ body.universe-reiki .switch-reiki::before {
     object-fit: contain;
 }
 
-/* Feuille de ch�ne */
+/* Feuille de chï¿½ne */
 
 .symbole-chene {
     height: 29px;
@@ -854,7 +854,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 /* =========================
-   MOTS CL�S
+   MOTS CLï¿½S
 ========================= */
 
 .mots {
@@ -988,7 +988,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 .adresse-reiki {
-    color: var(--color-primary);
+    color: var(--color-nature);
 }
 
 .adresse-point {
@@ -1000,7 +1000,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 .adresse-e {
-    color: var(--color-primary);
+    color: var(--color-nature);
 }
 
 .bas-page .adresse {
@@ -1152,7 +1152,7 @@ body.universe-nature .page-me-contacter .me-contacter-info-texte a:hover {
     text-decoration-color: var(--color-nature-h2);
 }
 
-/* Adaptation du sous-titre pour la page Réserver (Nature) */
+/* Adaptation du sous-titre pour la page RÃ©server (Nature) */
 body.universe-native-nature .page-reserver .reiki-hero p:first-of-type {
     color: var(--color-nature-h2);
 }
@@ -1183,7 +1183,7 @@ body.universe-nature .page-qui-suis-je .sous-titre-reiki {
     color: var(--color-accent-old);
 }
 
-/* Dor� → brun en contexte Nature */
+/* Dorï¿½ â†’ brun en contexte Nature */
 
 body.universe-nature .page-qui-suis-je .sous-titre-dore,
 body.universe-native-nature .page-qui-suis-je .sous-titre-dore {
@@ -1208,7 +1208,7 @@ body.universe-native-nature .page-qui-suis-je .sous-titre-dore {
     gap: 8px;
 }
 
-/* Lignes dor�es */
+/* Lignes dorï¿½es */
 
 .reiki-ligne-decoration span {
     height: 1px;
@@ -1284,7 +1284,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 
     font-family: "Lora", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 16px;
 
@@ -1301,17 +1301,17 @@ body.universe-native-nature .reiki-ligne-decoration span {
 .reiki-menu a:hover {
     background: var(--color-primary-bg-translucent);
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     transform: translateY(-1px);
 }
 
-/* Élément actif */
+/* Ã‰lÃ©ment actif */
 
 .reiki-menu a.actif {
     background: var(--color-primary-bg);
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-weight: 600;
 }
@@ -1351,7 +1351,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 
 /* =========================
    SECTION REIKI
-   BANNI�RE 1 � QU'EST-CE QUE LE REIKI ?
+   BANNIï¿½RE 1 ï¿½ QU'EST-CE QUE LE REIKI ?
 ========================= */
 
 .reiki-definition {
@@ -1391,7 +1391,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   BANNI�RE 2 � LES S�ANCES DE REIKI
+   BANNIï¿½RE 2 ï¿½ LES Sï¿½ANCES DE REIKI
 ========================= */
 
 .reiki-seances-section {
@@ -1431,7 +1431,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 1
+   Dï¿½CORATION ï¿½ BANNIï¿½RE 1
 ========================= */
 
 .reiki-banniere-1-decor {
@@ -1474,7 +1474,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   CONTENU � BANNI�RE 1
+   CONTENU ï¿½ BANNIï¿½RE 1
 ========================= */
 
 .reiki-banniere-1-contenu {
@@ -1488,7 +1488,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(30px, 3vw, 40px);
 
@@ -1512,7 +1512,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   BOUTON � BANNI�RE 1
+   BOUTON ï¿½ BANNIï¿½RE 1
 ========================= */
 
 .reiki-banniere-1-bouton {
@@ -1554,7 +1554,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 2
+   Dï¿½CORATION ï¿½ BANNIï¿½RE 2
    PENDULE REIKI
 ========================= */
 
@@ -1597,7 +1597,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   CONTENU � BANNI�RE 2
+   CONTENU ï¿½ BANNIï¿½RE 2
 ========================= */
 
 .reiki-banniere-2-contenu {
@@ -1611,7 +1611,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(30px, 3vw, 40px);
 
@@ -1635,7 +1635,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   BOUTON � BANNI�RE 2
+   BOUTON ï¿½ BANNIï¿½RE 2
 ========================= */
 
 .reiki-banniere-2-bouton {
@@ -1677,7 +1677,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   BANNI�RE 3 � QUI SUIS-JE ?
+   BANNIï¿½RE 3 ï¿½ QUI SUIS-JE ?
 ========================= */
 
 .reiki-qui-suis-je-section {
@@ -1717,7 +1717,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 3
+   Dï¿½CORATION ï¿½ BANNIï¿½RE 3
 ========================= */
 
 .reiki-banniere-3-decor {
@@ -1760,7 +1760,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   CONTENU � BANNI�RE 3
+   CONTENU ï¿½ BANNIï¿½RE 3
 ========================= */
 
 .reiki-banniere-3-contenu {
@@ -1774,7 +1774,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(30px, 3vw, 40px);
 
@@ -1798,7 +1798,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   BOUTON � BANNI�RE 3
+   BOUTON ï¿½ BANNIï¿½RE 3
 ========================= */
 
 .reiki-banniere-3-bouton {
@@ -1840,7 +1840,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   EFFET AU SURVOL � BANNI�RES REIKI
+   EFFET AU SURVOL ï¿½ BANNIï¿½RES REIKI
 ========================= */
 
 .reiki-banniere-1,
@@ -1855,7 +1855,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
         box-shadow 0.25s ease;
 }
 
-/* Soul�vement de la banni�re */
+/* Soulï¿½vement de la banniï¿½re */
 
 .reiki-banniere-1:hover,
 .reiki-banniere-2:hover,
@@ -1866,7 +1866,7 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* =========================
-   R�ACTION DU SYMBOLE
+   Rï¿½ACTION DU SYMBOLE
 ========================= */
 
 .reiki-banniere-1-decor img,
@@ -1882,8 +1882,8 @@ body.universe-native-nature .reiki-ligne-decoration span {
 }
 
 /* ---------------------------------------------------------
-   ACCUEIL REIKI � BANNI�RES L�G�REMENT PLUS HAUTES
-   Elles remplissent mieux l'�cran tout en laissant un espace
+   ACCUEIL REIKI ï¿½ BANNIï¿½RES Lï¿½Gï¿½REMENT PLUS HAUTES
+   Elles remplissent mieux l'ï¿½cran tout en laissant un espace
    avant le bas de la page.
 --------------------------------------------------------- */
 
@@ -1900,7 +1900,7 @@ body.page-template-accueil-reiki .reiki-banniere-3 {
 ========================================================= */
 
 /* =========================================================
-   D�FILEMENT VERTICAL
+   Dï¿½FILEMENT VERTICAL
 ========================================================= */
 
 html:has(body.page-template-qui-suis-je),
@@ -1918,7 +1918,7 @@ body.page-template-qui-suis-je .page-qui-suis-je {
 }
 
 /* =========================================================
-   CONTENU G�N�RAL
+   CONTENU Gï¿½Nï¿½RAL
 ========================================================= */
 
 .qui-suis-je-contenu {
@@ -1929,7 +1929,7 @@ body.page-template-qui-suis-je .page-qui-suis-je {
     margin: 0 0 12px;
 
     font-family: "Cormorant Garamond", serif;
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(34px, 4vw, 48px);
 
@@ -2000,7 +2000,7 @@ body.universe-nature .qui-suis-je-contenu p {
 }
 
 /* =========================================================
-   ACCORD�ONS PARCOURS
+   ACCORDï¿½ONS PARCOURS
 ========================================================= */
 
 .qui-suis-je-parcours {
@@ -2017,7 +2017,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    ESPACEMENT ENTRE LES BLOCS
-   Align� sur la page "Le Reiki"
+   Alignï¿½ sur la page "Le Reiki"
 ========================================================= */
 
 .qui-suis-je-introduction
@@ -2036,7 +2036,7 @@ body.universe-nature .qui-suis-je-contenu p {
 }
 
 /* =========================================================
-   CONTENU DES ACCORD�ONS
+   CONTENU DES ACCORDï¿½ONS
 ========================================================= */
 
 .qui-suis-je-parcours-contenu {
@@ -2050,7 +2050,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    GUIDE-NATURE
-   PHOTO � GAUCHE / TEXTE � DROITE
+   PHOTO ï¿½ GAUCHE / TEXTE ï¿½ DROITE
 ========================================================= */
 
 .qui-suis-je-nature
@@ -2060,7 +2060,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    REIKI
-   TEXTE � GAUCHE / PHOTO � DROITE
+   TEXTE ï¿½ GAUCHE / PHOTO ï¿½ DROITE
 ========================================================= */
 
 .qui-suis-je-reiki
@@ -2145,7 +2145,7 @@ body.universe-nature .qui-suis-je-parcours-contenu
 }
 
 /* ---------------------------------------------------------
-   LIGNÉE REIKI
+   LIGNÃ‰E REIKI
 --------------------------------------------------------- */
 
 .qui-suis-je-reiki .ligne-reiki-decoration {
@@ -2262,7 +2262,7 @@ body.universe-nature .qui-suis-je-lien .qui-suis-je-contenu p {
     background: var(--color-accent-border);
 }
 
-/* Doré → brun en contexte Nature */
+/* DorÃ© â†’ brun en contexte Nature */
 
 body.universe-nature .separateur-dore,
 body.universe-native-nature .separateur-dore {
@@ -2304,7 +2304,7 @@ body.universe-native-nature .separateur-dore {
     background: linear-gradient(
         115deg,
         transparent 40%,
-        var(--color-nature-bg) 50%,
+        var(--color-accent-border-50) 50%,
         transparent 60%
     );
 
@@ -2314,8 +2314,17 @@ body.universe-native-nature .separateur-dore {
     pointer-events: none;
 }
 
+body.universe-nature .qui-suis-je-citation-interieur::after {
+    background: linear-gradient(
+        115deg,
+        transparent 40%,
+        var(--color-nature-bg) 50%,
+        transparent 60%
+    );
+}
+
 .qui-suis-je-citation-interieur:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 
     box-shadow:
         var(--shadow-box),
@@ -2363,7 +2372,7 @@ body.universe-nature .qui-suis-je-citation-auteur {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(24px, 3vw, 34px);
 
@@ -2410,7 +2419,7 @@ body.universe-nature .qui-suis-je-citation-interieur:hover {
 ========================================================= */
 
 /* =========================================================
-   D�FILEMENT
+   Dï¿½FILEMENT
 ========================================================= */
 
 html:has(body.page-template-le-reiki),
@@ -2429,7 +2438,7 @@ body.page-template-le-reiki .page-le-reiki {
 }
 
 /* =========================================================
-   SECTIONS G�N�RALES
+   SECTIONS Gï¿½Nï¿½RALES
 ========================================================= */
 
 .le-reiki-section {
@@ -2451,7 +2460,7 @@ body.page-template-le-reiki .page-le-reiki {
 }
 
 /* =========================================================
-   ACCORD�ONS
+   ACCORDï¿½ONS
 ========================================================= */
 
 /* =========================
@@ -2477,7 +2486,7 @@ body.page-template-le-reiki .page-le-reiki {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: clamp(34px, 4vw, 48px);
 
@@ -2542,7 +2551,7 @@ body.universe-nature .le-reiki-toggle {
     border-color: var(--color-accent-hover);
 }
 
-/* Doré → brun en contexte Nature (qui suis-je) */
+/* DorÃ© â†’ brun en contexte Nature (qui suis-je) */
 
 body.universe-nature .le-reiki-fleche {
     border-right-color: var(--color-nature-menu-border);
@@ -2575,7 +2584,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================
-   CONTENU OUVERT PAR DÉFAUT
+   CONTENU OUVERT PAR DÃ‰FAUT
 ========================= */
 
 .le-reiki-contenu.ouvert .le-reiki-accordeon-contenu {
@@ -2675,14 +2684,14 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
 /* =========================================================
    PHRASE IMPORTANTE
-   "Ainsi, Reiki peut �tre interpr�t�..."
+   "Ainsi, Reiki peut ï¿½tre interprï¿½tï¿½..."
 ========================================================= */
 
 .le-reiki-origines .reiki-phrase-forte {
     margin-top: 28px;
     margin-bottom: 35px;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Lora", serif;
 
@@ -2738,7 +2747,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 32px;
 
@@ -2747,7 +2756,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     line-height: 1.1;
 }
 
-/* KANJI EN DOR� */
+/* KANJI EN DORï¿½ */
 
 .reiki-kanji-bloc h3 .kanji {
     color: var(--color-accent);
@@ -2820,7 +2829,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 25px;
 
@@ -2850,7 +2859,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     padding-bottom: 30px;
 }
 
-/* S�lecteur plus sp�cifique pour surcharger .le-reiki-accordeon-contenu p */
+/* Sï¿½lecteur plus spï¿½cifique pour surcharger .le-reiki-accordeon-contenu p */
 .le-reiki-pourquoi .le-reiki-accordeon-contenu p.reiki-introduction-forte {
     max-width: 700px;
 
@@ -2916,7 +2925,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 25px;
 
@@ -3032,7 +3041,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   NUM�RO DES GOKAI
+   NUMï¿½RO DES GOKAI
 ========================================================= */
 
 .reiki-gokai-item::before {
@@ -3059,7 +3068,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
     border: 1px solid var(--color-accent);
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Lora", serif;
 
@@ -3089,7 +3098,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 27px;
 
@@ -3164,7 +3173,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   COORDONN�ES
+   COORDONNï¿½ES
 ========================================================= */
 
 .me-contacter-coordonnees {
@@ -3251,7 +3260,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     max-height: 55px;
 }
 
-.me-contacter-icone img[alt="Téléphone"] {
+.me-contacter-icone img[alt="TÃ©lÃ©phone"] {
     width: 58px;
     height: 58px;
     max-width: 58px;
@@ -3266,7 +3275,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   TEXTE COORDONN�ES
+   TEXTE COORDONNï¿½ES
 ========================================================= */
 
 .me-contacter-info-texte {
@@ -3294,7 +3303,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 .me-contacter-info-texte a {
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     text-decoration: none;
 }
@@ -3342,7 +3351,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   SYMBOLES DES UNIVERS � ME CONTACTER
+   SYMBOLES DES UNIVERS ï¿½ ME CONTACTER
 ========================================================= */
 
 .me-contacter-univers-symbole {
@@ -3362,7 +3371,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* ---------------------------------------------------------
-   LOTUS � REIKI
+   LOTUS ï¿½ REIKI
 --------------------------------------------------------- */
 
 .me-contacter-univers-card:first-child
@@ -3371,7 +3380,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* ---------------------------------------------------------
-   FEUILLE DE CH�NE � GUIDE NATURE
+   FEUILLE DE CHï¿½NE ï¿½ GUIDE NATURE
 --------------------------------------------------------- */
 
 .me-contacter-univers-card:last-child
@@ -3400,7 +3409,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 ========================================================= */
 
 .me-contacter-univers-card:first-child h2 {
-    color: var(--color-primary);
+    color: var(--color-nature);
 }
 
 .me-contacter-univers-card:last-child h2 {
@@ -3414,7 +3423,7 @@ body.universe-nature .page-me-contacter .me-contacter-univers-card p {
 
 
 /* =========================================================
-   SCROLL � PAGE ME CONTACTER
+   SCROLL ï¿½ PAGE ME CONTACTER
 ========================================================= */
 
 body.page-template-me-contacter {
@@ -3436,7 +3445,7 @@ body.page-template-me-contacter {
 
 /* =========================================================
    HERO
-   M�me esprit que les autres pages Reiki
+   Mï¿½me esprit que les autres pages Reiki
 ========================================================= */
 
 /* =========================================================
@@ -3557,7 +3566,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 32px;
 
@@ -3575,7 +3584,7 @@ body.page-template-me-contacter {
 
     font-family: "Lora", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 22px;
 
@@ -3604,7 +3613,7 @@ body.page-template-me-contacter {
 
     background: transparent;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Lora", serif;
 
@@ -3649,7 +3658,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   CONTENU D�PLIABLE DES CARTES
+   CONTENU Dï¿½PLIABLE DES CARTES
 ========================================================= */
 
 .soin-reiki-details {
@@ -3699,7 +3708,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   TEST �NERG�TIQUE
+   TEST ï¿½NERGï¿½TIQUE
 ========================================================= */
 
 .soin-reiki-test {
@@ -3711,7 +3720,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   IC�NE PENDULE � TEST �NERG�TIQUE
+   ICï¿½NE PENDULE ï¿½ TEST ï¿½NERGï¿½TIQUE
 ========================================================= */
 
 .icone-pendule {
@@ -3728,7 +3737,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   M�T�O � S�ANCE EN FOR�T
+   Mï¿½Tï¿½O ï¿½ Sï¿½ANCE EN FORï¿½T
 ========================================================= */
 
 .soin-reiki-meteo {
@@ -3737,7 +3746,7 @@ body.page-template-me-contacter {
 
 /* =========================================================
    BOUTON RENDEZ-VOUS
-   Bouton commun plac� sous les 3 cartes
+   Bouton commun placï¿½ sous les 3 cartes
 ========================================================= */
 
 .soins-reiki-rendez-vous-global {
@@ -3789,7 +3798,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   TEST �NERG�TIQUE � SECTION
+   TEST ï¿½NERGï¿½TIQUE ï¿½ SECTION
 ========================================================= */
 
 .soins-reiki-test-energetique {
@@ -3810,7 +3819,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 38px;
 
@@ -3859,7 +3868,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 48px;
 
@@ -3895,7 +3904,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 30px;
 
@@ -3942,7 +3951,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 48px;
 
@@ -3954,7 +3963,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   ACCORD�ON INFORMATIONS
+   ACCORDï¿½ON INFORMATIONS
 ========================================================= */
 
 .soins-reiki-accordeon {
@@ -3979,7 +3988,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   BOUTON ACCORD�ON
+   BOUTON ACCORDï¿½ON
 ========================================================= */
 
 .soins-reiki-accordeon-bouton {
@@ -3996,7 +4005,7 @@ body.page-template-me-contacter {
 
     background: transparent;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Cormorant Garamond", serif;
 
@@ -4014,7 +4023,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   CHEVRON ACCORD�ON
+   CHEVRON ACCORDï¿½ON
 ========================================================= */
 
 .soins-reiki-accordeon-fleche {
@@ -4038,7 +4047,7 @@ body.page-template-me-contacter {
     transform: rotate(225deg);
 }
 
-/* Doré → brun en contexte Nature (questions FAQ) */
+/* DorÃ© â†’ brun en contexte Nature (questions FAQ) */
 
 body.universe-nature .soins-reiki-accordeon-fleche {
     border-right-color: var(--color-nature-menu-border);
@@ -4046,7 +4055,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 }
 
 /* =========================================================
-   CONTENU ACCORD�ON
+   CONTENU ACCORDï¿½ON
 ========================================================= */
 
 .soins-reiki-accordeon-contenu {
@@ -4122,7 +4131,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-size: 36px;
 
@@ -4179,7 +4188,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
 
 /* =========================================================
-   SCROLL � PAGE SOINS REIKI
+   SCROLL ï¿½ PAGE SOINS REIKI
 ========================================================= */
 
 body.page-template-soins-reiki {
@@ -4187,10 +4196,10 @@ body.page-template-soins-reiki {
 }
 
 /* ---------------------------------------------------------
-   1. ACCESSIBILIT� & TRANSITIONS
+   1. ACCESSIBILITï¿½ & TRANSITIONS
 --------------------------------------------------------- */
 
-/* �vite les transitions trop brutales sur les �l�ments interactifs. */
+/* ï¿½vite les transitions trop brutales sur les ï¿½lï¿½ments interactifs. */
 a,
 button {
     -webkit-tap-highlight-color: transparent;
@@ -4210,7 +4219,7 @@ button {
 }
 
 /* ---------------------------------------------------------
-   2. CARTES � HARMONISATION DISCR�TE
+   2. CARTES ï¿½ HARMONISATION DISCRï¿½TE
 --------------------------------------------------------- */
 
 .soin-reiki-card,
@@ -4222,7 +4231,7 @@ button {
     border-color: var(--color-accent-border-48);
 }
 
-/* Doré → brun en contexte Nature */
+/* DorÃ© â†’ brun en contexte Nature */
 
 body.universe-nature .me-contacter-univers-card,
 body.universe-native-nature .me-contacter-univers-card,
@@ -4239,10 +4248,10 @@ body.universe-native-nature .soins-reiki-accordeon {
     box-shadow: var(--shadow-hover);
 }
 
-/* On ne fait pas bouger les accord�ons : leur fonction est diff�rente. */
+/* On ne fait pas bouger les accordï¿½ons : leur fonction est diffï¿½rente. */
 
 /* ---------------------------------------------------------
-   3. CARTES SOINS REIKI � PLUS DE HI�RARCHIE
+   3. CARTES SOINS REIKI ï¿½ PLUS DE HIï¿½RARCHIE
 --------------------------------------------------------- */
 
 
@@ -4258,7 +4267,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   4. LE REIKI � RYTHME ENTRE LES GRANDES SECTIONS
+   4. LE REIKI ï¿½ RYTHME ENTRE LES GRANDES SECTIONS
 --------------------------------------------------------- */
 
 .le-reiki-section + .le-reiki-section {
@@ -4271,7 +4280,7 @@ body.universe-native-nature .soins-reiki-accordeon {
     margin-right: auto;
 }
 
-/* Les cartes doivent avoir une pr�sence l�g�rement sup�rieure
+/* Les cartes doivent avoir une prï¿½sence lï¿½gï¿½rement supï¿½rieure
    au fond sans devenir lourdes. */
 .reiki-fonctionnement-bloc,
 .reiki-pourquoi-bloc {
@@ -4279,7 +4288,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   5. BANNI�RES REIKI � UNIFORMIT� VISUELLE
+   5. BANNIï¿½RES REIKI ï¿½ UNIFORMITï¿½ VISUELLE
 --------------------------------------------------------- */
 
 
@@ -4292,7 +4301,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   6. ACCORD�ONS � �TAT OUVERT PLUS LISIBLE
+   6. ACCORDï¿½ONS ï¿½ ï¿½TAT OUVERT PLUS LISIBLE
 --------------------------------------------------------- */
 
 .soins-reiki-accordeon.ouvert {
@@ -4315,7 +4324,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   7. ME CONTACTER � PLUS DE PROFONDEUR ET DE CLART�
+   7. ME CONTACTER ï¿½ PLUS DE PROFONDEUR ET DE CLARTï¿½
 --------------------------------------------------------- */
 
 
@@ -4335,13 +4344,13 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* ---------------------------------------------------------
-   9. SWITCH D'UNIVERS � PLUS NET
+   9. SWITCH D'UNIVERS ï¿½ PLUS NET
 --------------------------------------------------------- */
 
 
 
 /* ---------------------------------------------------------
-   10. ACCUEIL � PROFONDEUR DES DEUX UNIVERS
+   10. ACCUEIL ï¿½ PROFONDEUR DES DEUX UNIVERS
 --------------------------------------------------------- */
 
 
@@ -4361,7 +4370,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* =========================================================
-   SCROLL � UNIQUEMENT POUR LA PAGE F.A.Q
+   SCROLL ï¿½ UNIQUEMENT POUR LA PAGE F.A.Q
 ========================================================= */
 
 html:has(.page-faq),
@@ -4370,7 +4379,7 @@ body:has(.page-faq) {
 }
 
 /* =========================================================
-   PRENDRE RENDEZ-VOUS � REIKI
+   PRENDRE RENDEZ-VOUS ï¿½ REIKI
 ========================================================= */
 
 .prendre-rendez-vous-reiki {
@@ -4399,10 +4408,10 @@ body:has(.page-faq) {
     text-align: center;
 }
 /* =========================================================
-   PRENDRE RENDEZ-VOUS – REIKI
+   PRENDRE RENDEZ-VOUS â€“ REIKI
 ============================================================= */
 .prendre-rendez-vous-reiki-contenu a {
-    color: var(--color-primary);
+    color: var(--color-nature);
     text-decoration-color: var(--color-accent);
 }
 
@@ -4422,7 +4431,7 @@ body:has(.page-faq) {
 
 
 /* =========================================================
-   PAGE F.A.Q — Contexte Nature
+   PAGE F.A.Q â€” Contexte Nature
 ========================================================= */
 
 body.universe-nature .page-faq .faq-univers-bouton {
@@ -4487,7 +4496,7 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
 
     background: transparent;
 
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Cormorant Garamond", serif;
 
@@ -4602,7 +4611,7 @@ body.universe-nature .page-faq .faq-univers-fleche {
     border-radius: 50%;
 
     background: var(--color-white-warm-translucent-88);
-    color: var(--color-primary);
+    color: var(--color-nature);
 
     font-family: "Lora", serif;
     font-size: 25px;
@@ -4891,8 +4900,8 @@ body.universe-native-nature .page-nature {
 }
 
 /* =========================================================
-   BOUTON "DEMANDER UN DEVIS" — PAGE BALADES
-   Bleu Nature pour harmoniser avec les grandes bannières
+   BOUTON "DEMANDER UN DEVIS" â€” PAGE BALADES
+   Bleu Nature pour harmoniser avec les grandes banniÃ¨res
    ========================================================= */
 body.page-template-balades .nature-bouton {
     background: var(--color-nature-h2);
@@ -4925,8 +4934,8 @@ body.page-template-balades .nature-bouton {
 }
 
 /* =========================================================
-   BOUTON "DEMANER UN DEVIS" — PAGE ANIMATIONS
-   Bleu Nature pour harmoniser avec les grandes bannières
+   BOUTON "DEMANER UN DEVIS" â€” PAGE ANIMATIONS
+   Bleu Nature pour harmoniser avec les grandes banniÃ¨res
    ========================================================= */
 
 body.page-template-animations .nature-bouton {
@@ -4973,10 +4982,10 @@ body.page-template-animations .nature-bouton {
 }
 
 /* ---------------------------------------------------------
-   BANNIÈRES ACCUEIL NATURE — FOND TEXTURE BOIS
-   Remplace le fond vert (dégradés) par la texture bois
+   BANNIÃˆRES ACCUEIL NATURE â€” FOND TEXTURE BOIS
+   Remplace le fond vert (dÃ©gradÃ©s) par la texture bois
    sur les 3 variantes : verte (Qui suis-je), brune (Balades), bleue (Animations).
-   Conserve : dimensions, position, coins arrondis, ombres, icônes, textes, boutons, animations, responsive.
+   Conserve : dimensions, position, coins arrondis, ombres, icÃ´nes, textes, boutons, animations, responsive.
    --------------------------------------------------------- */
 
 .nature-banniere--verte,
@@ -5284,7 +5293,7 @@ body.page-template-animations .nature-bouton {
 }
 
 /* =========================================================
-   CONTENU DÉPLIABLE DES CARTES NATURE
+   CONTENU DÃ‰PLIABLE DES CARTES NATURE
    ========================================================= */
 
 .nature-carte-details {
@@ -5901,3 +5910,4 @@ body.universe-nature .retour-haut {
         font-size: 16px;
     }
 }
+
