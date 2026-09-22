@@ -943,6 +943,8 @@ body.universe-reiki .switch-reiki::before {
 
     flex-shrink: 0;
 
+    transform: translateY(-2px);
+
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -957,7 +959,6 @@ body.universe-reiki .switch-reiki::before {
 
 .coeur {
     font-size: 25px;
-    color: red;
 }
 
 .coeur img {
@@ -4317,6 +4318,30 @@ body:has(.page-faq) {
     width: 100%;
     min-height: 100vh;
 }
+
+
+/* =========================================================
+   PAGE F.A.Q — Contexte Nature
+========================================================= */
+
+body.universe-nature .page-faq .faq-univers-bouton {
+    color: var(--color-nature);
+}
+
+body.universe-nature .page-faq .soins-reiki-accordeon-bouton {
+    color: var(--color-nature);
+}
+
+body.universe-nature .page-faq .soins-reiki-accordeon-contenu p {
+    color: var(--color-nature-text);
+}
+
+body.universe-nature .page-faq .faq-univers-fleche,
+body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
+    border-right-color: var(--color-nature-h2);
+    border-bottom-color: var(--color-nature-h2);
+}
+
 
 
 /* =========================================================

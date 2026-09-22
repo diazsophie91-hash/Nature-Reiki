@@ -23,7 +23,7 @@ Template Name: Réserver - Nature
 
 	<section class="reserver-section">
 		<div class="reserver-contenu">
-			<p>Page en construction, veuillez <a href="/me-contacter/?univers=nature">me contacter par e-mail</a> afin de prendre rendez-vous, merci.</p>
+			<p>Page en construction, veuillez <a href="<?php echo esc_url( home_url( '/me-contacter/?univers=nature' ) ); ?>">me contacter par e-mail</a> afin de prendre rendez-vous, merci.</p>
 		</div>
 	</section>
 </main>

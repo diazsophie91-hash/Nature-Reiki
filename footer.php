@@ -11,7 +11,6 @@
 	type="button"
 	class="retour-haut <?php echo nature_reiki_is_nature_context() ? 'retour-haut--nature' : 'retour-haut--reiki'; ?>"
 	aria-label="Revenir en haut de la page"
-	aria-hidden="true"
 >
 	<span aria-hidden="true"></span>
 </button>

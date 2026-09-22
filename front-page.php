@@ -260,7 +260,7 @@
 			Un même site, deux univers, une seule adresse
 		</span>
 
-<a href="https://nature-reiki.be/" class="adresse">
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="adresse">
     Nature-reiki.be
 </a>
 
