@@ -196,8 +196,8 @@ add_filter( 'body_class', 'nature_reiki_body_classes' );
  */
 function nature_reiki_page_has_accordion() {
 	return nature_reiki_is_current_page(
-		array( 'le-reiki.php', 'soins-reiki.php', 'faq.php', 'qui-suis-je.php' ),
-		array( 'faq', 'qui-suis-je', 'le-reiki' )
+		array( 'le-reiki.php', 'soins-reiki.php', 'faq.php', 'qui-suis-je.php', 'balades.php' ),
+		array( 'faq', 'qui-suis-je', 'le-reiki', 'balades' )
 	);
 }
 /**

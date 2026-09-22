@@ -261,7 +261,7 @@
 		</span>
 
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="adresse">
-    Nature-reiki.be
+    <span class="adresse-nature">Nature</span><span class="adresse-separateur">-</span><span class="adresse-reiki">reiki.be</span>
 </a>
 
 	</div>

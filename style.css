@@ -979,8 +979,20 @@ body.universe-reiki .switch-reiki::before {
     text-decoration: underline;
 }
 
+.adresse-nature {
+    color: var(--color-nature);
+}
+
+.adresse-separateur {
+    color: var(--color-accent);
+}
+
+.adresse-reiki {
+    color: var(--color-primary);
+}
+
 .bas-page .adresse {
-    text-decoration-color: var(--color-primary);
+    text-decoration-color: var(--color-accent);
 }
 
 /* =========================
@@ -5049,6 +5061,8 @@ body.page-template-animations .nature-bouton {
 
 .nature-cartes {
     display: grid;
+
+    align-items: start;
 
     grid-template-columns: repeat(3, minmax(0, 1fr));
 
