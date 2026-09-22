@@ -1095,7 +1095,29 @@ body.universe-reiki .reiki-hero h1 {
 /* Adaptation des couleurs de sous-titres pour F.A.Q et Me contacter */
 body.universe-nature .page-faq .reiki-hero p:first-of-type,
 body.universe-nature .page-me-contacter .reiki-hero p:first-of-type {
+    color: var(--color-nature-h2);
+}
+
+/* --- Cartes de contact en contexte Nature --- */
+
+body.universe-nature .page-me-contacter .me-contacter-info-texte h2 {
     color: var(--color-nature);
+}
+
+body.universe-nature .page-me-contacter .me-contacter-info-texte p {
+    color: var(--color-nature-text);
+}
+
+body.universe-nature .page-me-contacter .me-contacter-info {
+    border-color: var(--color-nature-menu-border);
+}
+
+body.universe-nature .page-me-contacter .me-contacter-icone {
+    border-color: var(--color-nature-h2);
+}
+
+body.universe-nature .page-me-contacter .me-contacter-info-texte a {
+    color: var(--color-nature-text);
 }
 
 /* Adaptation du sous-titre pour la page Réserver (Nature) */
@@ -3323,6 +3345,12 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 .me-contacter-univers-card:last-child h2 {
     color: var(--color-nature-gradient-start);
 }
+
+/* Texte descriptif des univers Reiki / Guide Nature en contexte Nature */
+body.universe-nature .page-me-contacter .me-contacter-univers-card p {
+    color: var(--color-nature-text);
+}
+
 
 /* =========================================================
    SCROLL � PAGE ME CONTACTER
