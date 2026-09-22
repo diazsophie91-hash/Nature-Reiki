@@ -991,6 +991,18 @@ body.universe-reiki .switch-reiki::before {
     color: var(--color-primary);
 }
 
+.adresse-point {
+    color: var(--color-accent);
+}
+
+.adresse-b {
+    color: var(--color-nature);
+}
+
+.adresse-e {
+    color: var(--color-primary);
+}
+
 .bas-page .adresse {
     text-decoration-color: var(--color-accent);
 }
