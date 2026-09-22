@@ -2296,32 +2296,7 @@ body.universe-native-nature .separateur-dore {
         box-shadow 0.4s ease;
 }
 
-.qui-suis-je-citation-interieur::after {
-    content: "";
-    position: absolute;
-    inset: -50%;
 
-    background: linear-gradient(
-        115deg,
-        transparent 40%,
-        var(--color-accent-light) 50%,
-        transparent 60%
-    );
-
-    opacity: 0;
-    transform: translateX(-35%) rotate(8deg);
-
-    pointer-events: none;
-}
-
-body.universe-nature .qui-suis-je-citation-interieur::after {
-    background: linear-gradient(
-        115deg,
-        transparent 40%,
-        var(--color-nature-bg) 50%,
-        transparent 60%
-    );
-}
 
 .qui-suis-je-citation-interieur:hover {
     transform: translateY(-4px);
@@ -2331,58 +2306,110 @@ body.universe-nature .qui-suis-je-citation-interieur::after {
         0 0 22px var(--color-accent-border-50);
 }
 
-.qui-suis-je-citation-interieur:hover::after {
-    animation: citation-brillance 2.2s ease-in-out;
-}
 
-@keyframes citation-brillance {
+@keyframes citation-texte-brillance {
     0% {
-        opacity: 0;
-        transform: translateX(-35%) rotate(8deg);
-    }
-
-    20% {
-        opacity: 0.45;
-    }
-
-    80% {
-        opacity: 0.45;
+        background-position: 100% 0;
     }
 
     100% {
-        opacity: 0;
-        transform: translateX(35%) rotate(8deg);
+        background-position: 0% 0;
     }
+}
+
+.qui-suis-je-citation-guillemets {
+    background-image: linear-gradient(
+        115deg,
+        var(--color-accent) 40%,
+        var(--color-accent-light) 50%,
+        var(--color-accent) 60%
+    );
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.qui-suis-je-citation-texte {
+    display: inline;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-style: italic;
+    line-height: 1.35;
+    background-image: linear-gradient(
+        115deg,
+        var(--color-primary) 40%,
+        var(--color-accent-light) 50%,
+        var(--color-primary) 60%
+    );
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.qui-suis-je-citation-auteur {
+    display: inline;
+    margin: 0 0 0 6px;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    vertical-align: baseline;
+    position: relative;
+    top: 7px;
+    background-image: linear-gradient(
+        115deg,
+        var(--color-accent) 40%,
+        var(--color-accent-light) 50%,
+        var(--color-accent) 60%
+    );
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.universe-nature .qui-suis-je-citation-guillemets {
+    background-image: linear-gradient(
+        115deg,
+        var(--color-nature-h2) 40%,
+        var(--color-nature-bg) 50%,
+        var(--color-nature-h2) 60%
+    );
+}
+
+body.universe-nature .qui-suis-je-citation-texte {
+    background-image: linear-gradient(
+        115deg,
+        var(--color-nature) 40%,
+        var(--color-nature-bg) 50%,
+        var(--color-nature) 60%
+    );
+}
+
+body.universe-nature .qui-suis-je-citation-auteur {
+    background-image: linear-gradient(
+        115deg,
+        var(--color-nature-text) 40%,
+        var(--color-nature-bg) 50%,
+        var(--color-nature-text) 60%
+    );
 }
 
 body.universe-nature .qui-suis-je-citation-interieur p {
     color: var(--color-nature);
 }
 
-body.universe-nature .qui-suis-je-citation-guillemets {
-    color: var(--color-nature-h2);
-}
-
-body.universe-nature .qui-suis-je-citation-auteur {
-    color: var(--color-nature-text);
-}
-
-.qui-suis-je-citation-texte {
-    margin: 0;
-
-    font-family: "Cormorant Garamond", serif;
-
-    color: var(--color-primary);
-
-    font-size: clamp(24px, 3vw, 34px);
-
-    font-style: italic;
-
-    line-height: 1.35;
-}
-
-body.universe-nature .qui-suis-je-citation-texte {
-    color: var(--color-nature);
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-guillemets,
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-texte,
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-auteur {
+    animation: citation-texte-brillance 2.2s ease-in-out;
 }
 
 body.universe-nature .qui-suis-je-citation-interieur {
@@ -2399,23 +2426,6 @@ body.universe-nature .qui-suis-je-citation-interieur:hover {
     box-shadow:
         var(--shadow-box),
         0 0 22px var(--color-nature-h2);
-}
-
-.qui-suis-je-citation-auteur {
-    display: inline-block;
-    margin: 0 0 0 6px;
-    padding: 0;
-
-    font-family: "Lora", serif;
-    color: var(--color-accent);
-    font-size: 20px;
-    font-style: italic;
-
-    text-align: left;
-    vertical-align: baseline;
-
-    position: relative;
-    top: 7px;
 }
 
 /* =========================================================
