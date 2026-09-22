@@ -979,6 +979,10 @@ body.universe-reiki .switch-reiki::before {
     text-decoration: underline;
 }
 
+.bas-page .adresse {
+    text-decoration-color: var(--color-primary);
+}
+
 /* =========================
    WORDPRESS ADMIN BAR
 ========================= */
@@ -1120,6 +1124,10 @@ body.universe-nature .page-me-contacter .me-contacter-info-texte a {
     color: var(--color-nature-text);
 }
 
+body.universe-nature .page-me-contacter .me-contacter-info-texte a:hover {
+    text-decoration-color: var(--color-nature-h2);
+}
+
 /* Adaptation du sous-titre pour la page Réserver (Nature) */
 body.universe-native-nature .page-reserver .reiki-hero p:first-of-type {
     color: var(--color-nature-h2);
@@ -1128,6 +1136,11 @@ body.universe-native-nature .page-reserver .reiki-hero p:first-of-type {
 body.universe-reiki .page-faq .reiki-hero p:first-of-type,
 body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-sub-reiki);
+}
+
+/* Hover underline color for contact card links in Reiki context */
+body.universe-reiki .page-me-contacter .me-contacter-info-texte a:hover {
+    text-decoration-color: var(--color-accent);
 }
 
 .page-qui-suis-je .sous-titre-reiki {
@@ -4337,6 +4350,18 @@ body:has(.page-faq) {
 
     text-align: center;
 }
+/* =========================================================
+   PRENDRE RENDEZ-VOUS – REIKI
+============================================================= */
+.prendre-rendez-vous-reiki-contenu a {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-accent);
+}
+
+.prendre-rendez-vous-reiki-contenu a:hover {
+    color: var(--color-primary-hover);
+    text-decoration-color: var(--color-accent);
+}
 
 /* =========================================================
    PAGE F.A.Q
@@ -5624,10 +5649,12 @@ body.page-template-animations .nature-bouton {
 
 .reserver-contenu a {
     color: var(--color-nature);
+    text-decoration-color: var(--color-nature-h2);
 }
 
 .reserver-contenu a:hover {
     color: var(--color-nature-hover);
+    text-decoration-color: var(--color-nature-h2);
 }
 
 /* =========================================================
