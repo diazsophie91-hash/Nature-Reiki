@@ -22,7 +22,7 @@ get_header(); ?>
 		<h1 id="a-venir-titre">À venir</h1>
 
 		<p>
-			Les prochains thèmes en préparation.
+			Les balades en préparation.
 		</p>
 
 		<div class="nature-ligne-decoration">
