@@ -38,7 +38,7 @@ Template Name: Qui suis-je ?
 		<p>
 			<span class="sous-titre-reiki">Praticienne Reiki</span>
 			<span class="sous-titre-dore">&amp;</span>
-			<span class="sous-titre-nature">Guide-nature et carrière</span><span class="sous-titre-dore">.</span>
+			<span class="sous-titre-nature">Guide-nature et carrière</span><span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="reiki-ligne-decoration">

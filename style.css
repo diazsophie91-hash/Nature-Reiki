@@ -1190,6 +1190,15 @@ body.universe-native-nature .page-qui-suis-je .sous-titre-dore {
     color: var(--color-accent);
 }
 
+.page-qui-suis-je .sous-titre-point {
+    color: var(--color-accent-old);
+}
+
+body.universe-nature .page-qui-suis-je .sous-titre-point,
+body.universe-native-nature .page-qui-suis-je .sous-titre-point {
+    color: var(--color-nature-h2);
+}
+
 /* =========================
    LIGNE + LOTUS
 ========================= */
