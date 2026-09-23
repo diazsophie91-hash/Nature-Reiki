@@ -2294,8 +2294,6 @@ body.universe-native-nature .separateur-dore {
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
-
-    --grad-pos: 100%;
 }
 
 
@@ -2306,18 +2304,16 @@ body.universe-native-nature .separateur-dore {
     box-shadow:
         var(--shadow-box),
         0 0 22px var(--color-accent-border-50);
-
-    animation: citation-texte-brillance 2.2s ease-in-out;
 }
 
 
 @keyframes citation-texte-brillance {
     0% {
-        --grad-pos: 100%;
+        background-position: 100% 0;
     }
 
     100% {
-        --grad-pos: 0%;
+        background-position: 0% 0;
     }
 }
 
@@ -2329,7 +2325,7 @@ body.universe-native-nature .separateur-dore {
         var(--color-accent) 60%
     );
     background-size: 250% 100%;
-    background-position: var(--grad-pos) 0;
+    background-position: 100% 0;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2349,7 +2345,7 @@ body.universe-native-nature .separateur-dore {
         var(--color-primary) 60%
     );
     background-size: 250% 100%;
-    background-position: var(--grad-pos) 0;
+    background-position: 100% 0;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2373,7 +2369,7 @@ body.universe-native-nature .separateur-dore {
         var(--color-accent) 60%
     );
     background-size: 250% 100%;
-    background-position: var(--grad-pos) 0;
+    background-position: 100% 0;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2386,7 +2382,6 @@ body.universe-nature .qui-suis-je-citation-guillemets {
         var(--color-nature-bg) 50%,
         var(--color-nature-h2) 60%
     );
-    background-position: var(--grad-pos) 0;
 }
 
 body.universe-nature .qui-suis-je-citation-texte {
@@ -2396,7 +2391,6 @@ body.universe-nature .qui-suis-je-citation-texte {
         var(--color-nature-bg) 50%,
         var(--color-nature) 60%
     );
-    background-position: var(--grad-pos) 0;
 }
 
 body.universe-nature .qui-suis-je-citation-auteur {
@@ -2406,14 +2400,17 @@ body.universe-nature .qui-suis-je-citation-auteur {
         var(--color-nature-bg) 50%,
         var(--color-nature-text) 60%
     );
-    background-position: var(--grad-pos) 0;
 }
 
 body.universe-nature .qui-suis-je-citation-interieur p {
     color: var(--color-nature);
 }
 
-
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-guillemets,
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-texte,
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-auteur {
+    animation: citation-texte-brillance 2.2s ease-in-out;
+}
 
 body.universe-nature .qui-suis-je-citation-interieur {
     background-image:
