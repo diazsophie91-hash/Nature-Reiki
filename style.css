@@ -1183,11 +1183,11 @@ body.universe-nature .page-qui-suis-je .sous-titre-reiki {
     color: var(--color-accent-old);
 }
 
-/* Dor� → brun en contexte Nature */
+/* Doré → brun en contexte Nature */
 
 body.universe-nature .page-qui-suis-je .sous-titre-dore,
 body.universe-native-nature .page-qui-suis-je .sous-titre-dore {
-    color: var(--color-nature-menu-border);
+    color: var(--color-accent);
 }
 
 /* =========================
@@ -2303,15 +2303,32 @@ body.universe-native-nature .separateur-dore {
 
     box-shadow:
         var(--shadow-box),
-        0 0 22px var(--color-accent-border-50);
+        0 0 22px var(--color-accent-border);
 }
 
+
+@keyframes citation-guillemets-brillance {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0% 0;
+    }
+}
 
 @keyframes citation-texte-brillance {
     0% {
         background-position: 100% 0;
     }
+    100% {
+        background-position: 0% 0;
+    }
+}
 
+@keyframes citation-auteur-brillance {
+    0% {
+        background-position: 100% 0;
+    }
     100% {
         background-position: 0% 0;
     }
@@ -2406,10 +2423,20 @@ body.universe-nature .qui-suis-je-citation-interieur p {
     color: var(--color-nature);
 }
 
-.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-guillemets,
-.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-texte,
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-guillemets:first-of-type {
+    animation: citation-guillemets-brillance 3s ease-out 0s;
+}
+
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-texte {
+    animation: citation-texte-brillance 3s ease-out 0.8s;
+}
+
+.qui-suis-je-citation-interieur:hover .qui-suis-je-citation-guillemets:nth-of-type(3) {
+    animation: citation-guillemets-brillance 1.2s ease-out 2.4s;
+}
+
 .qui-suis-je-citation-interieur:hover .qui-suis-je-citation-auteur {
-    animation: citation-texte-brillance 2.2s ease-in-out;
+    animation: citation-auteur-brillance 1.6s ease-out 2.8s;
 }
 
 body.universe-nature .qui-suis-je-citation-interieur {
