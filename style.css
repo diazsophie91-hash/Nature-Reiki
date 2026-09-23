@@ -5502,7 +5502,7 @@ body.page-template-animations .nature-bouton {
 
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--color-nature-h2);
+    color: var(--color-nature);
 
     font-size: clamp(26px, 2.8vw, 34px);
 
@@ -5534,6 +5534,22 @@ body.page-template-animations .nature-bouton {
     gap: 14px;
 
     margin-top: 18px;
+}
+
+.page-qui-suis-je .nature-cta-boutons .nature-bouton,
+.page-a-venir .nature-cta-boutons .nature-bouton,
+body.page-template-a-venir .nature-cta-boutons .nature-bouton {
+    font-weight: 600;
+    background: var(--color-nature-h2);
+    color: var(--color-white-warm);
+}
+
+.page-qui-suis-je .nature-cta-boutons .nature-bouton:hover,
+.page-a-venir .nature-cta-boutons .nature-bouton:hover,
+body.page-template-a-venir .nature-cta-boutons .nature-bouton:hover {
+    background: var(--color-nature-h2);
+    color: var(--color-white-warm);
+    transform: translateY(-2px);
 }
 
 /* =========================================================
