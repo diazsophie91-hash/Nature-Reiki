@@ -64,7 +64,7 @@ Template Name: Qui suis-je ?
 				src="
 				<?php
 				echo esc_url(
-					nature_reiki_asset_url( 'images/feuille-chene.png' )
+					nature_reiki_asset_url( 'images/feuille-chene.svg' )
 				);
 				?>
 				"

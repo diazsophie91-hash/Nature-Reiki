@@ -31,7 +31,7 @@ get_header(); ?>
 			<span></span>
 
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				loading="lazy"
@@ -90,13 +90,13 @@ get_header(); ?>
 			array(
 				'titre'       => 'Groupes privés',
 				'description' => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
-				'image'       => 'images/feuille-chene.png',
+				'image'       => 'images/feuille-chene.svg',
 				'variante'    => 'nature-carte--verte',
 			),
 			array(
 				'titre'       => 'Écoles',
 				'description' => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
-				'image'       => 'images/feuille-chene.png',
+				'image'       => 'images/feuille-chene.svg',
 				'variante'    => 'nature-carte--bleue',
 			),
 			array(

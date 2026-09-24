@@ -31,7 +31,7 @@ get_header(); ?>
 			<span></span>
 
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				loading="lazy"
@@ -86,7 +86,7 @@ get_header(); ?>
 			'description'   => 'Des animations sur mesure pour les familles, les écoles, les entreprises et les groupes privés.',
 			'url'           => home_url( '/animations/' ),
 			'bouton_text'   => 'Découvrir les animations →',
-			'image'         => 'images/feuille-chene.png',
+			'image'         => 'images/feuille-chene.svg',
 		),
 	);
 	?>

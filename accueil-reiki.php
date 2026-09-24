@@ -86,7 +86,7 @@ $bannieres = array(
 		'description'     => 'Un accompagnement personnalisé pour retrouver équilibre et harmonie.',
 		'url'             => home_url( '/soins-reiki/' ),
 		'bouton_text'     => 'Découvrir les soins →',
-		'image'           => 'images/pendule.png',
+		'image'           => 'images/pendule.svg',
 		'image_alt'       => 'Pendule de Reiki',
 	),
 );

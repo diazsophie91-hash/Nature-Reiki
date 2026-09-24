@@ -30,7 +30,7 @@ get_header(); ?>
 			<span></span>
 
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				loading="lazy"
@@ -106,21 +106,21 @@ get_header(); ?>
 			array(
 				'titre'     => 'La forêt autrement',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.png',
+				'image'     => 'images/feuille-chene.svg',
 				'variante'  => 'nature-carte--brune',
 				'contenu'   => '<p>La forêt est un lieu où l’on peut être au calme, s’émerveiller et simplement se sentir exister. Dans cette balade, nous apprendrons à l’observer autrement, à ralentir et à écouter ce qu’elle a à nous dire.</p><p>Chaque pas devient une rencontre avec le vivant, les plantes sauvages, les arbres et les animaux qui l’habitent.</p>',
 			),
 			array(
 				'titre'     => 'Traces et indices en forêt',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.png',
+				'image'     => 'images/feuille-chene.svg',
 				'variante'  => 'nature-carte--brune',
 				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à lire les traces, les indices et les signes discrets qui révèlent la présence de la vie dans la forêt.</p>',
 			),
 			array(
 				'titre'     => 'Cuisine sauvage',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.png',
+				'image'     => 'images/feuille-chene.svg',
 				'variante'  => 'nature-carte--bleue',
 				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à reconnaître les plantes sauvages comestibles, à les observer et à les intégrer avec respect dans notre cuisine quotidienne.</p>',
 			),

@@ -30,7 +30,7 @@ get_header(); ?>
 			<span></span>
 
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				loading="lazy"
@@ -91,7 +91,7 @@ get_header(); ?>
 			array(
 				'titre'       => 'Balade dans les vignes',
 				'description' => 'Une balade au fil des vignes, pour découvrir ce milieu particulier, son paysage et la vie qui s’y installe.',
-				'image'       => 'images/feuille-chene.png',
+				'image'       => 'images/feuille-chene.svg',
 				'variante'    => 'nature-carte--bleue',
 			),
 		);

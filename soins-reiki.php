@@ -84,7 +84,7 @@ $soins = array(
 	),
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
-		'image'         => 'images/feuille-chene.png',
+		'image'         => 'images/feuille-chene.svg',
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
 		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
@@ -196,7 +196,7 @@ foreach ( $soins as $soin ) :
 						src="
 						<?php
 						echo esc_url(
-							nature_reiki_asset_url( 'images/pendule.png' )
+							nature_reiki_asset_url( 'images/pendule.svg' )
 						);
 						?>
 						"

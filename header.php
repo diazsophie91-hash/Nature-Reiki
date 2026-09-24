@@ -56,7 +56,7 @@ if ( $is_reiki ) {
 			class="switch-nature <?php echo $is_nature ? 'actif' : ''; ?>"
 		>
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				class="switch-symbole"
