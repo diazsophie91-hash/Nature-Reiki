@@ -30,7 +30,7 @@ Template Name: Soins Reiki
 				src="
 				<?php
 				echo esc_url(
-					nature_reiki_asset_url( 'images/lotus.png' )
+					nature_reiki_asset_url( 'images/lotus.svg' )
 				);
 				?>
 				"
@@ -76,7 +76,7 @@ $soins = array(
 	),
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
-		'image'         => 'images/lotus.png',
+		'image'         => 'images/lotus.svg',
 		'titre'         => 'Séance unique',
 		'prix'          => '55 €',
 		'description'   => 'Une séance ponctuelle pour découvrir le Reiki, prendre un moment pour vous et bénéficier d’un soin adapté à vos besoins du moment.',

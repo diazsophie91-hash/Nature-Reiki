@@ -40,7 +40,7 @@ $guide_nature_questions = array(
 	<p>Les réponses à vos questions.</p>
 	<div class="reiki-ligne-decoration">
 		<span></span>
-		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.png' ) ); ?>" alt="">
+		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>" alt="">
 		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.png' ) ); ?>" alt="">
 		<span></span>
 	</div>

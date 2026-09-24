@@ -22,7 +22,7 @@ Template Name: Accueil Reiki
 		<span></span>
 
 		<img
-			src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.png' ) ); ?>"
+			src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>"
 			alt=""
 			aria-hidden="true"
 			loading="lazy"
@@ -70,7 +70,7 @@ $bannieres = array(
 		'description'     => 'Une courte introduction au Reiki.',
 		'url'             => home_url( '/le-reiki/' ),
 		'bouton_text'     => 'En savoir plus →',
-		'image'           => 'images/lotus.png',
+		'image'           => 'images/lotus.svg',
 		'image_alt'       => '',
 	),
 	array(

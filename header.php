@@ -80,7 +80,7 @@ if ( $is_reiki ) {
 		>
 			Reiki
 			<img
-				src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.png' ) ); ?>"
+				src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
 				class="switch-symbole"

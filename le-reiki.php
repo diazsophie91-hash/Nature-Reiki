@@ -29,7 +29,7 @@ Template Name: Le Reiki
 				src="
 				<?php
 				echo esc_url(
-					nature_reiki_asset_url( 'images/lotus.png' )
+					nature_reiki_asset_url( 'images/lotus.svg' )
 				);
 				?>
 				"

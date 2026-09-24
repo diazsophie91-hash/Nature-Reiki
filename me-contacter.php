@@ -29,7 +29,7 @@ get_header();
 			src="
 			<?php
 			echo esc_url(
-				nature_reiki_asset_url( 'images/lotus.png' )
+				nature_reiki_asset_url( 'images/lotus.svg' )
 			);
 			?>
 			"
@@ -212,7 +212,7 @@ get_header();
 							src="
 							<?php
 							echo esc_url(
-								nature_reiki_asset_url( 'images/lotus.png' )
+								nature_reiki_asset_url( 'images/lotus.svg' )
 							);
 							?>
 							"
