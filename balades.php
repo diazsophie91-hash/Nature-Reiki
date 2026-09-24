@@ -92,7 +92,7 @@ get_header(); ?>
 			array(
 				'titre'     => 'Sur les pas des Celtes à nos jours',
 				'mention'   => '',
-				'image'     => 'images/chene.png',
+				'image'     => 'images/celte.svg',
 				'variante'  => 'nature-carte--verte',
 				'contenu'   => '<p>Depuis mon enfance, la nature a toujours occupé une place particulière dans ma vie. Les plantes, les arbres, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité.</p><p>Cette balade invite à marcher, observer et comprendre, en suivant les traces de ceux qui nous ont précédés et en découvrant l’histoire qui s’écrit autour de nous, entre terre et ciel.</p>',
 			),

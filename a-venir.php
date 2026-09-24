@@ -85,13 +85,13 @@ get_header(); ?>
 			array(
 				'titre'       => 'Balade champignons',
 				'description' => 'Une sortie consacrée à l’observation des champignons : où les chercher, comment les regarder et quel rôle ils jouent dans la forêt.',
-				'image'       => 'images/chene.png',
+				'image'       => 'images/champignon.svg',
 				'variante'    => 'nature-carte--brune',
 			),
 			array(
 				'titre'       => 'Balade dans les vignes',
 				'description' => 'Une balade au fil des vignes, pour découvrir ce milieu particulier, son paysage et la vie qui s’y installe.',
-				'image'       => 'images/feuille-chene.svg',
+				'image'       => 'images/vigne.png',
 				'variante'    => 'nature-carte--bleue',
 			),
 		);
