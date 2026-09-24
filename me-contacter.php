@@ -125,7 +125,7 @@ get_header();
 						src="
 						<?php
 						echo esc_url(
-							nature_reiki_asset_url( 'images/mail.png' )
+							nature_reiki_asset_url( 'images/mail.svg' )
 						);
 						?>
 						"
