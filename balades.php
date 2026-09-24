@@ -106,7 +106,7 @@ get_header(); ?>
 			array(
 				'titre'     => 'La forêt autrement',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.svg',
+				'image'     => 'images/miroir.png',
 				'variante'  => 'nature-carte--brune',
 				'contenu'   => '<p>La forêt est un lieu où l’on peut être au calme, s’émerveiller et simplement se sentir exister. Dans cette balade, nous apprendrons à l’observer autrement, à ralentir et à écouter ce qu’elle a à nous dire.</p><p>Chaque pas devient une rencontre avec le vivant, les plantes sauvages, les arbres et les animaux qui l’habitent.</p>',
 			),
@@ -127,7 +127,7 @@ get_header(); ?>
 			array(
 				'titre'     => 'Découverte carrières',
 				'mention'   => '',
-				'image'     => 'images/chene.png',
+				'image'     => 'images/pierres.png',
 				'variante'  => 'nature-carte--bleue',
 				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à découvrir les carrières, à comprendre leur histoire, leur géologie et la manière dont elles participent à la richesse du paysage et de la biodiversité locale.</p>',
 			),
