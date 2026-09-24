@@ -23,7 +23,7 @@ get_header(); ?>
 		<h1 id="nature-titre">Guide Nature</h1>
 
 		<p>
-			Explorer, observer, s’émerveiller.
+			Explorer, observer, s’émerveiller<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="nature-ligne-decoration">

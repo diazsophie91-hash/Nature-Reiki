@@ -19,7 +19,7 @@ Template Name: Prendre rendez-vous — Reiki
 		<h1>Prendre rendez-vous</h1>
 
 		<p>
-			Réservez votre soin Reiki.
+			Réservez votre soin Reiki<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="reiki-ligne-decoration">

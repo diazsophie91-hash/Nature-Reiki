@@ -14,7 +14,7 @@ Template Name: Accueil Reiki
 	<h1 id="reiki-titre">Reiki</h1>
 
 	<p>
-		Un moment pour soi.
+		Un moment pour soi<span class="sous-titre-point">.</span>
 	</p>
 
 	<div class="reiki-ligne-decoration">

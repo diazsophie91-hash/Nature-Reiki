@@ -19,7 +19,7 @@ Template Name: Soins Reiki
 		<h1>Soins Reiki</h1>
 
 		<p>
-			Prendre soin de soi, autrement.
+			Prendre soin de soi, autrement<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="reiki-ligne-decoration">

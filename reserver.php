@@ -11,7 +11,7 @@ Template Name: Réserver - Nature
 <main class="page-nature page-reserver" id="main-content">
 	<section class="reiki-hero">
 		<h1>Réserver</h1>
-		<p>Réservez votre expérience Nature.</p>
+		<p>Réservez votre expérience Nature<span class="sous-titre-point">.</span></p>
 		<div class="reiki-ligne-decoration">
 			<span></span>
 			<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>" alt="">

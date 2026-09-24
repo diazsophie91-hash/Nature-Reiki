@@ -18,7 +18,7 @@ Template Name: Le Reiki
 		<h1>Le Reiki</h1>
 
 		<p>
-			Un accompagnement par l'énergie, pour soi.
+			Un accompagnement par l'énergie, pour soi<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="reiki-ligne-decoration">

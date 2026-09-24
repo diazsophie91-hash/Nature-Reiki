@@ -23,7 +23,7 @@ get_header(); ?>
 		<h1 id="animations-titre">Animations</h1>
 
 		<p>
-			Découvrir la nature, ensemble.
+			Découvrir la nature, ensemble<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="nature-ligne-decoration">

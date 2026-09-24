@@ -37,7 +37,7 @@ $guide_nature_questions = array(
 
 <section class="reiki-hero">
 	<h1>F.A.Q</h1>
-	<p>Les réponses à vos questions.</p>
+	<p>Les réponses à vos questions<span class="sous-titre-point">.</span></p>
 	<div class="reiki-ligne-decoration">
 		<span></span>
 		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>" alt="">

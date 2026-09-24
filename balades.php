@@ -22,7 +22,7 @@ get_header(); ?>
 		<h1 id="balades-titre">Balades</h1>
 
 		<p>
-			Marcher, observer, comprendre.
+			Marcher, observer, comprendre<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="nature-ligne-decoration">

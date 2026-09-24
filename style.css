@@ -1199,6 +1199,19 @@ body.universe-native-nature .page-qui-suis-je .sous-titre-point {
     color: var(--color-nature-h2);
 }
 
+/* Couleur du point final des sous-titres (exclut Qui suis-je) */
+body:not(.page-qui-suis-je).universe-reiki .reiki-hero .sous-titre-point,
+body:not(.page-qui-suis-je).universe-reiki .nature-hero .sous-titre-point {
+    color: var(--color-accent);
+}
+
+body:not(.page-qui-suis-je).universe-nature .reiki-hero .sous-titre-point,
+body:not(.page-qui-suis-je).universe-nature .nature-hero .sous-titre-point,
+body:not(.page-qui-suis-je).universe-native-nature .reiki-hero .sous-titre-point,
+body:not(.page-qui-suis-je).universe-native-nature .nature-hero .sous-titre-point {
+    color: var(--color-nature-text);
+}
+
 /* =========================
    LIGNE + LOTUS
 ========================= */

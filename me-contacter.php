@@ -18,7 +18,7 @@ get_header();
 
 	<p>
 		Une demande d’information ?
-		Je vous invite à me contacter directement.
+		Je vous invite à me contacter directement<span class="sous-titre-point">.</span>
 	</p>
 
 	<div class="reiki-ligne-decoration">
