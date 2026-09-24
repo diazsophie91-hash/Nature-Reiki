@@ -90,7 +90,7 @@ get_header(); ?>
 			array(
 				'titre'       => 'Groupes privés',
 				'description' => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
-				'image'       => 'images/feuille-chene.svg',
+				'image'       => 'images/groupe.svg',
 				'variante'    => 'nature-carte--verte',
 			),
 			array(
