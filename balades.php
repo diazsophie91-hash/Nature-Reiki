@@ -113,14 +113,14 @@ get_header(); ?>
 			array(
 				'titre'     => 'Traces et indices en forêt',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.svg',
+				'image'     => 'images/trace.svg',
 				'variante'  => 'nature-carte--brune',
 				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à lire les traces, les indices et les signes discrets qui révèlent la présence de la vie dans la forêt.</p>',
 			),
 			array(
 				'titre'     => 'Cuisine sauvage',
 				'mention'   => '',
-				'image'     => 'images/feuille-chene.svg',
+				'image'     => 'images/cuisine.png',
 				'variante'  => 'nature-carte--bleue',
 				'contenu'   => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à reconnaître les plantes sauvages comestibles, à les observer et à les intégrer avec respect dans notre cuisine quotidienne.</p>',
 			),
