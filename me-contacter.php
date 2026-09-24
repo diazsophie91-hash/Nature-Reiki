@@ -159,7 +159,7 @@ get_header();
 						src="
 						<?php
 						echo esc_url(
-							nature_reiki_asset_url( 'images/smartphone.png' )
+							nature_reiki_asset_url( 'images/smartphone.svg' )
 						);
 						?>
 						"
