@@ -174,7 +174,7 @@ function nature_reiki_is_nature_context() {
 function nature_reiki_body_classes( $classes ) {
 	if ( nature_reiki_is_nature_context() ) {
 		$classes[] = 'universe-nature';
-	} else {
+	} elseif ( nature_reiki_is_reiki_context() ) {
 		$classes[] = 'universe-reiki';
 	}
 
