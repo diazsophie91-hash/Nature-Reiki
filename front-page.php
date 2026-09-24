@@ -245,7 +245,7 @@
 				src="
 				<?php
 				echo esc_url(
-					nature_reiki_asset_url( 'images/coeur.png' )
+					nature_reiki_asset_url( 'images/coeur.svg' )
 				);
 				?>
 				"
