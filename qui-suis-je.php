@@ -35,14 +35,58 @@ Template Name: Qui suis-je ?
 
 		<h1>Joëlle Siwek</h1>
 
+		<?php
+	/*
+	 * Sous-titre inversé en contexte Nature
+	 */
+	if ( $est_nature ) : ?>
+		<p>
+			<span class="sous-titre-nature">Guide-nature et carrière</span>
+			<span class="sous-titre-dore">&amp;</span>
+			<span class="sous-titre-reiki">Praticienne Reiki</span><span class="sous-titre-point">.</span>
+		</p>
+	<?php else : ?>
 		<p>
 			<span class="sous-titre-reiki">Praticienne Reiki</span>
 			<span class="sous-titre-dore">&amp;</span>
 			<span class="sous-titre-nature">Guide-nature et carrière</span><span class="sous-titre-point">.</span>
 		</p>
+	<?php endif; ?>
 
+	<?php if ( $est_nature ) : ?>
 		<div class="reiki-ligne-decoration">
+			<span></span>
+			<img
+				src="
+				<?php
+				echo esc_url(
+					nature_reiki_asset_url( 'images/feuille-chene.svg' )
+				);
+				?>
+				"
+				alt=""
+				aria-hidden="true"
+				loading="lazy"
+				decoding="async"
+				>
 
+			<img
+				src="
+				<?php
+				echo esc_url(
+					nature_reiki_asset_url( 'images/lotus.svg' )
+				);
+				?>
+				"
+				alt=""
+				aria-hidden="true"
+				loading="lazy"
+				decoding="async"
+				>
+			<span></span>
+		</div>
+	<?php else : ?>
+		<div class="reiki-ligne-decoration">
 			<span></span>
 
 			<img
@@ -59,7 +103,6 @@ Template Name: Qui suis-je ?
 				decoding="async"
 				>
 
-
 			<img
 				src="
 				<?php
@@ -74,10 +117,9 @@ Template Name: Qui suis-je ?
 				decoding="async"
 				>
 
-
 			<span></span>
-
 		</div>
+	<?php endif; ?>
 
 	</section>
 
@@ -295,7 +337,7 @@ Template Name: Qui suis-je ?
 			src="
 			<?php
 			echo esc_url(
-				nature_reiki_asset_url( 'images/lignee-reiki.svg' )
+				$est_nature ? nature_reiki_asset_url( 'images/lignee-nature.svg' ) : nature_reiki_asset_url( 'images/lignee-reiki.svg' )
 			);
 			?>
 			"

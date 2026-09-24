@@ -1247,6 +1247,24 @@ body.universe-native-nature .reiki-ligne-decoration span {
     flex-shrink: 0;
 }
 
+/* Inverser l'ordre des images dans l'univers Nature */
+body.universe-nature .page-faq .reiki-ligne-decoration img:nth-of-type(1),
+body.universe-nature .page-me-contacter .reiki-ligne-decoration img:nth-of-type(1) {
+    order: 3;
+}
+body.universe-nature .page-faq .reiki-ligne-decoration img:nth-of-type(2),
+body.universe-nature .page-me-contacter .reiki-ligne-decoration img:nth-of-type(2) {
+    order: 2;
+}
+body.universe-nature .page-faq .reiki-ligne-decoration span:nth-of-type(1),
+body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type(1) {
+    order: 1;
+}
+body.universe-nature .page-faq .reiki-ligne-decoration span:nth-of-type(2),
+body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type(2) {
+    order: 4;
+}
+
 /* =========================
    MENUS HORIZONTAUX
 ========================= */
