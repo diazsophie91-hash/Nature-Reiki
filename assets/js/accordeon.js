@@ -68,34 +68,45 @@
         }
 
         /**
-         * Association entre un conteneur d'accordéon et son sélecteur de contenu.
-         * Permet à recalculerHauteurs() de déterminer quel contenu recalcular
-         * sans duplication de logique spécifique aux classes.
+         * Configuration partagée des accordéons animés (max-height).
+         * Centralise les sélecteurs du conteneur et du contenu pour éviter toute duplication,
+         * afin que initToggle() et recalculerHauteurs() les réutilisent.
          */
-        var containerContentSelectors = {
-            'soin-reiki-card': '.soin-reiki-details',
-            'soins-reiki-accordeon': '.soins-reiki-accordeon-contenu',
-            'nature-carte': '.nature-carte-details'
-        };
+        var accordionConfigs = [
+            {
+                boutonSelector: '.soin-reiki-en-savoir-plus',
+                containerSelector: '.soin-reiki-card',
+                contenuSelector: '.soin-reiki-details',
+                animate: true
+            },
+            {
+                boutonSelector: '.soins-reiki-accordeon-bouton',
+                containerSelector: '.soins-reiki-accordeon',
+                contenuSelector: '.soins-reiki-accordeon-contenu',
+                animate: true
+            },
+            {
+                boutonSelector: '.nature-carte-en-savoir-plus',
+                containerSelector: '.nature-carte',
+                contenuSelector: '.nature-carte-details',
+                animate: true
+            }
+        ];
 
         /**
          * Recalcule la hauteur des accordéons ouverts lors du redimensionnement.
-         * Les sélecteurs de conteneur et de contenu sont factorisés via containerContentSelectors.
+         * Utilise les configurations centralisées dans accordionConfigs pour éviter
+         * toute duplication de sélecteurs.
          */
         function recalculerHauteurs() {
-            var ouverts = document.querySelectorAll( '.ouvert' );
-            var j, container, contenu, className;
-            for ( j = 0; j < ouverts.length; j++ ) {
-                container = ouverts[ j ];
-                contenu = null;
-                for ( className in containerContentSelectors ) {
-                    if ( container.classList.contains( className ) ) {
-                        contenu = container.querySelector( containerContentSelectors[ className ] );
-                        break;
+            for ( var a = 0; a < accordionConfigs.length; a++ ) {
+                var config = accordionConfigs[ a ];
+                var containers = document.querySelectorAll( config.containerSelector + '.ouvert' );
+                for ( var j = 0; j < containers.length; j++ ) {
+                    var contenu = containers[ j ].querySelector( config.contenuSelector );
+                    if ( contenu && contenu.style.maxHeight && contenu.style.maxHeight !== '0px' ) {
+                        contenu.style.maxHeight = contenu.scrollHeight + 'px';
                     }
-                }
-                if ( contenu && contenu.style.maxHeight && contenu.style.maxHeight !== '0px' ) {
-                    contenu.style.maxHeight = contenu.scrollHeight + 'px';
                 }
             }
         }
@@ -108,22 +119,6 @@
 
         // Accordéon simple "Le Reiki" — animé via CSS (.ouvert).
         initToggle( { boutonSelector: '.le-reiki-toggle' } );
-
-        // Accordéon "En savoir plus" des cartes de soins — animé via max-height.
-        initToggle( {
-            boutonSelector: '.soin-reiki-en-savoir-plus',
-            containerSelector: '.soin-reiki-card',
-            contenuSelector: '.soin-reiki-details',
-            animate: true
-        } );
-
-        // Accordéons d'informations détaillées (soins-reiki) — animé via max-height.
-        initToggle( {
-            boutonSelector: '.soins-reiki-accordeon-bouton',
-            containerSelector: '.soins-reiki-accordeon',
-            contenuSelector: '.soins-reiki-accordeon-contenu',
-            animate: true
-        } );
 
         // Boutons d'ouverture/fermeture d'un univers en FAQ — utilise `hidden`.
         initToggle( {
@@ -142,7 +137,7 @@
                 contenuUnivers = univers.querySelector( '.faq-univers-contenu' );
                 if ( contenuUnivers ) {
                     contenuUnivers.hidden = false;
-                     contenuUnivers.setAttribute( 'aria-hidden', 'false' );
+                    contenuUnivers.setAttribute( 'aria-hidden', 'false' );
                 }
                 questions = univers.querySelectorAll( '.soins-reiki-accordeon' );
                 for ( q = 0; q < questions.length; q++ ) {
@@ -152,7 +147,7 @@
                     boutonQuestion  = question.querySelector( '.soins-reiki-accordeon-bouton' );
                     if ( contenuQuestion ) {
                         contenuQuestion.style.maxHeight = '0px';
-                         contenuQuestion.setAttribute( 'aria-hidden', 'true' );
+                        contenuQuestion.setAttribute( 'aria-hidden', 'true' );
                     }
                     if ( boutonQuestion ) {
                         boutonQuestion.setAttribute( 'aria-expanded', 'false' );
@@ -161,13 +156,10 @@
             }
         }() );
 
-        // Accordéon « En savoir plus » des cartes Nature — animé via max-height.
-        initToggle( {
-            boutonSelector: '.nature-carte-en-savoir-plus',
-            containerSelector: '.nature-carte',
-            contenuSelector: '.nature-carte-details',
-            animate: true
-        } );
+        // Initialisation des accordéons animés via la configuration centralisée.
+        for ( var a = 0; a < accordionConfigs.length; a++ ) {
+            initToggle( accordionConfigs[ a ] );
+        }
 
     } );
 
