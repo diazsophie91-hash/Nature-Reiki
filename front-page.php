@@ -39,7 +39,6 @@
 					"
 					alt=""
 					aria-hidden="true"
-					loading="lazy"
 					decoding="async"
 					class="symbole-chene"
 				>
@@ -54,7 +53,6 @@
 					"
 					alt=""
 					aria-hidden="true"
-					loading="lazy"
 					decoding="async"
 					class="symbole-lotus"
 				>

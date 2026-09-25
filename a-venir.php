@@ -33,7 +33,6 @@ get_header(); ?>
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
 				aria-hidden="true"
-				loading="lazy"
 				decoding="async"
 			>
 

@@ -35,7 +35,6 @@ Template Name: Le Reiki
 				"
 				alt=""
 				aria-hidden="true"
-				loading="lazy"
 				decoding="async"
 			>
 

@@ -35,7 +35,7 @@ get_header();
 			"
 			alt=""
 			aria-hidden="true"
-			loading="lazy"
+			
 				decoding="async"
 			>
 
@@ -50,7 +50,7 @@ get_header();
 			"
 			alt=""
 			aria-hidden="true"
-			loading="lazy"
+			
 				decoding="async"
 			>
 
