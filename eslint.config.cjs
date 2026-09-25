@@ -2,7 +2,10 @@ const globals = require("globals");
 
 module.exports = [
     {
-        ignores: ["vendor/**", "node_modules/**"],
+        ignores: [
+            "vendor/**",
+            "node_modules/**",
+        ],
     },
     {
         files: ["**/*.js"],
@@ -13,6 +16,15 @@ module.exports = [
                 ...globals.browser,
             },
         },
-        rules: {},
+        rules: {
+            "no-unused-vars": "warn",
+            "no-undef": "error",
+            "no-redeclare": "error",
+            "no-unreachable": "error",
+            "no-constant-condition": "error",
+            "eqeqeq": ["error", "always"],
+            "curly": ["error", "all"],
+            "semi": ["error", "always"],
+        },
     },
 ];
