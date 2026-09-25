@@ -66,7 +66,7 @@ Template Name: Qui suis-je ?
 				"
 				alt=""
 				aria-hidden="true"
-				
+
 				decoding="async"
 				>
 
@@ -80,7 +80,7 @@ Template Name: Qui suis-je ?
 				"
 				alt=""
 				aria-hidden="true"
-				
+
 				decoding="async"
 				>
 			<span></span>
@@ -99,7 +99,7 @@ Template Name: Qui suis-je ?
 				"
 				alt=""
 				aria-hidden="true"
-				
+
 				decoding="async"
 				>
 
@@ -113,7 +113,7 @@ Template Name: Qui suis-je ?
 				"
 				alt=""
 				aria-hidden="true"
-				
+
 				decoding="async"
 				>
 

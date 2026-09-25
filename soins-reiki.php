@@ -36,7 +36,7 @@ Template Name: Soins Reiki
 				"
 				alt=""
 							aria-hidden="true"
-							
+
 							decoding="async"
 			>
 
