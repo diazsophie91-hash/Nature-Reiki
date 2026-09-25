@@ -96,7 +96,7 @@ get_header(); ?>
 			array(
 				'titre'       => 'Écoles',
 				'description' => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
-				'image'       => 'images/feuille-chene.svg',
+				'image'       => 'images/sac.png',
 				'variante'    => 'nature-carte--bleue',
 			),
 			array(

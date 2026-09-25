@@ -1,103 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
-  <defs>
-    <linearGradient id="leather" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6f3d27"/>
-      <stop offset="0.45" stop-color="#4b2418"/>
-      <stop offset="1" stop-color="#32160f"/>
-    </linearGradient>
-    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#713f2a"/>
-      <stop offset="0.5" stop-color="#4a2318"/>
-      <stop offset="1" stop-color="#35170f"/>
-    </linearGradient>
-    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fff0a0"/>
-      <stop offset="0.35" stop-color="#d9a92e"/>
-      <stop offset="0.7" stop-color="#9b6910"/>
-      <stop offset="1" stop-color="#f1cb55"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
-      <feOffset dy="18"/>
-      <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
-      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Mallette vectorielle — contours uniquement -->
+  <g stroke-linecap="round" stroke-linejoin="round">
 
-  <!-- subtle ground shadow -->
-  <ellipse cx="610" cy="785" rx="500" ry="48" fill="#000" opacity=".18"/>
+    <!-- POIGNÉE : NE PAS MODIFIER -->
+    <path d="M184 145 V108
+             C184 88 198 76 218 76
+             H294
+             C314 76 328 88 328 108
+             V145"
+          fill="none" stroke="#6a5745" stroke-width="14"/>
 
-  <!-- handle -->
-  <path d="M390 230 C410 95 510 58 600 58 C690 58 790 95 810 230"
-        fill="none" stroke="#2a120c" stroke-width="62" stroke-linecap="round"/>
-  <path d="M390 230 C410 95 510 58 600 58 C690 58 790 95 810 230"
-        fill="none" stroke="url(#leather)" stroke-width="46" stroke-linecap="round"/>
-  <path d="M410 207 C430 111 515 81 600 81 C685 81 770 111 790 207"
-        fill="none" stroke="#3f7047" stroke-width="3" stroke-dasharray="8 7"/>
+    <path d="M201 145 V113
+             C201 101 208 93 220 93
+             H292
+             C304 93 311 101 311 113
+             V145"
+          fill="none" stroke="#6a5745" stroke-width="8"/>
 
-  <!-- handle mounts -->
-  <g fill="url(#brass)" stroke="#69430b" stroke-width="5">
-    <rect x="360" y="198" width="54" height="70" rx="12"/>
-    <rect x="786" y="198" width="54" height="70" rx="12"/>
-  </g>
-  <g fill="#4a2418" stroke="#2a120c" stroke-width="7">
-    <rect x="350" y="238" width="78" height="30" rx="8"/>
-    <rect x="772" y="238" width="78" height="30" rx="8"/>
-  </g>
+    <!-- Corps blanc -->
+    <path d="M103 154 H409
+             C424 154 436 166 436 181
+             V400
+             C436 415 424 427 409 427
+             H103
+             C88 427 76 415 76 400
+             V181
+             C76 166 88 154 103 154 Z"
+          fill="#fff" stroke="none"/>
 
-  <!-- case body -->
-  <g filter="url(#shadow)">
-    <path d="M120 245 Q120 215 155 210 L1045 210 Q1080 215 1080 250 L1080 705 Q1080 748 1038 760 L162 760 Q120 748 120 705 Z"
-          fill="url(#front)" stroke="#24100b" stroke-width="12"/>
+    <!-- Contour bleu complet : le bleu reste visible au-dessus du rabat -->
+    <path d="M103 154 H409
+             C424 154 436 166 436 181
+             V400
+             C436 415 424 427 409 427
+             H103
+             C88 427 76 415 76 400
+             V181
+             C76 166 88 154 103 154 Z"
+          fill="none" stroke="#246a95" stroke-width="16"/>
 
-    <!-- accordion side -->
-    <path d="M120 250 Q80 270 80 315 L80 685 Q80 735 125 750 L165 760 L165 250 Z"
-          fill="#3a1a12" stroke="#24100b" stroke-width="10"/>
-    <path d="M105 285 L105 690 Q105 720 135 730" fill="none" stroke="#87513a" stroke-width="5"/>
-    <path d="M130 270 L130 710" fill="none" stroke="#74432f" stroke-width="4"/>
+    <!-- Rabat vert : son bord supérieur est volontairement sous le bord bleu -->
+    <path d="M88 168
+             H424
+             V242
+             C424 250 420 254 412 257
+             L256 309
+             L100 257
+             C92 254 88 250 88 242
+             Z"
+          fill="#fff" stroke="#3f7047" stroke-width="14"/>
 
-    <!-- main flap -->
-    <path d="M150 220 Q150 195 180 190 L1020 190 Q1050 195 1050 225 L1050 445 Q1050 475 1025 490 L625 560 L175 490 Q150 475 150 445 Z"
-          fill="url(#leather)" stroke="#2a120c" stroke-width="10"/>
-    <path d="M175 215 L1020 215 Q1030 215 1030 230 L1030 425 Q1030 450 1008 458 L625 525 L192 458 Q170 450 170 425 L170 230 Q170 215 175 215 Z"
-          fill="none" stroke="#3f7047" stroke-width="4" stroke-dasharray="9 7"/>
+    <!-- Fermoir -->
+    <rect x="230" y="278" width="52" height="68" rx="10"
+          fill="#fff" stroke="#6a5745" stroke-width="12"/>
 
-    <!-- lower front panel -->
-    <path d="M175 495 L625 565 L1025 495 L1025 705 Q1025 730 1000 738 L200 738 Q175 730 175 705 Z"
-          fill="url(#front)" stroke="#24100b" stroke-width="7"/>
-    <path d="M200 510 L610 575 L1000 510" fill="none" stroke="#3f7047" stroke-width="3" stroke-dasharray="8 7"/>
-
-    <!-- bottom corner reinforcements -->
-    <path d="M175 660 Q175 635 200 630 L275 650 L275 745 L205 738 Q175 730 175 705 Z"
-          fill="#3a1a12" stroke="#246a95" stroke-width="4"/>
-    <path d="M1025 660 Q1025 635 1000 630 L925 650 L925 745 L995 738 Q1025 730 1025 705 Z"
-          fill="#3a1a12" stroke="#246a95" stroke-width="4"/>
-
-    <!-- central strap -->
-        
-
-    <path d="M575 548 L675 548 L675 750 L575 750 Z"
-          fill="#3a1a12" stroke="#24100b" stroke-width="7"/>
-    
-
-    <path d="M580 560 L670 560 L670 735 L580 735 L580 560"
-          fill="none" stroke="#3f7047" stroke-width="3" stroke-dasharray="7 6"/>
-
-    <!-- lock -->
-    <g transform="translate(5 0)">
-      <rect x="565" y="485" width="110" height="68" rx="12" fill="#3b1b12" stroke="#25100a" stroke-width="7"/>
-      <rect x="570" y="500" width="100" height="52" rx="8" fill="url(#brass)" stroke="#7a4f0b" stroke-width="4"/>
-      <rect x="585" y="548" width="70" height="72" rx="7" fill="url(#brass)" stroke="#714609" stroke-width="5"/>
-      <circle cx="620" cy="579" r="11" fill="#3b210d"/>
-      <rect x="616" y="579" width="8" height="22" rx="3" fill="#3b210d"/>
-    </g>
-
-    <!-- side buckle -->
-    <g transform="translate(82 355)">
-      <rect x="0" y="0" width="68" height="115" rx="14" fill="#3a1a12" stroke="#24100b" stroke-width="6"/>
-      <path d="M16 24 H52 Q60 24 60 34 V61 Q60 70 52 70 H16 Q8 70 8 61 V34 Q8 24 16 24 Z"
-            fill="none" stroke="url(#brass)" stroke-width="12"/>
-      <circle cx="34" cy="91" r="14" fill="url(#brass)" stroke="#70470b" stroke-width="4"/>
-    </g>
+    <path d="M242 313 H270"
+          fill="none" stroke="#6a5745" stroke-width="9"/>
   </g>
 </svg>
