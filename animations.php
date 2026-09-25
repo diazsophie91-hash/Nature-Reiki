@@ -102,7 +102,7 @@ get_header(); ?>
 			array(
 				'titre'       => 'Entreprises',
 				'description' => 'Un temps en extérieur pour souffler et se retrouver autrement, autour de la découverte du vivant.',
-				'image'       => 'images/chene.png',
+				'image'       => 'images/entreprise.svg',
 				'variante'    => 'nature-carte--brune',
 			),
 		);
