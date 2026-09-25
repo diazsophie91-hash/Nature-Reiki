@@ -130,7 +130,7 @@ foreach ( $soins as $soin ) :
 						<span class="soin-reiki-fleche"></span>
 					</button>
 
-					<div class="soin-reiki-details">
+					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
 
 						<p>
 							<?php echo esc_html( $soin['description'] ); ?>
@@ -450,7 +450,7 @@ foreach ( $soins as $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-lieu-contenu"  class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Les séances se déroulent à l’adresse suivante : Rue du Doyare n°3, 4920 Aywaille.
@@ -480,7 +480,7 @@ foreach ( $soins as $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-duree-contenu"  class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Les séances de Reiki durent environ 1 heure. 
@@ -514,7 +514,7 @@ foreach ( $soins as $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-paiement-contenu"  class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Le paiement s'effectue en espèces.
@@ -540,7 +540,7 @@ foreach ( $soins as $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-prevoir-contenu"  class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin. 
@@ -574,7 +574,7 @@ foreach ( $soins as $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-foret-contenu"  class="soins-reiki-accordeon-contenu">
 
 					<p>
 						La séance en forêt dépend des conditions météorologiques. En cas de météo défavorable, elle pourra être reportée.
