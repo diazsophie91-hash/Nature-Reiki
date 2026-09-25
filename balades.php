@@ -136,7 +136,7 @@ get_header(); ?>
 
 		<div class="nature-cartes">
 
-			<?php foreach ( $balades as $balade ) : ?>
+			<?php foreach ( $balades as $balade_index => $balade ) : ?>
 
 			<article class="nature-carte <?php echo esc_attr( $balade['variante'] ); ?>">
 

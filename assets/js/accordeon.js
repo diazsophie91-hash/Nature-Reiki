@@ -29,8 +29,9 @@
                 contenu.style.maxHeight = ouvrir ? contenu.scrollHeight + 'px' : '0px';
             } else {
                 contenu.hidden = ! ouvrir;
-            contenuto.setAttribute("aria-hidden", ! ouvrir);
             }
+
+            contenu.setAttribute( 'aria-hidden', ouvrir ? 'false' : 'true' );
         }
 
         /**
