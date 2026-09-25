@@ -100,7 +100,6 @@
 					?>
 					"
 					alt="Chêne"
-					loading="lazy"
 					decoding="async"
 				>
 
@@ -126,7 +125,6 @@
 					"
 					alt=""
 					aria-hidden="true"
-					loading="lazy"
 					decoding="async"
 				>
 
@@ -175,7 +173,6 @@
 					?>
 					"
 					alt="Arbre de vie"
-					loading="lazy"
 					decoding="async"
 				>
 
@@ -201,7 +198,6 @@
 					"
 					alt=""
 					aria-hidden="true"
-					loading="lazy"
 					decoding="async"
 				>
 
@@ -249,7 +245,6 @@
 				"
 				alt=""
 				aria-hidden="true"
-				loading="lazy"
 				decoding="async"
 			>
 		</span>

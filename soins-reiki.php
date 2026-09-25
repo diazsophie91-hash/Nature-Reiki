@@ -109,7 +109,6 @@ foreach ( $soins as $soin_index => $soin ) :
 							"
 							alt=""
 							aria-hidden="true"
-							loading="lazy"
 							decoding="async"
 							>
 
