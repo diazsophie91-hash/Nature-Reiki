@@ -280,7 +280,7 @@ Template Name: Qui suis-je ?
 				</button>
 
 
-				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-nature-contenu">
+				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-reiki-contenu">
 
 					<div class="qui-suis-je-contenu">
 

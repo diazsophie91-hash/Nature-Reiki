@@ -167,7 +167,7 @@ get_header(); ?>
 					<span class="nature-carte-fleche" aria-hidden="true"></span>
 				</button>
 
-				<div class="nature-carte-details" id="soins-reiki-accordeon-contenu-<?php echo esc_attr( $balade_index ); ?>">
+				<div class="nature-carte-details" id="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>">
 					<?php echo wp_kses_post( $balade['contenu'] ); ?>
 				</div>
 
