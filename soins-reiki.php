@@ -445,8 +445,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					type="button"
 					class="soins-reiki-accordeon-bouton"
 					aria-expanded="false"
-				>
-					aria-controls="soins-reiki-lieu-contenu"
+				aria-controls="soins-reiki-lieu-contenu"
+					>
 					<span>Lieu</span>
 
 					<span class="soins-reiki-accordeon-fleche"></span>
@@ -477,8 +477,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					type="button"
 					class="soins-reiki-accordeon-bouton"
 					aria-expanded="false"
-				>
-					aria-controls="soins-reiki-duree-contenu"
+				aria-controls="soins-reiki-duree-contenu"
+					>
 					<span>Durée</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
@@ -512,8 +512,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					type="button"
 					class="soins-reiki-accordeon-bouton"
 					aria-expanded="false"
-				>
-					aria-controls="soins-reiki-paiement-contenu"
+				aria-controls="soins-reiki-paiement-contenu"
+					>
 					<span>Paiement</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
@@ -539,8 +539,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					type="button"
 					class="soins-reiki-accordeon-bouton"
 					aria-expanded="false"
-				>
-					aria-controls="soins-reiki-prevoir-contenu"
+				aria-controls="soins-reiki-prevoir-contenu"
+					>
 					<span>Que faut-il prévoir ?</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
@@ -574,8 +574,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					type="button"
 					class="soins-reiki-accordeon-bouton"
 					aria-expanded="false"
-				>
-					aria-controls="soins-reiki-foret-contenu"
+				aria-controls="soins-reiki-foret-contenu"
+					>
 					<span>Séance en forêt</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
