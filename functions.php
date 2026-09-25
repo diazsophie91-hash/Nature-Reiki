@@ -39,20 +39,25 @@ function nature_reiki_is_native_reiki() {
  * @return string "nature" ou "reiki".
  */
 function nature_reiki_get_universe() {
-	if ( nature_reiki_is_native_nature() ) {
-		return 'nature';
-	}
-	if ( nature_reiki_is_native_reiki() ) {
-		return 'reiki';
+	static $universe = null;
+
+	if ( null === $universe ) {
+		if ( nature_reiki_is_native_nature() ) {
+			$universe = 'nature';
+		} elseif ( nature_reiki_is_native_reiki() ) {
+			$universe = 'reiki';
+		} else {
+			$univers = isset( $_GET['univers'] )
+				? sanitize_key( wp_unslash( $_GET['univers'] ) )
+				: 'reiki';
+
+			$universe = in_array( $univers, array( 'nature', 'reiki' ), true )
+				? $univers
+				: 'reiki';
+		}
 	}
 
-	$univers = isset( $_GET['univers'] )
-		? sanitize_key( wp_unslash( $_GET['univers'] ) )
-		: 'reiki';
-
-	return in_array( $univers, array( 'nature', 'reiki' ), true )
-		? $univers
-		: 'reiki';
+	return $universe;
 }
 
 /**
@@ -78,38 +83,44 @@ function nature_reiki_is_current_page( $templates, $slugs ) {
  * à un univers selon le paramètre d'URL `?univers=`.
  */
 function nature_reiki_get_universes_config() {
-	return array(
-		'reiki'  => array(
-			'templates' => array(
-				'accueil-reiki.php',
-				'le-reiki.php',
-				'soins-reiki.php',
-				'prendre-rendez-vous-reiki.php',
+	static $config = null;
+
+	if ( null === $config ) {
+		$config = array(
+			'reiki'  => array(
+				'templates' => array(
+					'accueil-reiki.php',
+					'le-reiki.php',
+					'soins-reiki.php',
+					'prendre-rendez-vous-reiki.php',
+				),
+				'slugs'     => array(
+					'accueil-reiki',
+					'le-reiki',
+					'soins-reiki',
+					'prendre-rendez-vous-reiki',
+				),
 			),
-			'slugs'     => array(
-				'accueil-reiki',
-				'le-reiki',
-				'soins-reiki',
-				'prendre-rendez-vous-reiki',
+			'nature' => array(
+				'templates' => array(
+					'accueil-guide-nature.php',
+					'balades.php',
+					'animations.php',
+					'a-venir.php',
+					'reserver.php',
+				),
+				'slugs'     => array(
+					'accueil-guide-nature',
+					'balades',
+					'animations',
+					'a-venir',
+					'reserver',
+				),
 			),
-		),
-		'nature' => array(
-			'templates' => array(
-				'accueil-guide-nature.php',
-				'balades.php',
-				'animations.php',
-				'a-venir.php',
-				'reserver.php',
-			),
-			'slugs'     => array(
-				'accueil-guide-nature',
-				'balades',
-				'animations',
-				'a-venir',
-				'reserver',
-			),
-		),
-	);
+		);
+	}
+
+	return $config;
 }
 
 /**
@@ -230,7 +241,6 @@ function nature_reiki_asset_url( $path ) {
  * Le JS des accordéons n'est chargé que sur les pages qui en ont besoin.
  */
 function nature_reiki_enqueue_assets() {
-	$theme    = wp_get_theme();
 	$min_css  = '/style.min.css';
 	$css_file = file_exists( get_stylesheet_directory() . $min_css ) ? $min_css : '/style.css';
 	$version  = filemtime( get_stylesheet_directory() . $css_file );
@@ -251,7 +261,7 @@ function nature_reiki_enqueue_assets() {
 			true
 		);
 	}
-if ( nature_reiki_page_has_carrousel_nature() ) {
+	if ( nature_reiki_page_has_carrousel_nature() ) {
 		wp_enqueue_script(
 			'nature-reiki-carrousel-nature',
 			nature_reiki_asset_url( 'assets/js/carrousel-nature.js' ),
@@ -260,7 +270,6 @@ if ( nature_reiki_page_has_carrousel_nature() ) {
 			true
 		);
 	}
-
 
 	wp_enqueue_script(
 		'nature-reiki-retour-haut',
