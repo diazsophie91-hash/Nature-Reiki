@@ -431,17 +431,6 @@ body.universe-native-nature .switch-icon {
     z-index: -1;
 }
 
-/* Fond mauve derrière Reiki */
-.switch-reiki.actif::before {
-    content: "";
-    position: absolute;
-
-    top: -5px;
-    bottom: -5px;
-    left: -9px;
-    right: -9px;
-}
-
 /* Doré → brun en contexte Nature pour la bordure du switch */
 
 body.universe-nature .switch-univers,

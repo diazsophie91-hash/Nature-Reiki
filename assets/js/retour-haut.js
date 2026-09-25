@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const visible = window.scrollY > 350;
 
         button.classList.toggle("visible", visible);
-        button.setAttribute("aria-hidden", String(!visible));
     };
 
     window.addEventListener("scroll", updateButton, { passive: true });

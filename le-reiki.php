@@ -65,6 +65,7 @@ Template Name: Le Reiki
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="false"
+				aria-controls="le-reiki-definition-contenu"
 			>
 				<span>Qu'est-ce que le Reiki ?</span>
 
@@ -72,7 +73,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu">
 
 				<p>
 					Le Reiki est l'art de canaliser l'énergie vitale de l'Univers
@@ -104,6 +105,7 @@ Template Name: Le Reiki
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="false"
+				aria-controls="le-reiki-origines-contenu"
 			>
 				<span>Les origines du Reiki</span>
 
@@ -111,7 +113,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-origines-contenu">
 
 <p>
 	Le Reiki a été créé au Japon au début du XXe siècle par Mikao Usui, un moine bouddhiste.
@@ -214,6 +216,7 @@ Template Name: Le Reiki
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="false"
+				aria-controls="le-reiki-fonctionnement-contenu"
 			>
 				<span>Comment fonctionne le Reiki ?</span>
 
@@ -221,7 +224,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu">
 
 				<p>
 					Le Reiki fonctionne par canalisation de l'énergie vitale
@@ -309,6 +312,7 @@ Template Name: Le Reiki
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="false"
+				aria-controls="le-reiki-gokai-contenu"
 			>
 				<span>
 					Les 5 Gokai
@@ -319,7 +323,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu">
 
 				<p>
 					En japonais, le mot Gokai
@@ -409,6 +413,7 @@ foreach ( $gokai_items as $item ) {
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="false"
+				aria-controls="le-reiki-pourquoi-contenu"
 			>
 				<span>Pourquoi faire appel au Reiki ?</span>
 
@@ -416,7 +421,7 @@ foreach ( $gokai_items as $item ) {
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-pourquoi-contenu">
 
 				<p class="reiki-introduction-forte">
 					Pour s'offrir une parenthèse de reconnexion et retrouver
