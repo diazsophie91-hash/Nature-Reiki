@@ -162,6 +162,7 @@ get_header(); ?>
 					type="button"
 					class="nature-carte-en-savoir-plus"
 					aria-expanded="false"
+					aria-controls="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>"
 				>
 					<span>En savoir plus</span>
 					<span class="nature-carte-fleche" aria-hidden="true"></span>
