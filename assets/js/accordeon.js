@@ -68,20 +68,31 @@
         }
 
         /**
+         * Association entre un conteneur d'accordéon et son sélecteur de contenu.
+         * Permet à recalculerHauteurs() de déterminer quel contenu recalcular
+         * sans duplication de logique spécifique aux classes.
+         */
+        var containerContentSelectors = {
+            'soin-reiki-card': '.soin-reiki-details',
+            'soins-reiki-accordeon': '.soins-reiki-accordeon-contenu',
+            'nature-carte': '.nature-carte-details'
+        };
+
+        /**
          * Recalcule la hauteur des accordéons ouverts lors du redimensionnement.
+         * Les sélecteurs de conteneur et de contenu sont factorisés via containerContentSelectors.
          */
         function recalculerHauteurs() {
             var ouverts = document.querySelectorAll( '.ouvert' );
-            var j, container, contenu;
+            var j, container, contenu, className;
             for ( j = 0; j < ouverts.length; j++ ) {
                 container = ouverts[ j ];
                 contenu = null;
-                if ( container.classList.contains( 'soin-reiki-card' ) ) {
-                    contenu = container.querySelector( '.soin-reiki-details' );
-                } else if ( container.classList.contains( 'soins-reiki-accordeon' ) ) {
-                    contenu = container.querySelector( '.soins-reiki-accordeon-contenu' );
-                } else if ( container.classList.contains( 'nature-carte' ) ) {
-                    contenu = container.querySelector( '.nature-carte-details' );
+                for ( className in containerContentSelectors ) {
+                    if ( container.classList.contains( className ) ) {
+                        contenu = container.querySelector( containerContentSelectors[ className ] );
+                        break;
+                    }
                 }
                 if ( contenu && contenu.style.maxHeight && contenu.style.maxHeight !== '0px' ) {
                     contenu.style.maxHeight = contenu.scrollHeight + 'px';
@@ -131,6 +142,7 @@
                 contenuUnivers = univers.querySelector( '.faq-univers-contenu' );
                 if ( contenuUnivers ) {
                     contenuUnivers.hidden = false;
+                     contenuUnivers.setAttribute( 'aria-hidden', 'false' );
                 }
                 questions = univers.querySelectorAll( '.soins-reiki-accordeon' );
                 for ( q = 0; q < questions.length; q++ ) {
@@ -140,6 +152,7 @@
                     boutonQuestion  = question.querySelector( '.soins-reiki-accordeon-bouton' );
                     if ( contenuQuestion ) {
                         contenuQuestion.style.maxHeight = '0px';
+                         contenuQuestion.setAttribute( 'aria-hidden', 'true' );
                     }
                     if ( boutonQuestion ) {
                         boutonQuestion.setAttribute( 'aria-expanded', 'false' );
