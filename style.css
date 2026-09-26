@@ -181,7 +181,6 @@ Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-rea
     --color-white-warm-translucent-40: rgba(255, 250, 242, 0.40);
     --color-accent-border-48: rgba(196, 154, 50, 0.48);
     --shadow-soft-7:      0 7px 22px rgba(70, 45, 80, 0.06);
-    --shadow-soft-6:      0 7px 22px rgba(70, 45, 80, 0.06);
     --shadow-hover-card:  0 10px 28px rgba(70, 45, 80, 0.10);
 }
 
@@ -2972,7 +2971,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     border: 1px solid var(--color-accent-border-42);
 
     box-shadow:
-        var(--shadow-soft-6);
+        var(--shadow-soft-7);
 
     text-align: center;
 
@@ -3101,7 +3100,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     border-radius: 18px;
 
     box-shadow:
-        var(--shadow-soft-6);
+        var(--shadow-soft-7);
 }
 
 .reiki-gokai-item:last-child {
@@ -3277,7 +3276,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     border-radius: 18px;
 
     box-shadow:
-        var(--shadow-soft-6);
+        var(--shadow-soft-7);
 }
 
 .me-contacter-info:last-child {
