@@ -245,39 +245,45 @@ function nature_reiki_asset_url( $path ) {
 function nature_reiki_enqueue_assets() {
 	$min_css  = '/style.min.css';
 	$css_file = file_exists( get_stylesheet_directory() . $min_css ) ? $min_css : '/style.css';
-	$version  = filemtime( get_stylesheet_directory() . $css_file );
+	$css_version = filemtime( get_stylesheet_directory() . $css_file );
 
 	wp_enqueue_style(
 		'nature-reiki-style',
 		get_stylesheet_directory_uri() . $css_file,
 		array(),
-		$version
+		$css_version
 	);
 
 	if ( nature_reiki_page_has_accordion() ) {
+		$accordeon_version = filemtime( get_theme_file_path( 'assets/js/accordeon.js' ) );
+
 		wp_enqueue_script(
 			'nature-reiki-accordeon',
 			nature_reiki_asset_url( 'assets/js/accordeon.js' ),
 			array(),
-			$version,
+			$accordeon_version,
 			true
 		);
 	}
 	if ( nature_reiki_page_has_carrousel_nature() ) {
+		$carrousel_version = filemtime( get_theme_file_path( 'assets/js/carrousel-nature.js' ) );
+
 		wp_enqueue_script(
 			'nature-reiki-carrousel-nature',
 			nature_reiki_asset_url( 'assets/js/carrousel-nature.js' ),
 			array(),
-			$version,
+			$carrousel_version,
 			true
 		);
 	}
+
+	$retour_haut_version = filemtime( get_theme_file_path( 'assets/js/retour-haut.js' ) );
 
 	wp_enqueue_script(
 		'nature-reiki-retour-haut',
 		nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
 		array(),
-		$version,
+		$retour_haut_version,
 		true
 	);
 }
