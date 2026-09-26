@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ruleset name="Nature-Reiki">
+    <description>PHP Coding Standards for the Nature &amp; Reiki WordPress theme.</description>
+
+    <rule ref="WordPress">
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+        <exclude name="Universal.WhiteSpace.PrecisionAlignment"/>
+	<exclude name="Squiz.Commenting.FileComment"/>
+    </rule>
+
+    <file>a-venir.php</file>
+    <file>accueil-guide-nature.php</file>
+    <file>accueil-reiki.php</file>
+    <file>animations.php</file>
+    <file>balades.php</file>
+    <file>faq.php</file>
+    <file>footer.php</file>
+    <file>front-page.php</file>
+    <file>functions.php</file>
+    <file>header.php</file>
+    <file>index.php</file>
+    <file>le-reiki.php</file>
+    <file>me-contacter.php</file>
+    <file>menu-nature.php</file>
+    <file>menu-reiki.php</file>
+    <file>prendre-rendez-vous-reiki.php</file>
+    <file>qui-suis-je.php</file>
+    <file>reserver.php</file>
+    <file>soins-reiki.php</file>
+
+    <exclude-pattern>/vendor/</exclude-pattern>
+    <exclude-pattern>/node_modules/</exclude-pattern>
+    <exclude-pattern>/\.git/</exclude-pattern>
+</ruleset>

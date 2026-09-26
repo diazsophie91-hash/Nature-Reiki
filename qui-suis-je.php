@@ -36,16 +36,17 @@ Template Name: Qui suis-je ?
 		<h1>Joëlle Siwek</h1>
 
 		<?php
-	/*
-	 * Sous-titre inversé en contexte Nature
-	 */
-	if ( $est_nature ) : ?>
+		/*
+        * Sous-titre inversé en contexte Nature
+		*/
+		if ( $est_nature ) :
+			?>
 		<p>
 			<span class="sous-titre-nature">Guide-nature et carrière</span>
 			<span class="sous-titre-dore">&amp;</span>
 			<span class="sous-titre-reiki">Praticienne Reiki</span><span class="sous-titre-point">.</span>
 		</p>
-	<?php else : ?>
+		<?php else : ?>
 		<p>
 			<span class="sous-titre-reiki">Praticienne Reiki</span>
 			<span class="sous-titre-dore">&amp;</span>

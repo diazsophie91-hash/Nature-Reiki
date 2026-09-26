@@ -47,9 +47,11 @@ function nature_reiki_get_universe() {
 		} elseif ( nature_reiki_is_native_reiki() ) {
 			$universe = 'reiki';
 		} else {
+			// phpcs:disable WordPress.Security.NonceVerification.Recommended -- paramètre d'affichage limité à nature/reiki.
 			$univers = isset( $_GET['univers'] )
 				? sanitize_key( wp_unslash( $_GET['univers'] ) )
 				: 'reiki';
+			// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
 			$universe = in_array( $univers, array( 'nature', 'reiki' ), true )
 				? $univers
