@@ -241,8 +241,8 @@ main {
 }
 
 /* =========================
-   ACCESSIBILIT�
-   - skip-link : lien d'acc�s rapide au contenu
+   ACCESSIBILITÉ
+   - skip-link : lien d'accès rapide au contenu
    - :focus-visible : focus clavier visible
  ========================= */
 
@@ -595,7 +595,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 /* =========================
-   LIGNE + FEUILLE DE CH�NE + LOTUS
+   LIGNE + FEUILLE DE CHÊNE + LOTUS
 ========================= */
 
 .ligne-decoration {
@@ -611,7 +611,7 @@ body.universe-reiki .switch-reiki::before {
     gap: 16px;
 }
 
-/* Les deux lignes dor�es */
+/* Les deux lignes dorées */
 
 .ligne-decoration .ligne {
     height: 1px;
@@ -643,7 +643,7 @@ body.universe-reiki .switch-reiki::before {
     object-fit: contain;
 }
 
-/* Feuille de ch�ne */
+/* Feuille de chêne */
 
 .symbole-chene {
     height: 29px;
@@ -842,7 +842,7 @@ body.universe-reiki .switch-reiki::before {
 }
 
 /* =========================
-   MOTS CL�S
+   MOTS CLÉS
 ========================= */
 
 .mots {
@@ -1218,7 +1218,7 @@ body:not(.page-qui-suis-je).universe-native-nature .nature-hero .sous-titre-poin
     gap: 8px;
 }
 
-/* Lignes dor�es */
+/* Lignes dorées */
 
 .reiki-ligne-decoration span {
     height: 1px;
@@ -1379,7 +1379,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 
 /* =========================
    SECTION REIKI
-   BANNI�RE 1 � QU'EST-CE QUE LE REIKI ?
+   BANNIÈRE 1 → QU'EST-CE QUE LE REIKI ? QUE LE REIKI ?
 ========================= */
 
 .reiki-definition {
@@ -1419,7 +1419,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BANNI�RE 2 � LES S�ANCES DE REIKI
+   BANNIÈRE 2 → LES SÉANCES DE REIKI DE REIKI
 ========================= */
 
 .reiki-seances-section {
@@ -1459,7 +1459,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 1
+   DÉCORATION → BANNIÈRE 1
 ========================= */
 
 .reiki-banniere-1-decor {
@@ -1502,7 +1502,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   CONTENU � BANNI�RE 1
+   CONTENU → BANNIÈRE 1
 ========================= */
 
 .reiki-banniere-1-contenu {
@@ -1540,7 +1540,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BOUTON � BANNI�RE 1
+   BOUTON → BANNIÈRE 1
 ========================= */
 
 .reiki-banniere-1-bouton {
@@ -1582,7 +1582,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 2
+   DÉCORATION → BANNIÈRE 2
    PENDULE REIKI
 ========================= */
 
@@ -1625,7 +1625,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   CONTENU � BANNI�RE 2
+   CONTENU → BANNIÈRE 2
 ========================= */
 
 .reiki-banniere-2-contenu {
@@ -1663,7 +1663,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BOUTON � BANNI�RE 2
+   BOUTON → BANNIÈRE 2
 ========================= */
 
 .reiki-banniere-2-bouton {
@@ -1705,7 +1705,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BANNI�RE 3 � QUI SUIS-JE ?
+   BANNIÈRE 3 → QUI SUIS-JE ? ?
 ========================= */
 
 .reiki-qui-suis-je-section {
@@ -1745,7 +1745,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   D�CORATION � BANNI�RE 3
+   DÉCORATION → BANNIÈRE 3
 ========================= */
 
 .reiki-banniere-3-decor {
@@ -1788,7 +1788,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   CONTENU � BANNI�RE 3
+   CONTENU → BANNIÈRE 3
 ========================= */
 
 .reiki-banniere-3-contenu {
@@ -1826,7 +1826,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BOUTON � BANNI�RE 3
+   BOUTON → BANNIÈRE 3
 ========================= */
 
 .reiki-banniere-3-bouton {
@@ -1868,7 +1868,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   EFFET AU SURVOL � BANNI�RES REIKI
+   EFFET AU SURVOL → BANNIÈRES REIKI REIKI
 ========================= */
 
 .reiki-banniere-1,
@@ -1883,7 +1883,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
         box-shadow 0.25s ease;
 }
 
-/* Soul�vement de la banni�re */
+/* Soulèvement de la bannière */
 
 .reiki-banniere-1:hover,
 .reiki-banniere-2:hover,
@@ -1894,7 +1894,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   R�ACTION DU SYMBOLE
+   RÉACTION DU SYMBOLE
 ========================= */
 
 .reiki-banniere-1-decor img,
@@ -1910,8 +1910,8 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* ---------------------------------------------------------
-   ACCUEIL REIKI � BANNI�RES L�G�REMENT PLUS HAUTES
-   Elles remplissent mieux l'�cran tout en laissant un espace
+   ACCUEIL REIKI → BANNIÈRES LÉGÈREMENT PLUS HAUTES LÉGÈREMENT PLUS HAUTES
+   Elles remplissent mieux l'cran tout en laissant un espace
    avant le bas de la page.
 --------------------------------------------------------- */
 
@@ -1928,7 +1928,7 @@ body.page-template-accueil-reiki .reiki-banniere-3 {
 ========================================================= */
 
 /* =========================================================
-   D�FILEMENT VERTICAL
+   DÉFILEMENT VERTICAL
 ========================================================= */
 
 html:has(body.page-template-qui-suis-je),
@@ -1946,7 +1946,7 @@ body.page-template-qui-suis-je .page-qui-suis-je {
 }
 
 /* =========================================================
-   CONTENU G�N�RAL
+   CONTENU GÉNÉRAL
 ========================================================= */
 
 .qui-suis-je-contenu {
@@ -2028,7 +2028,7 @@ body.universe-nature .qui-suis-je-contenu p {
 }
 
 /* =========================================================
-   ACCORD�ONS PARCOURS
+   ACCORDÉONS PARCOURS
 ========================================================= */
 
 .qui-suis-je-parcours {
@@ -2045,7 +2045,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    ESPACEMENT ENTRE LES BLOCS
-   Align� sur la page "Le Reiki"
+   Aligné sur la page "Le Reiki"
 ========================================================= */
 
 .qui-suis-je-introduction
@@ -2064,7 +2064,7 @@ body.universe-nature .qui-suis-je-contenu p {
 }
 
 /* =========================================================
-   CONTENU DES ACCORD�ONS
+   CONTENU DES ACCORDÉONS
 ========================================================= */
 
 .qui-suis-je-parcours-contenu {
@@ -2078,7 +2078,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    GUIDE-NATURE
-   PHOTO � GAUCHE / TEXTE � DROITE
+   PHOTO → GAUCHE / TEXTE → DROITE
 ========================================================= */
 
 .qui-suis-je-nature
@@ -2088,7 +2088,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
 /* =========================================================
    REIKI
-   TEXTE � GAUCHE / PHOTO � DROITE
+   TEXTE → GAUCHE / PHOTO → DROITE
 ========================================================= */
 
 .qui-suis-je-reiki
@@ -2486,7 +2486,7 @@ body.universe-nature .qui-suis-je-citation-interieur:hover {
 ========================================================= */
 
 /* =========================================================
-   D�FILEMENT
+   DÉFILEMENT
 ========================================================= */
 
 html:has(body.page-template-le-reiki),
@@ -2505,7 +2505,7 @@ body.page-template-le-reiki .page-le-reiki {
 }
 
 /* =========================================================
-   SECTIONS G�N�RALES
+   SECTIONS GÉNÉRALES
 ========================================================= */
 
 .le-reiki-section {
@@ -2527,7 +2527,7 @@ body.page-template-le-reiki .page-le-reiki {
 }
 
 /* =========================================================
-   ACCORD�ONS
+   ACCORDÉONS
 ========================================================= */
 
 /* =========================
@@ -2751,7 +2751,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 
 /* =========================================================
    PHRASE IMPORTANTE
-   "Ainsi, Reiki peut �tre interpr�t�..."
+   "Ainsi, Reiki peut être interprété..."
 ========================================================= */
 
 .le-reiki-origines .reiki-phrase-forte {
@@ -2823,7 +2823,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     line-height: 1.1;
 }
 
-/* KANJI EN DOR� */
+/* KANJI EN DORÉ */
 
 .reiki-kanji-bloc h3 .kanji {
     color: var(--color-accent);
@@ -2926,7 +2926,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     padding-bottom: 30px;
 }
 
-/* S�lecteur plus sp�cifique pour surcharger .le-reiki-accordeon-contenu p */
+/* Sélecteur plus spécifique pour surcharger .le-reiki-accordeon-contenu p */
 .le-reiki-pourquoi .le-reiki-accordeon-contenu p.reiki-introduction-forte {
     max-width: 700px;
 
@@ -3108,7 +3108,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   NUM�RO DES GOKAI
+   NUMÉRO DES GOKAI
 ========================================================= */
 
 .reiki-gokai-item::before {
@@ -3240,7 +3240,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   COORDONN�ES
+   COORDONNÉES
 ========================================================= */
 
 .me-contacter-coordonnees {
@@ -3342,7 +3342,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   TEXTE COORDONN�ES
+   TEXTE COORDONNÉES
 ========================================================= */
 
 .me-contacter-info-texte {
@@ -3418,7 +3418,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================================================
-   SYMBOLES DES UNIVERS � ME CONTACTER
+   SYMBOLES DES UNIVERS → ME CONTACTER
 ========================================================= */
 
 .me-contacter-univers-symbole {
@@ -3438,7 +3438,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* ---------------------------------------------------------
-   LOTUS � REIKI
+   LOTUS → REIKI
 --------------------------------------------------------- */
 
 .me-contacter-univers-card:first-child
@@ -3447,7 +3447,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* ---------------------------------------------------------
-   FEUILLE DE CH�NE � GUIDE NATURE
+   FEUILLE DE CHÊNE → GUIDE NATURE
 --------------------------------------------------------- */
 
 .me-contacter-univers-card:last-child
@@ -3490,7 +3490,7 @@ body.universe-nature .page-me-contacter .me-contacter-univers-card p {
 
 
 /* =========================================================
-   SCROLL � PAGE ME CONTACTER
+   SCROLL → PAGE ME CONTACTERTER
 ========================================================= */
 
 body.page-template-me-contacter {
@@ -3512,7 +3512,7 @@ body.page-template-me-contacter {
 
 /* =========================================================
    HERO
-   M�me esprit que les autres pages Reiki
+   Même esprit que les autres pages Reiki
 ========================================================= */
 
 /* =========================================================
@@ -3725,7 +3725,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   CONTENU D�PLIABLE DES CARTES
+   CONTENU DÉPLIABLE DES CARTES
 ========================================================= */
 
 .soin-reiki-details {
@@ -3775,7 +3775,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   TEST �NERG�TIQUE
+   TEST ÉNERGÉTIQUE
 ========================================================= */
 
 .soin-reiki-test {
@@ -3787,7 +3787,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   IC�NE PENDULE � TEST �NERG�TIQUE
+   ICÔNE PENDULE → TEST ÉNERGÉTIQUEGÉTIQUE
 ========================================================= */
 
 .icone-pendule {
@@ -3804,7 +3804,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   M�T�O � S�ANCE EN FOR�T
+   MÉTÉO → SÉANCE EN FORÊT
 ========================================================= */
 
 .soin-reiki-meteo {
@@ -3813,7 +3813,7 @@ body.page-template-me-contacter {
 
 /* =========================================================
    BOUTON RENDEZ-VOUS
-   Bouton commun plac� sous les 3 cartes
+   Bouton commun placé sous les 3 cartes
 ========================================================= */
 
 .soins-reiki-rendez-vous-global {
@@ -3865,7 +3865,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   TEST �NERG�TIQUE � SECTION
+   TEST ÉNERGÉTIQUE → SECTION
 ========================================================= */
 
 .soins-reiki-test-energetique {
@@ -4030,7 +4030,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   ACCORD�ON INFORMATIONS
+   ACCORDÉON INFORMATIONS
 ========================================================= */
 
 .soins-reiki-accordeon {
@@ -4055,7 +4055,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   BOUTON ACCORD�ON
+   BOUTON ACCORDÉON
 ========================================================= */
 
 .soins-reiki-accordeon-bouton {
@@ -4090,7 +4090,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   CHEVRON ACCORD�ON
+   CHEVRON ACCORDÉON
 ========================================================= */
 
 .soins-reiki-accordeon-fleche {
@@ -4122,7 +4122,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 }
 
 /* =========================================================
-   CONTENU ACCORD�ON
+   CONTENU ACCORDÉON
 ========================================================= */
 
 .soins-reiki-accordeon-contenu {
@@ -4255,7 +4255,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
 
 /* =========================================================
-   SCROLL � PAGE SOINS REIKI
+   SCROLL → PAGE SOINS REIKIIKI
 ========================================================= */
 
 body.page-template-soins-reiki {
@@ -4263,10 +4263,10 @@ body.page-template-soins-reiki {
 }
 
 /* ---------------------------------------------------------
-   1. ACCESSIBILIT� & TRANSITIONS
+   1. ACCESSIBILITÉ & TRANSITIONS
 --------------------------------------------------------- */
 
-/* �vite les transitions trop brutales sur les �l�ments interactifs. */
+/* Évite les transitions trop brutales sur les éléments interactifs. */
 a,
 button {
     -webkit-tap-highlight-color: transparent;
@@ -4286,7 +4286,7 @@ button {
 }
 
 /* ---------------------------------------------------------
-   2. CARTES � HARMONISATION DISCR�TE
+   2. CARTES → HARMONISATION DISCRÈTE DISCRÈTE
 --------------------------------------------------------- */
 
 .soin-reiki-card,
@@ -4315,10 +4315,10 @@ body.universe-native-nature .soins-reiki-accordeon {
     box-shadow: var(--shadow-hover);
 }
 
-/* On ne fait pas bouger les accord�ons : leur fonction est diff�rente. */
+/* On ne fait pas bouger les accordés : leur fonction est différente. */
 
 /* ---------------------------------------------------------
-   3. CARTES SOINS REIKI � PLUS DE HI�RARCHIE
+   3. CARTES SOINS REIKI → PLUS DE HIÉRARCHIERCHIE
 --------------------------------------------------------- */
 
 
@@ -4334,7 +4334,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   4. LE REIKI � RYTHME ENTRE LES GRANDES SECTIONS
+   4. LE REIKI → RYTHME ENTRE LES GRANDES SECTIONSTRE LES GRANDES SECTIONS
 --------------------------------------------------------- */
 
 .le-reiki-section + .le-reiki-section {
@@ -4347,7 +4347,7 @@ body.universe-native-nature .soins-reiki-accordeon {
     margin-right: auto;
 }
 
-/* Les cartes doivent avoir une pr�sence l�g�rement sup�rieure
+/* Les cartes doivent avoir une présence légèrementt supérieuree
    au fond sans devenir lourdes. */
 .reiki-fonctionnement-bloc,
 .reiki-pourquoi-bloc {
@@ -4355,7 +4355,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   5. BANNI�RES REIKI � UNIFORMIT� VISUELLE
+   5. BANNIÈRES REIKI → UNIFORMITÉ VISUELLE VISUELLE
 --------------------------------------------------------- */
 
 
@@ -4368,7 +4368,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   6. ACCORD�ONS � �TAT OUVERT PLUS LISIBLE
+   6. ACCORDÉONS → ÉTAT OUVERT PLUS LISIBLERT PLUS LISIBLE
 --------------------------------------------------------- */
 
 .soins-reiki-accordeon.ouvert {
@@ -4391,7 +4391,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   7. ME CONTACTER � PLUS DE PROFONDEUR ET DE CLART�
+   7. ME CONTACTER → PLUS DE PROFONDEUR ET DE CLARTÉROFONDEUR ET DE CLARTÉ
 --------------------------------------------------------- */
 
 
@@ -4411,13 +4411,13 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* ---------------------------------------------------------
-   9. SWITCH D'UNIVERS � PLUS NET
+   9. SWITCH D'UNIVERS → PLUS NET
 --------------------------------------------------------- */
 
 
 
 /* ---------------------------------------------------------
-   10. ACCUEIL � PROFONDEUR DES DEUX UNIVERS
+   10. ACCUEIL → PROFONDEUR DES DEUX UNIVERS DES DEUX UNIVERS
 --------------------------------------------------------- */
 
 
@@ -4437,7 +4437,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* =========================================================
-   SCROLL � UNIQUEMENT POUR LA PAGE F.A.Q
+   SCROLL → UNIQUEMENT POUR LA PAGE F.A.QUR LA PAGE F.A.Q
 ========================================================= */
 
 html:has(.page-faq),
@@ -4446,7 +4446,7 @@ body:has(.page-faq) {
 }
 
 /* =========================================================
-   PRENDRE RENDEZ-VOUS � REIKI
+   PRENDRE RENDEZ-VOUS → REIKI
 ========================================================= */
 
 .prendre-rendez-vous-reiki {
