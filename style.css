@@ -14,7 +14,7 @@ Text Domain: nature-reiki
 Tags: one-column, custom-menu, custom-logo, accessibility-ready, translation-ready
 */
 
-/* This file intentionally uses UTF-8 without BOM */
+/* Ce fichier utilise volontairement l'encodage UTF-8 sans BOM. */
 
 /* =========================
    POLICES LOCALES
@@ -1150,7 +1150,7 @@ body.universe-reiki .page-me-contacter .reiki-hero p:first-of-type {
     color: var(--color-sub-reiki);
 }
 
-/* Hover underline color for contact card links in Reiki context */
+/* Couleur du soulignement au survol des liens des cartes de contact en contexte Reiki */
 body.universe-reiki .page-me-contacter .me-contacter-info-texte a:hover {
     text-decoration-color: var(--color-accent);
 }
@@ -1379,7 +1379,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 
 /* =========================
    SECTION REIKI
-   BANNIÈRE 1 → QU'EST-CE QUE LE REIKI ? QUE LE REIKI ?
+   BANNIÈRE 1 → QU'EST-CE QUE LE REIKI ?
 ========================= */
 
 .reiki-definition {
@@ -1419,7 +1419,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BANNIÈRE 2 → LES SÉANCES DE REIKI DE REIKI
+   BANNIÈRE 2 → LES SÉANCES DE REIKI
 ========================= */
 
 .reiki-seances-section {
@@ -1705,7 +1705,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   BANNIÈRE 3 → QUI SUIS-JE ? ?
+   BANNIÈRE 3 → QUI SUIS-JE ?
 ========================= */
 
 .reiki-qui-suis-je-section {
@@ -1868,7 +1868,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================
-   EFFET AU SURVOL → BANNIÈRES REIKI REIKI
+   EFFET AU SURVOL → BANNIÈRES REIKI
 ========================= */
 
 .reiki-banniere-1,
@@ -1910,8 +1910,8 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* ---------------------------------------------------------
-   ACCUEIL REIKI → BANNIÈRES LÉGÈREMENT PLUS HAUTES LÉGÈREMENT PLUS HAUTES
-   Elles remplissent mieux l'cran tout en laissant un espace
+   ACCUEIL REIKI → BANNIÈRES LÉGÈREMENT PLUS HAUTES
+   Elles remplissent mieux l'écran tout en laissant un espace
    avant le bas de la page.
 --------------------------------------------------------- */
 
@@ -3490,7 +3490,7 @@ body.universe-nature .page-me-contacter .me-contacter-univers-card p {
 
 
 /* =========================================================
-   SCROLL → PAGE ME CONTACTERTER
+   SCROLL → PAGE ME CONTACTER
 ========================================================= */
 
 body.page-template-me-contacter {
@@ -3787,7 +3787,7 @@ body.page-template-me-contacter {
 }
 
 /* =========================================================
-   ICÔNE PENDULE → TEST ÉNERGÉTIQUEGÉTIQUE
+   ICÔNE PENDULE → TEST ÉNERGÉTIQUE
 ========================================================= */
 
 .icone-pendule {
@@ -4255,7 +4255,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
 
 /* =========================================================
-   SCROLL → PAGE SOINS REIKIIKI
+   SCROLL → PAGE SOINS REIKI
 ========================================================= */
 
 body.page-template-soins-reiki {
@@ -4286,7 +4286,7 @@ button {
 }
 
 /* ---------------------------------------------------------
-   2. CARTES → HARMONISATION DISCRÈTE DISCRÈTE
+   2. CARTES → HARMONISATION DISCRÈTE
 --------------------------------------------------------- */
 
 .soin-reiki-card,
@@ -4315,10 +4315,10 @@ body.universe-native-nature .soins-reiki-accordeon {
     box-shadow: var(--shadow-hover);
 }
 
-/* On ne fait pas bouger les accordés : leur fonction est différente. */
+/* On ne fait pas bouger les accordéons : leur fonction est différente. */
 
 /* ---------------------------------------------------------
-   3. CARTES SOINS REIKI → PLUS DE HIÉRARCHIERCHIE
+   3. CARTES SOINS REIKI → PLUS DE HIÉRARCHIE
 --------------------------------------------------------- */
 
 
@@ -4334,7 +4334,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   4. LE REIKI → RYTHME ENTRE LES GRANDES SECTIONSTRE LES GRANDES SECTIONS
+   4. LE REIKI → RYTHME ENTRE LES GRANDES SECTIONS
 --------------------------------------------------------- */
 
 .le-reiki-section + .le-reiki-section {
@@ -4347,7 +4347,7 @@ body.universe-native-nature .soins-reiki-accordeon {
     margin-right: auto;
 }
 
-/* Les cartes doivent avoir une présence légèrementt supérieuree
+/* Les cartes doivent avoir une présence légèrement supérieure
    au fond sans devenir lourdes. */
 .reiki-fonctionnement-bloc,
 .reiki-pourquoi-bloc {
@@ -4355,7 +4355,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   5. BANNIÈRES REIKI → UNIFORMITÉ VISUELLE VISUELLE
+   5. BANNIÈRES REIKI → UNIFORMITÉ VISUELLE
 --------------------------------------------------------- */
 
 
@@ -4368,7 +4368,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   6. ACCORDÉONS → ÉTAT OUVERT PLUS LISIBLERT PLUS LISIBLE
+   6. ACCORDÉONS → ÉTAT OUVERT PLUS LISIBLE
 --------------------------------------------------------- */
 
 .soins-reiki-accordeon.ouvert {
@@ -4391,7 +4391,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 /* ---------------------------------------------------------
-   7. ME CONTACTER → PLUS DE PROFONDEUR ET DE CLARTÉROFONDEUR ET DE CLARTÉ
+   7. ME CONTACTER → PLUS DE PROFONDEUR ET DE CLARTÉ
 --------------------------------------------------------- */
 
 
@@ -4417,7 +4417,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* ---------------------------------------------------------
-   10. ACCUEIL → PROFONDEUR DES DEUX UNIVERS DES DEUX UNIVERS
+   10. ACCUEIL → PROFONDEUR DES DEUX UNIVERS
 --------------------------------------------------------- */
 
 
@@ -4437,7 +4437,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 /* =========================================================
-   SCROLL → UNIQUEMENT POUR LA PAGE F.A.QUR LA PAGE F.A.Q
+   SCROLL → UNIQUEMENT POUR LA PAGE F.A.Q
 ========================================================= */
 
 html:has(.page-faq),
@@ -5012,8 +5012,8 @@ body.page-template-animations .nature-bouton {
 
 /* =========================================================
    BANNIERES DE L'ACCUEIL NATURE
-   Texture propre a Nature : degrade en couches, distinct de
-   la texture peinture utilisee par les bannieres Reiki.
+   Texture propre à Nature : degrade en couches, distinct de
+   la texture peinture utilisée par les bannieres Reiki.
 ========================================================= */
 
 .nature-banniere {
@@ -5168,7 +5168,7 @@ body.page-template-animations .nature-bouton {
 }
 
 /* =========================================================
-   CARTES NATURE (balades, animations, projets a venir)
+   CARTES NATURE (balades, animations, projets à venir)
 ========================================================= */
 
 .nature-cartes {
@@ -5412,7 +5412,7 @@ body.page-template-animations .nature-bouton {
 
 
 /* =========================================================
-   ENCARTS NATURE (balades privees, conditions)
+   ENCARTS NATURE (balades privées, conditions)
 ========================================================= */
 
 .nature-encart {
@@ -5486,7 +5486,7 @@ body.page-template-animations .nature-bouton {
 }
 
 /* =========================================================
-   APPEL A L'ACTION NATURE
+   APPEL À L'ACTION NATURE
 ========================================================= */
 
 .nature-cta {
@@ -5574,7 +5574,7 @@ body.page-template-a-venir .nature-cta-boutons .nature-bouton:hover {
 
 /* =========================================================
    CARROUSEL NATURE
-   Aucune librairie externe : le defilement est gere par
+   Aucune librairie externe : le défilement est géré par
    assets/js/carrousel-nature.js.
 ========================================================= */
 
@@ -5590,8 +5590,8 @@ body.page-template-a-venir .nature-cta-boutons .nature-bouton:hover {
     outline-offset: 4px;
 }
 
-/* La fenetre masque les diapositives hors champ : pas de
-   debordement horizontal possible. */
+/* La fenêtre masque les diapositives hors champ : pas de
+   débordement horizontal possible. */
 .nature-carrousel-fenetre {
     width: 100%;
 
@@ -5852,7 +5852,7 @@ body.universe-nature .retour-haut {
 }
 
 /* =========================================================
-   FOCUS CLAVIER DES ELEMENTS NATURE
+   FOCUS CLAVIER DES ÉLÉMENTS NATURE
 ========================================================= */
 
 .nature-bouton:focus-visible,
@@ -5927,7 +5927,7 @@ body.universe-nature .retour-haut {
         width: 100%;
     }
 
-    /* Le bouton quitte la position absolue pour eviter
+    /* Le bouton quitte la position absolue pour éviter
        tout chevauchement du texte. */
     .nature-banniere-bouton {
         position: static;
