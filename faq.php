@@ -40,6 +40,14 @@ $guide_nature_questions = array(
 	'Question 4',
 	'Question 5',
 );
+
+$nature_answers = array(
+	'<p>À venir</p>',
+	'<p>À venir</p>',
+	'<p>À venir</p>',
+	'<p>À venir</p>',
+	'<p>À venir</p>',
+);
 ?>
 
 <section class="reiki-hero">
@@ -92,7 +100,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
 				</button>
 				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
-					<?php echo $reiki_answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
+					<?php $answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers; echo $answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
 				</div>
 			</div>
 
