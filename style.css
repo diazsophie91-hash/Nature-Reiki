@@ -2654,7 +2654,10 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
    PROGRESSIVE ENHANCEMENT : visible sans JS
    ========================= */
 
-.no-js .le-reiki-accordeon-contenu {
+.no-js .le-reiki-accordeon-contenu,
+.no-js .soin-reiki-details,
+.no-js .soins-reiki-accordeon-contenu,
+.no-js .nature-carte-details {
     max-height: none;
     opacity: 1;
     overflow: visible;
