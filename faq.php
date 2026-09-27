@@ -99,7 +99,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 					<span><?php echo esc_html( $questions[ $i - 1 ] ); ?></span>
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
 				</button>
-				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
+				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>" aria-hidden="true">
 					<?php $answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers; echo $answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
 				</div>
 			</div>
