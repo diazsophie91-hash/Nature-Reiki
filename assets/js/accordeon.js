@@ -70,7 +70,7 @@ var sectionsOuvertes = document.querySelectorAll('.soins-reiki-accordeon.ouvert'
 for (var sectionIndex = 0; sectionIndex < sectionsOuvertes.length; sectionIndex++) {
     var section = sectionsOuvertes[sectionIndex];
     var bouton = section.querySelector('.soins-reiki-accordeon-bouton');
-    var contenu = section.querySelector('.soins-reiki-accordeon-contenu');
+    var contenuSection = section.querySelector('.soins-reiki-accordeon-contenu');
     
     if (bouton) {
         bouton.setAttribute('aria-expanded', 'true');
