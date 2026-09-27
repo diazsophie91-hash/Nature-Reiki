@@ -188,34 +188,7 @@ for (var sectionIndex = 0; sectionIndex < sectionsOuvertes.length; sectionIndex+
             contenuSelector: '.faq-univers-contenu'
         } );
 
-        // Initialisation FAQ : les deux univers restent ouverts, leurs questions fermées.
-        ( function () {
-            var universList = document.querySelectorAll( '.page-faq .faq-univers' );
-            var u, univers, contenuUnivers, questions, q, question, contenuQuestion, boutonQuestion;
-            for ( u = 0; u < universList.length; u++ ) {
-                univers = universList[ u ];
-                univers.classList.add( 'ouvert' );
-                contenuUnivers = univers.querySelector( '.faq-univers-contenu' );
-                if ( contenuUnivers ) {
-                    contenuUnivers.hidden = false;
-                    contenuUnivers.setAttribute( 'aria-hidden', 'false' );
-                }
-                questions = univers.querySelectorAll( '.soins-reiki-accordeon' );
-                for ( q = 0; q < questions.length; q++ ) {
-                    question = questions[ q ];
-                    question.classList.remove( 'ouvert' );
-                    contenuQuestion = question.querySelector( '.soins-reiki-accordeon-contenu' );
-                    boutonQuestion  = question.querySelector( '.soins-reiki-accordeon-bouton' );
-                    if ( contenuQuestion ) {
-                        contenuQuestion.style.maxHeight = '0px';
-                        contenuQuestion.setAttribute( 'aria-hidden', 'true' );
-                    }
-                    if ( boutonQuestion ) {
-                        boutonQuestion.setAttribute( 'aria-expanded', 'false' );
-                    }
-                }
-            }
-        }() );
+
 
         // Initialisation des accordéons animés via la configuration centralisée.
         for ( var a = 0; a < accordionConfigs.length; a++ ) {
