@@ -130,7 +130,7 @@ foreach ( $soins as $soin_index => $soin ) :
 						<span class="soin-reiki-fleche"></span>
 					</button>
 
-					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>" aria-hidden="true">
+					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
 
 						<p>
 							<?php echo esc_html( $soin['description'] ); ?>
