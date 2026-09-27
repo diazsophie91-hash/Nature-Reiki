@@ -199,7 +199,7 @@ Template Name: Qui suis-je ?
 				</button>
 
 
-				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-nature-contenu" aria-hidden="true">
+				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-nature-contenu">
 
 					<div class="qui-suis-je-photo">
 
@@ -281,7 +281,7 @@ Template Name: Qui suis-je ?
 				</button>
 
 
-				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-reiki-contenu" aria-hidden="true">
+				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-reiki-contenu">
 
 					<div class="qui-suis-je-contenu">
 

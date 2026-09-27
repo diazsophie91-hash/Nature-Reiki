@@ -223,7 +223,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu" aria-hidden="true">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu">
 
 				<p>
 					Le Reiki fonctionne par canalisation de l'énergie vitale
@@ -322,7 +322,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu" aria-hidden="true">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu">
 
 				<p>
 					En japonais, le mot Gokai

@@ -22,29 +22,29 @@
         document.documentElement.classList.replace( 'no-js', 'js' );
 
 // Initialisation des états ARIA pour les accordéons
-// Initialisation spécifique des FAQ d'abord
+// Initialisation des FAQ
 var faqUniversBoutons = document.querySelectorAll('.faq-univers-bouton');
 for (var i = 0; i < faqUniversBoutons.length; i++) {
     var faqUnivers = faqUniversBoutons[i].closest('.faq-univers');
-    var contenuUnivers = faqUnivers.querySelector('.faq-univers-contenu');
-    var questions = faqUnivers.querySelectorAll('.soins-reiki-accordeon-bouton');
+    if (!faqUnivers) { continue; }
     
-    if (faqUnivers) {
-        faqUnivers.classList.add('ouvert');
-        if (contenuUnivers) {
-            contenuUnivers.hidden = false;
-            contenuUnivers.setAttribute('aria-hidden', 'false');
+    faqUnivers.classList.add('ouvert');
+    var contenuUnivers = faqUnivers.querySelector('.faq-univers-contenu');
+    if (contenuUnivers) {
+        contenuUnivers.hidden = false;
+        contenuUnivers.setAttribute('aria-hidden', 'false');
+    }
+    
+    var questions = faqUnivers.querySelectorAll('.soins-reiki-accordeon-bouton');
+    for (var q = 0; q < questions.length; q++) {
+        var question = questions[q];
+        var contenuQuestion = question.closest('.soins-reiki-accordeon')?.querySelector('.soins-reiki-accordeon-contenu');
+        if (question) {
+            question.setAttribute('aria-expanded', 'false');
         }
-        for (var q = 0; q < questions.length; q++) {
-            var question = questions[q];
-            var contenuQuestion = question.closest('.soins-reiki-accordeon')?.querySelector('.soins-reiki-accordeon-contenu');
-            if (question) {
-                question.setAttribute('aria-expanded', 'false');
-            }
-            if (contenuQuestion) {
-                contenuQuestion.style.maxHeight = '0px';
-                contenuQuestion.setAttribute('aria-hidden', 'true');
-            }
+        if (contenuQuestion) {
+            contenuQuestion.style.maxHeight = '0px';
+            contenuQuestion.setAttribute('aria-hidden', 'true');
         }
     }
 }
@@ -70,7 +70,7 @@ var sectionsOuvertes = document.querySelectorAll('.soins-reiki-accordeon.ouvert'
 for (var sectionIndex = 0; sectionIndex < sectionsOuvertes.length; sectionIndex++) {
     var section = sectionsOuvertes[sectionIndex];
     var bouton = section.querySelector('.soins-reiki-accordeon-bouton');
-    var contenuAccordeon = section.querySelector('.soins-reiki-accordeon-contenu');
+    
     if (bouton) {
         bouton.setAttribute('aria-expanded', 'true');
     }
