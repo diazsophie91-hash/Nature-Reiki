@@ -70,13 +70,13 @@ var sectionsOuvertes = document.querySelectorAll('.soins-reiki-accordeon.ouvert'
 for (var sectionIndex = 0; sectionIndex < sectionsOuvertes.length; sectionIndex++) {
     var section = sectionsOuvertes[sectionIndex];
     var bouton = section.querySelector('.soins-reiki-accordeon-bouton');
-    var contenuAccordeon = section.querySelector('.soins-reiki-accordeon-contenu');
+    var contenuSection = section.querySelector('.soins-reiki-accordeon-contenu');
     
     if (bouton) {
         bouton.setAttribute('aria-expanded', 'true');
     }
-    if (contenu) {
-        contenu.setAttribute('aria-hidden', 'false');
+    if (contenuSection) {
+        contenuSection.setAttribute('aria-hidden', 'false');
     }
 }
 
