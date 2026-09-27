@@ -223,7 +223,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu" aria-hidden="true">
 
 				<p>
 					Le Reiki fonctionne par canalisation de l'énergie vitale
@@ -322,7 +322,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu" aria-hidden="true">
 
 				<p>
 					En japonais, le mot Gokai
@@ -420,7 +420,7 @@ foreach ( $gokai_items as $item ) {
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-pourquoi-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-pourquoi-contenu" aria-hidden="true">
 
 				<p class="reiki-introduction-forte">
 					Pour s'offrir une parenthèse de reconnexion et retrouver
