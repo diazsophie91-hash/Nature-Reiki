@@ -451,7 +451,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-lieu-contenu"  class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-lieu-contenu" class="soins-reiki-accordeon-contenu" aria-hidden="true">
 
 					<p>
 						Les séances se déroulent à l’adresse suivante : Rue du Doyare n°3, 4920 Aywaille.
@@ -482,7 +482,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-duree-contenu"  class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-duree-contenu" class="soins-reiki-accordeon-contenu" aria-hidden="true">
 
 					<p>
 						Les séances de Reiki durent environ 1 heure. 
