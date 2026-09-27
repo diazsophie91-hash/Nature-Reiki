@@ -3759,12 +3759,7 @@ body.page-template-me-contacter {
         margin-top 0.35s ease;
 }
 
-.no-js .soin-reiki-details {
-    max-height: none;
-    opacity: 1;
-    overflow: visible;
-    margin-top: 0;
-}
+
 
 .soin-reiki-card.ouvert
 .soin-reiki-details {
