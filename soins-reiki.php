@@ -130,7 +130,7 @@ foreach ( $soins as $soin_index => $soin ) :
 						<span class="soin-reiki-fleche"></span>
 					</button>
 
-					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
+					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>" aria-hidden="true">
 
 						<p>
 							<?php echo esc_html( $soin['description'] ); ?>
@@ -517,7 +517,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-paiement-contenu"  class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-paiement-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
 
 					<p>
 						Le paiement s'effectue en espèces.
@@ -544,7 +544,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-prevoir-contenu"  class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-prevoir-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
 
 					<p>
 						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin. 
@@ -579,7 +579,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-foret-contenu"  class="soins-reiki-accordeon-contenu">
+				<div id="soins-reiki-foret-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
 
 					<p>
 						La séance en forêt dépend des conditions météorologiques. En cas de météo défavorable, elle pourra être reportée.

@@ -72,7 +72,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu" aria-hidden="true">
 
 				<p>
 					Le Reiki est l'art de canaliser l'énergie vitale de l'Univers
@@ -112,7 +112,7 @@ Template Name: Le Reiki
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu" id="le-reiki-origines-contenu">
+			<div class="le-reiki-accordeon-contenu" id="le-reiki-origines-contenu" aria-hidden="true">
 
 <p>
 	Le Reiki a été créé au Japon au début du XXe siècle par Mikao Usui, un moine bouddhiste.
