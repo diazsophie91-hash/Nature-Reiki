@@ -26,6 +26,13 @@ $reiki_questions = array(
 	'Faut-il croire au Reiki pour ressentir ses bienfaits ?',
 );
 
+$reiki_answers = array(
+	'<p>Une séance Reiki se déroule comme suit :</p><p><strong>Accueil et petite discussion de prise de contact</strong></p><p>La personne reste habillée. Il n’y a aucune manipulation, juste l’imposition des mains à distance ou, si le receveur le permet, parfois directement sur le corps.<br>Il n’y a jamais de toucher sur les parties intimes.</p><p><strong>Installation</strong></p><p>Le receveur s’installe confortablement sur la table de soins, avec un plaid s’il le souhaite.</p><p>Durant la séance, une musique de relaxation sera diffusée.</p>',
+	'<p>Durant les 4 séances de soins Reiki, certaines personnes s’endorment directement, d’autres ont très froid ou très chaud ou ressentent également une grande fatigue.</p><p>Mais à la dernière séance, c’est un sentiment de bien-être et d’harmonie qui prédomine.</p><p>Lors des séances de suivi, les personnes ressentent généralement un sentiment de bien-être et de relaxation immédiat. D’autres récupèrent une énergie perdue.</p><p>Chaque séance de soins est particulière et adaptée à la personne. C’est pour cette raison que les bienfaits sont différents.</p>',
+	'<p>Le Reiki est une pratique naturelle qui apporte un bien-être général à tous les niveaux de l’Être.</p><p>Le Reiki apporte plus de relaxation, aide à diminuer, ou à faire disparaître le stress, apporte plus de clarté mentale et émotionnelle, et généralement déclenche un processus d’autoguérison.</p>',
+	'<p>Il est vivement conseillé de faire dans un premier temps 4 séances rapprochées dans le temps.</p><p>Ces 4 séances représentent les 4 étapes théoriques du Reiki dans le fonctionnement énergétique.</p><p><strong>Voir explication pack de 4 séances.</strong></p><p>Après ces 4 séances, le receveur choisit de continuer ou pas.</p><p>Tout dépend de son ressenti et de la raison pour laquelle il a fait appel au Reiki.</p><p>Il peut demander une séance lorsque le besoin se fait sentir ou alors décider de faire une séance de façon régulière, comme par exemple tous les mois ou tous les 3 mois, etc.</p>',
+);
+
 $guide_nature_questions = array(
 	'Question 1',
 	'Question 2',
@@ -85,7 +92,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
 				</button>
 				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
-					<p>À venir</p>
+					<?php echo $reiki_answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
 				</div>
 			</div>
 
