@@ -3748,13 +3748,6 @@ body.page-template-me-contacter {
 
     opacity: 0;
 
-.soin-reiki-details {
-    max-height: 0;
-
-    margin-top: 0;
-
-    opacity: 0;
-
     overflow: hidden;
 
     transition:
@@ -3768,15 +3761,6 @@ body.page-template-me-contacter {
     opacity: 1;
     overflow: visible;
     margin-top: 0;
-}
-
-/* =========================
-    overflow: hidden;
-
-    transition:
-        max-height 0.5s ease,
-        opacity 0.35s ease,
-        margin-top 0.35s ease;
 }
 
 .soin-reiki-card.ouvert
