@@ -2651,6 +2651,17 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================
+   PROGRESSIVE ENHANCEMENT : visible sans JS
+   ========================= */
+
+.no-js .le-reiki-accordeon-contenu {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    margin-top: 0;
+}
+
+/* =========================
    CONTENU OUVERT PAR DÉFAUT
 ========================= */
 
@@ -3737,6 +3748,29 @@ body.page-template-me-contacter {
 
     opacity: 0;
 
+.soin-reiki-details {
+    max-height: 0;
+
+    margin-top: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.5s ease,
+        opacity 0.35s ease,
+        margin-top 0.35s ease;
+}
+
+.no-js .soin-reiki-details {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    margin-top: 0;
+}
+
+/* =========================
     overflow: hidden;
 
     transition:

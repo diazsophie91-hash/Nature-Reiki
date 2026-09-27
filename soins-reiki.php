@@ -188,6 +188,7 @@ foreach ( $soins as $soin_index => $soin ) :
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="true"
+				aria-controls="le-reiki-test-energetique-contenu"
 			>
 				<span>
 					Test énergétique avec pendule
@@ -213,7 +214,7 @@ foreach ( $soins as $soin_index => $soin ) :
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu ouvert">
+			<div id="le-reiki-test-energetique-contenu" class="le-reiki-accordeon-contenu ouvert" aria-hidden="false">
 
 				<p>
 					Tout être vivant est traversé par une énergie, dont l’équilibre peut varier au fil du temps et selon les différents aspects de notre être.
@@ -266,6 +267,7 @@ foreach ( $soins as $soin_index => $soin ) :
 				class="le-reiki-toggle"
 				type="button"
 				aria-expanded="true"
+				aria-controls="le-reiki-soins-detail-contenu"
 			>
 				<span>Les soins en détail</span>
 
@@ -277,7 +279,7 @@ foreach ( $soins as $soin_index => $soin ) :
 			</button>
 
 
-			<div class="le-reiki-accordeon-contenu ouvert">
+			<div id="le-reiki-soins-detail-contenu" class="le-reiki-accordeon-contenu ouvert" aria-hidden="false">
 
 				<!-- =========================
 					PACK 4 SÉANCES

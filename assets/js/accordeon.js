@@ -18,6 +18,9 @@
 
     document.addEventListener( 'DOMContentLoaded', function () {
 
+        // Progressive enhancement: remove no-js class when JS is active.
+        document.documentElement.classList.replace( 'no-js', 'js' );
+
         /**
          * Met à jour l'état (affiché/masqué) du contenu d'un accordéon.
          */
