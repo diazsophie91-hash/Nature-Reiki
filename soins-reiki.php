@@ -519,7 +519,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-paiement-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
+				<div id="soins-reiki-paiement-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Le paiement s'effectue en espèces.
@@ -546,7 +546,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-prevoir-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
+				<div id="soins-reiki-prevoir-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
 						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin. 
@@ -581,7 +581,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<span class="soins-reiki-accordeon-fleche"></span>
 				</button>
 
-				<div id="soins-reiki-foret-contenu"  class="soins-reiki-accordeon-contenu" aria-hidden="true">
+				<div id="soins-reiki-foret-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
 						La séance en forêt dépend des conditions météorologiques. En cas de météo défavorable, elle pourra être reportée.
