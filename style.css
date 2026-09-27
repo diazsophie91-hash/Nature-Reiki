@@ -4629,7 +4629,7 @@ body.universe-nature .page-faq .faq-univers-fleche {
     display: none;
 }
 
-/* Questions de la FAQ : police Lora (override du Cormorant Garamond global). */
+/* Questions de la FAQ : police Lora (remplace la police Cormorant Garamond globale). */
 .page-faq .soins-reiki-accordeon-bouton {
     font-family: "Lora", serif;
     font-weight: 500;
@@ -4723,12 +4723,12 @@ body.universe-nature .page-faq .faq-univers-fleche {
 
 /* =========================================================
    UNIVERS NATURE
-   Bloc autonome : aucune regle Reiki n'est modifiee ici.
+   Bloc autonome : aucune règle Reiki n'est modifiée ici.
    Toutes les classes sont prefixees par "nature-".
 ========================================================= */
 
 /* =========================================================
-   DEFILEMENT DES PAGES NATURE
+   DÉFILEMENT DES PAGES NATURE
 ========================================================= */
 
 html:has(body.page-template-accueil-guide-nature),
@@ -4820,7 +4820,7 @@ body.universe-native-nature .page-nature {
 }
 
 /* =========================================================
-   LIGNE + FEUILLE DE CHENE
+   LIGNE + FEUILLE DE CHÊNE
 ========================================================= */
 
 .nature-ligne-decoration {
@@ -5001,7 +5001,7 @@ body.page-template-balades .nature-bouton {
 }
 
 /* =========================================================
-   BOUTON "DEMANER UN DEVIS" — PAGE ANIMATIONS
+   BOUTON "DEMANDER UN DEVIS" — PAGE ANIMATIONS
    Bleu Nature pour harmoniser avec les grandes bannières
    ========================================================= */
 
@@ -5011,9 +5011,9 @@ body.page-template-animations .nature-bouton {
 }
 
 /* =========================================================
-   BANNIERES DE L'ACCUEIL NATURE
-   Texture propre à Nature : degrade en couches, distinct de
-   la texture peinture utilisée par les bannieres Reiki.
+   BANNIÈRES DE L'ACCUEIL NATURE
+   Texture propre à Nature : dégradé en couches, distinct de
+   la texture peinture utilisée par les bannières Reiki.
 ========================================================= */
 
 .nature-banniere {
