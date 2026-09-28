@@ -55,8 +55,8 @@ $nature_answers = array(
 	<p>Les réponses à vos questions<span class="sous-titre-point">.</span></p>
 	<div class="reiki-ligne-decoration">
 		<span></span>
-		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>" alt="">
-		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>" alt="">
+		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>" alt="" width="1536" height="1024">
+		<img src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>" alt="" width="1377" height="1142">
 		<span></span>
 	</div>
 </section>

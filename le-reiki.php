@@ -36,6 +36,8 @@ Template Name: Le Reiki
 				alt=""
 				aria-hidden="true"
 				decoding="async"
+<img src="<?php echo esc_url(nature_reiki_asset_url('images/lotus.svg')); ?>" alt="" aria-hidden="true" decoding="async" width="1536" height="1024">
+
 			>
 
 			<span></span>
@@ -132,6 +134,8 @@ Template Name: Le Reiki
 		alt="Mikao Usui"
 		loading="lazy"
 		decoding="async"
+		width="160"
+		height="229"
 	>
 
 	<figcaption>
