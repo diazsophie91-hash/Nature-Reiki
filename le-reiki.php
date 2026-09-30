@@ -60,18 +60,15 @@ Template Name: Le Reiki
 
 	<section class="le-reiki-section le-reiki-definition">
 
-		<div class="le-reiki-contenu">
+		<details class="le-reiki-contenu">
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="false"
-				aria-controls="le-reiki-definition-contenu"
 			>
 				<span>Qu'est-ce que le Reiki ?</span>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
-			</button>
+			</summary>
 
 
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu">
@@ -89,7 +86,7 @@ Template Name: Le Reiki
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -100,18 +97,15 @@ Template Name: Le Reiki
 
 	<section class="le-reiki-section le-reiki-origines">
 
-		<div class="le-reiki-contenu">
+		<details class="le-reiki-contenu">
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="false"
-				aria-controls="le-reiki-origines-contenu"
 			>
 				<span>Les origines du Reiki</span>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
-			</button>
+			</summary>
 
 
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-origines-contenu">
@@ -202,7 +196,7 @@ Template Name: Le Reiki
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -213,18 +207,15 @@ Template Name: Le Reiki
 
 	<section class="le-reiki-section le-reiki-fonctionnement">
 
-		<div class="le-reiki-contenu">
+		<details class="le-reiki-contenu">
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="false"
-				aria-controls="le-reiki-fonctionnement-contenu"
 			>
 				<span>Comment fonctionne le Reiki ?</span>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
-			</button>
+			</summary>
 
 
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu">
@@ -298,7 +289,7 @@ Template Name: Le Reiki
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -309,13 +300,10 @@ Template Name: Le Reiki
 
 	<section class="le-reiki-section le-reiki-gokai">
 
-		<div class="le-reiki-contenu">
+		<details class="le-reiki-contenu">
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="false"
-				aria-controls="le-reiki-gokai-contenu"
 			>
 				<span>
 					Les 5 Gokai
@@ -323,7 +311,7 @@ Template Name: Le Reiki
 				</span>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
-			</button>
+			</summary>
 
 
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-gokai-contenu">
@@ -399,7 +387,7 @@ foreach ( $gokai_items as $item ) {
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -410,18 +398,15 @@ foreach ( $gokai_items as $item ) {
 
 	<section class="le-reiki-section le-reiki-pourquoi">
 
-		<div class="le-reiki-contenu">
+		<details class="le-reiki-contenu">
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="false"
-				aria-controls="le-reiki-pourquoi-contenu"
 			>
 				<span>Pourquoi faire appel au Reiki ?</span>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
-			</button>
+			</summary>
 
 
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-pourquoi-contenu">
@@ -492,7 +477,7 @@ foreach ( $gokai_items as $item ) {
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 

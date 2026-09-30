@@ -174,19 +174,19 @@ get_header(); ?>
 				</p>
 				<?php endif; ?>
 
-				<button
-					type="button"
-					class="nature-carte-en-savoir-plus"
-					aria-expanded="false"
-					aria-controls="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>"
-				>
-					<span>En savoir plus</span>
-					<span class="nature-carte-fleche" aria-hidden="true"></span>
-				</button>
+				<details class="nature-carte-accordeon">
+					<summary
+						class="nature-carte-en-savoir-plus"
+						aria-controls="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>"
+					>
+						<span>En savoir plus</span>
+						<span class="nature-carte-fleche" aria-hidden="true"></span>
+					</summary>
 
-				<div class="nature-carte-details" id="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>">
-					<?php echo wp_kses_post( $balade['contenu'] ); ?>
-				</div>
+					<div class="nature-carte-details" id="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>">
+						<?php echo wp_kses_post( $balade['contenu'] ); ?>
+					</div>
+				</details>
 
 			</article>
 

@@ -130,27 +130,28 @@ foreach ( $soins as $soin_index => $soin ) :
 						<?php echo esc_html( $soin['prix'] ); ?>
 					</div>
 
-					<button
-						type="button"
-						class="soin-reiki-en-savoir-plus"
-						aria-expanded="false"
-						aria-controls="soins-reiki-details-<?php echo esc_attr( $soin_index ); ?>"
+					<details class="soin-reiki-card-accordeon">
+						<summary
+							class="soin-reiki-en-savoir-plus"
+							aria-controls="soins-reiki-details-<?php echo esc_attr( $soin_index ); ?>"
 						>
-						En savoir plus
-						<span class="soin-reiki-fleche"></span>
-					</button>
+							En savoir plus
+							<span class="soin-reiki-fleche"></span>
+						</summary>
 
-					<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
+						<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
 
-						<p>
-							<?php echo esc_html( $soin['description'] ); ?>
-						</p>
+							<p>
+								<?php echo esc_html( $soin['description'] ); ?>
+							</p>
 
-						<p class="soin-reiki-test">
-							<?php echo wp_kses( $soin['test_html'], array( 'strong' => array() ) ); ?>
-						</p>
+							<p class="soin-reiki-test">
+								<?php echo wp_kses( $soin['test_html'], array( 'strong' => array() ) ); ?>
+							</p>
 
-					</div>
+						</div>
+
+					</details>
 
 				</article>
 
@@ -192,13 +193,10 @@ foreach ( $soins as $soin_index => $soin ) :
 
 	<section class="le-reiki-section soins-reiki-test-energetique">
 
-		<div class="le-reiki-contenu ouvert">
+		<details class="le-reiki-contenu" open>
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="true"
-				aria-controls="le-reiki-test-energetique-contenu"
 			>
 				<span>
 					Test énergétique avec pendule
@@ -223,10 +221,10 @@ foreach ( $soins as $soin_index => $soin ) :
 							aria-hidden="true"
 				></span>
 
-			</button>
+			</summary>
 
 
-			<div id="le-reiki-test-energetique-contenu" class="le-reiki-accordeon-contenu ouvert" aria-hidden="false">
+			<div id="le-reiki-test-energetique-contenu" class="le-reiki-accordeon-contenu">
 
 				<p>
 					Tout être vivant est traversé par une énergie, dont l’équilibre peut varier au fil du temps et selon les différents aspects de notre être.
@@ -262,7 +260,7 @@ foreach ( $soins as $soin_index => $soin ) :
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -273,13 +271,10 @@ foreach ( $soins as $soin_index => $soin ) :
 
 	<section class="le-reiki-section soins-reiki-explications">
 
-		<div class="le-reiki-contenu ouvert">
+		<details class="le-reiki-contenu" open>
 
-			<button
+			<summary
 				class="le-reiki-toggle"
-				type="button"
-				aria-expanded="true"
-				aria-controls="le-reiki-soins-detail-contenu"
 			>
 				<span>Les soins en détail</span>
 
@@ -288,10 +283,10 @@ foreach ( $soins as $soin_index => $soin ) :
 							aria-hidden="true"
 				></span>
 
-			</button>
+			</summary>
 
 
-			<div id="le-reiki-soins-detail-contenu" class="le-reiki-accordeon-contenu ouvert" aria-hidden="false">
+			<div id="le-reiki-soins-detail-contenu" class="le-reiki-accordeon-contenu">
 
 				<!-- =========================
 					PACK 4 SÉANCES
@@ -432,7 +427,7 @@ foreach ( $soins as $soin_index => $soin ) :
 
 			</div>
 
-		</div>
+		</details>
 
 	</section>
 
@@ -452,18 +447,15 @@ foreach ( $soins as $soin_index => $soin ) :
 				LIEU
 			========================== -->
 
-			<div class="soins-reiki-accordeon">
+			<details class="soins-reiki-accordeon">
 
-				<button
-					type="button"
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
-				aria-controls="soins-reiki-lieu-contenu"
 					>
 					<span>Lieu</span>
 
 					<span class="soins-reiki-accordeon-fleche"></span>
-				</button>
+				</summary>
 
 				<div id="soins-reiki-lieu-contenu" class="soins-reiki-accordeon-contenu">
 
@@ -477,24 +469,21 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</div>
 
-			</div>
+			</details>
 
 
 			<!-- =========================
 				DURÉE
 			========================== -->
 
-			<div class="soins-reiki-accordeon">
+			<details class="soins-reiki-accordeon">
 
-				<button
-					type="button"
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
-				aria-controls="soins-reiki-duree-contenu"
 					>
 					<span>Durée</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
-				</button>
+				</summary>
 
 				<div id="soins-reiki-duree-contenu" class="soins-reiki-accordeon-contenu">
 
@@ -512,24 +501,21 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</div>
 
-			</div>
+			</details>
 
 
 			<!-- =========================
 				PAIEMENT
 			========================== -->
 
-			<div class="soins-reiki-accordeon">
+			<details class="soins-reiki-accordeon">
 
-				<button
-					type="button"
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
-				aria-controls="soins-reiki-paiement-contenu"
 					>
 					<span>Paiement</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
-				</button>
+				</summary>
 
 				<div id="soins-reiki-paiement-contenu" class="soins-reiki-accordeon-contenu">
 
@@ -539,24 +525,21 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</div>
 
-			</div>
+			</details>
 
 
 			<!-- =========================
 				QUE FAUT-IL PRÉVOIR ?
 			========================== -->
 
-			<div class="soins-reiki-accordeon">
+			<details class="soins-reiki-accordeon">
 
-				<button
-					type="button"
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
-				aria-controls="soins-reiki-prevoir-contenu"
 					>
 					<span>Que faut-il prévoir ?</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
-				</button>
+				</summary>
 
 				<div id="soins-reiki-prevoir-contenu" class="soins-reiki-accordeon-contenu">
 
@@ -574,24 +557,21 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</div>
 
-			</div>
+			</details>
 
 
 			<!-- =========================
 				SÉANCE EN FORÊT
 			========================== -->
 
-			<div class="soins-reiki-accordeon">
+			<details class="soins-reiki-accordeon">
 
-				<button
-					type="button"
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
-				aria-controls="soins-reiki-foret-contenu"
 					>
 					<span>Séance en forêt</span>
 					<span class="soins-reiki-accordeon-fleche"></span>
-				</button>
+				</summary>
 
 				<div id="soins-reiki-foret-contenu" class="soins-reiki-accordeon-contenu">
 
@@ -601,7 +581,7 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</div>
 
-			</div>
+			</details>
 
 		</div>
 

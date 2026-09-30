@@ -2100,7 +2100,7 @@ body.universe-nature .qui-suis-je-contenu p {
    CONTENU OUVERT
 ========================================================= */
 
-.qui-suis-je-parcours.ouvert .le-reiki-accordeon-contenu {
+.qui-suis-je-parcours[open] .le-reiki-accordeon-contenu {
     max-height: 10000px;
 
     opacity: 1;
@@ -2196,7 +2196,7 @@ body.universe-nature .qui-suis-je-parcours-contenu
         visibility 0.3s ease;
 }
 
-.qui-suis-je-reiki.ouvert .ligne-reiki-decoration {
+.qui-suis-je-reiki[open] .ligne-reiki-decoration {
     max-height: 500px;
     margin-top: 24px;
     opacity: 1;
@@ -2530,6 +2530,26 @@ body.page-template-le-reiki .page-le-reiki {
    ACCORDÉONS
 ========================================================= */
 
+/* =========================================================
+   MARQUEUR NATIF DES ACCORDÉONS
+========================================================= */
+
+.le-reiki-toggle,
+.soin-reiki-en-savoir-plus,
+.soins-reiki-accordeon-bouton,
+.faq-univers-bouton,
+.nature-carte-en-savoir-plus {
+    list-style: none;
+}
+
+.le-reiki-toggle::-webkit-details-marker,
+.soin-reiki-en-savoir-plus::-webkit-details-marker,
+.soins-reiki-accordeon-bouton::-webkit-details-marker,
+.faq-univers-bouton::-webkit-details-marker,
+.nature-carte-en-savoir-plus::-webkit-details-marker {
+    display: none;
+}
+
 /* =========================
    BOUTON / TITRE
 ========================= */
@@ -2630,45 +2650,24 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 }
 
 /* =========================
-   CONTENU REPLIABLE
+   CONTENU DES ACCORDÉONS NATIFS
 ========================= */
 
 .le-reiki-accordeon-contenu {
     width: 100%;
-
-    max-height: 0;
-
-    opacity: 0;
-
-    overflow: hidden;
-
-    margin-top: 0;
-
-    transition:
-        max-height 0.6s ease,
-        opacity 0.4s ease,
-        margin-top 0.4s ease;
+    margin-top: 28px;
 }
-
 /* =========================
-   PROGRESSIVE ENHANCEMENT : visible sans JS
-   ========================= */
-
-.no-js .le-reiki-accordeon-contenu,
-.no-js .soin-reiki-details,
-.no-js .soins-reiki-accordeon-contenu,
-.no-js .nature-carte-details {
-    max-height: none;
-    opacity: 1;
-    overflow: visible;
-    margin-top: 0;
-}
-
+   ACCORDÉONS NATIFS
+   =========================
+   Les éléments <details>/<summary> assurent l'ouverture/fermeture
+   sans dépendre de JavaScript.
+*/
 /* =========================
    CONTENU OUVERT PAR DÉFAUT
 ========================= */
 
-.le-reiki-contenu.ouvert .le-reiki-accordeon-contenu {
+.le-reiki-contenu[open] .le-reiki-accordeon-contenu {
     max-height: 10000px;
 
     opacity: 1;
@@ -2680,7 +2679,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
    CHEVRON OUVERT
 ========================= */
 
-.le-reiki-toggle[aria-expanded="true"] .le-reiki-fleche {
+.le-reiki-contenu[open] > .le-reiki-toggle .le-reiki-fleche {
     transform: rotate(225deg);
 }
 
@@ -3733,41 +3732,25 @@ body.page-template-me-contacter {
     transition: transform 0.3s ease;
 }
 
-.soin-reiki-card.ouvert
+.soin-reiki-card-accordeon[open]
 .soin-reiki-fleche {
     transform: rotate(225deg);
 }
 
 /* =========================================================
-   CONTENU DÉPLIABLE DES CARTES
-========================================================= */
+   CONTENU DES ACCORDÉONS NATIFS
+   ========================================================= */
+
+.soin-reiki-card-accordeon {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
 
 .soin-reiki-details {
     width: 100%;
-
-    max-height: 0;
-
-    margin-top: 0;
-
-    opacity: 0;
-
-    overflow: hidden;
-
-    transition:
-        max-height 0.5s ease,
-        opacity 0.35s ease,
-        margin-top 0.35s ease;
-}
-
-
-
-.soin-reiki-card.ouvert
-.soin-reiki-details {
     margin-top: 22px;
-
-    opacity: 1;
 }
-
 /* =========================================================
    TEXTE DES CARTES
 ========================================================= */
@@ -4125,7 +4108,7 @@ body.page-template-me-contacter {
     transition: transform 0.3s ease;
 }
 
-.soins-reiki-accordeon.ouvert
+.soins-reiki-accordeon[open]
 .soins-reiki-accordeon-fleche {
     transform: rotate(225deg);
 }
@@ -4138,28 +4121,12 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 }
 
 /* =========================================================
-   CONTENU ACCORDÉON
+   CONTENU DES ACCORDÉONS NATIFS
 ========================================================= */
 
 .soins-reiki-accordeon-contenu {
     width: 100%;
-
-    max-height: 0;
-
-    opacity: 0;
-
-    overflow: hidden;
-
-    transition:
-        max-height 0.5s ease,
-        opacity 0.35s ease;
 }
-
-.soins-reiki-accordeon.ouvert
-.soins-reiki-accordeon-contenu {
-    opacity: 1;
-}
-
 .soins-reiki-accordeon-contenu p {
     margin: 0;
 
@@ -4345,10 +4312,6 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 
 
-.soin-reiki-card.ouvert {
-    box-shadow: var(--shadow-card-open);
-}
-
 /* ---------------------------------------------------------
    4. LE REIKI → RYTHME ENTRE LES GRANDES SECTIONS
 --------------------------------------------------------- */
@@ -4387,7 +4350,7 @@ body.universe-native-nature .soins-reiki-accordeon {
    6. ACCORDÉONS → ÉTAT OUVERT PLUS LISIBLE
 --------------------------------------------------------- */
 
-.soins-reiki-accordeon.ouvert {
+.soins-reiki-accordeon[open] {
     box-shadow: var(--shadow-accordion-open);
 }
 
@@ -4624,7 +4587,7 @@ body.universe-nature .page-faq .faq-univers-fleche {
     border-bottom-color: var(--color-nature-menu-border);
 }
 
-.page-faq .faq-univers.ouvert
+.page-faq .faq-univers[open]
 .faq-univers-fleche {
     transform: rotate(225deg);
 }
@@ -4639,10 +4602,6 @@ body.universe-nature .page-faq .faq-univers-fleche {
 
     padding-top: 25px;
     padding-bottom: 10px;
-}
-
-.page-faq .faq-univers-contenu[hidden] {
-    display: none;
 }
 
 /* Questions de la FAQ : police Lora (remplace la police Cormorant Garamond globale). */
@@ -5370,39 +5329,25 @@ body.page-template-animations .nature-bouton {
     transition: transform 0.3s ease;
 }
 
-.nature-carte.ouvert
+.nature-carte-accordeon[open]
 .nature-carte-fleche {
     transform: rotate(225deg);
 }
 
 /* =========================================================
-   CONTENU DÉPLIABLE DES CARTES NATURE
+   CONTENU DES ACCORDÉONS NATIFS
    ========================================================= */
+
+.nature-carte-accordeon {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
 
 .nature-carte-details {
     width: 100%;
-
-    max-height: 0;
-
-    margin-top: 0;
-
-    opacity: 0;
-
-    overflow: hidden;
-
-    transition:
-        max-height 0.5s ease,
-        opacity 0.35s ease,
-        margin-top 0.35s ease;
-}
-
-.nature-carte.ouvert
-.nature-carte-details {
     margin-top: 22px;
-
-    opacity: 1;
 }
-
 .nature-carte-details p {
     margin: 0 0 16px;
 
@@ -5420,11 +5365,6 @@ body.page-template-animations .nature-bouton {
 .nature-carte-details p:last-of-type {
     margin-bottom: 20px;
 }
-
-.nature-carte.ouvert {
-    box-shadow: var(--shadow-card-open);
-}
-
 
 
 /* =========================================================

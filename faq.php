@@ -72,16 +72,14 @@ foreach ( $univers_ordre as $univers_faq ) :
 	$questions  = ( 'nature' === $univers_faq ) ? $guide_nature_questions : $reiki_questions;
 	?>
 
-	<div class="faq-univers">
-		<button
-			type="button"
+	<details class="faq-univers" open>
+		<summary
 			class="faq-univers-bouton"
-			aria-expanded="true"
 			aria-controls="<?php echo esc_attr( $univers_id ); ?>"
 		>
 			<span><?php echo ( 'nature' === $univers_faq ) ? 'Guide-Nature' : 'Reiki'; ?></span>
 			<span class="faq-univers-fleche" aria-hidden="true"></span>
-		</button>
+		</summary>
 		<div class="faq-univers-contenu" id="<?php echo esc_attr( $univers_id ); ?>" aria-hidden="false">
 
 	<?php
@@ -89,25 +87,23 @@ foreach ( $univers_ordre as $univers_faq ) :
 		$question_id = $univers_id . '-question-' . $i;
 		?>
 
-			<div class="soins-reiki-accordeon">
-				<button
-					type="button"
+			<details class="soins-reiki-accordeon">
+				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
 					aria-controls="<?php echo esc_attr( $question_id ); ?>"
 				>
 					<span><?php echo esc_html( $questions[ $i - 1 ] ); ?></span>
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
-				</button>
+				</summary>
 				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
 					<?php $answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers; echo $answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
 				</div>
-			</div>
+			</details>
 
 	<?php endfor; ?>
 
 		</div>
-	</div>
+	</details>
 
 <?php endforeach; ?>
 

@@ -188,13 +188,10 @@ Template Name: Qui suis-je ?
 				MON PARCOURS GUIDE-NATURE
 			========================== -->
 
-			<section class="qui-suis-je-parcours qui-suis-je-nature">
+			<details class="qui-suis-je-parcours qui-suis-je-nature">
 
-				<button
+				<summary
 					class="le-reiki-toggle"
-					type="button"
-					aria-expanded="false"
-					aria-controls="qui-suis-je-nature-contenu"
 				>
 
 					<span>Mon parcours Guide-Nature</span>
@@ -204,7 +201,7 @@ Template Name: Qui suis-je ?
 				aria-hidden="true"
 					></span>
 
-				</button>
+				</summary>
 
 
 				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-nature-contenu">
@@ -263,7 +260,7 @@ Template Name: Qui suis-je ?
 
 				</div>
 
-			</section>
+			</details>
 
 
 		<?php elseif ( 'reiki' === $parcours ) : ?>
@@ -272,13 +269,10 @@ Template Name: Qui suis-je ?
 				MON PARCOURS REIKI
 			========================== -->
 
-			<section class="qui-suis-je-parcours qui-suis-je-reiki">
+			<details class="qui-suis-je-parcours qui-suis-je-reiki">
 
-				<button
+				<summary
 					class="le-reiki-toggle"
-					type="button"
-					aria-expanded="false"
-					aria-controls="qui-suis-je-reiki-contenu"
 				>
 
 					<span>Mon parcours Reiki</span>
@@ -288,7 +282,7 @@ Template Name: Qui suis-je ?
 				aria-hidden="true"
 					></span>
 
-				</button>
+				</summary>
 
 
 				<div class="le-reiki-accordeon-contenu qui-suis-je-parcours-contenu" id="qui-suis-je-reiki-contenu">
@@ -364,7 +358,7 @@ Template Name: Qui suis-je ?
 
 </div>
 
-			</section>
+			</details>
 
 
 		<?php endif; ?>
