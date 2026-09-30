@@ -2683,6 +2683,12 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     transform: rotate(225deg);
 }
 
+/* Chevron ouvert des accordéons de la page « Qui suis-je » */
+.qui-suis-je-parcours[open] > .le-reiki-toggle .le-reiki-fleche {
+    transform: rotate(225deg);
+}
+
+
 /* =========================================================
    TEXTES
 ========================================================= */
@@ -4093,8 +4099,8 @@ body.page-template-me-contacter {
 ========================================================= */
 
 .soins-reiki-accordeon-fleche {
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    height: 16px;
 
     flex-shrink: 0;
 
@@ -4567,8 +4573,8 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
 ========================================================= */
 
 .page-faq .faq-univers-fleche {
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    height: 16px;
 
     flex-shrink: 0;
 
