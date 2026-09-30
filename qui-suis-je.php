@@ -192,6 +192,8 @@ Template Name: Qui suis-je ?
 
 				<summary
 					class="le-reiki-toggle"
+					aria-expanded="false"
+					aria-controls="qui-suis-je-nature-contenu"
 				>
 
 					<span>Mon parcours Guide-Nature</span>
@@ -273,6 +275,8 @@ Template Name: Qui suis-je ?
 
 				<summary
 					class="le-reiki-toggle"
+					aria-expanded="false"
+					aria-controls="qui-suis-je-reiki-contenu"
 				>
 
 					<span>Mon parcours Reiki</span>

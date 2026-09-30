@@ -177,6 +177,7 @@ get_header(); ?>
 				<details class="nature-carte-accordeon">
 					<summary
 						class="nature-carte-en-savoir-plus"
+						aria-expanded="false"
 						aria-controls="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>"
 					>
 						<span>En savoir plus</span>

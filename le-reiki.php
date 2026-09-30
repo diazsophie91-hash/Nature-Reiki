@@ -64,6 +64,8 @@ Template Name: Le Reiki
 
 			<summary
 				class="le-reiki-toggle"
+				aria-expanded="false"
+				aria-controls="le-reiki-definition-contenu"
 			>
 				<span>Qu'est-ce que le Reiki ?</span>
 
@@ -101,6 +103,8 @@ Template Name: Le Reiki
 
 			<summary
 				class="le-reiki-toggle"
+				aria-expanded="false"
+				aria-controls="le-reiki-origines-contenu"
 			>
 				<span>Les origines du Reiki</span>
 
@@ -211,6 +215,8 @@ Template Name: Le Reiki
 
 			<summary
 				class="le-reiki-toggle"
+				aria-expanded="false"
+				aria-controls="le-reiki-fonctionnement-contenu"
 			>
 				<span>Comment fonctionne le Reiki ?</span>
 
@@ -304,6 +310,8 @@ Template Name: Le Reiki
 
 			<summary
 				class="le-reiki-toggle"
+				aria-expanded="false"
+				aria-controls="le-reiki-gokai-contenu"
 			>
 				<span>
 					Les 5 Gokai
@@ -402,6 +410,8 @@ foreach ( $gokai_items as $item ) {
 
 			<summary
 				class="le-reiki-toggle"
+				aria-expanded="false"
+				aria-controls="le-reiki-pourquoi-contenu"
 			>
 				<span>Pourquoi faire appel au Reiki ?</span>
 
