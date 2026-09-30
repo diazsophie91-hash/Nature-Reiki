@@ -58,6 +58,8 @@ if ( $is_reiki ) {
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
+				width="1377"
+				height="1142"
 				aria-hidden="true"
 				class="switch-symbole"
 			>
@@ -82,6 +84,8 @@ if ( $is_reiki ) {
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>"
 				alt=""
+				width="1536"
+				height="1024"
 				aria-hidden="true"
 				class="switch-symbole"
 			>
@@ -102,6 +106,8 @@ if ( $is_reiki ) {
 		<img
 			src="<?php echo esc_url( nature_reiki_asset_url( 'images/facebook.png' ) ); ?>"
 			alt=""
+			width="1254"
+			height="1254"
 			aria-hidden="true"
 		>
 	</a>
