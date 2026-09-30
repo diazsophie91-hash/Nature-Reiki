@@ -28,13 +28,15 @@ if ( $is_reiki ) {
 	$logo = 'images/logo-nature-reiki-transparent.png';
 }
 
-$logo_dimensions = wp_getimagesize( get_theme_file_path( $logo ) );
-$logo_width      = 150;
-$logo_height     = 150;
-
-if ( is_array( $logo_dimensions ) ) {
-	$logo_width  = (int) $logo_dimensions[0];
-	$logo_height = (int) $logo_dimensions[1];
+if ( 'images/logo-reiki-transparent.png' === $logo ) {
+	$logo_width  = 1203;
+	$logo_height = 1307;
+} elseif ( 'images/logo-guide-nature-transparent.png' === $logo ) {
+	$logo_width  = 1210;
+	$logo_height = 1300;
+} else {
+	$logo_width  = 1230;
+	$logo_height = 1278;
 }
 ?>
 

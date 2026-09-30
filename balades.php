@@ -94,6 +94,8 @@ get_header(); ?>
 				'titre'    => 'Sur les pas des Celtes à nos jours',
 				'mention'  => '',
 				'image'    => 'images/celte.svg',
+				'width'    => 1312,
+				'height'   => 1199,
 				'variante' => 'nature-carte--verte',
 				'contenu'  => '<p>Depuis mon enfance, la nature a toujours occupé une place particulière dans ma vie. Les plantes, les arbres, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité.</p><p>Cette balade invite à marcher, observer et comprendre, en suivant les traces de ceux qui nous ont précédés et en découvrant l’histoire qui s’écrit autour de nous, entre terre et ciel.</p>',
 			),
@@ -101,6 +103,8 @@ get_header(); ?>
 				'titre'    => 'Mon ami l’arbre',
 				'mention'  => '',
 				'image'    => 'images/chene.png',
+				'width'    => 1377,
+				'height'   => 1142,
 				'variante' => 'nature-carte--verte',
 				'contenu'  => '<p>Les arbres, les plantes, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité. Dans cette balade, nous apprendrons à observer l’arbre autrement, à lire ses cicatrices, ses branches et sa présence dans le paysage.</p><p>L’arbre est un compagnon de route qui nous enseigne la patience, la résilience et le lien profond qui nous unit au vivant.</p>',
 			),
@@ -108,6 +112,8 @@ get_header(); ?>
 				'titre'    => 'La forêt autrement',
 				'mention'  => '',
 				'image'    => 'images/miroir.png',
+				'width'    => 1536,
+				'height'   => 1024,
 				'variante' => 'nature-carte--brune',
 				'contenu'  => '<p>La forêt est un lieu où l’on peut être au calme, s’émerveiller et simplement se sentir exister. Dans cette balade, nous apprendrons à l’observer autrement, à ralentir et à écouter ce qu’elle a à nous dire.</p><p>Chaque pas devient une rencontre avec le vivant, les plantes sauvages, les arbres et les animaux qui l’habitent.</p>',
 			),
@@ -115,6 +121,8 @@ get_header(); ?>
 				'titre'    => 'Traces et indices en forêt',
 				'mention'  => '',
 				'image'    => 'images/trace.svg',
+				'width'    => 414,
+				'height'   => 442,
 				'variante' => 'nature-carte--brune',
 				'contenu'  => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à lire les traces, les indices et les signes discrets qui révèlent la présence de la vie dans la forêt.</p>',
 			),
@@ -122,6 +130,8 @@ get_header(); ?>
 				'titre'    => 'Cuisine sauvage',
 				'mention'  => '',
 				'image'    => 'images/cuisine.png',
+				'width'    => 1093,
+				'height'   => 1438,
 				'variante' => 'nature-carte--bleue',
 				'contenu'  => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à reconnaître les plantes sauvages comestibles, à les observer et à les intégrer avec respect dans notre cuisine quotidienne.</p>',
 			),
@@ -129,6 +139,8 @@ get_header(); ?>
 				'titre'    => 'Découverte carrières',
 				'mention'  => '',
 				'image'    => 'images/pierres.png',
+				'width'    => 1536,
+				'height'   => 1024,
 				'variante' => 'nature-carte--bleue',
 				'contenu'  => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à découvrir les carrières, à comprendre leur histoire, leur géologie et la manière dont elles participent à la richesse du paysage et de la biodiversité locale.</p>',
 			),
@@ -142,22 +154,13 @@ get_header(); ?>
 			<article class="nature-carte <?php echo esc_attr( $balade['variante'] ); ?>">
 
 				<div class="nature-carte-symbole">
-					<?php
-					$balade_dimensions = wp_getimagesize( get_theme_file_path( $balade['image'] ) );
-					$balade_width      = 48;
-					$balade_height     = 48;
-
-					if ( is_array( $balade_dimensions ) ) {
-						$balade_width  = (int) $balade_dimensions[0];
-						$balade_height = (int) $balade_dimensions[1];
-					}
-					?>
+					
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $balade['image'] ) ); ?>"
 						alt=""
 						aria-hidden="true"
-						width="<?php echo esc_attr( $balade_width ); ?>"
-						height="<?php echo esc_attr( $balade_height ); ?>"
+						width="<?php echo esc_attr( $balade['width'] ); ?>"
+						height="<?php echo esc_attr( $balade['height'] ); ?>"
 						loading="lazy"
 						decoding="async"
 					>
@@ -245,26 +248,38 @@ get_header(); ?>
 		$diapositives = array(
 			array(
 				'image'   => 'images/celte.jpg',
+				'width'   => 768,
+				'height'  => 1024,
 				'legende' => 'Sur les pas des Celtes à nos jours',
 			),
 			array(
 				'image'   => 'images/ami-arbre.jpg',
+				'width'   => 1365,
+				'height'  => 2048,
 				'legende' => 'Mon ami l’arbre',
 			),
 			array(
 				'image'   => 'images/foret-autrement.png',
+				'width'   => 970,
+				'height'  => 508,
 				'legende' => 'La forêt autrement',
 			),
 			array(
 				'image'   => 'images/traces.jpg',
+				'width'   => 365,
+				'height'  => 547,
 				'legende' => 'Traces et indices en forêt',
 			),
 			array(
 				'image'   => 'images/cuisine.jpg',
+				'width'   => 2048,
+				'height'  => 1152,
 				'legende' => 'Cuisine sauvage',
 			),
 			array(
 				'image'   => 'images/carriere.jpg',
+				'width'   => 576,
+				'height'  => 768,
 				'legende' => 'Découverte carrières',
 			),
 		);
@@ -289,21 +304,12 @@ get_header(); ?>
 					>
 
 						<figure class="nature-carrousel-figure">
-							<?php
-							$diapositive_dimensions = wp_getimagesize( get_theme_file_path( $diapositive['image'] ) );
-							$diapositive_width      = 1100;
-							$diapositive_height     = 330;
-
-							if ( is_array( $diapositive_dimensions ) ) {
-								$diapositive_width  = (int) $diapositive_dimensions[0];
-								$diapositive_height = (int) $diapositive_dimensions[1];
-							}
-							?>
+							
 							<img
 								src="<?php echo esc_url( nature_reiki_asset_url( $diapositive['image'] ) ); ?>"
 								alt="<?php echo esc_attr( $diapositive['legende'] ); ?>"
-								width="<?php echo esc_attr( $diapositive_width ); ?>"
-								height="<?php echo esc_attr( $diapositive_height ); ?>"
+								width="<?php echo esc_attr( $diapositive['width'] ); ?>"
+								height="<?php echo esc_attr( $diapositive['height'] ); ?>"
 								loading="lazy"
 								decoding="async"
 							>
