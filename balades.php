@@ -142,10 +142,22 @@ get_header(); ?>
 			<article class="nature-carte <?php echo esc_attr( $balade['variante'] ); ?>">
 
 				<div class="nature-carte-symbole">
+					<?php
+					$balade_dimensions = wp_getimagesize( get_theme_file_path( $balade['image'] ) );
+					$balade_width      = 48;
+					$balade_height     = 48;
+
+					if ( is_array( $balade_dimensions ) ) {
+						$balade_width  = (int) $balade_dimensions[0];
+						$balade_height = (int) $balade_dimensions[1];
+					}
+					?>
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $balade['image'] ) ); ?>"
 						alt=""
 						aria-hidden="true"
+						width="<?php echo esc_attr( $balade_width ); ?>"
+						height="<?php echo esc_attr( $balade_height ); ?>"
 						loading="lazy"
 						decoding="async"
 					>
@@ -277,9 +289,21 @@ get_header(); ?>
 					>
 
 						<figure class="nature-carrousel-figure">
+							<?php
+							$diapositive_dimensions = wp_getimagesize( get_theme_file_path( $diapositive['image'] ) );
+							$diapositive_width      = 1100;
+							$diapositive_height     = 330;
+
+							if ( is_array( $diapositive_dimensions ) ) {
+								$diapositive_width  = (int) $diapositive_dimensions[0];
+								$diapositive_height = (int) $diapositive_dimensions[1];
+							}
+							?>
 							<img
 								src="<?php echo esc_url( nature_reiki_asset_url( $diapositive['image'] ) ); ?>"
 								alt="<?php echo esc_attr( $diapositive['legende'] ); ?>"
+								width="<?php echo esc_attr( $diapositive_width ); ?>"
+								height="<?php echo esc_attr( $diapositive_height ); ?>"
 								loading="lazy"
 								decoding="async"
 							>
