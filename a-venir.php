@@ -87,12 +87,16 @@ get_header(); ?>
 				'titre'       => 'Balade champignons',
 				'description' => 'Une sortie consacrée à l’observation des champignons : où les chercher, comment les regarder et quel rôle ils jouent dans la forêt.',
 				'image'       => 'images/champignon.svg',
+			'image_width'  => 235,
+			'image_height' => 276,
 				'variante'    => 'nature-carte--brune',
 			),
 			array(
 				'titre'       => 'Balade dans les vignes',
 				'description' => 'Une balade au fil des vignes, pour découvrir ce milieu particulier, son paysage et la vie qui s’y installe.',
 				'image'       => 'images/vigne.png',
+			'image_width'  => 1093,
+			'image_height' => 1438,
 				'variante'    => 'nature-carte--bleue',
 			),
 		);
@@ -108,6 +112,8 @@ get_header(); ?>
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $projet['image'] ) ); ?>"
 						alt=""
+				width="<?php echo esc_attr( $projet['image_width'] ); ?>"
+				height="<?php echo esc_attr( $projet['image_height'] ); ?>"
 						aria-hidden="true"
 						loading="lazy"
 						decoding="async"

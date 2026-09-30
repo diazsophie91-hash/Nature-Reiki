@@ -24,6 +24,8 @@ Template Name: Accueil Reiki
 		<img
 			src="<?php echo esc_url( nature_reiki_asset_url( 'images/lotus.svg' ) ); ?>"
 			alt=""
+				width="1536"
+				height="1024"
 			aria-hidden="true"
 			decoding="async"
 		>
@@ -54,6 +56,8 @@ $bannieres = array(
 		'url'             => home_url( '/qui-suis-je/?univers=reiki' ),
 		'bouton_text'     => 'Découvrir mon parcours →',
 		'image'           => 'images/arbre-vie.png',
+			'image_width'  => 1377,
+			'image_height' => 1142,
 		'image_alt'       => '',
 	),
 	array(
@@ -70,6 +74,8 @@ $bannieres = array(
 		'url'             => home_url( '/le-reiki/' ),
 		'bouton_text'     => 'En savoir plus →',
 		'image'           => 'images/lotus.svg',
+			'image_width'  => 1536,
+			'image_height' => 1024,
 		'image_alt'       => '',
 	),
 	array(
@@ -86,6 +92,8 @@ $bannieres = array(
 		'url'             => home_url( '/soins-reiki/' ),
 		'bouton_text'     => 'Découvrir les soins →',
 		'image'           => 'images/pendule.svg',
+			'image_width'  => 1024,
+			'image_height' => 1536,
 		'image_alt'       => 'Pendule de Reiki',
 	),
 );
@@ -102,6 +110,8 @@ $bannieres = array(
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( $banniere['image'] ) ); ?>"
 				alt="<?php echo esc_attr( $banniere['image_alt'] ); ?>"
+				width="<?php echo esc_attr( $banniere['image_width'] ); ?>"
+				height="<?php echo esc_attr( $banniere['image_height'] ); ?>"
 				aria-hidden="true"
 				loading="lazy"
 				decoding="async"

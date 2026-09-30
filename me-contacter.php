@@ -34,6 +34,8 @@ get_header();
 			?>
 			"
 			alt=""
+				width="1536"
+				height="1024"
 			aria-hidden="true"
 
 				decoding="async"
@@ -49,6 +51,8 @@ get_header();
 			?>
 			"
 			alt=""
+				width="1377"
+				height="1142"
 			aria-hidden="true"
 
 				decoding="async"
@@ -92,6 +96,8 @@ get_header();
 						?>
 						"
 						alt="Adresse"
+				width="1230"
+				height="1278"
 						loading="lazy"
 						decoding="async"
 					>
@@ -130,6 +136,8 @@ get_header();
 						?>
 						"
 						alt="E-mail"
+				width="1536"
+				height="1024"
 						loading="lazy"
 						decoding="async"
 					>
@@ -164,6 +172,8 @@ get_header();
 						?>
 						"
 						alt="Téléphone"
+				width="1024"
+				height="1536"
 						loading="lazy"
 						decoding="async"
 					>
@@ -217,6 +227,8 @@ get_header();
 							?>
 							"
 							alt=""
+				width="1536"
+				height="1024"
 							aria-hidden="true"
 							loading="lazy"
 				decoding="async"
@@ -250,6 +262,8 @@ get_header();
 							?>
 							"
 							alt=""
+				width="1377"
+				height="1142"
 							aria-hidden="true"
 							loading="lazy"
 				decoding="async"

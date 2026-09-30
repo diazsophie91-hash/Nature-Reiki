@@ -33,6 +33,8 @@ get_header(); ?>
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
+				width="1377"
+				height="1142"
 				aria-hidden="true"
 				decoding="async"
 			>
@@ -66,6 +68,8 @@ get_header(); ?>
 			'url'           => home_url( '/qui-suis-je/?univers=nature' ),
 			'bouton_text'   => 'Découvrir mon parcours →',
 			'image'         => 'images/arbre-vie.png',
+			'image_width'  => 1377,
+			'image_height' => 1142,
 		),
 		array(
 			'section_class' => 'nature-section',
@@ -76,6 +80,8 @@ get_header(); ?>
 			'url'           => home_url( '/balades/' ),
 			'bouton_text'   => 'Découvrir les balades →',
 			'image'         => 'images/chene.png',
+			'image_width'  => 1377,
+			'image_height' => 1142,
 		),
 		array(
 			'section_class' => 'nature-section',
@@ -86,6 +92,8 @@ get_header(); ?>
 			'url'           => home_url( '/animations/' ),
 			'bouton_text'   => 'Découvrir les animations →',
 			'image'         => 'images/feuille-chene.svg',
+			'image_width'  => 1377,
+			'image_height' => 1142,
 		),
 	);
 	?>
@@ -99,6 +107,8 @@ get_header(); ?>
 				<img
 					src="<?php echo esc_url( nature_reiki_asset_url( $banniere['image'] ) ); ?>"
 					alt=""
+				width="<?php echo esc_attr( $banniere['image_width'] ); ?>"
+				height="<?php echo esc_attr( $banniere['image_height'] ); ?>"
 					aria-hidden="true"
 					loading="lazy"
 					decoding="async"

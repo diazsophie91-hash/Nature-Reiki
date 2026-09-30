@@ -66,6 +66,8 @@ Template Name: Qui suis-je ?
 				?>
 				"
 				alt=""
+				width="1377"
+				height="1142"
 				aria-hidden="true"
 
 				decoding="async"
@@ -80,6 +82,8 @@ Template Name: Qui suis-je ?
 				?>
 				"
 				alt=""
+				width="1536"
+				height="1024"
 				aria-hidden="true"
 
 				decoding="async"
@@ -99,6 +103,8 @@ Template Name: Qui suis-je ?
 				?>
 				"
 				alt=""
+				width="1536"
+				height="1024"
 				aria-hidden="true"
 
 				decoding="async"
@@ -113,6 +119,8 @@ Template Name: Qui suis-je ?
 				?>
 				"
 				alt=""
+				width="1377"
+				height="1142"
 				aria-hidden="true"
 
 				decoding="async"
@@ -212,6 +220,8 @@ Template Name: Qui suis-je ?
 							?>
 							"
 							alt="Chêne"
+				width="1377"
+				height="1142"
 				loading="lazy"
 				decoding="async"
 				>
@@ -327,6 +337,8 @@ Template Name: Qui suis-je ?
 							?>
 							"
 							alt="Arbre de vie"
+				width="1377"
+				height="1142"
 				loading="lazy"
 				decoding="async"
 				>
@@ -345,6 +357,8 @@ Template Name: Qui suis-je ?
 			?>
 			"
 			alt=""
+				width="1141"
+				height="1379"
 		>
 	</div>
 
