@@ -290,7 +290,12 @@ get_header(); ?>
 		$total_diapositives = count( $diapositives );
 		?>
 
-		<div class="nature-carrousel" data-nature-carrousel>
+		<div
+	class="nature-carrousel"
+	data-nature-carrousel
+	role="region"
+	aria-labelledby="balades-carrousel-titre"
+>
 
 			<div class="nature-carrousel-fenetre">
 
