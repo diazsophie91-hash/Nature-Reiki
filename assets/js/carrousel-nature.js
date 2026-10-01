@@ -134,7 +134,7 @@
                 allerA( distance < 0 ? index + 1 : index - 1 );
             }
             departX = null;
-        } );
+        }, { passive: true } );
 
         afficher();
     }
