@@ -34,7 +34,6 @@ get_header(); ?>
 				alt=""
 				width="1377"
 				height="1142"
-				aria-hidden="true"
 				decoding="async"
 			>
 
@@ -114,7 +113,6 @@ get_header(); ?>
 						alt=""
 						width="<?php echo esc_attr( (string) $projet['image_width'] ); ?>"
 						height="<?php echo esc_attr( (string) $projet['image_height'] ); ?>"
-						aria-hidden="true"
 						loading="lazy"
 						decoding="async"
 					>

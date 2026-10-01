@@ -73,7 +73,6 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 				alt=""
 				width="1377"
 				height="1142"
-				aria-hidden="true"
 				class="switch-symbole"
 			>
 			Nature
@@ -99,7 +98,6 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 				alt=""
 				width="1536"
 				height="1024"
-				aria-hidden="true"
 				class="switch-symbole"
 			>
 		</a>
@@ -121,7 +119,6 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 			alt=""
 			width="1254"
 			height="1254"
-			aria-hidden="true"
 		>
 	</a>
 

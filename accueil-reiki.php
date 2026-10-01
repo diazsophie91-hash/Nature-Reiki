@@ -26,7 +26,6 @@ Template Name: Accueil Reiki
 			alt=""
 			width="1536"
 			height="1024"
-			aria-hidden="true"
 			decoding="async"
 		>
 
@@ -109,7 +108,6 @@ $bannieres = array(
 				alt=""
 				width="<?php echo esc_attr( (string) $banniere['image_width'] ); ?>"
 				height="<?php echo esc_attr( (string) $banniere['image_height'] ); ?>"
-				aria-hidden="true"
 				loading="lazy"
 				decoding="async"
 			>

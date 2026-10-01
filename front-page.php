@@ -40,7 +40,6 @@
 					alt=""
 					width="1377"
 					height="1142"
-					aria-hidden="true"
 					decoding="async"
 					class="symbole-chene"
 				>
@@ -56,7 +55,6 @@
 					alt=""
 					width="1536"
 					height="1024"
-					aria-hidden="true"
 					decoding="async"
 					class="symbole-lotus"
 				>
@@ -130,7 +128,6 @@
 					alt=""
 					width="1377"
 					height="1142"
-					aria-hidden="true"
 					decoding="async"
 				>
 
@@ -205,7 +202,6 @@
 					alt=""
 					width="1536"
 					height="1024"
-					aria-hidden="true"
 					decoding="async"
 				>
 
@@ -252,7 +248,6 @@
 				alt=""
 				width="1295"
 				height="1215"
-				aria-hidden="true"
 				decoding="async"
 			>
 		</span>

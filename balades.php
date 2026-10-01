@@ -32,7 +32,6 @@ get_header(); ?>
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
 				alt=""
-				aria-hidden="true"
 				width="1377"
 				height="1142"
 				decoding="async"
@@ -158,7 +157,6 @@ get_header(); ?>
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $balade['image'] ) ); ?>"
 						alt=""
-						aria-hidden="true"
 						width="<?php echo esc_attr( (string) $balade['width'] ); ?>"
 						height="<?php echo esc_attr( (string) $balade['height'] ); ?>"
 						loading="lazy"

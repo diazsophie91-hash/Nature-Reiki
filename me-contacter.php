@@ -36,7 +36,6 @@ get_header();
 			alt=""
 				width="1536"
 				height="1024"
-			aria-hidden="true"
 
 				decoding="async"
 			>
@@ -53,7 +52,6 @@ get_header();
 			alt=""
 				width="1377"
 				height="1142"
-			aria-hidden="true"
 
 				decoding="async"
 			>
@@ -95,7 +93,7 @@ get_header();
 						);
 						?>
 						"
-						alt="" aria-hidden="true"
+						alt=""
 				width="1230"
 				height="1278"
 						loading="lazy"
@@ -135,7 +133,7 @@ get_header();
 						);
 						?>
 						"
-						alt="" aria-hidden="true"
+						alt=""
 				width="1536"
 				height="1024"
 						loading="lazy"
@@ -171,7 +169,7 @@ get_header();
 						);
 						?>
 						"
-						alt="" aria-hidden="true"
+						alt=""
 				width="1024"
 				height="1536"
 						loading="lazy"
@@ -229,7 +227,6 @@ get_header();
 							alt=""
 				width="1536"
 				height="1024"
-							aria-hidden="true"
 							loading="lazy"
 				decoding="async"
 							>
@@ -264,7 +261,6 @@ get_header();
 							alt=""
 				width="1377"
 				height="1142"
-							aria-hidden="true"
 							loading="lazy"
 				decoding="async"
 							>

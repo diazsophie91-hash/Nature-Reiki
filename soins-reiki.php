@@ -37,7 +37,6 @@ Template Name: Soins Reiki
 				alt=""
 				width="1536"
 				height="1024"
-							aria-hidden="true"
 
 							decoding="async"
 			>
@@ -118,7 +117,6 @@ foreach ( $soins as $soin_index => $soin ) :
 							alt=""
 							width="<?php echo esc_attr( (string) $soin['image_width'] ); ?>"
 							height="<?php echo esc_attr( (string) $soin['image_height'] ); ?>"
-							aria-hidden="true"
 							decoding="async"
 							>
 

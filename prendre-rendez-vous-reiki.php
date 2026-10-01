@@ -37,7 +37,6 @@ Template Name: Prendre rendez-vous — Reiki
 				alt=""
 				width="1536"
 				height="1024"
-				aria-hidden="true"
 
 				decoding="async"
 			>
