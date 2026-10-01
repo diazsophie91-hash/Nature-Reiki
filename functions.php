@@ -48,9 +48,10 @@ function nature_reiki_get_universe() {
 			$universe = 'reiki';
 		} else {
 			// phpcs:disable WordPress.Security.NonceVerification.Recommended -- paramètre d'affichage limité à nature/reiki.
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- La valeur est immédiatement passée à sanitize_key().
 			$univers_param = isset( $_GET['univers'] )
-				? wp_unslash( $_GET['univers'] )
-				: 'reiki';
+			? wp_unslash( $_GET['univers'] )
+			: 'reiki';
 
 			$univers = is_string( $univers_param )
 				? sanitize_key( $univers_param )
