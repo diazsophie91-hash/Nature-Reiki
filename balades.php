@@ -159,8 +159,8 @@ get_header(); ?>
 						src="<?php echo esc_url( nature_reiki_asset_url( $balade['image'] ) ); ?>"
 						alt=""
 						aria-hidden="true"
-						width="<?php echo esc_attr( $balade['width'] ); ?>"
-						height="<?php echo esc_attr( $balade['height'] ); ?>"
+						width="<?php echo esc_attr( (string) $balade['width'] ); ?>"
+						height="<?php echo esc_attr( (string) $balade['height'] ); ?>"
 						loading="lazy"
 						decoding="async"
 					>
@@ -168,7 +168,10 @@ get_header(); ?>
 
 				<h3><?php echo esc_html( $balade['titre'] ); ?></h3>
 
-				<?php if ( '' !== $balade['mention'] ) : ?>
+				<?php
+				// @phpstan-ignore notIdentical.alwaysFalse (La clé mention est conservée pour les futures mentions des balades.)
+				if ( '' !== $balade['mention'] ) :
+					?>
 				<p class="nature-carte-etiquette">
 					<?php echo esc_html( $balade['mention'] ); ?>
 				</p>
@@ -178,13 +181,13 @@ get_header(); ?>
 					<summary
 						class="nature-carte-en-savoir-plus"
 						aria-expanded="false"
-						aria-controls="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>"
+						aria-controls="nature-carte-details-<?php echo esc_attr( (string) $balade_index ); ?>"
 					>
 						<span>En savoir plus</span>
 						<span class="nature-carte-fleche" aria-hidden="true"></span>
 					</summary>
 
-					<div class="nature-carte-details" id="nature-carte-details-<?php echo esc_attr( $balade_index ); ?>">
+					<div class="nature-carte-details" id="nature-carte-details-<?php echo esc_attr( (string) $balade_index ); ?>">
 						<?php echo wp_kses_post( $balade['contenu'] ); ?>
 					</div>
 				</details>
@@ -309,8 +312,8 @@ get_header(); ?>
 							<img
 								src="<?php echo esc_url( nature_reiki_asset_url( $diapositive['image'] ) ); ?>"
 								alt="<?php echo esc_attr( $diapositive['legende'] ); ?>"
-								width="<?php echo esc_attr( $diapositive['width'] ); ?>"
-								height="<?php echo esc_attr( $diapositive['height'] ); ?>"
+								width="<?php echo esc_attr( (string) $diapositive['width'] ); ?>"
+								height="<?php echo esc_attr( (string) $diapositive['height'] ); ?>"
 								loading="lazy"
 								decoding="async"
 							>

@@ -107,8 +107,8 @@ get_header(); ?>
 				<img
 					src="<?php echo esc_url( nature_reiki_asset_url( $banniere['image'] ) ); ?>"
 					alt=""
-				width="<?php echo esc_attr( $banniere['image_width'] ); ?>"
-				height="<?php echo esc_attr( $banniere['image_height'] ); ?>"
+				width="<?php echo esc_attr( (string) $banniere['image_width'] ); ?>"
+				height="<?php echo esc_attr( (string) $banniere['image_height'] ); ?>"
 					aria-hidden="true"
 					loading="lazy"
 					decoding="async"

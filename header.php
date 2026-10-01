@@ -49,8 +49,8 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 	<img
 		src="<?php echo esc_url( nature_reiki_asset_url( $logo ) ); ?>"
 		alt="Nature & Reiki"
-		width="<?php echo esc_attr( $logo_width ); ?>"
-		height="<?php echo esc_attr( $logo_height ); ?>"
+		width="<?php echo esc_attr( (string) $logo_width ); ?>"
+		height="<?php echo esc_attr( (string) $logo_height ); ?>"
 	>
 
 </a>

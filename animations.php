@@ -125,8 +125,8 @@ get_header(); ?>
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $public['image'] ) ); ?>"
 						alt=""
-				width="<?php echo esc_attr( $public['image_width'] ); ?>"
-				height="<?php echo esc_attr( $public['image_height'] ); ?>"
+				width="<?php echo esc_attr( (string) $public['image_width'] ); ?>"
+				height="<?php echo esc_attr( (string) $public['image_height'] ); ?>"
 						aria-hidden="true"
 						loading="lazy"
 						decoding="async"

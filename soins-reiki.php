@@ -116,8 +116,8 @@ foreach ( $soins as $soin_index => $soin ) :
 							?>
 							"
 							alt=""
-				width="<?php echo esc_attr( $soin['image_width'] ); ?>"
-				height="<?php echo esc_attr( $soin['image_height'] ); ?>"
+				width="<?php echo esc_attr( (string) $soin['image_width'] ); ?>"
+				height="<?php echo esc_attr( (string) $soin['image_height'] ); ?>"
 							aria-hidden="true"
 							decoding="async"
 							>
@@ -134,13 +134,13 @@ foreach ( $soins as $soin_index => $soin ) :
 						<summary
 							class="soin-reiki-en-savoir-plus"
 							aria-expanded="false"
-							aria-controls="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>"
+							aria-controls="soin-reiki-details-<?php echo esc_attr( (string) $soin_index ); ?>"
 						>
 							En savoir plus
 							<span class="soin-reiki-fleche"></span>
 						</summary>
 
-						<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( $soin_index ); ?>">
+						<div class="soin-reiki-details" id="soin-reiki-details-<?php echo esc_attr( (string) $soin_index ); ?>">
 
 							<p>
 								<?php echo esc_html( $soin['description'] ); ?>
