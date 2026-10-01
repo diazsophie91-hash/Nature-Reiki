@@ -84,6 +84,8 @@ foreach ( $univers_ordre as $univers_faq ) :
 		<div class="faq-univers-contenu" id="<?php echo esc_attr( $univers_id ); ?>" aria-hidden="false">
 
 	<?php
+	$answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers;
+
 	for ( $i = 1; $i <= 5; $i++ ) :
 		$question_id = $univers_id . '-question-' . $i;
 		?>
@@ -98,7 +100,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
 				</summary>
 				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
-					<?php $answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers; echo $answers[ $i - 1 ] ?? '<p>À venir</p>'; ?>
+					<?php echo wp_kses_post( $answers[ $i - 1 ] ?? '<p>À venir</p>' ); ?>
 				</div>
 			</details>
 
