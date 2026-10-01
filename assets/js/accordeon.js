@@ -12,7 +12,6 @@
 ( function () {
 'use strict';
 
-```
 document.addEventListener( 'DOMContentLoaded', function () {
     document.documentElement.classList.replace( 'no-js', 'js' );
 
@@ -41,6 +40,5 @@ document.addEventListener( 'DOMContentLoaded', function () {
         } )( accordion, summary ) );
     }
 } );
-```
 
 } )();
