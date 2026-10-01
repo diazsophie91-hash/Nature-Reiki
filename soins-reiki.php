@@ -611,7 +611,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					href="
 					<?php
 					echo esc_url(
-						home_url( '/faq/' )
+						home_url( '/faq/?univers=reiki' )
 					);
 					?>
 					"

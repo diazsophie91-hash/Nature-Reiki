@@ -373,3 +373,228 @@ function nature_reiki_display_menu() {
 
 	get_template_part( $template );
 }
+
+/**
+ * Renvoie les éléments SEO définis pour la page courante.
+ *
+ * @return array
+ */
+function nature_reiki_get_seo_data() {
+	$data = array(
+		'title'       => '',
+		'description' => '',
+	);
+
+	if ( is_front_page() ) {
+		$data = array(
+			'title'       => 'Nature & Reiki — Guide Nature et Reiki à Aywaille',
+			'description' => 'Nature & Reiki propose deux univers à Aywaille : balades et découvertes de la nature, et accompagnement Reiki.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'accueil-guide-nature.php', 'accueil-guide-nature' ) ) {
+		$data = array(
+			'title'       => 'Guide Nature à Aywaille',
+			'description' => 'Découvrez les activités Guide Nature de Nature & Reiki à Aywaille : balades, animations et découverte de la nature.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'accueil-reiki.php', 'accueil-reiki' ) ) {
+		$data = array(
+			'title'       => 'Reiki à Aywaille',
+			'description' => 'Découvrez le Reiki proposé par Nature & Reiki à Aywaille : soins Reiki, informations sur la pratique et rendez-vous.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'balades.php', 'balades' ) ) {
+		$data = array(
+			'title'       => 'Balades Nature à Aywaille',
+			'description' => 'Découvrez les balades nature de Nature & Reiki à Aywaille : sorties guidées, balades privées et découvertes au fil des saisons.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'animations.php', 'animations' ) ) {
+		$data = array(
+			'title'       => 'Animations Nature à Aywaille',
+			'description' => 'Participez aux animations Nature de Nature & Reiki à Aywaille pour observer, comprendre et découvrir la nature.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'a-venir.php', 'a-venir' ) ) {
+		$data = array(
+			'title'       => 'À venir – Guide Nature',
+			'description' => 'Découvrez les prochaines activités et nouveautés de l’univers Guide Nature de Nature & Reiki.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'le-reiki.php', 'le-reiki' ) ) {
+		$data = array(
+			'title'       => 'Le Reiki',
+			'description' => 'Découvrez le Reiki, ses origines, son fonctionnement et les cinq Gokai à travers l’approche de Nature & Reiki.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'soins-reiki.php', 'soins-reiki' ) ) {
+		$data = array(
+			'title'       => 'Soins Reiki à Aywaille',
+			'description' => 'Découvrez les soins Reiki de Nature & Reiki : séance unique, pack de quatre séances et séance en forêt.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'prendre-rendez-vous-reiki.php', 'prendre-rendez-vous-reiki' ) ) {
+		$data = array(
+			'title'       => 'Prendre rendez-vous pour un soin Reiki',
+			'description' => 'Prenez rendez-vous pour un soin Reiki à Aywaille avec Nature & Reiki.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'reserver.php', 'reserver' ) ) {
+		$data = array(
+			'title'       => 'Réserver une activité Nature',
+			'description' => 'Réservez une activité Nature à Aywaille avec Nature & Reiki.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'faq.php', 'faq' ) ) {
+		if ( 'nature' === nature_reiki_get_universe() ) {
+			$data = array(
+				'title'       => 'FAQ Guide Nature',
+				'description' => 'Retrouvez les réponses aux questions fréquentes sur les activités Guide Nature de Nature & Reiki.',
+			);
+		} else {
+			$data = array(
+				'title'       => 'FAQ Reiki',
+				'description' => 'Retrouvez les réponses aux questions fréquentes sur les séances et la pratique du Reiki de Nature & Reiki.',
+			);
+		}
+	} elseif ( nature_reiki_is_current_page( 'qui-suis-je.php', 'qui-suis-je' ) ) {
+		$data = array(
+			'title'       => 'Joëlle Siwek, Guide Nature et praticienne Reiki',
+			'description' => 'Découvrez le parcours de Joëlle Siwek, Guide Nature et praticienne Reiki, et le lien entre ces deux univers.',
+		);
+	} elseif ( nature_reiki_is_current_page( 'me-contacter.php', 'me-contacter' ) ) {
+		$data = array(
+			'title'       => 'Me contacter',
+			'description' => 'Retrouvez les coordonnées de Nature & Reiki à Aywaille pour vos questions sur le Reiki et les activités Nature.',
+		);
+	}
+
+	return apply_filters( 'nature_reiki_seo_data', $data );
+}
+
+/**
+ * Personnalise le titre du document pour les pages principales du site.
+ *
+ * @param array $parts Parties du titre du document.
+ * @return array
+ */
+function nature_reiki_filter_document_title_parts( $parts ) {
+	$seo = nature_reiki_get_seo_data();
+
+	if ( empty( $seo['title'] ) ) {
+		return $parts;
+	}
+
+	$parts['title'] = $seo['title'];
+
+	if ( is_front_page() ) {
+		$parts['site'] = '';
+	}
+
+	return $parts;
+}
+add_filter( 'document_title_parts', 'nature_reiki_filter_document_title_parts' );
+
+/**
+ * Affiche la meta description des pages SEO du thème.
+ */
+function nature_reiki_output_meta_description() {
+	$seo = nature_reiki_get_seo_data();
+
+	if ( empty( $seo['description'] ) ) {
+		return;
+	}
+
+	echo '<meta name="description" content="' . esc_attr( $seo['description'] ) . '">' . "\n";
+}
+add_action( 'wp_head', 'nature_reiki_output_meta_description', 1 );
+
+/**
+ * Affiche les métadonnées Open Graph des pages SEO du thème.
+ */
+function nature_reiki_output_open_graph() {
+	$seo = nature_reiki_get_seo_data();
+
+	if ( empty( $seo['description'] ) ) {
+		return;
+	}
+
+	$canonical_url = wp_get_canonical_url();
+
+	if ( ! $canonical_url ) {
+		return;
+	}
+
+	$site_name = get_bloginfo( 'name', 'display' );
+	$title     = wp_get_document_title();
+	$locale    = str_replace( '-', '_', get_locale() );
+
+	echo '<meta property="og:type" content="website">' . "\n";
+	echo '<meta property="og:site_name" content="' . esc_attr( $site_name ) . '">' . "\n";
+	echo '<meta property="og:locale" content="' . esc_attr( $locale ) . '">' . "\n";
+	echo '<meta property="og:title" content="' . esc_attr( $title ) . '">' . "\n";
+	echo '<meta property="og:description" content="' . esc_attr( $seo['description'] ) . '">' . "\n";
+	echo '<meta property="og:url" content="' . esc_url( $canonical_url ) . '">' . "\n";
+}
+add_action( 'wp_head', 'nature_reiki_output_open_graph', 1 );
+
+/**
+ * Modifie le canonical des pages partagées selon l'univers courant.
+ *
+ * @param string $canonical_url URL canonique actuelle.
+ * @return string
+ */
+function nature_reiki_filter_canonical_url( $canonical_url ) {
+	if ( ! nature_reiki_is_current_page(
+		array(
+			'faq.php',
+			'qui-suis-je.php',
+			'me-contacter.php',
+		),
+		array(
+			'faq',
+			'qui-suis-je',
+			'me-contacter',
+		)
+	) ) {
+		return $canonical_url;
+	}
+
+	return add_query_arg(
+		'univers',
+		nature_reiki_get_universe(),
+		remove_query_arg( 'univers', $canonical_url )
+	);
+}
+add_filter( 'get_canonical_url', 'nature_reiki_filter_canonical_url', 10 );
+
+/**
+ * Affiche les données structurées LocalBusiness sur la page de contact.
+ *
+ * Les informations correspondent aux coordonnées actuellement affichées
+ * sur la page de contact du site.
+ */
+function nature_reiki_output_local_business_schema() {
+	if ( ! nature_reiki_is_current_page( 'me-contacter.php', 'me-contacter' ) ) {
+		return;
+	}
+
+	$schema = array(
+		'@context'  => 'https://schema.org',
+		'@type'     => 'LocalBusiness',
+		'@id'       => home_url( '/#local-business' ),
+		'name'      => get_bloginfo( 'name', 'display' ),
+		'url'       => home_url( '/me-contacter/' ),
+		'telephone' => '+32 497 81 21 83',
+		'address'   => array(
+			'@type'           => 'PostalAddress',
+			'streetAddress'   => 'Rue du Doyare n°3',
+			'postalCode'      => '4920',
+			'addressLocality' => 'Aywaille',
+			'addressCountry'  => 'BE',
+		),
+	);
+
+	$json = wp_json_encode(
+		$schema,
+		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+	);
+
+	if ( false === $json ) {
+		return;
+	}
+
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
+	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+}
+add_action( 'wp_head', 'nature_reiki_output_local_business_schema', 2 );
