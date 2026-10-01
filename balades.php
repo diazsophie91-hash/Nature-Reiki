@@ -103,8 +103,8 @@ get_header(); ?>
 				'titre'    => 'Mon ami l’arbre',
 				'mention'  => '',
 				'image'    => 'images/chene.png',
-				'width'    => 1377,
-				'height'   => 1142,
+				'width'    => 1536,
+				'height'   => 1024,
 				'variante' => 'nature-carte--verte',
 				'contenu'  => '<p>Les arbres, les plantes, les animaux, les oiseaux… tout ce qui compose le vivant a toujours éveillé ma curiosité. Dans cette balade, nous apprendrons à observer l’arbre autrement, à lire ses cicatrices, ses branches et sa présence dans le paysage.</p><p>L’arbre est un compagnon de route qui nous enseigne la patience, la résilience et le lien profond qui nous unit au vivant.</p>',
 			),
@@ -249,14 +249,14 @@ get_header(); ?>
 		$diapositives = array(
 			array(
 				'image'   => 'images/celte.jpg',
-				'width'   => 768,
-				'height'  => 1024,
+				'width'   => 1024,
+				'height'  => 768,
 				'legende' => 'Sur les pas des Celtes à nos jours',
 			),
 			array(
 				'image'   => 'images/ami-arbre.jpg',
-				'width'   => 1365,
-				'height'  => 2048,
+				'width'   => 2048,
+				'height'  => 1365,
 				'legende' => 'Mon ami l’arbre',
 			),
 			array(
@@ -267,8 +267,8 @@ get_header(); ?>
 			),
 			array(
 				'image'   => 'images/traces.jpg',
-				'width'   => 365,
-				'height'  => 547,
+				'width'   => 547,
+				'height'  => 365,
 				'legende' => 'Traces et indices en forêt',
 			),
 			array(
@@ -279,8 +279,8 @@ get_header(); ?>
 			),
 			array(
 				'image'   => 'images/carriere.jpg',
-				'width'   => 576,
-				'height'  => 768,
+				'width'   => 768,
+				'height'  => 576,
 				'legende' => 'Découverte carrières',
 			),
 		);

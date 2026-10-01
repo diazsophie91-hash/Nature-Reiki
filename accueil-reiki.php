@@ -56,8 +56,8 @@ $bannieres = array(
 		'url'             => home_url( '/qui-suis-je/?univers=reiki' ),
 		'bouton_text'     => 'Découvrir mon parcours →',
 		'image'           => 'images/arbre-vie.png',
-			'image_width'  => 1377,
-			'image_height' => 1142,
+			'image_width'  => 1312,
+			'image_height' => 1199,
 		'image_alt'       => '',
 	),
 	array(

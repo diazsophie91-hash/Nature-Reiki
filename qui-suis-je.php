@@ -219,8 +219,8 @@ Template Name: Qui suis-je ?
 							?>
 							"
 							alt="Chêne"
-				width="1377"
-				height="1142"
+				width="1536"
+				height="1024"
 				loading="lazy"
 				decoding="async"
 				>
@@ -335,8 +335,8 @@ Template Name: Qui suis-je ?
 							?>
 							"
 							alt="Arbre de vie"
-				width="1377"
-				height="1142"
+				width="1312"
+				height="1199"
 				loading="lazy"
 				decoding="async"
 				>

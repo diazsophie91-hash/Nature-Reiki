@@ -71,8 +71,8 @@ $soins = array(
 	array(
 		'symbole_class' => 'soin-reiki-symbole soin-reiki-symbole-arbre',
 		'image'         => 'images/arbre-vie.png',
-			'image_width'  => 1377,
-			'image_height' => 1142,
+			'image_width'  => 1312,
+			'image_height' => 1199,
 		'titre'         => 'Pack 4 séances',
 		'prix'          => '170 €',
 		'description'   => 'Un accompagnement complet en quatre séances, conçu pour travailler progressivement sur l’équilibre énergétique et permettre au processus d’harmonisation de s’installer dans le temps. Particulièrement conseillé pour une première expérience du Reiki.',

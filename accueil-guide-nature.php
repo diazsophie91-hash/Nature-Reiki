@@ -68,8 +68,8 @@ get_header(); ?>
 			'url'           => home_url( '/qui-suis-je/?univers=nature' ),
 			'bouton_text'   => 'Découvrir mon parcours →',
 			'image'         => 'images/arbre-vie.png',
-			'image_width'  => 1377,
-			'image_height' => 1142,
+			'image_width'  => 1312,
+			'image_height' => 1199,
 		),
 		array(
 			'section_class' => 'nature-section',
@@ -80,8 +80,8 @@ get_header(); ?>
 			'url'           => home_url( '/balades/' ),
 			'bouton_text'   => 'Découvrir les balades →',
 			'image'         => 'images/chene.png',
-			'image_width'  => 1377,
-			'image_height' => 1142,
+			'image_width'  => 1536,
+			'image_height' => 1024,
 		),
 		array(
 			'section_class' => 'nature-section',

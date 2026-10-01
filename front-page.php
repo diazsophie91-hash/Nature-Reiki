@@ -104,8 +104,8 @@
 					?>
 					"
 					alt="Chêne"
-					width="1377"
-					height="1142"
+					width="1536"
+					height="1024"
 					decoding="async"
 				>
 
@@ -181,8 +181,8 @@
 					?>
 					"
 					alt="Arbre de vie"
-					width="1377"
-					height="1142"
+					width="1312"
+					height="1199"
 					decoding="async"
 				>
 
