@@ -488,7 +488,6 @@ add_filter( 'document_title_parts', 'nature_reiki_filter_document_title_parts' )
 /**
  * Utilise un tiret demi-cadratin comme séparateur des titres.
  *
- * @param string $separator Séparateur du titre.
  * @return string
  */
 function nature_reiki_filter_document_title_separator() {
