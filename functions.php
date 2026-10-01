@@ -531,6 +531,11 @@ function nature_reiki_output_open_graph() {
 	echo '<meta property="og:image:height" content="630">' . "\n";
 	echo '<meta property="og:image:type" content="image/png">' . "\n";
 	echo '<meta property="og:image:alt" content="Nature &amp; Reiki">' . "\n";
+	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+	echo '<meta name="twitter:title" content="' . esc_attr( $title ) . '">' . "\n";
+	echo '<meta name="twitter:description" content="' . esc_attr( $seo['description'] ) . '">' . "\n";
+	echo '<meta name="twitter:image" content="' . esc_url( $og_image ) . '">' . "\n";
+	echo '<meta name="twitter:image:alt" content="Nature &amp; Reiki">' . "\n";
 }
 
 add_action( 'wp_head', 'nature_reiki_output_open_graph', 1 );
