@@ -153,7 +153,7 @@
 
 
 			<span class="bouton">
-				Découvrir
+				Explorer la nature
 				<span>›</span>
 			</span>
 
@@ -230,7 +230,7 @@
 
 
 			<span class="bouton">
-				Découvrir
+				Découvrir le Reiki
 				<span>›</span>
 			</span>
 
