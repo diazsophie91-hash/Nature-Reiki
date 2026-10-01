@@ -3775,7 +3775,7 @@ body.page-template-me-contacter {
 ========================================================= */
 
 .soin-reiki-test {
-    color: var(--color-primary) !important;
+    color: var(--color-primary);
 }
 
 .soin-reiki-test strong {
