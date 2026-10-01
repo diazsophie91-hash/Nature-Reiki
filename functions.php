@@ -392,12 +392,12 @@ function nature_reiki_get_seo_data() {
 		);
 	} elseif ( nature_reiki_is_current_page( 'accueil-guide-nature.php', 'accueil-guide-nature' ) ) {
 		$data = array(
-			'title'       => 'Guide Nature à Aywaille',
+			'title'       => 'Guide Nature à Aywaille — Balades et animations',
 			'description' => 'Découvrez les activités Guide Nature de Nature & Reiki à Aywaille : balades, animations et découverte de la nature.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'accueil-reiki.php', 'accueil-reiki' ) ) {
 		$data = array(
-			'title'       => 'Reiki à Aywaille',
+			'title'       => 'Reiki à Aywaille — Soins énergétiques',
 			'description' => 'Découvrez le Reiki proposé par Nature & Reiki à Aywaille : soins Reiki, informations sur la pratique et rendez-vous.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'balades.php', 'balades' ) ) {
@@ -412,12 +412,12 @@ function nature_reiki_get_seo_data() {
 		);
 	} elseif ( nature_reiki_is_current_page( 'a-venir.php', 'a-venir' ) ) {
 		$data = array(
-			'title'       => 'À venir – Guide Nature',
+			'title'       => 'À venir — Balades et animations Nature à Aywaille',
 			'description' => 'Découvrez les prochaines activités et nouveautés de l’univers Guide Nature de Nature & Reiki.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'le-reiki.php', 'le-reiki' ) ) {
 		$data = array(
-			'title'       => 'Le Reiki',
+			'title'       => 'Le Reiki à Aywaille — Qu’est-ce que le Reiki et pourquoi y faire appel ?',
 			'description' => 'Découvrez le Reiki, ses origines, son fonctionnement et les cinq Gokai à travers l’approche de Nature & Reiki.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'soins-reiki.php', 'soins-reiki' ) ) {
@@ -427,34 +427,34 @@ function nature_reiki_get_seo_data() {
 		);
 	} elseif ( nature_reiki_is_current_page( 'prendre-rendez-vous-reiki.php', 'prendre-rendez-vous-reiki' ) ) {
 		$data = array(
-			'title'       => 'Prendre rendez-vous pour un soin Reiki',
+			'title'       => 'Prendre rendez-vous pour un soin Reiki à Aywaille',
 			'description' => 'Prenez rendez-vous pour un soin Reiki à Aywaille avec Nature & Reiki.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'reserver.php', 'reserver' ) ) {
 		$data = array(
-			'title'       => 'Réserver une activité Nature',
+			'title'       => 'Réserver une balade ou une animation Nature à Aywaille',
 			'description' => 'Réservez une activité Nature à Aywaille avec Nature & Reiki.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'faq.php', 'faq' ) ) {
 		if ( 'nature' === nature_reiki_get_universe() ) {
 			$data = array(
-				'title'       => 'FAQ Guide Nature',
+				'title'       => 'FAQ Guide Nature — Joëlle Siwek à Aywaille',
 				'description' => 'Retrouvez les réponses aux questions fréquentes sur les activités Guide Nature de Nature & Reiki.',
 			);
 		} else {
 			$data = array(
-				'title'       => 'FAQ Reiki',
+				'title'       => 'FAQ Reiki — Joëlle Siwek à Aywaille',
 				'description' => 'Retrouvez les réponses aux questions fréquentes sur les séances et la pratique du Reiki de Nature & Reiki.',
 			);
 		}
 	} elseif ( nature_reiki_is_current_page( 'qui-suis-je.php', 'qui-suis-je' ) ) {
 		$data = array(
-			'title'       => 'Joëlle Siwek, Guide Nature et praticienne Reiki',
+			'title'       => 'Joëlle Siwek — Guide-Nature, Guide Carrière et Praticienne Reiki',
 			'description' => 'Découvrez le parcours de Joëlle Siwek, Guide Nature et praticienne Reiki, et le lien entre ces deux univers.',
 		);
 	} elseif ( nature_reiki_is_current_page( 'me-contacter.php', 'me-contacter' ) ) {
 		$data = array(
-			'title'       => 'Me contacter',
+			'title'       => 'Contacter Nature & Reiki par Joëlle Siwek à Aywaille',
 			'description' => 'Retrouvez les coordonnées de Nature & Reiki à Aywaille pour vos questions sur le Reiki et les activités Nature.',
 		);
 	}
@@ -484,6 +484,17 @@ function nature_reiki_filter_document_title_parts( $parts ) {
 	return $parts;
 }
 add_filter( 'document_title_parts', 'nature_reiki_filter_document_title_parts' );
+
+/**
+ * Utilise un tiret demi-cadratin comme séparateur des titres.
+ *
+ * @param string $separator Séparateur du titre.
+ * @return string
+ */
+function nature_reiki_filter_document_title_separator() {
+	return '–';
+}
+add_filter( 'document_title_separator', 'nature_reiki_filter_document_title_separator' );
 
 /**
  * Affiche la meta description des pages SEO du thème.
