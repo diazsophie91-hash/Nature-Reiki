@@ -80,7 +80,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 			<h2><?php echo ( 'nature' === $univers_faq ) ? 'Guide-Nature' : 'Reiki'; ?></h2>
 			<span class="faq-univers-fleche" aria-hidden="true"></span>
 		</summary>
-		<div class="faq-univers-contenu" id="<?php echo esc_attr( $univers_id ); ?>" aria-hidden="false">
+		<div class="faq-univers-contenu" id="<?php echo esc_attr( $univers_id ); ?>">
 
 	<?php
 	$answers = ( 'nature' === $univers_faq ) ? $nature_answers : $reiki_answers;
