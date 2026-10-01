@@ -323,7 +323,7 @@ function nature_reiki_enqueue_script_asset( $handle, $path ) {
  */
 function nature_reiki_enqueue_assets() {
 	$min_css     = '/style.min.css';
-	$css_file    = file_exists( get_stylesheet_directory() . $min_css ) ? $min_css : '/style.css';
+	$css_file    = null !== nature_reiki_asset_version( $min_css ) ? $min_css : '/style.css';
 	$css_version = nature_reiki_asset_version( $css_file );
 
 	if ( null === $css_version ) {
@@ -332,7 +332,7 @@ function nature_reiki_enqueue_assets() {
 
 	wp_enqueue_style(
 	    'nature-reiki-style',
-	    get_stylesheet_directory_uri() . $css_file,
+	    nature_reiki_asset_url( $css_file ),
 	    array(),
 	    $css_version
 	);
