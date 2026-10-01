@@ -1,6 +1,7 @@
 {
     "name": "nature-reiki/theme",
     "description": "Nature & Reiki WordPress theme",
+    "license": "GPL-2.0-or-later",
     "require-dev": {
         "phpstan/phpstan": "^2.2",
         "php-stubs/wordpress-stubs": "^7.1",
