@@ -251,7 +251,7 @@ function nature_reiki_page_has_retour_haut() {
 function nature_reiki_page_has_accordion() {
 	return nature_reiki_is_current_page(
 		array( 'le-reiki.php', 'soins-reiki.php', 'faq.php', 'qui-suis-je.php', 'balades.php' ),
-		array( 'faq', 'qui-suis-je', 'le-reiki', 'balades' )
+		array( 'faq', 'qui-suis-je', 'le-reiki', 'soins-reiki', 'balades' )
 	);
 }
 /**
