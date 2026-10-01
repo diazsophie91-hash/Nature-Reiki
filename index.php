@@ -21,7 +21,10 @@ get_header();
 			<h1>Contenu</h1>
 		<?php endif; ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php
+        while ( have_posts() ) :
+			the_post();
+			?>
 			<article class="page-fallback-article">
 				<?php if ( is_singular() ) : ?>
 					<h1><?php the_title(); ?></h1>

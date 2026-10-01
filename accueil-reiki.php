@@ -56,8 +56,8 @@ $bannieres = array(
 		'url'             => home_url( '/qui-suis-je/?univers=reiki' ),
 		'bouton_text'     => 'Découvrir mon parcours →',
 		'image'           => 'images/arbre-vie.png',
-			'image_width'  => 1312,
-			'image_height' => 1199,
+		'image_width'     => 1312,
+		'image_height'    => 1199,
 	),
 	array(
 		'section_class'   => 'reiki-definition',
@@ -73,8 +73,8 @@ $bannieres = array(
 		'url'             => home_url( '/le-reiki/' ),
 		'bouton_text'     => 'En savoir plus →',
 		'image'           => 'images/lotus.svg',
-			'image_width'  => 1536,
-			'image_height' => 1024,
+		'image_width'     => 1536,
+		'image_height'    => 1024,
 	),
 	array(
 		'section_class'   => 'reiki-seances-section',
@@ -90,8 +90,8 @@ $bannieres = array(
 		'url'             => home_url( '/soins-reiki/' ),
 		'bouton_text'     => 'Découvrir les soins →',
 		'image'           => 'images/pendule.svg',
-			'image_width'  => 1024,
-			'image_height' => 1536,
+		'image_width'     => 1024,
+		'image_height'    => 1536,
 	),
 );
 ?>

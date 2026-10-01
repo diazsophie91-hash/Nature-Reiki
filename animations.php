@@ -89,28 +89,28 @@ get_header(); ?>
 		<?php
 		$publics = array(
 			array(
-				'titre'       => 'Groupes privés',
-				'description' => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
-				'image'       => 'images/groupe.svg',
+				'titre'        => 'Groupes privés',
+				'description'  => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
+				'image'        => 'images/groupe.svg',
 				'image_width'  => 360,
 				'image_height' => 360,
-				'variante'    => 'nature-carte--verte',
+				'variante'     => 'nature-carte--verte',
 			),
 			array(
-				'titre'       => 'Écoles',
-				'description' => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
-				'image'       => 'images/sac.png',
+				'titre'        => 'Écoles',
+				'description'  => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
+				'image'        => 'images/sac.png',
 				'image_width'  => 1374,
 				'image_height' => 1145,
-				'variante'    => 'nature-carte--bleue',
+				'variante'     => 'nature-carte--bleue',
 			),
 			array(
-				'titre'       => 'Entreprises',
-				'description' => 'Un temps en extérieur pour souffler et se retrouver autrement, autour de la découverte du vivant.',
-				'image'       => 'images/entreprise.svg',
+				'titre'        => 'Entreprises',
+				'description'  => 'Un temps en extérieur pour souffler et se retrouver autrement, autour de la découverte du vivant.',
+				'image'        => 'images/entreprise.svg',
 				'image_width'  => 512,
 				'image_height' => 512,
-				'variante'    => 'nature-carte--brune',
+				'variante'     => 'nature-carte--brune',
 			),
 		);
 		?>
