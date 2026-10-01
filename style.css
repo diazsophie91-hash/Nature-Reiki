@@ -430,13 +430,7 @@ body.universe-native-nature .switch-univers {
 
 /* Focus sur le switch en contexte Nature */
 
-body.universe-nature .switch-univers a:focus-visible {
-    outline-color: var(--color-nature-menu-border);
-    outline-offset: 3px;
-}
-
-/* Focus sur le switch en contexte Reiki */
-
+body.universe-nature .switch-univers a:focus-visible,
 body.universe-native-nature .switch-univers a:focus-visible {
     outline-color: var(--color-nature-menu-border);
     outline-offset: 3px;
@@ -634,14 +628,9 @@ body.universe-reiki .switch-reiki::before {
     object-fit: contain;
 }
 
-/* Feuille de chêne */
+/* Feuille de chêne + lotus */
 
-.symbole-chene {
-    height: 29px;
-}
-
-/* Lotus */
-
+.symbole-chene,
 .symbole-lotus {
     height: 29px;
 }
@@ -2040,15 +2029,9 @@ body.universe-nature .qui-suis-je-contenu p {
 ========================================================= */
 
 .qui-suis-je-introduction
-+ .qui-suis-je-parcours {
-    margin-top: 20px;
-}
-
++ .qui-suis-je-parcours,
 .qui-suis-je-parcours
-+ .qui-suis-je-parcours {
-    margin-top: 20px;
-}
-
++ .qui-suis-je-parcours,
 .qui-suis-je-parcours
 + .qui-suis-je-lien {
     margin-top: 20px;
@@ -2670,11 +2653,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
    CHEVRON OUVERT
 ========================= */
 
-.le-reiki-contenu[open] > .le-reiki-toggle .le-reiki-fleche {
-    transform: rotate(225deg);
-}
-
-/* Chevron ouvert des accordéons de la page « Qui suis-je » */
+.le-reiki-contenu[open] > .le-reiki-toggle .le-reiki-fleche,
 .qui-suis-je-parcours[open] > .le-reiki-toggle .le-reiki-fleche {
     transform: rotate(225deg);
 }
@@ -4477,10 +4456,7 @@ body:has(.page-faq) {
    PAGE F.A.Q — Contexte Nature
 ========================================================= */
 
-body.universe-nature .page-faq .faq-univers-bouton {
-    color: var(--color-nature);
-}
-
+body.universe-nature .page-faq .faq-univers-bouton,
 body.universe-nature .page-faq .soins-reiki-accordeon-bouton {
     color: var(--color-nature);
 }
@@ -5386,15 +5362,9 @@ body.page-template-animations .nature-bouton {
     text-align: center;
 }
 
-.nature-encart--brun {
-    border-color: var(--color-nature-text);
-
-    background: var(--color-white-warm-translucent-72);
-}
-
+.nature-encart--brun,
 .nature-encart--bleu {
     border-color: var(--color-nature-text);
-
     background: var(--color-white-warm-translucent-72);
 }
 
@@ -5412,10 +5382,7 @@ body.page-template-animations .nature-bouton {
     letter-spacing: 1px;
 }
 
-.nature-encart--brun h2 {
-    color: var(--color-nature);
-}
-
+.nature-encart--brun h2,
 .nature-encart--bleu h2 {
     color: var(--color-nature);
 }
@@ -5823,10 +5790,7 @@ body.universe-nature .retour-haut {
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-    .nature-carrousel-piste {
-        transition: none;
-    }
-
+    .nature-carrousel-piste,
     .nature-banniere,
     .nature-carte,
     .nature-bouton,
