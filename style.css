@@ -4081,6 +4081,8 @@ body.universe-native-nature .soins-reiki-accordeon {
     box-shadow: var(--shadow-accordion-open);
 }
 
+.le-reiki-toggle:focus-visible,
+.faq-univers-bouton:focus-visible,
 .soins-reiki-accordeon-bouton:focus-visible,
 .soin-reiki-en-savoir-plus:focus-visible,
 .soin-reiki-rendez-vous:focus-visible,
