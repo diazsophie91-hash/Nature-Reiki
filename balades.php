@@ -154,7 +154,7 @@ get_header(); ?>
 			<article class="nature-carte <?php echo esc_attr( $balade['variante'] ); ?>">
 
 				<div class="nature-carte-symbole">
-					
+
 					<img
 						src="<?php echo esc_url( nature_reiki_asset_url( $balade['image'] ) ); ?>"
 						alt=""
@@ -308,7 +308,7 @@ get_header(); ?>
 					>
 
 						<figure class="nature-carrousel-figure">
-							
+
 							<img
 								src="<?php echo esc_url( nature_reiki_asset_url( $diapositive['image'] ) ); ?>"
 								alt="<?php echo esc_attr( $diapositive['legende'] ); ?>"

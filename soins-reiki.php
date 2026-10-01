@@ -71,8 +71,8 @@ $soins = array(
 	array(
 		'symbole_class' => 'soin-reiki-symbole soin-reiki-symbole-arbre',
 		'image'         => 'images/arbre-vie.png',
-			'image_width'  => 1312,
-			'image_height' => 1199,
+		'image_width'  => 1312,
+		'image_height' => 1199,
 		'titre'         => 'Pack 4 séances',
 		'prix'          => '170 €',
 		'description'   => 'Un accompagnement complet en quatre séances, conçu pour travailler progressivement sur l’équilibre énergétique et permettre au processus d’harmonisation de s’installer dans le temps. Particulièrement conseillé pour une première expérience du Reiki.',
@@ -81,8 +81,8 @@ $soins = array(
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
 		'image'         => 'images/lotus.svg',
-			'image_width'  => 1536,
-			'image_height' => 1024,
+		'image_width'  => 1536,
+		'image_height' => 1024,
 		'titre'         => 'Séance unique',
 		'prix'          => '55 €',
 		'description'   => 'Une séance ponctuelle pour découvrir le Reiki, prendre un moment pour vous et bénéficier d’un soin adapté à vos besoins du moment.',
@@ -91,8 +91,8 @@ $soins = array(
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
 		'image'         => 'images/feuille-chene.svg',
-			'image_width'  => 1377,
-			'image_height' => 1142,
+		'image_width'  => 1377,
+		'image_height' => 1142,
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
 		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
@@ -116,8 +116,8 @@ foreach ( $soins as $soin_index => $soin ) :
 							?>
 							"
 							alt=""
-				width="<?php echo esc_attr( (string) $soin['image_width'] ); ?>"
-				height="<?php echo esc_attr( (string) $soin['image_height'] ); ?>"
+							width="<?php echo esc_attr( (string) $soin['image_width'] ); ?>"
+							height="<?php echo esc_attr( (string) $soin['image_height'] ); ?>"
 							aria-hidden="true"
 							decoding="async"
 							>
@@ -381,8 +381,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				</article>
 
-
-
 				<!-- =========================
 					SÉANCE EN FORÊT
 				========================== -->
@@ -497,7 +495,7 @@ foreach ( $soins as $soin_index => $soin ) :
 				<div id="soins-reiki-duree-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Les séances de Reiki durent environ 1 heure. 
+						Les séances de Reiki durent environ 1 heure.
 					</p>
 
 					<p>
@@ -557,9 +555,9 @@ foreach ( $soins as $soin_index => $soin ) :
 				<div id="soins-reiki-prevoir-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin. 
+						Pour les séances de Reiki, le receveur reste habillé pendant toute la durée du soin.
 					</p>
-					
+
 					<p>
 						Pour une séance en forêt, prévoir une tenue et des chaussures adaptées aux conditions météorologiques ainsi qu’un ou plusieurs plaids.
 					</p>

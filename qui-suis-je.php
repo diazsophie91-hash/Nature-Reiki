@@ -344,7 +344,7 @@ Template Name: Qui suis-je ?
 					</div>
 
 				</div>
-				
+
 					<div class="ligne-reiki-decoration">
 		<img
 			src="
