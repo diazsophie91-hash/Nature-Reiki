@@ -570,7 +570,7 @@ function nature_reiki_output_local_business_schema() {
 	}
 
 	$schema = array(
-		'@context'  => 'https://schema.org',
+	    '@context'  => 'https://schema.org',
 		'@type'     => 'LocalBusiness',
 		'@id'       => home_url( '/#local-business' ),
 		'name'      => get_bloginfo( 'name', 'display' ),
@@ -582,6 +582,11 @@ function nature_reiki_output_local_business_schema() {
 			'postalCode'      => '4920',
 			'addressLocality' => 'Aywaille',
 			'addressCountry'  => 'BE',
+		),
+		'geo'       => array(
+			'@type'     => 'GeoCoordinates',
+			'latitude'  => 50.46512732466139,
+			'longitude' => 5.689984781699726,
 		),
 	);
 
@@ -598,3 +603,80 @@ function nature_reiki_output_local_business_schema() {
 	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
 }
 add_action( 'wp_head', 'nature_reiki_output_local_business_schema', 2 );
+
+/**
+ * Affiche les données structurées du site sur la page d'accueil.
+ */
+function nature_reiki_output_website_schema() {
+	if ( ! is_front_page() ) {
+		return;
+	}
+
+	$schema = array(
+		'@context'    => 'https://schema.org',
+		'@type'       => 'WebSite',
+		'@id'         => home_url( '/#website' ),
+		'name'        => get_bloginfo( 'name', 'display' ),
+		'url'         => home_url( '/' ),
+		'description' => 'Nature & Reiki propose deux univers à Aywaille : balades et découvertes de la nature, et accompagnement Reiki.',
+	);
+
+	$json = wp_json_encode(
+		$schema,
+		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+	);
+
+	if ( false === $json ) {
+		return;
+	}
+
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
+	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+}
+add_action( 'wp_head', 'nature_reiki_output_website_schema', 2 );
+
+/**
+ * Affiche les données structurées de la page de profil de Joëlle Siwek.
+ */
+function nature_reiki_output_profile_schema() {
+	if ( ! nature_reiki_is_current_page( 'qui-suis-je.php', 'qui-suis-je' ) ) {
+		return;
+	}
+
+	$canonical_url = wp_get_canonical_url();
+
+	if ( ! $canonical_url ) {
+		return;
+	}
+
+	$person_id = home_url( '/#joelle-siwek' );
+
+	$schema = array(
+		'@context'   => 'https://schema.org',
+		'@type'      => 'ProfilePage',
+		'@id'        => $canonical_url . '#profile',
+		'url'        => $canonical_url,
+		'name'       => 'Joëlle Siwek',
+		'mainEntity' => array(
+			'@type'       => 'Person',
+			'@id'         => $person_id,
+			'name'        => 'Joëlle Siwek',
+			'jobTitle'    => 'Guide-Nature et carrière, praticienne Reiki',
+			'description' => 'Joëlle Siwek est Guide-Nature et carrière et praticienne Reiki.',
+			'url'         => home_url( '/qui-suis-je/' ),
+		),
+	);
+
+	$json = wp_json_encode(
+		$schema,
+		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+	);
+
+	if ( false === $json ) {
+		return;
+	}
+
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
+	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+}
+add_action( 'wp_head', 'nature_reiki_output_profile_schema', 2 );
