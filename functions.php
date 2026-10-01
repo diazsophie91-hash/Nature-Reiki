@@ -274,16 +274,39 @@ function nature_reiki_asset_url( $path ) {
 }
 
 /**
+ * Renvoie la date de modification d'un asset pour la gestion du cache.
+ *
+ * @param string $path Chemin relatif au dossier du thème.
+ * @return string|null Timestamp de modification ou null si indisponible.
+ */
+function nature_reiki_asset_version( $path ) {
+	$file = get_theme_file_path( '/' . ltrim( $path, '/' ) );
+
+	if ( ! is_file( $file ) || ! is_readable( $file ) ) {
+		return null;
+	}
+
+	$modified = filemtime( $file );
+
+	return false !== $modified ? (string) $modified : null;
+}
+
+/**
  * Charge un fichier JavaScript, en utilisant sa version minifiée lorsqu'elle existe.
  *
  * @param string $handle Identifiant du script.
  * @param string $path   Chemin relatif vers le script non minifié.
  */
 function nature_reiki_enqueue_script_asset( $handle, $path ) {
-	$min_path       = substr( $path, 0, -3 ) . '.min.js';
-	$script_path    = file_exists( get_theme_file_path( $min_path ) ) ? $min_path : $path;
-	$script_file    = get_theme_file_path( $script_path );
-	$script_version = filemtime( $script_file );
+	$min_path    = substr( $path, 0, -3 ) . '.min.js';
+	$script_path = file_exists( get_theme_file_path( $min_path ) ) ? $min_path : $path;
+	$script_file = get_theme_file_path( '/' . ltrim( $script_path, '/' ) );
+
+	if ( ! is_file( $script_file ) || ! is_readable( $script_file ) ) {
+		return;
+	}
+
+	$script_version = nature_reiki_asset_version( $script_path );
 
 	wp_enqueue_script(
 		$handle,
@@ -302,13 +325,17 @@ function nature_reiki_enqueue_script_asset( $handle, $path ) {
 function nature_reiki_enqueue_assets() {
 	$min_css     = '/style.min.css';
 	$css_file    = file_exists( get_stylesheet_directory() . $min_css ) ? $min_css : '/style.css';
-	$css_version = filemtime( get_stylesheet_directory() . $css_file );
+	$css_version = nature_reiki_asset_version( $css_file );
+
+	if ( null === $css_version ) {
+		return;
+	}
 
 	wp_enqueue_style(
-		'nature-reiki-style',
-		get_stylesheet_directory_uri() . $css_file,
-		array(),
-		$css_version
+	    'nature-reiki-style',
+	    get_stylesheet_directory_uri() . $css_file,
+	    array(),
+	    $css_version
 	);
 
 	if ( nature_reiki_page_has_accordion() ) {
