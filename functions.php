@@ -278,10 +278,30 @@ function nature_reiki_asset_url( $path ) {
 }
 
 /**
- * Charge la feuille de style principale et le JS des accordéons
- * avec la version du thème pour le cache.
+ * Charge un fichier JavaScript, en utilisant sa version minifiée lorsqu'elle existe.
  *
- * Le JS des accordéons n'est chargé que sur les pages qui en ont besoin.
+ * @param string $handle Identifiant du script.
+ * @param string $path   Chemin relatif vers le script non minifié.
+ */
+function nature_reiki_enqueue_script_asset( $handle, $path ) {
+	$min_path = substr( $path, 0, -3 ) . '.min.js';
+	$script_path = file_exists( get_theme_file_path( $min_path ) ) ? $min_path : $path;
+	$script_file = get_theme_file_path( $script_path );
+	$script_version = filemtime( $script_file );
+
+	wp_enqueue_script(
+		$handle,
+		nature_reiki_asset_url( $script_path ),
+		array(),
+		$script_version,
+		true
+	);
+}
+
+/**
+ * Charge la feuille de style principale et les scripts du thème.
+ *
+ * Les scripts sont chargés uniquement sur les pages qui en ont besoin.
  */
 function nature_reiki_enqueue_assets() {
 	$min_css  = '/style.min.css';
@@ -296,37 +316,23 @@ function nature_reiki_enqueue_assets() {
 	);
 
 	if ( nature_reiki_page_has_accordion() ) {
-		$accordeon_version = filemtime( get_theme_file_path( 'assets/js/accordeon.js' ) );
-
-		wp_enqueue_script(
+		nature_reiki_enqueue_script_asset(
 			'nature-reiki-accordeon',
-			nature_reiki_asset_url( 'assets/js/accordeon.js' ),
-			array(),
-			$accordeon_version,
-			true
+			'assets/js/accordeon.js'
 		);
 	}
-	if ( nature_reiki_page_has_carrousel_nature() ) {
-		$carrousel_version = filemtime( get_theme_file_path( 'assets/js/carrousel-nature.js' ) );
 
-		wp_enqueue_script(
+	if ( nature_reiki_page_has_carrousel_nature() ) {
+		nature_reiki_enqueue_script_asset(
 			'nature-reiki-carrousel-nature',
-			nature_reiki_asset_url( 'assets/js/carrousel-nature.js' ),
-			array(),
-			$carrousel_version,
-			true
+			'assets/js/carrousel-nature.js'
 		);
 	}
 
 	if ( nature_reiki_page_has_retour_haut() ) {
-		$retour_haut_version = filemtime( get_theme_file_path( 'assets/js/retour-haut.js' ) );
-
-		wp_enqueue_script(
+		nature_reiki_enqueue_script_asset(
 			'nature-reiki-retour-haut',
-			nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
-			array(),
-			$retour_haut_version,
-			true
+			'assets/js/retour-haut.js'
 		);
 	}
 }
