@@ -48,8 +48,12 @@ function nature_reiki_get_universe() {
 			$universe = 'reiki';
 		} else {
 			// phpcs:disable WordPress.Security.NonceVerification.Recommended -- paramètre d'affichage limité à nature/reiki.
-			$univers = isset( $_GET['univers'] )
-				? sanitize_key( wp_unslash( $_GET['univers'] ) )
+			$univers_param = isset( $_GET['univers'] )
+				? wp_unslash( $_GET['univers'] )
+				: 'reiki';
+
+			$univers = is_string( $univers_param )
+				? sanitize_key( $univers_param )
 				: 'reiki';
 			// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
@@ -202,6 +206,43 @@ function nature_reiki_body_classes( $classes ) {
 add_filter( 'body_class', 'nature_reiki_body_classes' );
 
 /**
+ * Indique si la page courante utilise le bouton « retour en haut ».
+ *
+ * Le script associé n'est chargé que sur les pages où le contenu est
+ * suffisamment long pour justifier ce contrôle.
+ *
+ * @return bool
+ */
+function nature_reiki_page_has_retour_haut() {
+	return is_front_page() || nature_reiki_is_current_page(
+		array(
+			'accueil-reiki.php',
+			'accueil-guide-nature.php',
+			'le-reiki.php',
+			'soins-reiki.php',
+			'balades.php',
+			'animations.php',
+			'a-venir.php',
+			'faq.php',
+			'qui-suis-je.php',
+			'me-contacter.php',
+		),
+		array(
+			'accueil-reiki',
+			'accueil-guide-nature',
+			'le-reiki',
+			'soins-reiki',
+			'balades',
+			'animations',
+			'a-venir',
+			'faq',
+			'qui-suis-je',
+			'me-contacter',
+		)
+	);
+}
+
+/**
  * Indique si la page courante utilise un des accordéons du thème.
  * Utilisé pour ne charger le JS des accordéons que sur les pages concernées.
  *
@@ -277,15 +318,17 @@ function nature_reiki_enqueue_assets() {
 		);
 	}
 
-	$retour_haut_version = filemtime( get_theme_file_path( 'assets/js/retour-haut.js' ) );
+	if ( nature_reiki_page_has_retour_haut() ) {
+		$retour_haut_version = filemtime( get_theme_file_path( 'assets/js/retour-haut.js' ) );
 
-	wp_enqueue_script(
-		'nature-reiki-retour-haut',
-		nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
-		array(),
-		$retour_haut_version,
-		true
-	);
+		wp_enqueue_script(
+			'nature-reiki-retour-haut',
+			nature_reiki_asset_url( 'assets/js/retour-haut.js' ),
+			array(),
+			$retour_haut_version,
+			true
+		);
+	}
 }
 add_action( 'wp_enqueue_scripts', 'nature_reiki_enqueue_assets' );
 

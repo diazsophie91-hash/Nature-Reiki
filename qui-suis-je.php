@@ -360,8 +360,6 @@ Template Name: Qui suis-je ?
 		>
 	</div>
 
-</div>
-
 			</details>
 
 

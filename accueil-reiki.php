@@ -94,7 +94,7 @@ $bannieres = array(
 		'image'           => 'images/pendule.svg',
 			'image_width'  => 1024,
 			'image_height' => 1536,
-		'image_alt'       => 'Pendule de Reiki',
+		'image_alt'       => '',
 	),
 );
 ?>

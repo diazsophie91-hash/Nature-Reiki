@@ -78,7 +78,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 			aria-expanded="true"
 			aria-controls="<?php echo esc_attr( $univers_id ); ?>"
 		>
-			<span><?php echo ( 'nature' === $univers_faq ) ? 'Guide-Nature' : 'Reiki'; ?></span>
+			<h2><?php echo ( 'nature' === $univers_faq ) ? 'Guide-Nature' : 'Reiki'; ?></h2>
 			<span class="faq-univers-fleche" aria-hidden="true"></span>
 		</summary>
 		<div class="faq-univers-contenu" id="<?php echo esc_attr( $univers_id ); ?>" aria-hidden="false">
@@ -94,7 +94,7 @@ foreach ( $univers_ordre as $univers_faq ) :
 					aria-expanded="false"
 					aria-controls="<?php echo esc_attr( $question_id ); ?>"
 				>
-					<span><?php echo esc_html( $questions[ $i - 1 ] ); ?></span>
+					<h3><?php echo esc_html( $questions[ $i - 1 ] ); ?></h3>
 					<span class="soins-reiki-accordeon-fleche" aria-hidden="true"></span>
 				</summary>
 				<div class="soins-reiki-accordeon-contenu" id="<?php echo esc_attr( $question_id ); ?>">
