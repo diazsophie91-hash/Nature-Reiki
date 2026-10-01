@@ -14,7 +14,7 @@
         document.documentElement.classList.replace( 'no-js', 'js' );
 
         var accordions = document.querySelectorAll(
-            'details.le-reiki-contenu, details.soin-reiki-card-accordeon, details.soins-reiki-accordeon, details.faq-univers, details.nature-carte-accordeon'
+            'details.le-reiki-contenu, details.soin-reiki-card-accordeon, details.soins-reiki-accordeon, details.faq-univers, details.nature-carte-accordeon, details.qui-suis-je-parcours'
         );
 
         for ( var i = 0; i < accordions.length; i++ ) {
