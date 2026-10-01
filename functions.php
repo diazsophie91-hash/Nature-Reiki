@@ -576,6 +576,8 @@ function nature_reiki_output_local_business_schema() {
 		'name'      => get_bloginfo( 'name', 'display' ),
 		'url'       => home_url( '/me-contacter/' ),
 		'telephone' => '+32 497 81 21 83',
+		'logo'      => nature_reiki_asset_url( 'images/logo-nature-reiki-transparent.png' ),
+		'hasMap'    => 'https://www.google.com/maps/search/?api=1&query=Rue+du+Doyare+n%C2%B03%2C+4920+Aywaille',
 		'address'   => array(
 			'@type'           => 'PostalAddress',
 			'streetAddress'   => 'Rue du Doyare n°3',
