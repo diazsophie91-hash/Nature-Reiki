@@ -75,7 +75,6 @@ foreach ( $univers_ordre as $univers_faq ) :
 	<details class="faq-univers" open>
 		<summary
 			class="faq-univers-bouton"
-			aria-expanded="true"
 			aria-controls="<?php echo esc_attr( $univers_id ); ?>"
 		>
 			<h2><?php echo ( 'nature' === $univers_faq ) ? 'Guide-Nature' : 'Reiki'; ?></h2>
@@ -93,7 +92,6 @@ foreach ( $univers_ordre as $univers_faq ) :
 			<details class="soins-reiki-accordeon">
 				<summary
 					class="soins-reiki-accordeon-bouton"
-					aria-expanded="false"
 					aria-controls="<?php echo esc_attr( $question_id ); ?>"
 				>
 					<h3><?php echo esc_html( $questions[ $i - 1 ] ); ?></h3>

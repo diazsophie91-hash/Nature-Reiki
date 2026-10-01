@@ -192,7 +192,6 @@ Template Name: Qui suis-je ?
 
 				<summary
 					class="le-reiki-toggle"
-					aria-expanded="false"
 					aria-controls="qui-suis-je-nature-contenu"
 				>
 
@@ -275,7 +274,6 @@ Template Name: Qui suis-je ?
 
 				<summary
 					class="le-reiki-toggle"
-					aria-expanded="false"
 					aria-controls="qui-suis-je-reiki-contenu"
 				>
 

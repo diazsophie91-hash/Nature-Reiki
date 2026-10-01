@@ -95,7 +95,7 @@ get_header();
 						);
 						?>
 						"
-						alt="Adresse"
+						alt="" aria-hidden="true"
 				width="1230"
 				height="1278"
 						loading="lazy"
@@ -135,7 +135,7 @@ get_header();
 						);
 						?>
 						"
-						alt="E-mail"
+						alt="" aria-hidden="true"
 				width="1536"
 				height="1024"
 						loading="lazy"
@@ -171,7 +171,7 @@ get_header();
 						);
 						?>
 						"
-						alt="Téléphone"
+						alt="" aria-hidden="true"
 				width="1024"
 				height="1536"
 						loading="lazy"

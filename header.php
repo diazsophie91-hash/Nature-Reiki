@@ -66,7 +66,7 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 
 		<a
 			href="<?php echo esc_url( home_url( '/accueil-guide-nature/' ) ); ?>"
-			class="switch-nature <?php echo $is_nature ? 'actif' : ''; ?>"
+			class="switch-nature <?php echo $is_nature ? 'actif' : ''; ?>"<?php echo $is_nature ? ' aria-current="true"' : ''; ?>
 		>
 			<img
 				src="<?php echo esc_url( nature_reiki_asset_url( 'images/feuille-chene.svg' ) ); ?>"
@@ -91,7 +91,7 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 
 		<a
 			href="<?php echo esc_url( home_url( '/accueil-reiki/' ) ); ?>"
-			class="switch-reiki <?php echo $is_reiki ? 'actif' : ''; ?>"
+			class="switch-reiki <?php echo $is_reiki ? 'actif' : ''; ?>"<?php echo $is_reiki ? ' aria-current="true"' : ''; ?>
 		>
 			Reiki
 			<img

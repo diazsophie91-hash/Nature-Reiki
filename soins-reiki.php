@@ -133,7 +133,6 @@ foreach ( $soins as $soin_index => $soin ) :
 					<details class="soin-reiki-card-accordeon">
 						<summary
 							class="soin-reiki-en-savoir-plus"
-							aria-expanded="false"
 							aria-controls="soin-reiki-details-<?php echo esc_attr( (string) $soin_index ); ?>"
 						>
 							En savoir plus
@@ -198,7 +197,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 			<summary
 				class="le-reiki-toggle"
-				aria-expanded="true"
 				aria-controls="le-reiki-test-energetique-contenu"
 			>
 				<span>
@@ -278,7 +276,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 			<summary
 				class="le-reiki-toggle"
-				aria-expanded="true"
 				aria-controls="le-reiki-soins-detail-contenu"
 			>
 				<span>Les soins en détail</span>
@@ -454,7 +451,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				<summary
 					class="soins-reiki-accordeon-bouton"
-						aria-expanded="false"
 						aria-controls="soins-reiki-lieu-contenu"
 					>
 					<span>Lieu</span>
@@ -485,7 +481,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				<summary
 					class="soins-reiki-accordeon-bouton"
-						aria-expanded="false"
 						aria-controls="soins-reiki-duree-contenu"
 					>
 					<span>Durée</span>
@@ -519,7 +514,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				<summary
 					class="soins-reiki-accordeon-bouton"
-						aria-expanded="false"
 						aria-controls="soins-reiki-paiement-contenu"
 					>
 					<span>Paiement</span>
@@ -545,7 +539,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				<summary
 					class="soins-reiki-accordeon-bouton"
-						aria-expanded="false"
 						aria-controls="soins-reiki-prevoir-contenu"
 					>
 					<span>Que faut-il prévoir ?</span>
@@ -579,7 +572,6 @@ foreach ( $soins as $soin_index => $soin ) :
 
 				<summary
 					class="soins-reiki-accordeon-bouton"
-						aria-expanded="false"
 						aria-controls="soins-reiki-foret-contenu"
 					>
 					<span>Séance en forêt</span>
