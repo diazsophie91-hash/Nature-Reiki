@@ -518,6 +518,7 @@ function nature_reiki_output_open_graph() {
 	$site_name = get_bloginfo( 'name', 'display' );
 	$title     = wp_get_document_title();
 	$locale    = str_replace( '-', '_', get_locale() );
+	$og_image  = nature_reiki_asset_url( 'images/nature-reiki-open-graph-1200x630.png' );
 
 	echo '<meta property="og:type" content="website">' . "\n";
 	echo '<meta property="og:site_name" content="' . esc_attr( $site_name ) . '">' . "\n";
@@ -525,7 +526,13 @@ function nature_reiki_output_open_graph() {
 	echo '<meta property="og:title" content="' . esc_attr( $title ) . '">' . "\n";
 	echo '<meta property="og:description" content="' . esc_attr( $seo['description'] ) . '">' . "\n";
 	echo '<meta property="og:url" content="' . esc_url( $canonical_url ) . '">' . "\n";
+	echo '<meta property="og:image" content="' . esc_url( $og_image ) . '">' . "\n";
+	echo '<meta property="og:image:width" content="1200">' . "\n";
+	echo '<meta property="og:image:height" content="630">' . "\n";
+	echo '<meta property="og:image:type" content="image/png">' . "\n";
+	echo '<meta property="og:image:alt" content="Nature &amp; Reiki">' . "\n";
 }
+
 add_action( 'wp_head', 'nature_reiki_output_open_graph', 1 );
 
 /**
