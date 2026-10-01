@@ -298,15 +298,14 @@ function nature_reiki_asset_version( $path ) {
  * @param string $path   Chemin relatif vers le script non minifié.
  */
 function nature_reiki_enqueue_script_asset( $handle, $path ) {
-	$min_path    = substr( $path, 0, -3 ) . '.min.js';
-	$script_path = file_exists( get_theme_file_path( $min_path ) ) ? $min_path : $path;
-	$script_file = get_theme_file_path( '/' . ltrim( $script_path, '/' ) );
+	$min_path       = substr( $path, 0, -3 ) . '.min.js';
+	$min_version    = nature_reiki_asset_version( $min_path );
+	$script_path    = null !== $min_version ? $min_path : $path;
+	$script_version = null !== $min_version ? $min_version : nature_reiki_asset_version( $path );
 
-	if ( ! is_file( $script_file ) || ! is_readable( $script_file ) ) {
+	if ( null === $script_version ) {
 		return;
 	}
-
-	$script_version = nature_reiki_asset_version( $script_path );
 
 	wp_enqueue_script(
 		$handle,
