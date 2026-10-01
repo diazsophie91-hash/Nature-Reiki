@@ -222,8 +222,8 @@ body {
 
 html:has(body.home),
 body.home {
-    height: 100%;
-    overflow: hidden;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 /* Les pages de contenu doivent pouvoir défiler sans règle spécifique. */
