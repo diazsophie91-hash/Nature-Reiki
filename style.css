@@ -3067,25 +3067,25 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
     object-fit: contain;
 }
 
-.me-contacter-icone img[alt="Adresse"] {
+.me-contacter-info:nth-child(1) .me-contacter-icone img {
     width: 55px;
     height: 55px;
     max-width: 55px;
     max-height: 55px;
 }
 
-.me-contacter-icone img[alt="Téléphone"] {
-    width: 58px;
-    height: 58px;
-    max-width: 58px;
-    max-height: 58px;
-}
-
-.me-contacter-icone img[alt="E-mail"] {
+.me-contacter-info:nth-child(2) .me-contacter-icone img {
     width: 68px;
     height: 68px;
     max-width: 68px;
     max-height: 68px;
+}
+
+.me-contacter-info:nth-child(3) .me-contacter-icone img {
+    width: 58px;
+    height: 58px;
+    max-width: 58px;
+    max-height: 58px;
 }
 
 /* =========================================================
@@ -4066,12 +4066,6 @@ body.universe-native-nature .soins-reiki-accordeon {
 .reiki-pourquoi-bloc {
     background: var(--color-white-warm-translucent-56);
 }
-
-/* ---------------------------------------------------------
-   5. BANNIÈRES REIKI → UNIFORMITÉ VISUELLE
---------------------------------------------------------- */
-
-
 
 /* ---------------------------------------------------------
    6. ACCORDÉONS → ÉTAT OUVERT PLUS LISIBLE
