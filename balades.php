@@ -52,25 +52,6 @@ get_header(); ?>
 
 
 	<!-- =========================
-		INTRODUCTION
-	========================== -->
-
-	<section class="nature-section nature-section--texte">
-
-		<div class="nature-intro">
-
-			<p>
-				Chaque balade est un temps de découverte, à mon rythme et au vôtre : on
-				observe, on écoute, on touche, on goûte parfois. Les thèmes ci-dessous
-				sont proposés au fil des saisons.
-			</p>
-
-		</div>
-
-	</section>
-
-
-	<!-- =========================
 		LES SIX BALADES
 	========================== -->
 
@@ -90,7 +71,7 @@ get_header(); ?>
 		 */
 		$balades = array(
 			array(
-				'titre'    => 'Sur les pas des Celtes à nos jours',
+				'titre'    => 'Sur les pas des Celtes',
 				'mention'  => '',
 				'image'    => 'images/celte.svg',
 				'width'    => 1312,
@@ -194,6 +175,24 @@ get_header(); ?>
 			<?php endforeach; ?>
 
 		</div>
+
+	<!-- =========================
+		TEXTE EXPLICATIF
+	========================== -->
+
+	<section class="nature-section nature-section--texte">
+
+		<div class="nature-intro">
+
+			<p>
+				Chaque balade est un temps de découverte, à mon rythme et au vôtre : on
+				observe, on écoute, on touche, on goûte parfois. Les thèmes ci-dessous
+				sont proposés au fil des saisons.
+			</p>
+
+		</div>
+
+	</section>
 
 		<div class="nature-section-action">
 
