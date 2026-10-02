@@ -4077,8 +4077,41 @@ body.universe-native-nature .soins-reiki-accordeon {
 
 .le-reiki-toggle:focus-visible,
 .faq-univers-bouton:focus-visible,
-.soins-reiki-accordeon-bouton:focus-visible,
+.soins-reiki-accordeon-bouton:focus-visible {
+    outline: none;
+}
+
+.le-reiki-toggle:focus-visible > h2,
+.faq-univers-bouton:focus-visible > h2,
+.soins-reiki-accordeon-bouton:focus-visible > h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--color-accent);
+}
+
+body.universe-nature .le-reiki-toggle:focus-visible > h2,
+body.universe-nature .faq-univers-bouton:focus-visible > h2,
+body.universe-nature .soins-reiki-accordeon-bouton:focus-visible > h3 {
+    text-decoration-color: var(--color-nature-menu-border);
+}
+
 .soin-reiki-en-savoir-plus:focus-visible,
+.nature-carte-en-savoir-plus:focus-visible {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.soin-reiki-en-savoir-plus:focus-visible {
+    text-decoration-color: var(--color-accent);
+}
+
+.nature-carte-en-savoir-plus:focus-visible {
+    text-decoration-color: var(--color-nature-menu-border);
+}
+
 .soin-reiki-rendez-vous:focus-visible,
 .soins-reiki-cta-bouton:focus-visible,
 .reiki-menu a:focus-visible,
@@ -4096,33 +4129,19 @@ body.universe-native-nature .soins-reiki-accordeon {
    7. ME CONTACTER → PLUS DE PROFONDEUR ET DE CLARTÉ
 --------------------------------------------------------- */
 
-
-
 .me-contacter-info:hover {
     transform: translateY(-2px);
     background: var(--color-white-warm-translucent-68);
 }
-
-
 
 .me-contacter-univers-card:hover {
     transform: translateY(-3px);
     background: var(--color-white-warm-translucent-68);
 }
 
-
-
-/* ---------------------------------------------------------
-   9. SWITCH D'UNIVERS → PLUS NET
---------------------------------------------------------- */
-
-
-
 /* ---------------------------------------------------------
    10. ACCUEIL → PROFONDEUR DES DEUX UNIVERS
 --------------------------------------------------------- */
-
-
 
 .univers-box::after {
     content: "";
@@ -4132,11 +4151,6 @@ body.universe-native-nature .soins-reiki-accordeon {
     pointer-events: none;
     box-shadow: var(--shadow-inset-white);
 }
-
-/* =========================================================
-   F.A.Q
-========================================================= */
-
 
 /* =========================================================
    SCROLL → UNIQUEMENT POUR LA PAGE F.A.Q
@@ -4198,7 +4212,6 @@ body:has(.page-faq) {
     min-height: 100vh;
 }
 
-
 /* =========================================================
    PAGE F.A.Q — Contexte Nature
 ========================================================= */
@@ -4218,8 +4231,6 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
     border-bottom-color: var(--color-nature-h2);
 }
 
-
-
 /* =========================================================
    ESPACE ENTRE LE MENU ET LA F.A.Q
 ========================================================= */
@@ -4227,7 +4238,6 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
 .page-faq .soins-reiki-pratiques {
     padding-top: 35px;
 }
-
 
 /* =========================================================
    ESPACEMENT ENTRE LES DEUX UNIVERS
@@ -4242,7 +4252,6 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
 .page-faq .faq-univers:last-child {
     margin-bottom: 0;
 }
-
 
 /* =========================================================
    BOUTON GUIDE-NATURE / REIKI
@@ -4281,7 +4290,6 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
     color: var(--color-primary-light);
 }
 
-
 /* =========================================================
    CHEVRON GUIDE-NATURE / REIKI
 ========================================================= */
@@ -4311,7 +4319,6 @@ body.universe-nature .page-faq .faq-univers-fleche {
 .faq-univers-fleche {
     transform: rotate(225deg);
 }
-
 
 /* =========================================================
    CONTENU GUIDE-NATURE / REIKI
@@ -4665,6 +4672,7 @@ body.universe-native-nature .page-nature {
    BOUTON "DEMANDER UN DEVIS" — PAGE BALADES
    Bleu Nature pour harmoniser avec les grandes bannières
    ========================================================= */
+
 body.page-template-balades .nature-bouton {
     background: var(--color-nature-h2);
     font-weight: 600;
@@ -5085,7 +5093,6 @@ body.page-template-animations .nature-bouton {
 .nature-carte-details p:last-of-type {
     margin-bottom: 20px;
 }
-
 
 /* =========================================================
    ENCARTS NATURE (balades privées, conditions)
@@ -5526,10 +5533,8 @@ body.universe-nature .retour-haut {
 .nature-banniere-bouton:focus-visible,
 .nature-carrousel-fleche:focus-visible,
 .nature-carrousel-puce:focus-visible,
-.nature-reserver-contenu a:focus-visible,
-.nature-carte-en-savoir-plus:focus-visible {
+.nature-reserver-contenu a:focus-visible {
     outline: 2px solid var(--color-nature);
-    outline-offset: 3px;
 }
 
 /* =========================================================
