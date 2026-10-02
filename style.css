@@ -1623,7 +1623,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 
     margin: 0 auto;
 
-    padding: 35px 30px 5px;
+    padding: 25px 30px 5px;
 }
 
 
@@ -1748,7 +1748,7 @@ body.universe-nature .qui-suis-je-contenu p {
 
     margin: 0 auto;
 
-    padding: 35px 30px 0;
+    padding: 25px 30px 0;
 
     text-align: center;
 }
@@ -2454,7 +2454,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 ========================================================= */
 
 .le-reiki-definition {
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
@@ -3003,7 +3003,7 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
 .me-contacter-coordonnees {
     width: 100%;
 
-    padding: 35px 30px 18px;
+    padding: 25px 30px 18px;
 }
 
 .me-contacter-contenu {
@@ -3279,7 +3279,7 @@ body.page-template-me-contacter {
 .soins-reiki-types {
     width: 100%;
 
-    padding: 35px 30px 15px;
+    padding: 25px 30px 15px;
 }
 
 .soins-reiki-contenu {
@@ -4166,7 +4166,7 @@ body:has(.page-faq) {
 ========================================================= */
 
 .prendre-rendez-vous-reiki {
-    padding-top: 35px;
+    padding-top: 25px;
 }
 
 .reserver-section {
@@ -4236,7 +4236,7 @@ body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
 ========================================================= */
 
 .page-faq .soins-reiki-pratiques {
-    padding-top: 35px;
+    padding-top: 25px;
 }
 
 /* =========================================================
@@ -4568,11 +4568,11 @@ body.universe-native-nature .page-nature {
 
     margin: 0 auto;
 
-    padding: 18px 30px;
+    padding: 25px 30px;
 }
 
 .nature-section--texte {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .nature-titre-section {
