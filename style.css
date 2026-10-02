@@ -262,7 +262,18 @@ main {
     outline-offset: 2px;
 }
 
+/* Focus clavier général des liens et boutons */
 
+a:focus-visible:not(.skip-link),
+button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+body.universe-nature a:focus-visible:not(.skip-link),
+body.universe-nature button:focus-visible {
+    outline-color: var(--color-nature-menu-border);
+}
 
 /* =========================
    EN-TETE
@@ -4032,20 +4043,6 @@ body.universe-native-nature .soins-reiki-accordeon {
     box-shadow: var(--shadow-hover);
 }
 
-/* On ne fait pas bouger les accordéons : leur fonction est différente. */
-
-/* ---------------------------------------------------------
-   3. CARTES SOINS REIKI → PLUS DE HIÉRARCHIE
---------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------------------------
    4. LE REIKI → RYTHME ENTRE LES GRANDES SECTIONS
 --------------------------------------------------------- */
@@ -4121,7 +4118,7 @@ body.universe-nature .soins-reiki-accordeon-bouton:focus-visible > h3 {
 }
 
 .nature-menu a:focus-visible {
-    outline: 2px solid var(--color-nature);
+    outline: 2px solid var(--color-nature-menu-border);
     outline-offset: 3px;
 }
 
@@ -5259,11 +5256,6 @@ body.page-template-a-venir .nature-cta-boutons .nature-bouton:hover {
     margin: 0 auto;
 }
 
-.nature-carrousel:focus-visible {
-    outline: 2px solid var(--color-nature-menu-border);
-    outline-offset: 4px;
-}
-
 /* La fenêtre masque les diapositives hors champ : pas de
    débordement horizontal possible. */
 .nature-carrousel-fenetre {
@@ -5534,7 +5526,8 @@ body.universe-nature .retour-haut {
 .nature-carrousel-fleche:focus-visible,
 .nature-carrousel-puce:focus-visible,
 .nature-reserver-contenu a:focus-visible {
-    outline: 2px solid var(--color-nature);
+    outline: 2px solid var(--color-nature-menu-border);
+    outline-offset: 3px;
 }
 
 /* =========================================================
