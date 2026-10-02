@@ -1625,24 +1625,12 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 }
 
 /* =========================================================
-   ESPACE ENTRE LE MENU ET LE PREMIER CONTENU — REIKI
+   ESPACE ENTRE LE MENU ET LE PREMIER CONTENU
 ========================================================= */
 
-body.universe-reiki .reiki-menu + :is(
-    .reiki-qui-suis-je-section,
-    .le-reiki-definition,
-    .soins-reiki-types,
-    .soins-reiki-pratiques,
-    .me-contacter-coordonnees
-) {
+body.universe-reiki .reiki-menu + *,
+body.universe-nature .nature-menu + * {
     padding-top: 25px;
-}
-
-body.universe-reiki .reiki-menu + :is(
-    .prendre-rendez-vous-reiki,
-    .qui-suis-je-introduction
-) {
-    padding-top: 20px;
 }
 
 /* =========================================================
