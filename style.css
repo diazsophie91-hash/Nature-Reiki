@@ -991,8 +991,7 @@ body.universe-reiki .switch-reiki::before {
 ========================= */
 
 body.admin-bar .accueil {
-    height: calc(100vh - 84px);
-    min-height: 0;
+    min-height: calc(100vh - 84px);
 }
 
 /* =========================
