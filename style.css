@@ -4574,6 +4574,10 @@ body.universe-native-nature .page-nature {
     padding-top: 20px;
 }
 
+.nature-section--texte + .nature-section {
+    padding-top: 0px;
+}
+
 .nature-titre-section {
     margin: 0 0 20px;
 
@@ -4901,6 +4905,8 @@ body.page-template-animations .nature-bouton {
     align-items: center;
 
     padding: 24px 22px 26px;
+
+    min-height: 240px;
 
     background: var(--color-white-warm-translucent-72);
 
