@@ -253,6 +253,28 @@ Template Name: Qui suis-je ?
 				Je considère qu’il est d’utilité publique de mieux connaître la nature, car <strong>mieux la comprendre permet aussi de mieux la respecter</strong>. Mon souhait est de partager mes connaissances et de donner à chacun l’envie d’observer, de comprendre et de porter un regard différent sur le monde qui nous entoure.
 			</p>
 
+			<div class="qui-suis-je-natagora reserver-contenu">
+
+    			<h3>Engagement auprès de Natagora</h3>
+
+    			<p>
+       				Je suis également volontaire au sein de <strong>Natagora Pays Chantoire</strong>,
+        			où je participe notamment aux activités de Guide nature, Guide carrières et au
+        			groupe de travail consacré aux mammifères.
+    			</p>
+
+    			<p>
+        			<a
+            			href="https://payschantoire.natagora.be/qui-sommes-nous/qui-fait-quoi"
+            			target="_blank"
+            			rel="noopener noreferrer"
+        			>
+            			Voir mon profil sur le site de Natagora Pays Chantoire
+        			</a>
+    			</p>
+
+			</div>
+
 					</div>
 
 				</div>
