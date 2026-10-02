@@ -1430,7 +1430,6 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
     padding: 5px 30px;
 }
 
-
 /* =========================
    DÉCORATION → BANNIÈRE 1
 ========================= */
@@ -1586,7 +1585,6 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
     position: relative;
 }
 
-
 .reiki-banniere-2-decor img,
 .reiki-banniere-3-decor img {
     width: 70px;
@@ -1623,7 +1621,41 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 
     margin: 0 auto;
 
-    padding: 25px 30px 5px;
+    padding: 0 30px 5px;
+}
+
+/* =========================================================
+   ESPACE ENTRE LE MENU ET LE PREMIER CONTENU — REIKI
+========================================================= */
+
+body.universe-reiki .reiki-menu + :is(
+    .reiki-qui-suis-je-section,
+    .le-reiki-definition,
+    .soins-reiki-types,
+    .soins-reiki-pratiques,
+    .me-contacter-coordonnees
+) {
+    padding-top: 25px;
+}
+
+body.universe-reiki .reiki-menu + :is(
+    .prendre-rendez-vous-reiki,
+    .qui-suis-je-introduction
+) {
+    padding-top: 20px;
+}
+
+/* =========================================================
+   ESPACEMENT DES BANNIÈRES — ACCUEIL NATURE
+========================================================= */
+
+body.page-template-accueil-guide-nature .nature-section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body.page-template-accueil-guide-nature .nature-menu + .nature-section {
+    padding-top: 25px;
 }
 
 
@@ -2453,11 +2485,6 @@ body.universe-nature .le-reiki-toggle:hover .le-reiki-fleche {
    1. QU'EST-CE QUE LE REIKI ?
 ========================================================= */
 
-.le-reiki-definition {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
 /* =========================================================
    2. LES ORIGINES DU REIKI
 ========================================================= */
@@ -3279,7 +3306,7 @@ body.page-template-me-contacter {
 .soins-reiki-types {
     width: 100%;
 
-    padding: 25px 30px 15px;
+    padding: 0 30px 15px;
 }
 
 .soins-reiki-contenu {
@@ -4161,14 +4188,6 @@ body:has(.page-faq) {
     overflow-y: auto;
 }
 
-/* =========================================================
-   PRENDRE RENDEZ-VOUS → REIKI
-========================================================= */
-
-.prendre-rendez-vous-reiki {
-    padding-top: 25px;
-}
-
 .reserver-section {
     width: 100%;
     max-width: 900px;
@@ -4229,14 +4248,6 @@ body.universe-nature .page-faq .faq-univers-fleche,
 body.universe-nature .page-faq .soins-reiki-accordeon-fleche {
     border-right-color: var(--color-nature-h2);
     border-bottom-color: var(--color-nature-h2);
-}
-
-/* =========================================================
-   ESPACE ENTRE LE MENU ET LA F.A.Q
-========================================================= */
-
-.page-faq .soins-reiki-pratiques {
-    padding-top: 25px;
 }
 
 /* =========================================================
@@ -4732,7 +4743,7 @@ body.page-template-animations .nature-bouton {
 
     gap: 25px;
 
-    padding: 22px 30px;
+    padding: 21px 30px;
 
     box-sizing: border-box;
 
