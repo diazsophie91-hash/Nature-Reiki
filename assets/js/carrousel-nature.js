@@ -107,17 +107,8 @@
             } );
         }
 
-        // Navigation au clavier lorsque le carrousel a le focus.
-        carrousel.setAttribute( 'tabindex', '0' );
-        carrousel.addEventListener( 'keydown', function ( evenement ) {
-            if ( evenement.key === 'ArrowLeft' ) {
-                evenement.preventDefault();
-                allerA( index - 1 );
-            } else if ( evenement.key === 'ArrowRight' ) {
-                evenement.preventDefault();
-                allerA( index + 1 );
-            }
-        } );
+// La navigation clavier se fait via les boutons du carrousel.
+// Le conteneur lui-même ne reçoit pas le focus.
 
         // Balayage tactile.
         var departX = null;
