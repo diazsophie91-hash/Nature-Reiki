@@ -50,26 +50,6 @@ get_header(); ?>
 
 	<?php nature_reiki_display_menu(); ?>
 
-
-	<!-- =========================
-		INTRODUCTION
-	========================== -->
-
-	<section class="nature-section nature-section--texte">
-
-		<div class="nature-intro">
-
-			<p>
-				Deux nouveaux thèmes de balades sont en préparation. Ils ne sont pas encore
-				proposés au calendrier : cette page sera mise à jour dès que les dates
-				seront connues.
-			</p>
-
-		</div>
-
-	</section>
-
-
 	<!-- =========================
 		LES PROJETS
 	========================== -->
@@ -132,8 +112,25 @@ get_header(); ?>
 
 		</div>
 
+	<!-- =========================
+		TEXTE EXPLICATIF
+	========================== -->
+
 	</section>
 
+		<section class="nature-section nature-section--texte">
+
+		<div class="nature-intro">
+
+			<p>
+				Deux nouveaux thèmes de balades sont en préparation. Ils ne sont pas encore
+				proposés au calendrier, cette page sera mise à jour dès que les dates
+				seront connues.
+			</p>
+
+		</div>
+
+	</section>
 
 	<!-- =========================
 		APPEL À L'ACTION
