@@ -51,30 +51,6 @@ get_header(); ?>
 
 	<?php nature_reiki_display_menu(); ?>
 
-
-	<!-- =========================
-		INTRODUCTION
-	========================== -->
-
-	<section class="nature-section nature-section--texte">
-
-		<div class="nature-intro">
-
-			<p>
-				Les animations sont construites avec vous, en fonction du public, de la
-				durée souhaitée et du lieu. Chaque formule s’adapte à l’âge des
-				participants et à la saison.
-			</p>
-
-			<p class="nature-disponibilite">
-				Disponible à partir de juin 2027.
-			</p>
-
-		</div>
-
-	</section>
-
-
 	<!-- =========================
 		LES PUBLICS
 	========================== -->
@@ -145,6 +121,27 @@ get_header(); ?>
 
 	</section>
 
+		<!-- =========================
+		TEXTE EXPLICATIF
+	========================== -->
+
+	<section class="nature-section nature-section--texte">
+
+		<div class="nature-intro">
+
+			<p>
+				Les animations sont construites avec vous, en fonction du public, de la
+				durée souhaitée et du lieu. Chaque formule s’adapte à l’âge des
+				participants et à la saison.
+			</p>
+
+			<p class="nature-disponibilite">
+				Disponible à partir de juin 2027.
+			</p>
+
+		</div>
+
+	</section>
 
 	<!-- =========================
 		CONDITIONS

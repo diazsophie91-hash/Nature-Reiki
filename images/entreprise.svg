@@ -39,16 +39,16 @@
              C76 166 88 154 103 154 Z"
           fill="none" stroke="#246a95" stroke-width="16"/>
 
-    <!-- Rabat vert : son bord supérieur est volontairement sous le bord bleu -->
-    <path d="M88 168
-             H424
+    <!-- Rabat vert -->
+    <path d="M76 154
+             H436
              V242
-             C424 250 420 254 412 257
+             C436 250 432 254 424 257
              L256 309
-             L100 257
-             C92 254 88 250 88 242
+             L88 257
+             C80 254 76 250 76 242
              Z"
-          fill="#fff" stroke="#3f7047" stroke-width="14"/>
+          fill="#fff" stroke="#3f7047" stroke-width="16"/>
 
     <!-- Fermoir -->
     <rect x="230" y="278" width="52" height="68" rx="10"

@@ -4574,6 +4574,11 @@ body.universe-native-nature .page-nature {
     padding-top: 20px;
 }
 
+body.page-template-a-venir .nature-section--texte,
+body.page-template-animations .nature-section--texte {
+    padding-top: 0px;
+}
+
 .nature-titre-section {
     margin: 0 0 20px;
 
@@ -4922,6 +4927,29 @@ body.page-template-animations .nature-bouton {
     transform: translateY(-3px);
 
     box-shadow: var(--shadow-nature-card-hover);
+}
+
+.nature-carte-symbole {
+    width: 80px;
+    height: 80px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 14px;
+}
+
+.nature-carte-symbole img {
+    width: 85px;
+    height: 85px;
+
+    object-fit: contain;
+
+    display: block;
 }
 
 .page-template-balades .nature-carte-symbole {
