@@ -3327,7 +3327,7 @@ body.page-template-me-contacter {
 .soin-reiki-card {
     width: 100%;
 
-    padding: 32px 30px;
+    padding: 30px 30px;
 
     background: var(--color-white-warm-translucent-58);
 
@@ -3629,7 +3629,7 @@ body.page-template-me-contacter {
 .soins-reiki-test-energetique {
     width: 100%;
 
-    padding: 20px 30px 15px;
+    padding: 5px 30px 15px;
 }
 
 .soins-reiki-test-energetique
@@ -3794,7 +3794,7 @@ body.page-template-me-contacter {
 .soins-reiki-accordeon {
     width: 100%;
 
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 
     background: var(--color-white-warm-translucent-48);
 
@@ -3824,7 +3824,7 @@ body.page-template-me-contacter {
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px 25px;
+    padding: 14px 25px;
 
     border: none;
 
@@ -3834,7 +3834,7 @@ body.page-template-me-contacter {
 
     font-family: "Cormorant Garamond", serif;
 
-    font-size: 27px;
+    font-size: 24px;
 
     font-weight: 500;
 
@@ -4326,7 +4326,7 @@ body.universe-nature .page-faq .faq-univers-fleche {
 .page-faq .faq-univers-contenu {
     width: 100%;
 
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
