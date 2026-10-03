@@ -1738,6 +1738,14 @@ body.universe-nature .qui-suis-je-contenu h2 {
     color: var(--color-nature);
 }
 
+.qui-suis-je-natagora h3 {
+    color: var(--color-accent);
+}
+
+body.universe-nature .qui-suis-je-natagora h3 {
+    color: var(--color-nature);
+}
+
 .qui-suis-je-contenu p {
     margin: 0 0 22px;
 
@@ -5528,6 +5536,16 @@ body.page-template-a-venir .nature-cta-boutons .nature-bouton:hover {
 .reserver-contenu a:hover {
     color: var(--color-nature-hover);
     text-decoration-color: var(--color-nature-h2);
+}
+
+body.universe-reiki .qui-suis-je-natagora a {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-accent);
+}
+
+body.universe-reiki .qui-suis-je-natagora a:hover {
+    color: var(--color-primary-hover);
+    text-decoration-color: var(--color-accent);
 }
 
 /* =========================================================
