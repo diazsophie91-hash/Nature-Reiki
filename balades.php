@@ -116,7 +116,7 @@ get_header(); ?>
 				'contenu'  => '<p>La nature m’intéresse dans toute sa richesse : les plantes sauvages, les arbres, les animaux, les traces et indices, la géologie, l’écologie… mais aussi l’histoire, que j’aime particulièrement.</p><p>Dans cette balade, nous apprendrons à reconnaître les plantes sauvages comestibles, à les observer et à les intégrer avec respect dans notre cuisine quotidienne.</p>',
 			),
 			array(
-				'titre'    => 'Découverte carrières',
+				'titre'    => 'Découverte des carrières',
 				'mention'  => '',
 				'image'    => 'images/pierres.png',
 				'width'    => 1536,
@@ -250,7 +250,7 @@ get_header(); ?>
 				'image'   => 'images/celte.jpg',
 				'width'   => 1024,
 				'height'  => 768,
-				'legende' => 'Sur les pas des Celtes à nos jours',
+				'legende' => 'Sur les pas des Celtes',
 			),
 			array(
 				'image'   => 'images/ami-arbre.jpg',
@@ -280,7 +280,7 @@ get_header(); ?>
 				'image'   => 'images/carriere.jpg',
 				'width'   => 768,
 				'height'  => 576,
-				'legende' => 'Découverte carrières',
+				'legende' => 'Découverte des carrières',
 			),
 		);
 

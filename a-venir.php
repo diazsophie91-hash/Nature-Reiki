@@ -140,7 +140,7 @@ get_header(); ?>
 
 		<div class="nature-cta-interieur">
 
-			<h2 id="a-venir-cta-titre">Envie d’être prévenu·e ?</h2>
+			<h2 id="a-venir-cta-titre">Envie de recevoir les prochaines dates ?</h2>
 
 			<p>
 				Faites-moi signe : je vous informerai dès que ces balades seront programmées.

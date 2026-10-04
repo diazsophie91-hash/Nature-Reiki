@@ -236,15 +236,15 @@ foreach ( $soins as $soin_index => $soin ) :
 				</p>
 
 				<p>
-					Dans le cadre de ma pratique, le pendule me permet d’explorer cet équilibre énergétique et d’obtenir des indications sur votre état du moment.
+					Dans le cadre de ma pratique, le pendule me permet d’explorer votre équilibre énergétique et d’obtenir des indications sur votre état du moment.
 				</p>
 
 				<p>
-					Je testerai votre <strong>taux vibratoire</strong> selon trois dimensions : physique, énergétique et spirituelle.
+					J’évaluerai notamment votre <strong>taux vibratoire</strong> selon trois dimensions : physique, énergétique et spirituelle.
 				</p>
 
 				<p>
-					J’effectuerai également un test des <strong>7 chakras principaux</strong>, afin d’identifier d’éventuels déséquilibres et de travailler à leur harmonisation, dans le but de favoriser une circulation plus fluide de l’énergie.
+					J’observerai également les <strong>7 chakras principaux</strong>, afin d’identifier d’éventuels déséquilibres et de travailler à leur harmonisation, dans le but de favoriser une circulation plus fluide de l’énergie.
 				</p>
 
 				<p>
@@ -303,7 +303,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<h3>Pack 4 séances</h3>
 
 					<p>
-						Ce traitement complet est vivement conseillé, surtout si vous n’avez jamais reçu de soins Reiki.
+						Ce soin complet est vivement conseillé, surtout si vous n’avez jamais reçu de soins Reiki.
 					</p>
 
 					<p>
@@ -311,11 +311,11 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						<strong>Les quatre étapes du traitement :</strong>
+						<strong>Les quatre étapes du soin :</strong>
 					</p>
 
 					<p>
-						<strong>1ère séance — Nettoyage et rééquilibrage</strong>
+						<strong>1re séance — Nettoyage et rééquilibrage</strong>
 					</p>
 
 					<p>
@@ -323,7 +323,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						<strong>2ème séance — Mise en mouvement de l’énergie Reiki</strong>
+						<strong>2e séance — Mise en mouvement de l’énergie Reiki</strong>
 					</p>
 
 					<p>
@@ -331,7 +331,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						<strong>3ème séance — Accompagnement du processus d’harmonisation</strong>
+						<strong>3e séance — Accompagnement du processus d’harmonisation</strong>
 					</p>
 
 					<p>
@@ -339,7 +339,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						<strong>4ème séance — Harmonisation du système énergétique</strong>
+						<strong>4e séance — Harmonisation du système énergétique</strong>
 					</p>
 
 					<p>
@@ -351,7 +351,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						Un test énergétique comprenant l’évaluation du taux vibratoire et l’observation des 7 chakras principaux est réalisé lors de la première et de la dernière séance. Il permet d’observer l’évolution de l’équilibre énergétique au cours du traitement.
+						Un test énergétique comprenant l’évaluation du taux vibratoire et l’observation des 7 chakras principaux est réalisé lors de la première et de la dernière séance. Il permet d’observer l’évolution de l’équilibre énergétique au cours du soin.
 					</p>
 
 				</article>
