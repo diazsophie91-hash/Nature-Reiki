@@ -10,10 +10,13 @@
         "stylelint": "^17.15.0",
         "stylelint-config-standard": "^40.0.0"
     },
+    "overrides": {
+        "braces": "file:tools/braces-patched"
+    },
     "scripts": {
         "lint:js": "eslint .",
         "lint:css": "stylelint \"**/*.css\"",
-        "lint": "npm run lint:js && npm run lint:css"
+        "lint": "npm run lint:js && npm run lint:css",
         "test:e2e": "playwright test"
     }
 }
