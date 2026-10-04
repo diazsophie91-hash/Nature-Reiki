@@ -15,8 +15,5 @@
         "lint:css": "stylelint \"**/*.css\"",
         "lint": "npm run lint:js && npm run lint:css",
         "test:e2e": "playwright test"
-    },
-    "overrides": {
-        "braces": "github:FSDevelop/braces#28d440b5dd449dbf1fe6f3506cf94ecca4d02660"
     }
 }

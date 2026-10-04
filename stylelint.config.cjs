@@ -3,6 +3,8 @@ module.exports = {
     ignoreFiles: [
         "vendor/**",
         "node_modules/**",
+        "playwright-report/**",
+        "test-results/**",
     ],
     rules: {
         "no-descending-specificity": null,
