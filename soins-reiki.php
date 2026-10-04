@@ -144,14 +144,15 @@ foreach ( $soins as $soin_index => $soin ) :
 							</p>
 
 							<p class="soin-reiki-test">
-    							<?php 
+    							<?php
 								echo wp_kses(
         							$soin['test_html'],
         							array(
             							'strong' => array(),
             							'em'     => array(),
         							)
-    							); ?>
+    							);
+                                ?>
 							</p>
 
 						</div>

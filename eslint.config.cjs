@@ -6,6 +6,8 @@ module.exports = [
             "vendor/**",
             "node_modules/**",
             "**/*.min.js",
+            "playwright-report/**",
+            "test-results/**",
         ],
     },
     {
@@ -26,6 +28,14 @@ module.exports = [
             "eqeqeq": ["error", "always"],
             "curly": ["error", "all"],
             "semi": ["error", "always"],
+        },
+    },
+    {
+        files: ["tests/**/*.js"],
+        languageOptions: {
+            globals: {
+                ...globals.node,
+            },
         },
     },
 ];
