@@ -20,7 +20,7 @@ get_header(); ?>
 
 	<section class="nature-hero" aria-labelledby="nature-titre">
 
-		<h1 id="nature-titre">Guide Nature</h1>
+		<h1 id="nature-titre">Guide-Nature</h1>
 
 		<p>
 			Explorer, observer, s’émerveiller<span class="sous-titre-point">.</span>

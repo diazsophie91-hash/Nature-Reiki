@@ -42,7 +42,7 @@ Template Name: Qui suis-je ?
 		if ( $est_nature ) :
 			?>
 		<p>
-			<span class="sous-titre-nature">Guide-Nature et carrière</span>
+			<span class="sous-titre-nature">Guide-Nature et carrières</span>
 			<span class="sous-titre-dore">&amp;</span>
 			<span class="sous-titre-reiki">Praticienne Reiki</span><span class="sous-titre-point">.</span>
 		</p>
@@ -50,7 +50,7 @@ Template Name: Qui suis-je ?
 		<p>
 			<span class="sous-titre-reiki">Praticienne Reiki</span>
 			<span class="sous-titre-dore">&amp;</span>
-			<span class="sous-titre-nature">Guide-Nature et carrière</span><span class="sous-titre-point">.</span>
+			<span class="sous-titre-nature">Guide-Nature et carrières</span><span class="sous-titre-point">.</span>
 		</p>
 	<?php endif; ?>
 
@@ -234,7 +234,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 						<p>
-				J’ai alors choisi de me tourner vers ce qui m’attirait depuis toujours et de construire une nouvelle voie autour de cette passion. Pendant deux années, j’ai suivi un cursus d’<strong>Interprète Nature et Environnement et Guide Nature</strong>. Après l’obtention du brevet, j’ai enchaîné avec une formation de <strong>Guide Carrière</strong>, ainsi qu’une formation en <strong>herboristerie</strong>.
+				J’ai alors choisi de me tourner vers ce qui m’attirait depuis toujours et de construire une nouvelle voie autour de cette passion. Pendant deux années, j’ai suivi un cursus d’<strong>Interprète Nature et Environnement et Guide-Nature</strong>. Après l’obtention du brevet, j’ai enchaîné avec une formation de <strong>Guide-Carrières</strong>, ainsi qu’une formation en <strong>herboristerie</strong>.
 			</p>
 
 						<p>
@@ -246,7 +246,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 						<p>
-				Pour moi, être Guide-Nature, c’est avant tout échanger. Ce n’est pas seulement transmettre : nous avons chacun des connaissances que nous ignorons souvent et qui peuvent se révéler au fil des guidances. C’est aussi permettre à chacun d’apprendre, de s’émerveiller et de changer son regard sur la nature.
+				Pour moi, être Guide-Nature, c’est avant tout échanger. Ce n’est pas seulement transmettre : nous avons chacun des connaissances dont nous n'avons pas toujours conscience et qui peuvent se révéler au fil des guidances. C’est aussi permettre à chacun d’apprendre, de s’émerveiller et de changer son regard sur la nature.
 			</p>
 
 						<p>
@@ -259,7 +259,7 @@ Template Name: Qui suis-je ?
 
     			<p>
        				Je suis également volontaire au sein de <strong>Natagora Pays Chantoire</strong>,
-        			où je participe notamment aux activités de Guide nature, Guide carrières et au
+        			où je participe notamment aux activités de Guide-Nature, Guide-Carrières et au
         			groupe de travail consacré aux mammifères.
     			</p>
 

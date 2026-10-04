@@ -57,7 +57,7 @@ get_header(); ?>
 	<section class="nature-section" aria-labelledby="a-venir-projets-titre">
 
 		<h2 id="a-venir-projets-titre" class="nature-titre-section">
-			En préparation
+			Les prochains thèmes
 		</h2>
 
 		<?php

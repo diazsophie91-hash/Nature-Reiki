@@ -185,7 +185,7 @@ get_header(); ?>
 		<div class="nature-intro">
 
 			<p>
-				Chaque balade est un temps de découverte, à mon rythme et au vôtre : on
+				Chaque balade est un temps de découverte, où chacun avance à son rythme : on
 				observe, on écoute, on touche, on goûte parfois. Les thèmes ci-dessous
 				sont proposés au fil des saisons.
 			</p>

@@ -268,7 +268,7 @@ get_header();
 
 					</div>
 
-					<h2>Guide Nature</h2>
+					<h2>Guide-Nature</h2>
 
 					<p>
 						Pour toute question concernant les balades,
