@@ -66,7 +66,7 @@ get_header(); ?>
 			array(
 				'titre'        => 'Groupes privés',
 				'description'  => 'Une animation sur mesure pour un groupe constitué : famille, amis, association ou occasion particulière.',
-				'image'        => 'images/groupe.svg',
+				'image'        => 'images/animation-groupes-prives.svg',
 				'image_width'  => 360,
 				'image_height' => 360,
 				'variante'     => 'nature-carte--verte',
@@ -74,7 +74,7 @@ get_header(); ?>
 			array(
 				'titre'        => 'Écoles',
 				'description'  => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
-				'image'        => 'images/sac.png',
+				'image'        => 'images/animation-ecoles.png',
 				'image_width'  => 1374,
 				'image_height' => 1145,
 				'variante'     => 'nature-carte--bleue',
@@ -82,7 +82,7 @@ get_header(); ?>
 			array(
 				'titre'        => 'Entreprises',
 				'description'  => 'Un temps en extérieur pour souffler et se retrouver autrement, autour de la découverte du vivant.',
-				'image'        => 'images/entreprise.svg',
+				'image'        => 'images/animation-entreprises.svg',
 				'image_width'  => 512,
 				'image_height' => 512,
 				'variante'     => 'nature-carte--brune',

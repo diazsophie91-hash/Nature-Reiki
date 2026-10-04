@@ -73,7 +73,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Sur les pas des Celtes',
 				'mention'  => '',
-				'image'    => 'images/celte.svg',
+				'image'    => 'images/sur-les-pas-des-celtes.svg',
 				'width'    => 1312,
 				'height'   => 1199,
 				'variante' => 'nature-carte--verte',
@@ -91,7 +91,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'La forêt autrement',
 				'mention'  => '',
-				'image'    => 'images/miroir.png',
+				'image'    => 'images/foret-autrement-miroir.png',
 				'width'    => 1536,
 				'height'   => 1024,
 				'variante' => 'nature-carte--brune',
@@ -100,7 +100,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Traces et indices en forêt',
 				'mention'  => '',
-				'image'    => 'images/trace.svg',
+				'image'    => 'images/traces-indices-foret.svg',
 				'width'    => 414,
 				'height'   => 442,
 				'variante' => 'nature-carte--brune',
@@ -109,7 +109,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Cuisine sauvage',
 				'mention'  => '',
-				'image'    => 'images/cuisine.png',
+				'image'    => 'images/cuisine-sauvage.png',
 				'width'    => 1093,
 				'height'   => 1438,
 				'variante' => 'nature-carte--bleue',
@@ -118,7 +118,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Découverte des carrières',
 				'mention'  => '',
-				'image'    => 'images/pierres.png',
+				'image'    => 'images/decouverte-carrieres.png',
 				'width'    => 1536,
 				'height'   => 1024,
 				'variante' => 'nature-carte--bleue',
