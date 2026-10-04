@@ -189,7 +189,7 @@ Template Name: Le Reiki
 						C'est vers le Reiki Usui, la méthode traditionnelle et d'origine,
 						que mon cœur s'est tourné.
 					</strong>
-					Certifiée au niveau 3 (Maître Praticienne), je vous
+					<strong>Certifiée au niveau 3 (Maître Praticienne)</strong>, je vous
 					accompagne avec cette approche épurée, centrée sur la canalisation
 					de l'énergie pure, le respect des 5 principes du Reiki et
 					l'harmonisation globale de votre être.

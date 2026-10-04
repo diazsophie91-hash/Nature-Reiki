@@ -167,7 +167,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 			<p>
-				C’est cette complémentarité entre <strong>Reiki et Guide-Nature</strong> que je souhaite aujourd’hui partager à travers <em>Nature &amp; Reiki</em>.
+				C’est cette <strong>complémentarité</strong> entre Reiki et Guide-Nature que je souhaite aujourd’hui partager à travers <strong>Nature &amp; Reiki</strong>.
 			</p>
 
 		</div>
@@ -326,7 +326,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 						<p>
-				Durant trois années, je me suis formée au <strong>Reiki Usui auprès de la Maître Reiki Dominique Pfeiffer</strong>.
+				Durant trois années, je me suis formée au <strong>Reiki Usui auprès de la Maître Reiki Dominique Pfeiffer</strong>, et je suis aujourd’hui <strong>certifiée au niveau 3 (Maître Praticienne)</strong>.
 			</p>
 
 						<p>

@@ -154,7 +154,7 @@ get_header(); ?>
 			<h2 id="animations-conditions-titre">Conditions</h2>
 
 			<p>
-				Les animations sont proposées sur devis et réservation. Le contenu, la
+				Les animations sont proposées <strong>sur devis et réservation</strong>. Le contenu, la
 				durée et le tarif sont définis ensemble, selon le public et le lieu
 				choisis.
 			</p>

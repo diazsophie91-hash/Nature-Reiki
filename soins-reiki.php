@@ -75,7 +75,7 @@ $soins = array(
 		'titre'         => 'Pack 4 séances',
 		'prix'          => '170 €',
 		'description'   => 'Un accompagnement complet en quatre séances, conçu pour travailler progressivement sur l’équilibre énergétique et permettre au processus d’harmonisation de s’installer dans le temps. Particulièrement conseillé pour une première expérience du Reiki.',
-		'test_html'     => 'Test énergétique avec pendule :                            <strong>compris dans le pack</strong>',
+		'test_html'     => '<em>Test énergétique avec pendule :</em> <strong>compris dans le pack</strong>',
 	),
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
@@ -85,7 +85,7 @@ $soins = array(
 		'titre'         => 'Séance unique',
 		'prix'          => '55 €',
 		'description'   => 'Une séance ponctuelle pour découvrir le Reiki, prendre un moment pour vous et bénéficier d’un soin adapté à vos besoins du moment.',
-		'test_html'     => 'Test énergétique avec pendule : + 8 €',
+		'test_html'     => '<em>Test énergétique avec pendule :</em> <strong>+ 8 €</strong>',
 	),
 	array(
 		'symbole_class' => 'soin-reiki-symbole',
@@ -95,7 +95,7 @@ $soins = array(
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
 		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
-		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\'y a pas de test énergétique pour ce type de séance.',
+		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\'y a <strong>pas de test énergétique</strong> <em>pour ce type de séance</em>.',
 	),
 );
 
@@ -144,7 +144,13 @@ foreach ( $soins as $soin_index => $soin ) :
 							</p>
 
 							<p class="soin-reiki-test">
-								<?php echo wp_kses( $soin['test_html'], array( 'strong' => array() ) ); ?>
+    							<?php echo wp_kses(
+        							$soin['test_html'],
+        							array(
+            							'strong' => array(),
+            							'em'     => array(),
+        							)
+    							); ?>
 							</p>
 
 						</div>
@@ -246,15 +252,15 @@ foreach ( $soins as $soin_index => $soin ) :
 				</p>
 
 				<p>
-					Le test énergétique est compris dans le Pack 4 séances.
+					Le test énergétique est <strong>compris dans le pack 4 séances</strong>.
 				</p>
 
 				<p>
-					Pour une séance unique, il est proposé avec un supplément de 8 €.
+					Pour une séance unique, il est proposé avec un <strong>supplément de 8 €</strong>.
 				</p>
 
 				<p>
-					Pas de test énergétique pour la séance en forêt, qui se concentre sur l’expérience de l’immersion dans la nature et le soin Reiki.
+					<strong>Pas de test énergétique</strong> pour la séance en forêt, qui se concentre sur l’expérience de l’immersion dans la nature et le soin Reiki.
 				</p>
 
 			</div>
@@ -341,7 +347,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						<strong>Test énergétique</strong>
+						<h4>Test énergétique</h4>
 					</p>
 
 					<p>
@@ -385,31 +391,31 @@ foreach ( $soins as $soin_index => $soin ) :
 					<h3>Séance en forêt</h3>
 
 					<p>
-						Lors de mes balades en forêt, il m’est arrivé de m’arrêter un moment, ressentant le besoin de m’offrir un auto-soin de Reiki. Ces moments me redonnaient de l’énergie et m’aidaient à retrouver des forces parfois diminuées par les aléas de la vie.
+						Lors de mes balades en forêt, il m’est arrivé de m’arrêter un moment, ressentant le besoin de <strong>m’offrir un auto-soin de Reiki</strong>. Ces moments me <strong>redonnaient de l’énergie et m’aidaient à retrouver des forces</strong> parfois diminuées par les aléas de la vie.
 					</p>
 
 					<p>
-						Alors, pourquoi ne pas en faire profiter d’autres personnes ?
+						<em>Alors, pourquoi ne pas en faire profiter d’autres personnes ?</em>
 					</p>
 
 					<p>
-						Depuis plusieurs décennies, les bienfaits de l’immersion en forêt sont étudiés par la science. Le contact avec cet environnement naturel peut notamment avoir des effets bénéfiques sur notre organisme et notre bien-être.
+						Depuis plusieurs décennies, <strong>les bienfaits de l’immersion en forêt sont étudiés par la science</strong>. Le contact avec cet environnement naturel peut notamment avoir des <strong>effets bénéfiques sur notre organisme et notre bien-être</strong>.
 					</p>
 
 					<p>
-						Les arbres et les plantes libèrent des <strong>phytocides</strong>, des composés organiques volatils auxquels notre organisme est exposé lors d’une immersion en forêt. Certaines recherches associent cette exposition à une stimulation de certaines fonctions de notre système immunitaire.
+						Les arbres et les plantes libèrent des <strong>phytocides</strong>, des composés organiques volatils auxquels notre organisme est exposé lors d’une immersion en forêt. Certaines recherches associent cette exposition à une stimulation de certaines fonctions de notre <strong>système immunitaire</strong>.
 					</p>
 
 					<p>
-						L’immersion en forêt est également associée à une diminution du <strong>stress et du taux de cortisol</strong>, l’une des principales hormones impliquées dans la réponse au stress.
+						L’immersion en forêt est également associée à une <strong>diminution du stress et du taux de cortisol</strong>, l’une des principales hormones impliquées dans la réponse au stress.
 					</p>
 
 					<p>
-						Mais au-delà de ces effets physiologiques, la forêt offre surtout un environnement propice au <strong>calme, à la détente et au bien-être</strong>. Elle nous invite à ralentir, à respirer, à observer et à nous reconnecter à nous-mêmes.
+						Mais au-delà de ces effets physiologiques, la forêt offre surtout un environnement propice au <strong>calme, à la détente et au bien-être</strong>. Elle nous invite à ralentir, à respirer, à observer et à nous <strong>reconnecter à nous-mêmes</strong>.
 					</p>
 
 					<p>
-						C’est dans cet environnement que je souhaite proposer des <strong>séances de Reiki en forêt</strong>, en associant les bienfaits d’un moment passé au cœur de la nature à ceux d’un soin Reiki.
+						C’est dans cet environnement que je souhaite proposer des <strong>séances de Reiki en forêt</strong>, en associant les bienfaits d’un moment passé <strong>au cœur de la nature</strong> à ceux d’un soin Reiki.
 					</p>
 
 					<p>
@@ -417,7 +423,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						La séance en forêt dépend des conditions météorologiques. En cas de météo défavorable, la séance pourra être reportée.
+						<em>La séance en forêt dépend des conditions météorologiques. En cas de météo défavorable, la séance pourra être reportée.</em>
 					</p>
 
 				</article>

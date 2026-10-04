@@ -123,7 +123,7 @@ get_header(); ?>
 		<div class="nature-intro">
 
 			<p>
-				Deux nouveaux thèmes de balades sont en préparation. Ils ne sont pas encore
+				<strong>Deux nouveaux thèmes de balades sont en préparation</strong>. Ils ne sont pas encore
 				proposés au calendrier, cette page sera mise à jour dès que les dates
 				seront connues.
 			</p>

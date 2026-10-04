@@ -3552,6 +3552,20 @@ body.page-template-me-contacter {
     font-weight: 600;
 }
 
+.soin-reiki-explication h4 {
+    margin: 0 0 15px;
+
+    font-family: "Lora", serif;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    line-height: 1.75;
+}
+
 /* =========================================================
    ICÔNE PENDULE → TEST ÉNERGÉTIQUE
 ========================================================= */
