@@ -95,7 +95,7 @@ $soins = array(
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
 		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
-		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\’y a <strong>pas de test énergétique</strong> <em>pour ce type de séance</em>.',
+		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n’y a <strong>pas de test énergétique</strong> <em>pour ce type de séance</em>.',
 	),
 );
 

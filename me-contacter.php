@@ -238,7 +238,7 @@ get_header();
 
 					<p>
 						Pour toute question concernant les séances
-						et/ou sur une réservation.
+						et/ou une réservation.
 					</p>
 
 				</article>
@@ -272,7 +272,7 @@ get_header();
 
 					<p>
 						Pour toute question concernant les balades,
-						animations, balades privées et/ou sur une réservation.
+						les animations, les balades privées et/ou une réservation.
 					</p>
 
 				</article>

@@ -124,7 +124,7 @@ get_header(); ?>
 
 			<p>
 				<strong>Deux nouveaux thèmes de balades sont en préparation</strong>. Ils ne sont pas encore
-				proposés au calendrier, cette page sera mise à jour dès que les dates
+				proposés au calendrier. Cette page sera mise à jour dès que les dates
 				seront connues.
 			</p>
 
