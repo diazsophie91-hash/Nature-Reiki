@@ -2,7 +2,7 @@
 /**
  * Template Name: Balades - Nature
  *
- * Présentation des balades de l'univers Nature.
+ * Présentation des balades de l’univers Nature.
  *
  * @package Nature_Reiki
  */
@@ -66,7 +66,7 @@ get_header(); ?>
 		 * Les six balades proposées.
 		 *
 		 * Seuls les intitulés définis sont utilisés ici : aucune description
-		 * ni saison n'est ajoutée tant que les textes ne sont pas fournis.
+		 * ni saison n’est ajoutée tant que les textes ne sont pas fournis.
 		 * La clé 'mention' reste vide sauf information à afficher.
 		 */
 		$balades = array(

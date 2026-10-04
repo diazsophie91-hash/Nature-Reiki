@@ -2,7 +2,7 @@
 /**
  * Template Name: Accueil Guide Nature
  *
- * Page d'accueil de l'univers Nature.
+ * Page d’accueil de l’univers Nature.
  * Structure calquée sur accueil-reiki.php (hero, menu, bannières).
  *
  * @package Nature_Reiki

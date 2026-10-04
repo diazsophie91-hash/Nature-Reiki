@@ -18,7 +18,7 @@ Template Name: Le Reiki
 		<h1>Le Reiki</h1>
 
 		<p>
-			Un accompagnement par l'énergie, pour soi<span class="sous-titre-point">.</span>
+			Un accompagnement par l’énergie, pour soi<span class="sous-titre-point">.</span>
 		</p>
 
 		<div class="reiki-ligne-decoration">
@@ -54,7 +54,7 @@ Template Name: Le Reiki
 
 
 	<!-- =========================
-		1. QU'EST-CE QUE LE REIKI ?
+		1. QU’EST-CE QUE LE REIKI ?
 	========================== -->
 
 	<section class="le-reiki-section le-reiki-definition">
@@ -65,7 +65,7 @@ Template Name: Le Reiki
 				class="le-reiki-toggle"
 				aria-controls="le-reiki-definition-contenu"
 			>
-				<h2>Qu'est-ce que le Reiki ?</h2>
+				<h2>Qu’est-ce que le Reiki ?</h2>
 
 				<span class="le-reiki-fleche" aria-hidden="true"></span>
 			</summary>
@@ -74,13 +74,13 @@ Template Name: Le Reiki
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu">
 
 				<p>
-					Le Reiki est l'art de canaliser l'énergie vitale de l'Univers
-					et de la Terre puis de la transmettre par l'imposition des mains.
+					Le Reiki est l’art de canaliser l’énergie vitale de l'Univers
+					et de la Terre puis de la transmettre par l’imposition des mains.
 				</p>
 
 				<p>
 					Le praticien Reiki devient un canal par lequel transite
-					l'énergie qui apporte au receveur ce dont il
+					l’énergie qui apporte au receveur ce dont il
 					a besoin pendant la séance en particulier et dans sa vie en général.
 				</p>
 
@@ -167,8 +167,8 @@ Template Name: Le Reiki
 						</h3>
 
 						<p>
-							Que l'on traduit par « énergie vitale ».
-							C'est l'énergie qui anime tous les êtres vivants.
+							Que l’on traduit par « énergie vitale ».
+							C’est l’énergie qui anime tous les êtres vivants.
 						</p>
 
 					</div>
@@ -177,22 +177,22 @@ Template Name: Le Reiki
 
 
 				<p class="reiki-phrase-forte">
-					Ainsi, Reiki peut être interprété comme « l'énergie vitale spirituelle »
-					ou « l'énergie de l'âme ».
+					Ainsi, Reiki peut être interprété comme « l’énergie vitale spirituelle »
+					ou « l’énergie de l’âme ».
 				</p>
 
 
 				<p>
-					Depuis sa création au Japon, le Reiki s'est diffusé dans le monde
-					entier et s'est divisé en de nombreux courants.
+					Depuis sa création au Japon, le Reiki s’est diffusé dans le monde
+					entier et s’est divisé en de nombreux courants.
 					<strong>
-						C'est vers le Reiki Usui, la méthode traditionnelle et d'origine,
-						que mon cœur s'est tourné.
+						C’est vers le Reiki Usui, la méthode traditionnelle et d’origine,
+						que mon cœur s’est tourné.
 					</strong>
 					<strong>Certifiée au niveau 3 (Maître Praticienne)</strong>, je vous
 					accompagne avec cette approche épurée, centrée sur la canalisation
-					de l'énergie pure, le respect des 5 principes du Reiki et
-					l'harmonisation globale de votre être.
+					de l’énergie pure, le respect des 5 principes du Reiki et
+					l’harmonisation globale de votre être.
 				</p>
 
 			</div>
@@ -223,21 +223,21 @@ Template Name: Le Reiki
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-fonctionnement-contenu">
 
 				<p>
-					Le Reiki fonctionne par canalisation de l'énergie vitale
+					Le Reiki fonctionne par canalisation de l’énergie vitale
 					universelle. Le praticien agit comme un canal transparent :
-					il capte l'énergie universelle du cosmos et de la Terre,
-					puis la transmet au receveur par l'imposition des mains
+					il capte l’énergie universelle du cosmos et de la Terre,
+					puis la transmet au receveur par l’imposition des mains
 					sur différentes zones du corps, sans manipulation physique.
 				</p>
 
 				<p>
-					L'énergie circule alors dans tout le corps du receveur :
+					L’énergie circule alors dans tout le corps du receveur :
 					elle aligne, nettoie, équilibre, transforme et soigne ce
-					qui peut l'être pendant le soin.
+					qui peut l’être pendant le soin.
 				</p>
 
 				<p>
-					Cette approche holistique agit sur la totalité de l'individu
+					Cette approche holistique agit sur la totalité de l’individu
 					et donc sur ses différentes composantes, mentale, physique,
 					émotionnelle et spirituelle, à travers trois niveaux :
 				</p>
@@ -252,7 +252,7 @@ Template Name: Le Reiki
 						</h3>
 
 						<p>
-							L'énergie circule là où le corps en a le plus besoin
+							L’énergie circule là où le corps en a le plus besoin
 							pour dissoudre les tensions physiques et émotionnelles.
 						</p>
 
@@ -267,7 +267,7 @@ Template Name: Le Reiki
 
 						<p>
 							Elle harmonise les centres énergétiques (les chakras)
-							pour restaurer l'équilibre global.
+							pour restaurer l’équilibre global.
 						</p>
 
 					</div>
@@ -276,7 +276,7 @@ Template Name: Le Reiki
 					<div class="reiki-fonctionnement-bloc">
 
 						<h3>
-							Le soutien à l'autorégulation
+							Le soutien à l’autorégulation
 						</h3>
 
 						<p>
@@ -332,7 +332,7 @@ Template Name: Le Reiki
 				<p>
 					Mikao Usui a créé ces
 					<strong>cinq principes spirituels du Reiki</strong>,
-					qu'il considérait comme le remède secret pour inviter
+					qu’il considérait comme le remède secret pour inviter
 					le bonheur dans sa vie et la base de toute guérison.
 				</p>
 
@@ -347,25 +347,25 @@ $gokai_items = array(
 		'num'            => 1,
 		'title'          => 'Ne te mets pas en colère',
 		'japanese_title' => '(Ikaru na)',
-		'description'    => 'La colère est une énergie destructrice pour soi et pour les autres. Ce précepte invite à accueillir l\'émotion sans la laisser prendre le contrôle, pour aller vers la paix intérieure.',
+		'description'    => 'La colère est une énergie destructrice pour soi et pour les autres. Ce précepte invite à accueillir l\’émotion sans la laisser prendre le contrôle, pour aller vers la paix intérieure.',
 	),
 	array(
 		'num'            => 2,
 		'title'          => 'Ne te fais pas de soucis',
 		'japanese_title' => '(Shinpai suna)',
-		'description'    => 'L\'inquiétude lie l\'esprit à des projections futures souvent illusoires. Ce principe invite au lâcher-prise, à la confiance en la vie et en ses propres ressources.',
+		'description'    => 'L\’inquiétude lie l\’esprit à des projections futures souvent illusoires. Ce principe invite au lâcher-prise, à la confiance en la vie et en ses propres ressources.',
 	),
 	array(
 		'num'            => 3,
 		'title'          => 'Sois rempli de gratitude',
 		'japanese_title' => '(Kansha shite)',
-		'description'    => 'Apprécier ce que l\'on a déjà, des plus grandes bénédictions aux plus petits détails du quotidien. La gratitude ouvre le cœur et modifie positivement notre perception de la vie.',
+		'description'    => 'Apprécier ce que l\’on a déjà, des plus grandes bénédictions aux plus petits détails du quotidien. La gratitude ouvre le cœur et modifie positivement notre perception de la vie.',
 	),
 	array(
 		'num'            => 4,
 		'title'          => 'Travaille honnêtement',
 		'japanese_title' => '(Gyō o hageme)',
-		'description'    => 'Ce précepte ne parle pas seulement du métier, mais de l\'action juste. Il invite à s\'investir pleinement et honnêtement dans ce que l\'on fait, envers soi-même et envers les autres.',
+		'description'    => 'Ce précepte ne parle pas seulement du métier, mais de l\’action juste. Il invite à s\'investir pleinement et honnêtement dans ce que l\'on fait, envers soi-même et envers les autres.',
 	),
 	array(
 		'num'            => 5,
@@ -416,12 +416,12 @@ foreach ( $gokai_items as $item ) {
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-pourquoi-contenu">
 
 				<p class="reiki-introduction-forte">
-					Pour s'offrir une parenthèse de reconnexion et retrouver
+					Pour s’offrir une parenthèse de reconnexion et retrouver
 					un équilibre global.
 				</p>
 
 				<p>
-					C'est une démarche idéale pour :
+					C’est une démarche idéale pour :
 				</p>
 
 
@@ -429,10 +429,10 @@ foreach ( $gokai_items as $item ) {
 
 					<div class="reiki-pourquoi-bloc">
 
-						<h3>Apaiser l'esprit</h3>
+						<h3>Apaiser l’esprit</h3>
 
 						<p>
-							Libérer le stress, l'anxiété et la charge mentale.
+							Libérer le stress, l’anxiété et la charge mentale.
 						</p>
 
 					</div>
@@ -475,7 +475,7 @@ foreach ( $gokai_items as $item ) {
 
 
 				<p>
-					C'est un soin doux qui s'adresse à toute personne désireuse
+					C’est un soin doux qui s’adresse à toute personne désireuse
 					de prendre soin de soi et de se (re)découvrir.
 				</p>
 

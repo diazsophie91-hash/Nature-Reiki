@@ -95,7 +95,7 @@ $soins = array(
 		'titre'         => 'Séance en forêt',
 		'prix'          => '70 €',
 		'description'   => 'Une séance de Reiki au cœur de la nature, associant le soin énergétique à un environnement propice au calme, à la détente et à la reconnexion.',
-		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\'y a <strong>pas de test énergétique</strong> <em>pour ce type de séance</em>.',
+		'test_html'     => 'Cette séance dépend des conditions météorologiques. Il n\’y a <strong>pas de test énergétique</strong> <em>pour ce type de séance</em>.',
 	),
 );
 
@@ -527,7 +527,7 @@ foreach ( $soins as $soin_index => $soin ) :
 				<div id="soins-reiki-paiement-contenu" class="soins-reiki-accordeon-contenu">
 
 					<p>
-						Le paiement s'effectue en espèces.
+						Le paiement s’effectue en espèces.
 					</p>
 
 				</div>
@@ -560,7 +560,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						Pensez à apporter de l'eau et à vous hydrater avant et après la séance.
+						Pensez à apporter de l’eau et à vous hydrater avant et après la séance.
 					</p>
 
 				</div>

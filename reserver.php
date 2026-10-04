@@ -2,7 +2,7 @@
 /*
 Template Name: Réserver - Nature
 *
-* Page de réservation pour l'univers Nature.
+* Page de réservation pour l’univers Nature.
 * À compléter ultérieurement.
 */
 ?>

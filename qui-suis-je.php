@@ -12,13 +12,13 @@ Template Name: Qui suis-je ?
 
 	<?php
 	/*
-	 * Détermination de l'univers d'origine
+	 * Détermination de l’univers d’origine
 	 */
 
 	$est_nature = 'nature' === nature_reiki_get_universe();
 
 	/*
-	 * Ordre des deux parcours selon l'univers d'origine
+	 * Ordre des deux parcours selon l’univers d’origine
 	 */
 
 	$ordre_parcours = $est_nature

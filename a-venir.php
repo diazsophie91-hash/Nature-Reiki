@@ -2,7 +2,7 @@
 /**
  * Template Name: À venir - Nature
  *
- * Thèmes de balades en préparation pour l'univers Nature.
+ * Thèmes de balades en préparation pour l’univers Nature.
  *
  * @package Nature_Reiki
  */
@@ -133,7 +133,7 @@ get_header(); ?>
 	</section>
 
 	<!-- =========================
-		APPEL À L'ACTION
+		APPEL À L’ACTION
 	========================== -->
 
 	<section class="nature-cta" aria-labelledby="a-venir-cta-titre">
