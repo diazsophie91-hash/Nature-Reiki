@@ -42,7 +42,7 @@ Template Name: Qui suis-je ?
 		if ( $est_nature ) :
 			?>
 		<p>
-			<span class="sous-titre-nature">Guide-nature et carrière</span>
+			<span class="sous-titre-nature">Guide-Nature et carrière</span>
 			<span class="sous-titre-dore">&amp;</span>
 			<span class="sous-titre-reiki">Praticienne Reiki</span><span class="sous-titre-point">.</span>
 		</p>
@@ -50,7 +50,7 @@ Template Name: Qui suis-je ?
 		<p>
 			<span class="sous-titre-reiki">Praticienne Reiki</span>
 			<span class="sous-titre-dore">&amp;</span>
-			<span class="sous-titre-nature">Guide-nature et carrière</span><span class="sous-titre-point">.</span>
+			<span class="sous-titre-nature">Guide-Nature et carrière</span><span class="sous-titre-point">.</span>
 		</p>
 	<?php endif; ?>
 
