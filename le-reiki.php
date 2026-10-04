@@ -74,7 +74,7 @@ Template Name: Le Reiki
 			<div class="le-reiki-accordeon-contenu" id="le-reiki-definition-contenu">
 
 				<p>
-					Le Reiki est l’art de canaliser l’énergie vitale de l'Univers
+					Le Reiki est l’art de canaliser l’énergie vitale de l’Univers
 					et de la Terre puis de la transmettre par l’imposition des mains.
 				</p>
 
@@ -262,7 +262,7 @@ Template Name: Le Reiki
 					<div class="reiki-fonctionnement-bloc">
 
 						<h3>
-							La relance de l'harmonie
+							La relance de l’harmonie
 						</h3>
 
 						<p>
