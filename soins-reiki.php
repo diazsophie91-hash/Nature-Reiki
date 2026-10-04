@@ -345,10 +345,8 @@ foreach ( $soins as $soin_index => $soin ) :
 					<p>
 						Cette dernière séance vient compléter le processus et accompagner l’harmonisation globale.
 					</p>
-
-					<p>
+					
 						<h4>Test énergétique</h4>
-					</p>
 
 					<p>
 						Un test énergétique comprenant l’évaluation du taux vibratoire et l’observation des 7 chakras principaux est réalisé lors de la première et de la dernière séance. Il permet d’observer l’évolution de l’équilibre énergétique au cours du soin.

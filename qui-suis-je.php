@@ -246,7 +246,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 						<p>
-				Pour moi, être Guide-Nature, c’est avant tout échanger. Ce n’est pas seulement transmettre : nous avons chacun des connaissances dont nous n'avons pas toujours conscience et qui peuvent se révéler au fil des guidances. C’est aussi permettre à chacun d’apprendre, de s’émerveiller et de changer son regard sur la nature.
+				Pour moi, être Guide-Nature, c’est avant tout échanger. Ce n’est pas seulement transmettre : nous avons chacun des connaissances dont nous n’avons pas toujours conscience et qui peuvent se révéler au fil des guidances. C’est aussi permettre à chacun d’apprendre, de s’émerveiller et de changer son regard sur la nature.
 			</p>
 
 						<p>
