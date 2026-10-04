@@ -191,7 +191,7 @@ Template Name: Qui suis-je ?
 					aria-controls="qui-suis-je-nature-contenu"
 				>
 
-					<span>Mon parcours Guide-Nature</span>
+					<h3>Mon parcours Guide-Nature</h3>
 
 					<span
 						class="le-reiki-fleche"
@@ -255,7 +255,7 @@ Template Name: Qui suis-je ?
 
 			<div class="qui-suis-je-natagora reserver-contenu">
 
-    			<h3>Engagement auprès de Natagora</h3>
+    			<h4>Engagement auprès de Natagora</h4>
 
     			<p>
        				Je suis également volontaire au sein de <strong>Natagora Pays Chantoire</strong>,
@@ -295,7 +295,7 @@ Template Name: Qui suis-je ?
 					aria-controls="qui-suis-je-reiki-contenu"
 				>
 
-					<span>Mon parcours Reiki</span>
+					<h3>Mon parcours Reiki</h3>
 
 					<span
 						class="le-reiki-fleche"

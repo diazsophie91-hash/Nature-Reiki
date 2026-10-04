@@ -1738,11 +1738,17 @@ body.universe-nature .qui-suis-je-contenu h2 {
     color: var(--color-nature);
 }
 
-.qui-suis-je-natagora h3 {
+.qui-suis-je-natagora h4 {
+    margin-block: 1em;
+
+    font-size: 1.17em;
+
+    font-weight: bold;
+
     color: var(--color-accent);
 }
 
-body.universe-nature .qui-suis-je-natagora h3 {
+body.universe-nature .qui-suis-je-natagora h4 {
     color: var(--color-nature);
 }
 
@@ -4115,6 +4121,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 .le-reiki-toggle:focus-visible > h2,
+.le-reiki-toggle:focus-visible > h3,
 .le-reiki-toggle:focus-visible > span:first-child,
 .faq-univers-bouton:focus-visible > h2,
 .soins-reiki-accordeon-bouton:focus-visible > h3,
@@ -4126,6 +4133,7 @@ body.universe-native-nature .soins-reiki-accordeon {
 }
 
 body.universe-nature .le-reiki-toggle:focus-visible > h2,
+body.universe-nature .le-reiki-toggle:focus-visible > h3,
 body.universe-nature .le-reiki-toggle:focus-visible > span:first-child,
 body.universe-nature .faq-univers-bouton:focus-visible > h2,
 body.universe-nature .soins-reiki-accordeon-bouton:focus-visible > h3,
@@ -5850,6 +5858,7 @@ body.universe-nature .page-fallback-article h2 {
 
 /* Les titres des résumés d'accordéons conservent exactement la typographie existante. */
 .le-reiki-toggle > h2,
+.qui-suis-je-parcours > .le-reiki-toggle > h3,
 .page-faq .faq-univers-bouton > h2,
 .page-faq .soins-reiki-accordeon-bouton > h3 {
     margin: 0;
