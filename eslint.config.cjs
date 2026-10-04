@@ -5,6 +5,7 @@ module.exports = [
         ignores: [
             "vendor/**",
             "node_modules/**",
+            "**/*.min.js",
         ],
     },
     {
