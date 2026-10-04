@@ -4606,7 +4606,7 @@ body.universe-native-nature .page-nature {
 
 body.page-template-a-venir .nature-section--texte,
 body.page-template-animations .nature-section--texte {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .nature-titre-section {

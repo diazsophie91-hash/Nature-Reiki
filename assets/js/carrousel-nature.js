@@ -7,7 +7,6 @@
  * Fonctionnalités :
  *  - flèches précédent / suivant (bouclage sur la première et la dernière),
  *  - puces de navigation générées en JS,
- *  - navigation au clavier (flèches gauche / droite),
  *  - balayage tactile,
  *  - `aria-hidden` sur les diapositives masquées.
  *
