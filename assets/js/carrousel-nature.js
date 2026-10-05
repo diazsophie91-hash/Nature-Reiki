@@ -58,10 +58,11 @@
 
             for ( i = 0; i < puces.length; i++ ) {
                 puces[ i ].classList.toggle( 'actif', i === index );
-                puces[ i ].setAttribute(
-                    'aria-current',
-                    i === index ? 'true' : 'false'
-                );
+                if ( i === index ) {
+                    puces[ i ].setAttribute( 'aria-current', 'true' );
+                } else {
+                    puces[ i ].removeAttribute( 'aria-current' );
+                }
             }
         }
 
