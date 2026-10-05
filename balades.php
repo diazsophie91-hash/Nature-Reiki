@@ -190,6 +190,11 @@ get_header(); ?>
 				sont proposés au fil des saisons.
 			</p>
 
+			<p>
+				Découvrez également les
+				<a class="lien-contextuel" href="<?php echo esc_url( home_url( '/a-venir/' ) ); ?>">prochaines balades en préparation</a>.
+			</p>
+
 		</div>
 
 	</section>
@@ -197,7 +202,7 @@ get_header(); ?>
 		<div class="nature-section-action">
 
 			<a href="<?php echo esc_url( home_url( '/reserver/' ) ); ?>" class="nature-bouton nature-bouton--large">
-				Voir les balades prévues &amp; réserver
+				Voir les balades disponibles &amp; réserver
 			</a>
 
 		</div>
