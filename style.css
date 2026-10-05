@@ -1400,7 +1400,7 @@ body.universe-nature .page-me-contacter .reiki-ligne-decoration span:nth-of-type
 
     background-image: 
         linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
-        url("images/texture-peinture.png");
+        url("images/texture-peinture.webp");
     background-color: var(--color-white-warm);
 
     background-size: cover;
@@ -2079,7 +2079,7 @@ body.universe-native-nature .separateur-dore {
 
     background-image:
         linear-gradient(rgba(255, 252, 247, 0.5), rgba(255, 252, 247, 0.5)),
-        url("images/texture-peinture.png");
+        url("images/texture-peinture.webp");
     background-color: var(--color-white-warm);
 
     background-size: cover;
@@ -2244,7 +2244,7 @@ body.universe-nature .qui-suis-je-citation-interieur p {
 body.universe-nature .qui-suis-je-citation-interieur {
     background-image:
         linear-gradient(rgba(229, 240, 226, 0.65), rgba(229, 240, 226, 0.65)),
-        url("images/texture-bois.png");
+        url("images/texture-bois.webp");
     background-color: var(--color-nature-bg);
     background-size: cover;
     background-position: center;
@@ -4798,7 +4798,7 @@ body.page-template-animations .nature-bouton {
     background-color: var(--color-nature-bg);
     background-image:
         linear-gradient(rgba(229, 240, 226, 0.65), rgba(229, 240, 226, 0.65)),
-        url("images/texture-bois.png");
+        url("images/texture-bois.webp");
     background-size: cover;
     background-position: center;
 }
@@ -4826,12 +4826,12 @@ body.page-template-animations .nature-bouton {
     transition: transform 0.25s ease;
 }
 
-.nature-banniere-decor img[src*="arbre-vie.png"] {
+.nature-banniere-decor img[src*="arbre-vie.webp"] {
     width: 70px;
     height: 70px;
 }
 
-.nature-banniere-decor img[src*="chene.png"] {
+.nature-banniere-decor img[src*="chene.webp"] {
     width: 95px;
     height: 95px;
 }
@@ -5020,17 +5020,17 @@ body.page-template-animations .nature-bouton {
     display: block;
 }
 
-.page-template-balades .nature-carte-symbole img[src*="chene.png"] {
+.page-template-balades .nature-carte-symbole img[src*="chene.webp"] {
     width: 120px;
     height: 120px;
 }
 
-.page-template-balades .nature-carte-symbole img[src*="foret-autrement-miroir.png"] {
+.page-template-balades .nature-carte-symbole img[src*="foret-autrement-miroir.webp"] {
     width: 120px;
     height: 120px;
 }
 
-.page-template-balades .nature-carte-symbole img[src*="decouverte-carrieres.png"] {
+.page-template-balades .nature-carte-symbole img[src*="decouverte-carrieres.webp"] {
     width: 95px;
     height: 95px;
 }
@@ -5271,7 +5271,7 @@ body.page-template-animations .nature-bouton {
     background-color: var(--color-nature-bg);
     background-image:
         linear-gradient(rgba(229, 240, 226, 0.65), rgba(229, 240, 226, 0.65)),
-        url("images/texture-bois.png");
+        url("images/texture-bois.webp");
     background-size: cover;
     background-position: center;
 

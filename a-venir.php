@@ -73,7 +73,7 @@ get_header(); ?>
 			array(
 				'titre'        => 'Balade dans les vignes',
 				'description'  => 'Une balade au fil des vignes, pour découvrir ce milieu particulier, son paysage et la vie qui s’y installe.',
-				'image'        => 'images/balade-dans-les-vignes.png',
+				'image'        => 'images/balade-dans-les-vignes.webp',
 				'image_width'  => 1093,
 				'image_height' => 1438,
 				'variante'     => 'nature-carte--bleue',

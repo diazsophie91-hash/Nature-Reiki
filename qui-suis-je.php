@@ -209,7 +209,7 @@ Template Name: Qui suis-je ?
 							src="
 							<?php
 							echo esc_url(
-								nature_reiki_asset_url( 'images/chene.png' )
+								nature_reiki_asset_url( 'images/chene.webp' )
 							);
 							?>
 							"
@@ -346,7 +346,7 @@ Template Name: Qui suis-je ?
 							src="
 							<?php
 							echo esc_url(
-								nature_reiki_asset_url( 'images/arbre-vie.png' )
+								nature_reiki_asset_url( 'images/arbre-vie.webp' )
 							);
 							?>
 							"

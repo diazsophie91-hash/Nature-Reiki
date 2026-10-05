@@ -69,7 +69,7 @@ Template Name: Soins Reiki
 $soins = array(
 	array(
 		'symbole_class' => 'soin-reiki-symbole soin-reiki-symbole-arbre',
-		'image'         => 'images/arbre-vie.png',
+		'image'         => 'images/arbre-vie.webp',
 		'image_width'   => 1312,
 		'image_height'  => 1199,
 		'titre'         => 'Pack 4 séances',

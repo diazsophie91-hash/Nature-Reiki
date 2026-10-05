@@ -82,7 +82,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Mon ami l’arbre',
 				'mention'  => '',
-				'image'    => 'images/chene.png',
+				'image'    => 'images/chene.webp',
 				'width'    => 1536,
 				'height'   => 1024,
 				'variante' => 'nature-carte--verte',
@@ -91,7 +91,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'La forêt autrement',
 				'mention'  => '',
-				'image'    => 'images/foret-autrement-miroir.png',
+				'image'    => 'images/foret-autrement-miroir.webp',
 				'width'    => 1536,
 				'height'   => 1024,
 				'variante' => 'nature-carte--brune',
@@ -109,7 +109,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Cuisine sauvage',
 				'mention'  => '',
-				'image'    => 'images/cuisine-sauvage.png',
+				'image'    => 'images/cuisine-sauvage.webp',
 				'width'    => 1093,
 				'height'   => 1438,
 				'variante' => 'nature-carte--bleue',
@@ -118,7 +118,7 @@ get_header(); ?>
 			array(
 				'titre'    => 'Découverte des carrières',
 				'mention'  => '',
-				'image'    => 'images/decouverte-carrieres.png',
+				'image'    => 'images/decouverte-carrieres.webp',
 				'width'    => 1536,
 				'height'   => 1024,
 				'variante' => 'nature-carte--bleue',
@@ -259,7 +259,7 @@ get_header(); ?>
 				'legende' => 'Mon ami l’arbre',
 			),
 			array(
-				'image'   => 'images/foret-autrement.png',
+				'image'   => 'images/foret-autrement.webp',
 				'width'   => 970,
 				'height'  => 508,
 				'legende' => 'La forêt autrement',

@@ -21,17 +21,17 @@ $is_reiki  = nature_reiki_is_reiki_context();
 $is_nature = nature_reiki_is_nature_context();
 
 if ( $is_reiki ) {
-	$logo = 'images/logo-reiki-transparent.png';
+	$logo = 'images/logo-reiki-transparent.webp';
 } elseif ( $is_nature ) {
-	$logo = 'images/logo-guide-nature-transparent.png';
+	$logo = 'images/logo-guide-nature-transparent.webp';
 } else {
-	$logo = 'images/logo-nature-reiki-transparent.png';
+	$logo = 'images/logo-nature-reiki-transparent.webp';
 }
 
-if ( 'images/logo-reiki-transparent.png' === $logo ) {
+if ( 'images/logo-reiki-transparent.webp' === $logo ) {
 	$logo_width  = 1203;
 	$logo_height = 1307;
-} elseif ( 'images/logo-guide-nature-transparent.png' === $logo ) {
+} elseif ( 'images/logo-guide-nature-transparent.webp' === $logo ) {
 	$logo_width  = 1210;
 	$logo_height = 1300;
 } else {
@@ -115,7 +115,7 @@ if ( 'images/logo-reiki-transparent.png' === $logo ) {
 		aria-label="Facebook"
 	>
 		<img
-			src="<?php echo esc_url( nature_reiki_asset_url( 'images/facebook.png' ) ); ?>"
+			src="<?php echo esc_url( nature_reiki_asset_url( 'images/facebook.webp' ) ); ?>"
 			alt=""
 			width="1254"
 			height="1254"

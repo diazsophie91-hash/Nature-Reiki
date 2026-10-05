@@ -74,7 +74,7 @@ get_header(); ?>
 			array(
 				'titre'        => 'Écoles',
 				'description'  => 'Une animation adaptée au niveau de la classe, en lien avec le milieu naturel proche de l’école.',
-				'image'        => 'images/animation-ecoles.png',
+				'image'        => 'images/animation-ecoles.webp',
 				'image_width'  => 1374,
 				'image_height' => 1145,
 				'variante'     => 'nature-carte--bleue',
