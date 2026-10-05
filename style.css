@@ -5944,3 +5944,41 @@ body.universe-nature .page-fallback-article h2 {
     font: inherit;
     color: inherit;
 }
+
+
+/* =========================================================
+   CTA RÉSERVATION NATURE — COULEURS CONDITIONS
+========================================================= */
+
+.page-reserver .soins-reiki-cta-interieur {
+    background: var(--color-white-warm-translucent-72);
+
+    border-color: var(--color-nature-text);
+
+    box-shadow: var(--shadow-nature-card);
+}
+
+.page-reserver .soins-reiki-cta-interieur h2 {
+    color: var(--color-nature);
+}
+
+.page-reserver .soins-reiki-cta-bouton {
+    background: var(--color-nature-h2);
+
+    border: 1px solid var(--color-nature);
+
+    color: var(--color-white-warm);
+}
+
+.page-reserver .soins-reiki-cta-bouton:hover {
+    background: var(--color-nature-hover);
+
+    border-color: var(--color-nature);
+}
+/* =========================================================
+   ESPACE AVANT LE CTA — PRISE DE RENDEZ-VOUS REIKI
+========================================================= */
+
+.page-prendre-rendez-vous-reiki .prendre-rendez-vous-reiki {
+    margin-bottom: 20px;
+}

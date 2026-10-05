@@ -26,6 +26,44 @@ Template Name: Réserver - Nature
 			<p>Page en construction, veuillez <a href="<?php echo esc_url( home_url( '/me-contacter/?univers=nature' ) ); ?>">me contacter par e-mail</a> afin de prendre rendez-vous, merci.</p>
 		</div>
 	</section>
+<!-- =========================
+    CTA FINAL — RÉSERVATION NATURE
+========================== -->
+<section class="soins-reiki-cta reserver-nature-cta-marker">
+
+    <div class="separateur-dore" aria-hidden="true"></div>
+
+    <div class="soins-reiki-cta-interieur">
+
+        <h2>Une question avant votre réservation ?</h2>
+
+        <div class="soins-reiki-cta-boutons">
+
+            <a
+                href="<?php echo esc_url(
+                    home_url( '/faq/?univers=nature' )
+                ); ?>"
+                class="soins-reiki-cta-bouton"
+            >
+                F.A.Q
+            </a>
+
+            <a
+                href="<?php echo esc_url(
+                    home_url( '/me-contacter/?univers=nature' )
+                ); ?>"
+                class="soins-reiki-cta-bouton"
+            >
+                Me contacter
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 </main>
 
 <?php get_footer(); ?>
