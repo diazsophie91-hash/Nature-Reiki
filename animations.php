@@ -147,6 +147,8 @@ get_header(); ?>
 		CONDITIONS
 	========================== -->
 
+	    <div class="separateur-dore" aria-hidden="true"></div>
+
 	<section class="nature-section" aria-labelledby="animations-conditions-titre">
 
 		<div class="nature-encart nature-encart--bleu">
