@@ -297,7 +297,7 @@ Template Name: Le Reiki
 
 
 	<!-- =========================
-		5. LES 5 GOKAI
+		4. LES 5 GOKAI
 	========================== -->
 
 	<section class="le-reiki-section le-reiki-gokai">
@@ -396,7 +396,7 @@ foreach ( $gokai_items as $item ) {
 
 
 	<!-- =========================
-		4. POURQUOI FAIRE APPEL AU REIKI ?
+		5. POURQUOI FAIRE APPEL AU REIKI ?
 	========================== -->
 
 	<section class="le-reiki-section le-reiki-pourquoi">
