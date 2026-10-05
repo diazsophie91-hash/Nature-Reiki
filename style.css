@@ -3943,6 +3943,73 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 }
 
 /* =========================================================
+   NAVIGATION DE FIN — PAGE SOINS REIKI
+========================================================= */
+
+.soins-reiki-navigation {
+    width: 100%;
+
+    padding: 10px 30px 35px;
+}
+
+.soins-reiki-navigation-interieur {
+    width: 100%;
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    padding: 12px 20px;
+
+    background: var(--color-white-warm-translucent-48);
+
+    border: 1px solid var(--color-accent-border-65);
+    border-radius: 22px;
+
+    box-shadow:
+        var(--shadow-soft);
+
+    text-align: center;
+}
+
+.soins-reiki-navigation-boutons {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+}
+
+.soins-reiki-navigation-boutons a:nth-child(1) {
+    position: absolute;
+
+    right: calc(50% + 160px);
+}
+
+.soins-reiki-navigation-boutons a:nth-child(2) {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.soins-reiki-navigation-boutons a:nth-child(3) {
+    position: absolute;
+
+    left: calc(50% + 160px);
+}
+
+.soins-reiki-navigation-boutons a:nth-child(1),
+.soins-reiki-navigation-boutons a:nth-child(3) {
+    width: 120px;
+
+    justify-content: center;
+}
+
+/* =========================================================
    CTA FINAL
 ========================================================= */
 
@@ -3961,7 +4028,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
     margin: 0 auto;
 
-    padding: 20px 45px;
+    padding: 13px 30px;
 
     background: var(--color-white-warm-translucent-48);
 
@@ -3976,13 +4043,13 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 }
 
 .soins-reiki-cta-interieur h2 {
-    margin: 0 0 25px;
+    margin: 0 0 14px;
 
     font-family: "Cormorant Garamond", serif;
 
     color: var(--color-primary);
 
-    font-size: 36px;
+    font-size: 30px;
 
     font-weight: 500;
 
@@ -4005,7 +4072,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 .soins-reiki-cta-bouton {
     display: inline-block;
 
-    padding: 12px 25px;
+    padding: 10px 20px;
 
     border: 2px solid var(--color-white-warm);
 
@@ -4017,7 +4084,7 @@ body.universe-nature .soins-reiki-accordeon-fleche {
 
     font-family: "Lora", serif;
 
-    font-size: 15px;
+    font-size: 14px;
 
 	font-weight: 600;
 

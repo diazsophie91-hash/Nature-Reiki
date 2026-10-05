@@ -598,18 +598,46 @@ foreach ( $soins as $soin_index => $soin ) :
 
 
 	<!-- =========================
-		CTA FINAL
+		NAVIGATION DE FIN
 	========================== -->
 
-	<section class="soins-reiki-cta">
+	<section
+		class="soins-reiki-navigation"
+		aria-label="Navigation complémentaire Reiki"
+	>
 
+		
 		<div class="separateur-dore" aria-hidden="true"></div>
 
-		<div class="soins-reiki-cta-interieur">
+		<div class="soins-reiki-navigation-interieur">
 
-			<h2>Une question avant votre rendez-vous ?</h2>
+			<div class="soins-reiki-navigation-boutons">
 
-			<div class="soins-reiki-cta-boutons">
+				<a
+					href="
+					<?php
+					echo esc_url(
+						home_url( '/le-reiki/' )
+					);
+					?>
+					"
+					class="soins-reiki-cta-bouton"
+				>
+					Le Reiki
+				</a>
+
+				<a
+					href="
+					<?php
+					echo esc_url(
+						home_url( '/prendre-rendez-vous-reiki/' )
+					);
+					?>
+					"
+					class="soins-reiki-cta-bouton"
+				>
+					Réserver votre soin Reiki
+				</a>
 
 				<a
 					href="
@@ -622,19 +650,6 @@ foreach ( $soins as $soin_index => $soin ) :
 					class="soins-reiki-cta-bouton"
 				>
 					F.A.Q
-				</a>
-
-				<a
-					href="
-					<?php
-					echo esc_url(
-						home_url( '/me-contacter/?univers=reiki' )
-					);
-					?>
-					"
-					class="soins-reiki-cta-bouton"
-				>
-					Me contacter
 				</a>
 
 			</div>
