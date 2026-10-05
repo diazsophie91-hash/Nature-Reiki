@@ -136,7 +136,7 @@ get_header(); ?>
 		APPEL À L’ACTION
 	========================== -->
 
-	    <div class="separateur-dore" aria-hidden="true"></div>
+	<div class="separateur-dore" aria-hidden="true"></div>
 
 	<section class="nature-cta" aria-labelledby="a-venir-cta-titre">
 
