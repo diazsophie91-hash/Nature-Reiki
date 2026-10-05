@@ -373,7 +373,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					</p>
 
 					<p>
-						Le soin Reiki s’inscrit dans une approche d’accompagnement énergétique et peut être choisi lorsque l’on ressent le besoin de prendre soin de soi, de retrouver davantage d’équilibre ou simplement de s’accorder une pause.
+						<a class="lien-contextuel" href="<?php echo esc_url( home_url( '/le-reiki/' ) ); ?>">Le soin Reiki</a> s’inscrit dans une approche d’accompagnement énergétique et peut être choisi lorsque l’on ressent le besoin de prendre soin de soi, de retrouver davantage d’équilibre ou simplement de s’accorder une pause.
 					</p>
 
 					<p>
@@ -391,7 +391,7 @@ foreach ( $soins as $soin_index => $soin ) :
 					<h3>Séance en forêt</h3>
 
 					<p>
-						Lors de mes balades en forêt, il m’est arrivé de m’arrêter un moment, ressentant le besoin de <strong>m’offrir un auto-soin de Reiki</strong>. Ces moments me <strong>redonnaient de l’énergie et m’aidaient à retrouver des forces</strong> parfois diminuées par les aléas de la vie.
+						Lors de mes <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/balades/' ) ); ?>">balades en forêt</a>, il m’est arrivé de m’arrêter un moment, ressentant le besoin de <strong>m’offrir un auto-soin de Reiki</strong>. Ces moments me <strong>redonnaient de l’énergie et m’aidaient à retrouver des forces</strong> parfois diminuées par les aléas de la vie.
 					</p>
 
 					<p>

@@ -189,7 +189,7 @@ Template Name: Le Reiki
 						C’est vers le Reiki Usui, la méthode traditionnelle et d’origine,
 						que mon cœur s’est tourné.
 					</strong>
-					<strong>Certifiée au niveau 3 (Maître Praticienne)</strong>, je vous
+					<strong><a class="lien-contextuel" href="<?php echo esc_url( home_url( '/qui-suis-je/?univers=reiki' ) ); ?>">Certifiée au niveau 3 (Maître Praticienne)</a></strong>, je vous
 					accompagne avec cette approche épurée, centrée sur la canalisation
 					de l’énergie pure, le respect des 5 principes du Reiki et
 					l’harmonisation globale de votre être.
@@ -475,7 +475,7 @@ foreach ( $gokai_items as $item ) {
 
 
 				<p>
-					C’est un soin doux qui s’adresse à toute personne désireuse
+					C’est un <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/soins-reiki/' ) ); ?>">soin doux</a> qui s’adresse à toute personne désireuse
 					de prendre soin de soi et de se (re)découvrir.
 				</p>
 

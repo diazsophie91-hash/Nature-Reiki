@@ -262,6 +262,18 @@ main {
     outline-offset: 2px;
 }
 
+/* Liens contextuels dans les textes éditoriaux. */
+.lien-contextuel {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.lien-contextuel:hover {
+    text-decoration-thickness: 2px;
+}
+
 /* Focus clavier général des liens et boutons */
 
 a:focus-visible:not(.skip-link),

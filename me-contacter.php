@@ -237,7 +237,7 @@ get_header();
 					<h2>Reiki</h2>
 
 					<p>
-						Pour toute question concernant les séances
+						Pour toute question concernant les <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/soins-reiki/' ) ); ?>">séances</a>
 						et/ou une réservation.
 					</p>
 
@@ -271,8 +271,8 @@ get_header();
 					<h2>Guide-Nature</h2>
 
 					<p>
-						Pour toute question concernant les balades,
-						les animations, les balades privées et/ou une réservation.
+						Pour toute question concernant les <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/balades/' ) ); ?>">balades</a>,
+						les <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/animations/' ) ); ?>">animations</a>, les balades privées et/ou une réservation.
 					</p>
 
 				</article>

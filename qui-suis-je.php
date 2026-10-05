@@ -147,7 +147,7 @@ Template Name: Qui suis-je ?
 			<h2>Introduction</h2>
 
 			<p>
-				Née sous le signe du Taureau, je suis une vraie épicurienne, attirée et émerveillée par la Nature depuis toujours.
+				Née sous le signe du Taureau, je suis une vraie épicurienne, attirée et émerveillée par la <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/accueil-guide-nature/' ) ); ?>">Nature</a> depuis toujours.
 			</p>
 
 			<p>
@@ -159,7 +159,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 			<p>
-				En parallèle, mon côté spirituel avait également besoin de développement et de compréhension. Le Reiki est ainsi venu naturellement trouver sa place dans mon parcours, comme un autre chemin d’exploration, tourné davantage vers l’énergie, l’intériorité, l’harmonie et l’accompagnement de l’humain.
+				En parallèle, mon côté spirituel avait également besoin de développement et de compréhension. Le <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/accueil-reiki/' ) ); ?>">Reiki</a> est ainsi venu naturellement trouver sa place dans mon parcours, comme un autre chemin d’exploration, tourné davantage vers l’énergie, l’intériorité, l’harmonie et l’accompagnement de l’humain.
 			</p>
 
 			<p>
@@ -416,7 +416,7 @@ Template Name: Qui suis-je ?
 			</p>
 
 			<p>
-				Que ce soit au cœur d’une forêt, à la découverte d’une plante, en observant un oiseau ou lors d’un soin Reiki, mon souhait reste le même : <strong>offrir un espace où l’on peut prendre le temps, découvrir, ressentir et se reconnecter.</strong>
+				Que ce soit au cœur d’une forêt, à la découverte d’une plante, en observant un oiseau ou lors d’un <a class="lien-contextuel" href="<?php echo esc_url( home_url( '/soins-reiki/' ) ); ?>">soin Reiki</a>, mon souhait reste le même : <strong>offrir un espace où l’on peut prendre le temps, découvrir, ressentir et se reconnecter.</strong>
 			</p>
 
 			<p>
