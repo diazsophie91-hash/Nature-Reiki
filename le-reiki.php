@@ -485,6 +485,26 @@ foreach ( $gokai_items as $item ) {
 
 	</section>
 
+<!-- =========================
+    CTA SOINS REIKI
+========================== -->
+
+<div class="soins-reiki-rendez-vous-global">
+
+    <a
+        href="
+        <?php
+        echo esc_url(
+            home_url( '/soins-reiki/' )
+        );
+        ?>
+        "
+        class="soin-reiki-rendez-vous"
+    >
+        Découvrir les soins Reiki
+    </a>
+
+</div>
 
 	<!-- =========================
 		MENTION LÉGALE
