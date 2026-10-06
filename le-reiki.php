@@ -122,7 +122,7 @@ Template Name: Le Reiki
 		src="
 		<?php
 		echo esc_url(
-			nature_reiki_asset_url( 'images/mikao-usui.png' )
+			nature_reiki_asset_url( 'images/mikao-usui.webp' )
 		);
 		?>
 		"
