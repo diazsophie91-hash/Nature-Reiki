@@ -40,6 +40,7 @@ if ( 'images/logo-reiki-transparent.webp' === $logo ) {
 }
 ?>
 
+<script>document.documentElement.classList.add( 'js-menu' );</script>
 
 <header class="accueil-header">
 
@@ -56,9 +57,24 @@ if ( 'images/logo-reiki-transparent.webp' === $logo ) {
 </a>
 
 
+<!-- BOUTON HAMBURGER (mobile uniquement) -->
+
+<button
+	type="button"
+	class="menu-toggle"
+	aria-label="Ouvrir le menu"
+	aria-expanded="false"
+	aria-controls="header-menu"
+>
+	<span></span>
+	<span></span>
+	<span></span>
+</button>
+
+
 <!-- SWITCH ENTRE LES DEUX UNIVERS + FB -->
 
-<div class="header-actions">
+<div class="header-actions" id="header-menu">
 
 	<div class="switch-univers">
 
@@ -121,6 +137,13 @@ if ( 'images/logo-reiki-transparent.webp' === $logo ) {
 			height="1254"
 		>
 	</a>
+
+	<?php
+	// Navigation complète de l'univers courant, affichée dans le menu mobile.
+	if ( $is_nature || $is_reiki ) {
+		get_template_part( $is_nature ? 'menu-nature' : 'menu-reiki', null, array( 'mobile' => true ) );
+	}
+	?>
 
 </div>
 

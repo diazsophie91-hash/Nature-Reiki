@@ -5938,12 +5938,18 @@ body.universe-nature .retour-haut {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    /* Le bouton reste en position absolue au-dessus de 860px :
+       on réserve sa largeur pour éviter tout chevauchement. */
     .nature-banniere-contenu p {
-        max-width: 100%;
+        max-width: 68%;
     }
 }
 
 @media (max-width: 860px) {
+    .nature-banniere-contenu p {
+        max-width: 100%;
+    }
+
     .nature-section,
     .nature-cta {
         padding-left: 20px;
@@ -6175,4 +6181,526 @@ body.universe-nature .page-fallback-article h2 {
 
 .page-prendre-rendez-vous-reiki .prendre-rendez-vous-reiki {
     margin-bottom: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE — MENU HAMBURGER (MOBILE ET TABLETTE ÉTROITE)
+   Masqué sur desktop : aucune règle ci-dessous ne s'applique
+   au-dessus de 800px, sauf le masquage du bouton et du menu mobile.
+========================================================= */
+
+.menu-toggle,
+.menu-mobile-nav {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .accueil-header {
+        position: relative;
+        z-index: 20;
+
+        height: auto;
+        min-height: 72px;
+
+        padding: 10px 16px;
+
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logo img {
+        width: 64px;
+    }
+
+    .logo:hover {
+        transform: none;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        width: 48px;
+        height: 48px;
+
+        margin: 0;
+        padding: 0;
+
+        background: var(--color-white-warm-translucent-92);
+
+        border: 1px solid var(--color-accent-border);
+        border-radius: 50%;
+
+        box-shadow: var(--shadow-switch);
+
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+
+        width: 22px;
+        height: 2px;
+
+        background: var(--color-primary);
+        border-radius: 2px;
+
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    body.universe-nature .menu-toggle {
+        border-color: var(--color-nature-menu-border);
+    }
+
+    body.universe-nature .menu-toggle span {
+        background: var(--color-nature);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Sans JavaScript, le contenu du menu reste visible sous le logo. */
+    .header-actions {
+        flex: 1 0 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+
+        margin-top: 10px;
+    }
+
+    .js-menu .header-actions {
+        position: absolute;
+        top: 100%;
+        left: 16px;
+        right: 16px;
+        z-index: 30;
+
+        display: none;
+
+        margin-top: 0;
+        padding: 16px;
+
+        background: var(--color-white-warm-translucent-92);
+
+        border: 1px solid var(--color-accent-border);
+        border-radius: 22px;
+
+        box-shadow: var(--shadow-box);
+    }
+
+    .js-menu .header-actions.is-open {
+        display: flex;
+    }
+
+    body.universe-nature .js-menu .header-actions,
+    .js-menu body.universe-nature .header-actions {
+        border-color: var(--color-nature-menu-border);
+    }
+
+    .js-menu .menu-toggle {
+        margin-left: auto;
+    }
+
+    .switch-univers {
+        flex-wrap: wrap;
+
+        padding: 10px 14px;
+        gap: 8px;
+
+        font-size: 16px;
+    }
+
+    .switch-symbole {
+        margin: 0 4px;
+    }
+
+    .facebook-link {
+        align-self: center;
+    }
+
+    .facebook-link img {
+        height: 48px;
+    }
+
+    .menu-mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        padding-top: 12px;
+
+        border-top: 1px solid var(--color-accent-border-50);
+    }
+
+    .menu-mobile-nav a {
+        display: flex;
+        align-items: center;
+
+        min-height: 44px;
+
+        padding: 10px 18px;
+
+        border-radius: 30px;
+
+        color: var(--color-primary);
+
+        font-family: "Lora", serif;
+        font-size: 16px;
+
+        text-decoration: none;
+    }
+
+    .menu-mobile-nav a.actif {
+        background: var(--color-primary-bg);
+
+        font-weight: 600;
+    }
+
+    body.universe-nature .menu-mobile-nav a {
+        color: var(--color-nature);
+    }
+
+    body.universe-nature .menu-mobile-nav a.actif {
+        background: var(--color-nature-accent);
+    }
+
+    /* La navigation complète est dans le hamburger : on évite le doublon. */
+    .reiki-menu,
+    .nature-menu {
+        display: none;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLETTE ÉTROITE ET MOBILE (≤ 800px)
+   Les règles desktop ci-dessus restent inchangées.
+========================================================= */
+
+@media (max-width: 800px) {
+
+    /* ---- Accueil : deux univers empilés ---- */
+
+    .univers {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 24px;
+
+        height: auto;
+    }
+
+    .univers-box {
+        padding: 160px 20px 24px;
+
+        justify-content: flex-start;
+    }
+
+    .univers-box h2 {
+        margin-top: 0;
+    }
+
+    .univers-box p:last-child {
+        margin-bottom: 0;
+    }
+
+    .bas-page {
+        max-width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+    /* ---- Bannières Reiki : bouton dans le flux ---- */
+
+    .reiki-banniere-1,
+    .reiki-banniere-2,
+    .reiki-banniere-3 {
+        padding: 20px;
+
+        gap: 16px;
+    }
+
+    .reiki-banniere-1-contenu,
+    .reiki-banniere-2-contenu,
+    .reiki-banniere-3-contenu {
+        min-width: 0;
+    }
+
+    .reiki-banniere-1-bouton,
+    .reiki-banniere-2-bouton,
+    .reiki-banniere-3-bouton {
+        position: static;
+
+        right: auto;
+        bottom: auto;
+
+        margin-top: 14px;
+
+        white-space: normal;
+
+        text-align: center;
+    }
+
+    .reiki-banniere-1-decor,
+    .reiki-banniere-2-decor,
+    .reiki-banniere-3-decor {
+        width: 56px;
+        height: 56px;
+    }
+
+    .reiki-banniere-1-decor img,
+    .reiki-banniere-2-decor img,
+    .reiki-banniere-3-decor img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .reiki-banniere-1-decor::before,
+    .reiki-banniere-2-decor::before,
+    .reiki-banniere-3-decor::before {
+        width: 90px;
+        height: 90px;
+    }
+
+    .reiki-banniere-1-contenu p,
+    .reiki-banniere-3-contenu p {
+        margin-left: 0;
+    }
+
+    /* ---- Le Reiki ---- */
+
+    .reiki-fonctionnement-blocs {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* ---- Soins Reiki ---- */
+
+    .soins-reiki-types-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .soins-reiki-navigation-interieur {
+        padding: 16px;
+    }
+
+    .soins-reiki-navigation-boutons {
+        flex-direction: column;
+
+        gap: 10px;
+
+        min-height: 0;
+    }
+
+    .soins-reiki-navigation-boutons a:nth-child(1),
+    .soins-reiki-navigation-boutons a:nth-child(2),
+    .soins-reiki-navigation-boutons a:nth-child(3) {
+        position: static;
+
+        left: auto;
+        right: auto;
+
+        transform: none;
+
+        display: block;
+
+        width: 100%;
+        max-width: 320px;
+
+        text-align: center;
+    }
+
+    /* ---- Qui suis-je ---- */
+
+    .qui-suis-je-nature .qui-suis-je-parcours-contenu,
+    .qui-suis-je-reiki .qui-suis-je-parcours-contenu {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 24px;
+    }
+
+    .qui-suis-je-parcours-contenu .qui-suis-je-photo {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+
+        aspect-ratio: 250 / 320;
+
+        margin: 0 auto;
+    }
+
+    /* ---- Me contacter ---- */
+
+    .me-contacter-univers-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .me-contacter-univers-card {
+        padding: 26px 20px;
+
+        overflow-wrap: anywhere;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE (≤ 600px)
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* ---- Texte justifié : évite les grands blancs en colonne étroite ---- */
+
+    .qui-suis-je-contenu p,
+    .qui-suis-je-introduction .qui-suis-je-contenu p,
+    .qui-suis-je-lien .qui-suis-je-contenu p,
+    .le-reiki-contenu p,
+    .soins-reiki-test-energetique p,
+    .soin-reiki-explication p,
+    .soins-reiki-accordeon-contenu p {
+        text-align: left;
+    }
+
+    /* ---- Me contacter : coordonnées ---- */
+
+    .me-contacter-coordonnees {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .me-contacter-info {
+        gap: 16px;
+
+        padding: 20px 16px;
+    }
+
+    .me-contacter-icone {
+        width: 56px;
+        height: 56px;
+    }
+
+    .me-contacter-info:nth-child(1) .me-contacter-icone img,
+    .me-contacter-info:nth-child(2) .me-contacter-icone img,
+    .me-contacter-info:nth-child(3) .me-contacter-icone img {
+        width: 44px;
+        height: 44px;
+        max-width: 44px;
+        max-height: 44px;
+    }
+
+    .me-contacter-info-texte {
+        min-width: 0;
+
+        overflow-wrap: anywhere;
+    }
+
+    .me-contacter-info-texte h2 {
+        font-size: 26px;
+    }
+
+    /* ---- Le Reiki ---- */
+
+    .reiki-kanji,
+    .reiki-pourquoi-blocs {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 18px;
+    }
+
+    .reiki-kanji-bloc,
+    .reiki-pourquoi-bloc,
+    .reiki-fonctionnement-bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* ---- Gokai : numéros réduits, mention finale sur le flux ---- */
+
+    .reiki-gokai-liste {
+        margin-top: 90px;
+
+        padding-left: 46px;
+    }
+
+    .reiki-gokai-liste::before {
+        left: 18px;
+    }
+
+    .reiki-gokai-liste::after {
+        top: -70px;
+        left: 0;
+        right: 0;
+
+        transform: none;
+
+        padding: 0;
+
+        font-size: 22px;
+        line-height: 1.2;
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+    .reiki-gokai-item {
+        padding: 20px 18px;
+    }
+
+    .reiki-gokai-item::before {
+        left: -46px;
+        top: 20px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+    /* ---- Soins Reiki : CTA ---- */
+
+    .soins-reiki-cta-boutons {
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLETTE LARGE (801px – 1024px)
+   Le menu desktop est conservé : on évite seulement qu'il soit
+   rogné et que les boutons recouvrent le texte des bannières.
+========================================================= */
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .reiki-menu,
+    .nature-menu {
+        flex-wrap: wrap;
+
+        max-width: calc(100% - 32px);
+    }
+
+    .reiki-menu a,
+    .nature-menu a {
+        padding: 10px 14px;
+    }
+
+    .reiki-banniere-1-contenu p,
+    .reiki-banniere-2-contenu p,
+    .reiki-banniere-3-contenu p {
+        max-width: calc(100% - 200px);
+    }
 }

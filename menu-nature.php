@@ -59,9 +59,14 @@ $menu_items = array(
 	),
 );
 
+// Version du menu intégrée au hamburger mobile (header.php).
+$is_mobile_menu = isset( $args['mobile'] ) && $args['mobile'];
+$menu_class     = $is_mobile_menu ? 'menu-mobile-nav' : 'nature-menu';
+$menu_label     = $is_mobile_menu ? 'Navigation Nature (menu mobile)' : 'Navigation Nature';
+
 ?>
 
-<nav class="nature-menu" aria-label="Navigation Nature">
+<nav class="<?php echo esc_attr( $menu_class ); ?>" aria-label="<?php echo esc_attr( $menu_label ); ?>">
 
 	<?php foreach ( $menu_items as $item ) : ?>
 		<?php $is_current = nature_reiki_is_current_page( $item['template'], $item['slug'] ); ?>

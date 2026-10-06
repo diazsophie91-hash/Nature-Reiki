@@ -350,6 +350,11 @@ function nature_reiki_enqueue_assets() {
 	    $css_version
 	);
 
+	nature_reiki_enqueue_script_asset(
+		'nature-reiki-menu-mobile',
+		'assets/js/menu-mobile.js'
+	);
+
 	if ( nature_reiki_page_has_accordion() ) {
 		nature_reiki_enqueue_script_asset(
 			'nature-reiki-accordeon',
