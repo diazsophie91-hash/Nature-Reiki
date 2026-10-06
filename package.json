@@ -17,7 +17,7 @@
     "lint:css": "stylelint \"**/*.css\"",
     "lint": "npm run lint:js && npm run lint:css",
     "test:e2e": "playwright test",
-    "minify:js": "terser assets/js/accordeon.js -c -m -o assets/js/accordeon.min.js && terser assets/js/carrousel-nature.js -c -m -o assets/js/carrousel-nature.min.js && terser assets/js/carte-visite.js -c -m -o assets/js/carte-visite.min.js && terser assets/js/retour-haut.js -c -m -o assets/js/retour-haut.min.js",
+    "minify:js": "terser assets/js/accordeon.js -c -m -o assets/js/accordeon.min.js && terser assets/js/carrousel-nature.js -c -m -o assets/js/carrousel-nature.min.js && terser assets/js/carte-visite.js -c -m -o assets/js/carte-visite.min.js && terser assets/js/menu-mobile.js -c -m -o assets/js/menu-mobile.min.js && terser assets/js/retour-haut.js -c -m -o assets/js/retour-haut.min.js",
     "minify:css": "cleancss -o style.min.css style.css",
     "minify": "npm run minify:js && npm run minify:css"
 }
