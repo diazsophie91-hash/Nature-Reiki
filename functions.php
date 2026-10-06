@@ -601,6 +601,25 @@ function nature_reiki_filter_canonical_url( $canonical_url ) {
 add_filter( 'get_canonical_url', 'nature_reiki_filter_canonical_url', 10 );
 
 /**
+ * Affiche des données structurées JSON-LD.
+ *
+ * @param array $schema Données structurées à encoder.
+ */
+function nature_reiki_output_json_ld( $schema ) {
+	$json = wp_json_encode(
+		$schema,
+		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+	);
+
+	if ( false === $json ) {
+		return;
+	}
+
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
+	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+}
+
+/**
  * Affiche les données structurées LocalBusiness sur la page de contact.
  *
  * Les informations correspondent aux coordonnées actuellement affichées
@@ -634,17 +653,7 @@ function nature_reiki_output_local_business_schema() {
 		),
 	);
 
-	$json = wp_json_encode(
-		$schema,
-		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-	);
-
-	if ( false === $json ) {
-		return;
-	}
-
-	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
-	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+	nature_reiki_output_json_ld( $schema );
 }
 add_action( 'wp_head', 'nature_reiki_output_local_business_schema', 2 );
 
@@ -665,17 +674,7 @@ function nature_reiki_output_website_schema() {
 		'description' => 'Nature & Reiki propose deux univers à Aywaille : balades et découvertes de la nature, et accompagnement Reiki.',
 	);
 
-	$json = wp_json_encode(
-		$schema,
-		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-	);
-
-	if ( false === $json ) {
-		return;
-	}
-
-	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
-	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+	nature_reiki_output_json_ld( $schema );
 }
 add_action( 'wp_head', 'nature_reiki_output_website_schema', 2 );
 
@@ -711,16 +710,6 @@ function nature_reiki_output_profile_schema() {
 		),
 	);
 
-	$json = wp_json_encode(
-		$schema,
-		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-	);
-
-	if ( false === $json ) {
-		return;
-	}
-
-	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON-LD déjà encodé par wp_json_encode().
-	echo '<script type="application/ld+json">' . $json . '</script>' . "\n";
+	nature_reiki_output_json_ld( $schema );
 }
 add_action( 'wp_head', 'nature_reiki_output_profile_schema', 2 );
