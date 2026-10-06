@@ -318,8 +318,8 @@ $carte_visite = 'nature' === $carte_visite_univers
 				class="me-contacter-carte-visite-image"
 				src="<?php echo esc_url( nature_reiki_asset_url( $carte_visite['fichier'] ) ); ?>"
 				alt="<?php echo esc_attr( 'Carte de visite ' . $carte_visite['nom'] ); ?>"
-				width="<?php echo esc_attr( $carte_visite['width'] ); ?>"
-				height="<?php echo esc_attr( $carte_visite['height'] ); ?>"
+				width="<?php echo esc_attr( (string) $carte_visite['width'] ); ?>"
+				height="<?php echo esc_attr( (string) $carte_visite['height'] ); ?>"
 				loading="lazy"
 				decoding="async"
 			>

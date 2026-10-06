@@ -40,18 +40,26 @@ Template Name: Réserver - Nature
         <div class="soins-reiki-cta-boutons">
 
             <a
-                href="<?php echo esc_url(
+                href="
+                <?php
+                echo esc_url(
                     home_url( '/faq/?univers=nature' )
-                ); ?>"
+                );
+                ?>
+                "
                 class="soins-reiki-cta-bouton"
             >
                 F.A.Q
             </a>
 
             <a
-                href="<?php echo esc_url(
+                href="
+                <?php
+                echo esc_url(
                     home_url( '/me-contacter/?univers=nature' )
-                ); ?>"
+                );
+                ?>
+                "
                 class="soins-reiki-cta-bouton"
             >
                 Me contacter
