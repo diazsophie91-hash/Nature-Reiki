@@ -264,6 +264,19 @@ function nature_reiki_page_has_carrousel_nature() {
 }
 
 /**
+ * Indique si la page courante utilise la visionneuse de carte de visite.
+ * Utilisé pour ne charger le JS de la carte de visite que sur la page de contact.
+ *
+ * @return bool
+ */
+function nature_reiki_page_has_carte_visite() {
+	return nature_reiki_is_current_page(
+		array( 'me-contacter.php' ),
+		array( 'me-contacter' )
+	);
+}
+
+/**
  * Construit l'URL d'un fichier inclus dans le thème.
  *
  * @param string $path Chemin relatif au dossier du thème.
@@ -348,6 +361,13 @@ function nature_reiki_enqueue_assets() {
 		nature_reiki_enqueue_script_asset(
 			'nature-reiki-carrousel-nature',
 			'assets/js/carrousel-nature.js'
+		);
+	}
+
+	if ( nature_reiki_page_has_carte_visite() ) {
+		nature_reiki_enqueue_script_asset(
+			'nature-reiki-carte-visite',
+			'assets/js/carte-visite.js'
 		);
 	}
 

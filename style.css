@@ -3288,6 +3288,200 @@ body.universe-nature .page-me-contacter .me-contacter-univers-card p {
 
 
 /* =========================================================
+   CARTE DE VISITE → PAGE ME CONTACTER
+========================================================= */
+
+.me-contacter-carte-visite {
+    width: 100%;
+
+    padding: 5px 30px 60px;
+}
+
+.me-contacter-carte-visite-lien {
+    display: block;
+
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: var(--color-white-warm-translucent-58);
+
+    border: 1px solid var(--color-accent-border-48);
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-soft-7);
+
+    cursor: zoom-in;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.me-contacter-carte-visite-lien:hover {
+    transform: scale(1.015);
+
+    box-shadow: var(--shadow-hover-card);
+}
+
+.me-contacter-carte-visite-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.carte-visite-lightbox {
+    width: min(94vw, 1200px);
+    max-width: none;
+    max-height: 94vh;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    overflow: visible;
+}
+
+.carte-visite-lightbox::backdrop {
+    background: rgba(48, 45, 43, 0.72);
+}
+
+.carte-visite-lightbox-contenu {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-height: 94vh;
+
+    padding: 20px;
+
+    background: var(--color-white-warm-translucent-92);
+
+    border: 1px solid var(--color-accent-border-65);
+    border-radius: 18px;
+
+    box-shadow: var(--shadow-box);
+}
+
+.carte-visite-lightbox-image {
+    display: block;
+
+    width: auto;
+    max-width: calc(94vw - 40px);
+    height: auto;
+    max-height: calc(90vh - 40px);
+
+    object-fit: contain;
+}
+
+.carte-visite-lightbox-fermer {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    z-index: 1;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: var(--color-white-warm);
+
+    color: var(--color-primary-dark);
+
+    border: 1px solid var(--color-accent-border);
+    border-radius: 50%;
+
+    font-size: 0;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.carte-visite-lightbox-fermer:hover {
+    transform: scale(1.05);
+
+    background: var(--color-white-warm-translucent-92);
+}
+
+.carte-visite-lightbox-fermer span {
+    position: relative;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    font-size: 0;
+}
+
+.carte-visite-lightbox-fermer span::before,
+.carte-visite-lightbox-fermer span::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 18px;
+    height: 1px;
+
+    background: currentColor;
+
+    border-radius: 999px;
+
+    transform-origin: center;
+}
+
+.carte-visite-lightbox-fermer span::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.carte-visite-lightbox-fermer span::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+    .me-contacter-carte-visite {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .carte-visite-lightbox-contenu {
+        padding: 46px 12px 12px;
+    }
+
+    .carte-visite-lightbox-image {
+        max-width: calc(94vw - 24px);
+        max-height: calc(90vh - 58px);
+    }
+
+    .carte-visite-lightbox-fermer {
+        top: 7px;
+        right: 7px;
+    }
+}
+
+/* =========================================================
    SCROLL → PAGE ME CONTACTER
 ========================================================= */
 

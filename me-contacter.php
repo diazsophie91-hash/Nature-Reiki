@@ -3,6 +3,22 @@
  * Template Name: Me contacter
  */
 get_header();
+
+$carte_visite_univers = nature_reiki_get_universe();
+
+$carte_visite = 'nature' === $carte_visite_univers
+	? array(
+		'nom'     => 'Guide-Nature',
+		'fichier' => 'images/carte_visite_nature.webp',
+		'width'   => 1658,
+		'height'  => 949,
+	)
+	: array(
+		'nom'     => 'Reiki',
+		'fichier' => 'images/carte_visite_reiki.webp',
+		'width'   => 1050,
+		'height'  => 600,
+	);
 ?>
 
 <main class="page-me-contacter" id="main-content">
@@ -284,6 +300,59 @@ get_header();
 
 	</section>
 
+
+
+	<!-- =========================
+		CARTE DE VISITE
+	========================== -->
+
+	<div class="me-contacter-carte-visite">
+
+		<a
+			class="me-contacter-carte-visite-lien"
+			href="<?php echo esc_url( nature_reiki_asset_url( $carte_visite['fichier'] ) ); ?>"
+			data-carte-visite-lightbox
+			aria-label="<?php echo esc_attr( 'Agrandir la carte de visite ' . $carte_visite['nom'] ); ?>"
+		>
+			<img
+				class="me-contacter-carte-visite-image"
+				src="<?php echo esc_url( nature_reiki_asset_url( $carte_visite['fichier'] ) ); ?>"
+				alt="<?php echo esc_attr( 'Carte de visite ' . $carte_visite['nom'] ); ?>"
+				width="<?php echo esc_attr( $carte_visite['width'] ); ?>"
+				height="<?php echo esc_attr( $carte_visite['height'] ); ?>"
+				loading="lazy"
+				decoding="async"
+			>
+		</a>
+
+	</div>
+
+
+	<dialog
+		class="carte-visite-lightbox"
+		data-carte-visite-dialog
+		aria-label="<?php echo esc_attr( 'Carte de visite ' . $carte_visite['nom'] . ' en grand' ); ?>"
+	>
+		<div class="carte-visite-lightbox-contenu">
+
+			<button
+				type="button"
+				class="carte-visite-lightbox-fermer"
+				data-carte-visite-close
+				aria-label="Fermer l’agrandissement"
+			>
+				<span aria-hidden="true">×</span>
+			</button>
+
+			<img
+				class="carte-visite-lightbox-image"
+				data-carte-visite-dialog-image
+				alt=""
+				decoding="async"
+			>
+
+		</div>
+	</dialog>
 
 </main>
 
